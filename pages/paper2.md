@@ -10,3 +10,5 @@ tags:
 summary: This paper summarizes the experience of using recogito for annotating named entities and its results.
 type: white-paper
 ---
+
+## Some content

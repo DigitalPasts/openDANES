@@ -11,3 +11,5 @@ tags:
 summary: This tutorial will teach you common visualizations methods in the R programming language.
 type: tutorial
 ---
+
+## Some content

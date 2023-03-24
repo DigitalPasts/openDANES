@@ -8,4 +8,5 @@ tags:
   - R
   - visualization
 summary: This paper discusses the efficacity of latest visualization methods using R studio.
+type: white-paper
 ---

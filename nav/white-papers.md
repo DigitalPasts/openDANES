@@ -4,7 +4,7 @@ title: White Papers
 ---
 
 {% for item in site.pages %}
-  {% if item.type == "tutorial" %}
+  {% if item.type == "white-paper" %}
 
     {% capture item-title %}{{ item.title }}{% endcapture %}
     {% capture item-date %}{{ item.date }}{% endcapture %}

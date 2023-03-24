@@ -12,6 +12,13 @@ title: White Papers
   {% capture item-authors %}{{ item.authors }}{% endcapture %}
   {% capture item-tags %}{{ item.tags }}{% endcapture %}
 
+  {{ item.title }}
+  {{ item.date }}
+  {{ item.summary }}
+  {{ item.url }}
+  {{ item.authors }}
+  {{ item.tags }}
+
   {{ item-title }}
   {{ item-date }}
   {{ item-summary }}

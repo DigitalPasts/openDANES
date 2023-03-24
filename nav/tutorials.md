@@ -6,7 +6,7 @@ title: Tutorials
 {% for item in site.tutorials %}
 
   <div class="card">
-  <a href="{{site.url}}{{item.url}}">
+  <a href="{{item.url}}">
     <div class="card-body">
 
       <h3 class="card-title">

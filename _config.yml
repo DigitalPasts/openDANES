@@ -12,6 +12,6 @@ url: "https://digitalpasts.github.io"
 baseurl: "/openDANES"
 collections:
   tutorials:
-    output: true
+    output: false
   white-papers:
-    output: true
+    output: false

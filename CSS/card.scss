@@ -7,8 +7,8 @@ $card-hover-color: #f2f2f2;
 .card {
   border: 1px solid $card-border-color;
   border-radius: $card-border-radius;
-  padding: 3vw;
-  margin: 6vw;
+  padding: 2.5%;
+  margin: 3%;
   transition: background-color 0.3s ease-in-out;
   
   &:hover {
@@ -22,6 +22,7 @@ $card-hover-color: #f2f2f2;
       h3.card-title {
         margin-top: 0;
         text-decoration: none;
+        font-size: 2vw;
       }
       
       .card-meta {

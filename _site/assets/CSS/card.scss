@@ -1,0 +1,90 @@
+// define variables
+$card-border-color: #ddd;
+$card-border-radius: 10px;
+$card-hover-color: #f2f2f2;
+
+// styling
+
+.cards {
+
+  .card .invisible {
+    display: none;
+  }
+
+  .card .visible{
+
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    padding: 2.5%;
+    margin: 3%;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    
+    &:hover {
+      background-color: $card-hover-color;
+    }
+    
+    a {
+      text-decoration: none;
+      
+      .card-body {
+        h3.card-title {
+          margin-top: 0;
+          text-decoration: none;
+          font-size: 2vw;
+        }
+        
+        .card-meta {
+          font-size: 1.15vw;
+          color: #888;
+          margin-bottom: 10px;
+          
+          i {
+            margin-right: 5px;
+  
+            &:not(:first-child) {
+              margin-left: 1.2rem;
+            }
+          }
+        }
+        
+        .card-summary {
+          font-size: 16px;
+          line-height: 1.5;
+          
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2vw;
+
+  span {
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0.4vw;
+  
+    &:hover {
+      background-color: $card-hover-color;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+.clicked {
+  background-color: $card-hover-color;
+  transition: background-color 0.3s ease-in-out;
+}

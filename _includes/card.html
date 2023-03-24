@@ -16,11 +16,13 @@
         <i class="fas fa-calendar-alt"></i>
         {{ include.date | date: "%B %d, %Y" }}
         <i class="fas fa-hashtag"></i>
-        {% for tag in include.tags %}
-          {%- if forloop.length > 0 -%}
-            {{ tag }}{% unless forloop.last %}, {% endunless -%}
-          {%- endif -%}
-        {% endfor %}
+        <span class="page-tags">
+          {% for tag in include.tags %}
+            {%- if forloop.length > 0 -%}
+              {{ tag }}{% unless forloop.last %}, {% endunless -%}
+            {%- endif -%}
+          {% endfor %}
+        </span>
       </div>
 
       <div class="card-summary">

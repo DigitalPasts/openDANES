@@ -7,6 +7,7 @@ date: 2023-03-22
 tags:
   - recogito
   - annotation
+  - python
 summary: This paper summarizes the experience of using recogito for annotating named entities and its results.
 type: white-paper
 ---

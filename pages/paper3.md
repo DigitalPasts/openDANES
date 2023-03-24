@@ -3,6 +3,7 @@ layout: default+toc
 title: Paper 3
 authors:
   - Jane Doe
+  - John Doe
 date: 2023-03-23
 tags:
   - R

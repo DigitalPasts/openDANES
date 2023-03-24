@@ -1,0 +1,17 @@
+{% assign tags = '' %}
+{% for page in site.pages %}
+  {% for tag in page.tags %}
+    {% unless tags contains tag %}
+      {% assign tags = tags | append: tag | append: ',' %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+
+{% assign tag_list = tags | split: ',' | sort %}
+
+<div class="tags">
+  <span class="tag clicked">All</span>
+  {% for tag in tag_list %}
+  <span class="tag">{{ tag }}</span>
+  {% endfor %}
+</div>

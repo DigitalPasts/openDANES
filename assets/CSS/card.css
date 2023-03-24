@@ -1,0 +1,63 @@
+.cards .card .invisible {
+    display: none;
+}
+.cards .card .visible {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2.5%;
+    margin: 3%;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+}
+.cards .card .visible:hover {
+    background-color: #f2f2f2;
+}
+.cards .card .visible a {
+    text-decoration: none;
+}
+.cards .card .visible a .card-body h3.card-title {
+    margin-top: 0;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.cards .card .visible a .card-body .card-meta {
+    font-size: 1.15vw;
+    color: #888;
+    margin-bottom: 10px;
+}
+.cards .card .visible a .card-body .card-meta i {
+    margin-right: 5px;
+}
+.cards .card .visible a .card-body .card-meta i:not(:first-child) {
+    margin-left: 1.2rem;
+}
+.cards .card .visible a .card-body .card-summary {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.cards .card .visible a .card-body .card-summary p {
+    margin: 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2vw;
+}
+.tags span {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0.4vw;
+}
+.tags span:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease-in-out;
+}

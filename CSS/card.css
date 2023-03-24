@@ -10,7 +10,7 @@
 .card a {
     text-decoration: none;
 }
-.card a .card-body h3.card-title {
+.card a .card-body h1.card-title {
     margin-top: 0;
     text-decoration: none;
 }

@@ -1,0 +1,32 @@
+<div class="card">
+  <a href="">
+    <div class="card-body">
+
+      <h3 class="card-title">
+        {{ title }}
+      </h3>
+
+      <div class="card-meta">
+        <i class="fas fa-robot"></i>
+        {% for author in authors %}
+          {{ author }}, 
+        {% endfor %}
+        <i class="fas fa-calendar-alt"></i>
+        {{ date | date: "%B %d, %Y" }}
+        <i class="fas fa-hashtag"></i>
+        {% for tag in tags %}
+          {{ tag }}, 
+        {% endfor %}
+      </div>
+
+      <div class="card-summary">
+        <p>
+          {{ summary }}
+        </p>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+

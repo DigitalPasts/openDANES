@@ -26,7 +26,12 @@ title: White Papers
     {% endfor %}
   {% endcapture %}
 
-  
+  {{ item-title }}
+  {{ item-date }}
+  {{ item-summary }}
+  {{ item-url }}
+  {{ item-authors }}
+  {{ item-tags }}
 
   {% include card.html title=item-title authors=item-authors date=item-date tags=item-tags summary=item-summary url=item-url %}
 {% endfor %}

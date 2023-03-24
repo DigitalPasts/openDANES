@@ -8,15 +8,11 @@
 
       <div class="card-meta">
         <i class="fas fa-robot"></i>
-        {% for author in authors %}
-          {{ author }}, 
-        {% endfor %}
+        {% authors %}
         <i class="fas fa-calendar-alt"></i>
         {{ date | date: "%B %d, %Y" }}
         <i class="fas fa-hashtag"></i>
-        {% for tag in tags %}
-          {{ tag }}, 
-        {% endfor %}
+        {% tags %}
       </div>
 
       <div class="card-summary">

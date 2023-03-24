@@ -9,9 +9,9 @@ title: Tutorials
   <a href="{{site.url}}{{item.url}}">
     <div class="card-body">
 
-      <h1 class="card-title">
+      <h3 class="card-title">
         {{ item.title }}
-      </h1>
+      </h3>
 
       <div class="card-meta">
         <i class="fas fa-robot"></i>

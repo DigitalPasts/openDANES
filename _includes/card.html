@@ -1,22 +1,22 @@
 <div class="card">
-  <a href="{{ url }}">
+  <a href="{{ include.url }}">
     <div class="card-body">
 
       <h3 class="card-title">
-        {{ title }}
+        {{ include.title }}
       </h3>
 
       <div class="card-meta">
         <i class="fas fa-robot"></i>
-        {% for author in authors %}
+        {% for author in include.authors %}
           {%- if forloop.length > 0 -%}
             {{ author }}{% unless forloop.last %}, {% endunless -%}
           {%- endif -%}
         {% endfor %}
         <i class="fas fa-calendar-alt"></i>
-        {{ date | date: "%B %d, %Y" }}
+        {{ include.date | date: "%B %d, %Y" }}
         <i class="fas fa-hashtag"></i>
-        {% for tag in tags %}
+        {% for tag in include.tags %}
           {%- if forloop.length > 0 -%}
             {{ tag }}{% unless forloop.last %}, {% endunless -%}
           {%- endif -%}
@@ -25,7 +25,7 @@
 
       <div class="card-summary">
         <p>
-          {{ summary }}
+          {{ include.summary }}
         </p>
       </div>
 

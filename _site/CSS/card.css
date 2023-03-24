@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2.5%;
+    margin: 3%;
+    transition: background-color 0.3s ease-in-out;
+}
+.card:hover {
+    background-color: #f2f2f2;
+}
+.card a {
+    text-decoration: none;
+}
+.card a .card-body h3.card-title {
+    margin-top: 0;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.card a .card-body .card-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.card a .card-body .card-meta i {
+    margin-right: 5px;
+}
+.card a .card-body .card-meta i:not(:first-child) {
+    margin-left: 1.2rem;
+}
+.card a .card-body .card-summary {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card a .card-body .card-summary p {
+    margin: 0;
+}

@@ -2,7 +2,7 @@
 layout: default+toc
 title: Paper 2
 authors:
-  - Jane Doe
+  - John Doe
 date: 2023-03-22
 tags:
   - recogito

@@ -1,0 +1,12 @@
+---
+layout: default-main
+title: Tutorials
+---
+{% assign pages = site.pages | sort: "date" | reverse %}
+{% for item in pages %}
+  {% if item.type == "tutorial" %}
+
+    {% include card.html title=item.title authors=item.authors date=item.date tags=item.tags summary=item.summary url=item.url %}
+  
+  {% endif %}
+{% endfor %}

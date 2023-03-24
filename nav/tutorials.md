@@ -3,7 +3,7 @@ layout: default-main
 title: Tutorials
 ---
 
-{% for item in site.static_files %}
+{% for item in site.pages %}
   {% if item.type == "tutorial" %}
 
     <div class="card">

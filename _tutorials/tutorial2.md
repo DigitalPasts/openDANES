@@ -8,5 +8,6 @@ tags:
   - recogito
   - annotation
 summary: This tutorial will teach you how to annotate named entity using the recogito software.
+type: tutorial
 ---
 

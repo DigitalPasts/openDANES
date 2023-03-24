@@ -2,6 +2,7 @@
 layout: default-main
 title: Tutorials
 ---
+
 {% assign pages = site.pages | sort: "date" | reverse %}
 {% for item in pages %}
   {% if item.type == "tutorial" %}

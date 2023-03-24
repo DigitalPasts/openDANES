@@ -4,7 +4,7 @@ title: Tutorials
 ---
 
 <!-- Loop through all posts in the 'posts' directory -->
-{% for page in site.docs/tutorials %}
+{% for item in site.tutorials %}
   <!-- Include the 'card' template for each post -->
-  {% include 'card.html' title=page.title authors=page.authors date=page.date tags=page.tags summary=page.summary %}
+  {% include 'card.html' title=item.title authors=item.authors date=item.date tags=item.tags summary=item.summary %}
 {% endfor %}

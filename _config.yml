@@ -13,5 +13,7 @@ baseurl: "/openDANES"
 collections:
   tutorials:
     output: true
+    future: true
   white-papers:
     output: true
+    future: true

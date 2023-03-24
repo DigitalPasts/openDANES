@@ -10,4 +10,8 @@ github: "https://github.com/DigitalPasts"
 dig-pasts: "https://digitalpasts.github.io/index.html"
 url: "https://digitalpasts.github.io"
 baseurl: "/openDANES"
-tutorials: "https://digitalpasts.github.io/openDANES/tutorials/"
+collections:
+  tutorials:
+    output: true
+  white-papers:
+    output: true

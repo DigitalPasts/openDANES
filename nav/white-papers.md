@@ -3,7 +3,8 @@ layout: default-main
 title: White Papers
 ---
 
-{% for item in site.pages %}
+{% assign pages = site.pages | sort: "date" %}
+{% for item in pages %}
   {% if item.type == "white-paper" %}
 
     {% capture item-title %}{{ item.title }}{% endcapture %}

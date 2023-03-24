@@ -2,8 +2,8 @@
 layout: default-main
 title: Tutorials
 ---
-
-{% for item in site.pages %}
+{% assign pages = site.pages | sort: "date" %}
+{% for item in pages %}
   {% if item.type == "tutorial" %}
 
     <div class="card">

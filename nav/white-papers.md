@@ -9,22 +9,8 @@ title: White Papers
   {% capture item-date %}{{ item.date }}{% endcapture %}
   {% capture item-summary %}{{ item.summary }}{% endcapture %}
   {% capture item-url %}{{ item.url }}{% endcapture %}
-
-  {% capture item-authors %}
-    {% for author in item.authors %}
-      {%- if forloop.length > 0 -%}
-        {{ author }}{% unless forloop.last %}, {% endunless -%}
-      {%- endif -%}
-    {% endfor %}
-  {% endcapture %}
-
-  {% capture item-tags %}
-    {% for tag in item.tags %}
-      {%- if forloop.length > 0 -%}
-        {{ tag }}{% unless forloop.last %}, {% endunless -%}
-      {%- endif -%}
-    {% endfor %}
-  {% endcapture %}
+  {% capture item-authors %}{{ item.authors }}{% endcapture %}
+  {% capture item-tags %}{{ item.tags }}{% endcapture %}
 
   {{ item-title }}
   {{ item-date }}

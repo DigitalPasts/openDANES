@@ -2,7 +2,7 @@
     display: none;
 }
 .cards .card .visible {
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3%;
@@ -10,7 +10,7 @@
     width: 100%;
 }
 .cards .card .visible:hover {
-    background-color: #f2f2f2;
+    background-color: #bebebe;
 }
 .cards .card .visible a {
     text-decoration: none;
@@ -47,17 +47,17 @@
     padding-bottom: 2vw;
 }
 .tags span {
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
     padding: 0.4vw;
 }
 .tags span:hover {
-    background-color: #f2f2f2;
+    background-color: #bebebe;
     cursor: pointer;
 }
 
 .clicked {
-    background-color: #f2f2f2;
+    background-color: #bebebe;
     transition: background-color 0.3s ease-in-out;
 }

@@ -8,37 +8,38 @@
     width: 4px;
 }
 * ::-webkit-scrollbar-track {
-    background: #f4f4f4;
+    background: #bebebe;
 }
 * ::-webkit-scrollbar-thumb {
-    background: #4c7ea4;
+    background: #222f5b;
     border-radius: 5px;
 }
 * ::-webkit-scrollbar-thumb:hover {
-    background: #00487e;
+    background: #0e1a40;
 }
 * body {
     overflow-x: hidden;
+    background-color: #efefef;
 }
 
 h1 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Mukta", sans-serif;
     font-size: 3.2vw;
     padding: 15px;
     margin-top: 15px;
-    color: #00487e;
+    color: #0e1a40;
     text-align: center;
 }
 
 section {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Mukta", sans-serif;
     margin: 15px 20vw;
 }
 section h2, section h3 {
     padding-bottom: 10px;
     margin-bottom: 10px;
-    color: #00487e;
-    border-bottom: #00487e solid 1px;
+    color: #0e1a40;
+    border-bottom: #0e1a40 solid 1px;
 }
 section h2 {
     font-size: 2.7vw;
@@ -81,10 +82,10 @@ section .fig a {
 }
 section a {
     text-decoration: none;
-    color: #4c7ea4;
+    color: #222f5b;
 }
 section a:hover {
-    color: #00487e;
+    color: #0e1a40;
 }
 section img {
     max-width: 100%;
@@ -97,14 +98,13 @@ section i {
 }
 
 header {
-    background-color: #00487e;
-    background-image: url("../images/navigation/banner_background_light_small.jpg");
+    background-color: #0e1a40;
     background-size: cover;
     width: 100vw;
     height: 80px;
     padding: 10px;
-    font-family: "Quicksand", sans-serif;
-    color: #f4f4f4;
+    font-family: "Mukta", sans-serif;
+    color: #bebebe;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,12 +127,12 @@ header .logo a {
     position: absolute;
     padding: 20px 0;
     text-decoration: none;
-    color: #f4f4f4;
-    left: 80px;
+    color: #bebebe;
+    left: 40px;
     top: 0;
 }
 header .logo a:hover {
-    color: #edd59d;
+    color: #946b2d;
 }
 header ul {
     display: flex;
@@ -147,47 +147,47 @@ header ul li {
 }
 header ul li a {
     text-decoration: none;
-    color: #f4f4f4;
+    color: #bebebe;
 }
 header ul li a:hover {
-    color: #edd59d;
+    color: #946b2d;
 }
 
 footer {
-    background-color: #00487e;
-    background-image: url("../images/navigation/banner_background_light_small.jpg");
+    background-color: #0e1a40;
     background-size: cover;
     width: 100vw;
     height: 160px;
-    font-family: "Quicksand", sans-serif;
-    color: #f4f4f4;
+    font-family: "Mukta", sans-serif;
+    color: #bebebe;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 footer div {
     padding: 10px;
 }
 footer div h3 {
-    color: #edd59d;
+    color: #946b2d;
 }
 footer div a {
     text-decoration: none;
-    color: #f4f4f4;
+    color: #bebebe;
 }
 footer div a i {
     font-size: 25px;
     padding: 1px;
 }
 footer div a:hover {
-    color: #edd59d;
+    color: #946b2d;
     cursor: pointer;
 }
 
 #credits {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 #credits p {
     padding: 10px;
@@ -291,7 +291,7 @@ footer div a:hover {
 
     footer {
         height: 500px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: justify;
         justify-content: space-evenly;
     }

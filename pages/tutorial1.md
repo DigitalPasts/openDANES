@@ -12,3 +12,5 @@ type: tutorial
 ---
 
 ## Some content
+
+This tutorial uses the python programming language to create word embeddings with sklearn package.

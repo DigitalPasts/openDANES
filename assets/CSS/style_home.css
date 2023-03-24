@@ -30,20 +30,20 @@ section .container .middle {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #00487e;
+    background-color: #0e1a40;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
 section .container .middle a {
-    color: #f4f4f4;
+    color: #bebebe;
     font-size: 2vw;
     display: inline-block;
     padding: 10px;
     text-align: center;
 }
 section .container .middle a:hover {
-    color: #edd59d;
+    color: #946b2d;
 }
 section .container:hover .image {
     opacity: 0.7;

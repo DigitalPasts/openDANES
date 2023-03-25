@@ -15,6 +15,24 @@ openDANES currently welcomes submissions for tutorials and white papers in Engli
 - accept submissions in markdown format
 - link to template
 
+{: .prompt-tip }
+> tip: testing a longer tip blockquote that will go over multiple lines to see how the text wraps around inside the colored background. It is very important to do that before publishing a site to the internet!
+
+some text inbetween
+
+{: .prompt-info }
+> info: testing a longer tip blockquote that will go over multiple lines to see how the text wraps around inside the colored background. It is very important to do that before publishing a site to the internet!
+
+some text inbetween
+
+{: .prompt-warning }
+> warning: testing a longer tip blockquote that will go over multiple lines to see how the text wraps around inside the colored background. It is very important to do that before publishing a site to the internet!
+
+some text inbetween
+
+{: .prompt-danger }
+> danger: testing a longer tip blockquote that will go over multiple lines to see how the text wraps around inside the colored background. It is very important to do that before publishing a site to the internet!
+
 ## Guidelines for White Papers
 
 - accept submissions in markdown format or google doc

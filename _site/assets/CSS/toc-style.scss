@@ -1,3 +1,9 @@
+$primary-color: #0e1a40;
+$primary-color-light: #222f5b;
+$secondary-color: #946b2d;
+$light-color: #bebebe;
+$dark-color: #333;
+
 section {
   margin: 15px 0;
 
@@ -22,7 +28,12 @@ section {
         list-style: none;
         text-align: left;
         font-size: 1vw;
-        padding-bottom: 10px;
+        padding: 5px;
+        transition: border-left 0.3s ease-in-out;
+
+        &:hover {
+          border-left: 1px solid $primary-color;
+        }
       }
     }
     

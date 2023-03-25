@@ -4,6 +4,14 @@ $primary-color-light: #222f5b;
 $secondary-color: #946b2d;
 $light-color: #bebebe;
 $dark-color: #333;
+$tip-prompt: rgb(123, 247, 144, 0.2);
+$tip-prompt-icon-color: #03b303;
+$info-prompt: #e1f5fe;
+$info-prompt-icon-color: #0070cb;
+$warning-prompt:rgb(255, 243, 205);
+$warning-prompt-icon-color: #ef9c03;
+$danger-prompt:rgb(248, 215, 218, 0.56);
+$danger-prompt-icon-color: #df3c30;
 $font-main: 'Mukta', sans-serif;
 $font-code: 'Source Code Pro', monospace;
 $icon-size: 25px;
@@ -76,6 +84,78 @@ section {
     }
   }
 
+  blockquote.prompt-tip {
+    background-color: $tip-prompt;
+    border-radius: 10px;
+
+    p {
+      margin-left: 27.34px;
+      padding: 13px;
+    }
+
+    ::before {
+      content: "\f0eb";
+      color: $tip-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding: 15px;
+      margin-left: -41.34px;
+    }
+  }
+
+  blockquote.prompt-info {
+    background-color: $info-prompt;
+    border-radius: 10px;
+
+    p {
+      margin-left: 32.13px;
+      padding: 13px;
+    }
+
+    ::before {
+      content: "\f05a";
+      color: $info-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding: 15px;
+      margin-left: -45.13px;
+    }
+  }
+
+  blockquote.prompt-warning {
+    background-color: $warning-prompt;
+    border-radius: 10px;
+
+    p {
+      margin-left: 32.13px;
+      padding: 13px;
+    }
+
+    ::before {
+      content: "\f06a";
+      color: $warning-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding: 15px;
+      margin-left: -45.13px;
+    }
+  }
+
+  blockquote.prompt-danger {
+    background-color: $danger-prompt;
+    border-radius: 10px;
+
+    p {
+      margin-left: 32.13px;
+      padding: 13px;
+    }
+
+    ::before {
+      content: "\f071";
+      color: $danger-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding: 15px;
+      margin-left: -45.13px;
+    }
+  }
+
   p {
     padding: 15px 0;
     text-align: justify;
@@ -131,7 +211,6 @@ section {
   }
 }
 // rgba(6, 43, 94, 0.5)
-
 
 // Header and Footer
 header {

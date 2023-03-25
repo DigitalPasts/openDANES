@@ -59,60 +59,60 @@ section blockquote.prompt-tip {
     border-radius: 10px;
 }
 section blockquote.prompt-tip p {
-    margin-left: 27.34px;
+    display: flex;
     padding: 13px;
 }
 section blockquote.prompt-tip ::before {
     content: "";
     color: #03b303;
     font: var(--fa-font-solid);
-    padding: 15px;
-    margin-left: -41.34px;
+    padding-right: 13px;
+    padding-top: 5px;
 }
 section blockquote.prompt-info {
     background-color: #e1f5fe;
     border-radius: 10px;
 }
 section blockquote.prompt-info p {
-    margin-left: 32.13px;
+    display: flex;
     padding: 13px;
 }
 section blockquote.prompt-info ::before {
     content: "";
     color: #0070cb;
     font: var(--fa-font-solid);
-    padding: 15px;
-    margin-left: -45.13px;
+    padding-right: 13px;
+    padding-top: 5px;
 }
 section blockquote.prompt-warning {
     background-color: #fff3cd;
     border-radius: 10px;
 }
 section blockquote.prompt-warning p {
-    margin-left: 32.13px;
+    display: flex;
     padding: 13px;
 }
 section blockquote.prompt-warning ::before {
     content: "";
     color: #ef9c03;
     font: var(--fa-font-solid);
-    padding: 15px;
-    margin-left: -45.13px;
+    padding-right: 13px;
+    padding-top: 5px;
 }
 section blockquote.prompt-danger {
     background-color: rgba(248, 215, 218, 0.56);
     border-radius: 10px;
 }
 section blockquote.prompt-danger p {
-    margin-left: 32.13px;
+    display: flex;
     padding: 13px;
 }
 section blockquote.prompt-danger ::before {
     content: "";
     color: #df3c30;
     font: var(--fa-font-solid);
-    padding: 15px;
-    margin-left: -45.13px;
+    padding-right: 13px;
+    padding-top: 5px;
 }
 section p {
     padding: 15px 0;

@@ -2,7 +2,7 @@
 $card-border-color: #333;
 $card-border-radius: 10px;
 $card-hover-color: #bebebe;
-
+$font-main: 'Mukta', sans-serif;
 // styling
 
 .cards {
@@ -87,4 +87,68 @@ $card-hover-color: #bebebe;
 .clicked {
   background-color: $card-hover-color;
   transition: background-color 0.3s ease-in-out;
+}
+
+ul#results-container {
+  li.result {
+    list-style-type: none;
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    padding: 2.5%;
+    margin: 3%;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    
+    &:hover {
+      background-color: $card-hover-color;
+    }
+
+    p {
+      padding: 5px;
+    }
+  }
+}
+
+div#no-results {
+  text-align: center;
+  font-size: 40px;
+}
+
+li #search-input {
+  border: none;
+  background: none;
+  font: var(--fa-font-solid);
+  width: 40px;
+  height: 40px;
+  transition: all .25s ease-in .25s;
+  color: transparent;
+  line-height:25px;
+  &:hover {
+    cursor: pointer;
+    &:focus {
+      cursor: text;
+    }
+  }
+  &:focus, &:not(:placeholder-shown) {
+    font-family: $font-main;
+    border: 2px solid $card-hover-color;
+    border-radius: 10px;
+    width: 200px;
+    padding: 0 10px;
+    outline: none;
+    background:none;
+    color: $card-hover-color;
+    + span {
+      width: 200px;
+      &::before {
+        width:2px;
+        opacity: 0;
+        transition: all .25s ease-in;
+      }
+    }
+  }
+
+  &:focus::placeholder{
+    color: transparent;
+  }
 }

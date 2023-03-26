@@ -23,12 +23,13 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/style_0.2.css">
     <!-- style css for table of contents -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/toc-style.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/search-and-tags.css">
     <title>openDANES</title>
   </head>
   <body>
     <a name="top"></a>
     {% include navigation.html %}
-    <h1>{{ page.title }}</h1>
+
     <section>
       <div class="toc">
         <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
@@ -36,6 +37,8 @@
         {% include toc.html html=content %}
       </div>
       <div class="content">
+        {% include search.html %}
+        <h1>{{ page.title }}</h1>
         {{ content }}
       </div>
     </section>

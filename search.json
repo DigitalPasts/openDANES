@@ -1,3 +1,6 @@
+---
+layout: none
+---
 [
   {% for page in site.pages %}
     {
@@ -6,8 +9,10 @@
       "tags"     : "{{ page.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "date"     : "{{ page.date }}",
+      "type"     : "{{ page.type }}",
       "summary"     : "{{ page.summary }}",
-      "content"     : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}",
+      "content"     : "{{ page.content | markdownify | strip_html | strip_newlines | escape }}",
+      "snippet"     : "{{ page.content | markdownify | strip_html | strip_newlines | remove_chars | escape | truncate: 200 }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

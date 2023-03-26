@@ -1,13 +1,171 @@
 [
-  {% for page in site.pages %}
+  
     {
-      "title"    : "{{ page.title | escape }}",
-      "authors" : "{{ page.authors | join: ', ' }}",
-      "tags"     : "{{ page.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ page.url }}",
-      "date"     : "{{ page.date }}",
-      "summary"     : "{{ page.summary }}",
-      "content"     : "{{ page.content | strip_html | strip_newlines | remove_chars | escape }}",
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "Online Resources for Digital Ancient Near Eastern Studies",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/nav/DANES-resources.html",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "The following provides a list of digital, online resources for studying the ancient Near East.While this list is meant to be comprehensive, please contact us to let us know if anything is missed!Databases(list of databases…)Projects(list of projects…)Repositories(list of repositories…)",
+      "snippet"     : "The following provides a list of digital, online resources for studying the ancient Near East.While this list is meant to be comprehensive, please contact us to let us know if anything is missed!Da..."
+    } ,
+  
+    {
+      "title"    : "About openDANES",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/nav/about.html",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "openDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies.",
+      "snippet"     : "openDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies."
+    } ,
+  
+    {
+      "title"    : "Open Digital Ancient Near Eastern Studies",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "",
+      "snippet"     : ""
+    } ,
+  
+    {
+      "title"    : "Paper 1",
+      "authors" : "Jane Doe",
+      "tags"     : "python, word-embedding",
+      "url"      : "/openDANES/pages/paper1.html",
+      "date"     : "2023-03-21",
+      "type"     : "white-paper",
+      "summary"     : "This paper is an opinion piece about performing word embedding for ancient langauges in python.",
+      "content"     : "Some content",
+      "snippet"     : "Some content"
+    } ,
+  
+    {
+      "title"    : "Paper 2",
+      "authors" : "John Doe",
+      "tags"     : "recogito, annotation, python",
+      "url"      : "/openDANES/pages/paper2.html",
+      "date"     : "2023-03-22",
+      "type"     : "white-paper",
+      "summary"     : "This paper summarizes the experience of using recogito for annotating named entities and its results.",
+      "content"     : "Some content",
+      "snippet"     : "Some content"
+    } ,
+  
+    {
+      "title"    : "Paper 3",
+      "authors" : "Jane Doe, John Doe",
+      "tags"     : "R, visualization",
+      "url"      : "/openDANES/pages/paper3.html",
+      "date"     : "2023-03-23",
+      "type"     : "white-paper",
+      "summary"     : "This paper discusses the efficacity of latest visualization methods using R studio.",
+      "content"     : "Some content",
+      "snippet"     : "Some content"
+    } ,
+  
+    {
+      "title"    : "Posters",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/nav/posters.html",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "A selection of posters presented in the DANES conferences!DANES 2023",
+      "snippet"     : "A selection of posters presented in the DANES conferences!DANES 2023"
+    } ,
+  
+    {
+      "title"    : "",
+      "authors" : "",
+      "tags"     : "",
+      "url"      : "/openDANES/search.json",
+      "date"     : "",
+      "type"     : "",
+      "summary"     : "",
+      "content"     : "[  {% for page in site.pages %}    {      “title”    : “{{ page.title | escape }}”,      “authors” : “{{ page.authors | join: ‘, ‘ }}”,      “tags”     : “{{ page.tags | join: ‘, ‘ }}”,      “url”      : “{{ site.baseurl }}{{ page.url }}”,      “date”     : “{{ page.date }}”,      “type”     : “{{ page.type }}”,      “summary”     : “{{ page.summary }}”,      “content”     : “{{ page.content | markdownify | strip_html | strip_newlines | escape }}”,      “snippet”     : “{{ page.content | markdownify | strip_html | strip_newlines | remove_chars | escape | truncate: 200 }}”    } {% unless forloop.last %},{% endunless %}  {% endfor %}]",
+      "snippet"     : "[  {% for page in site.pages %}    {      title    : {{ page.title | escape }},      authors : {{ page.authors | join: ,  }},      tags     : {{ page.tags | join: ,  }},      url      : {{ site.bas..."
+    } ,
+  
+    {
+      "title"    : "Submission Guidelines",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/nav/submission-guidelines.html",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "openDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.General Guidelines  style guidelines, follow X.  explanation on peer review process through hypothesis, publication, and doi.Guidelines for Tutorials  accept submissions in markdown format  link to template  this is a tip promptsome text inbetween  this is an info promptsome text inbetween  this is a warning promptsome text inbetween  this is a danger promptGuidelines for White Papers  accept submissions in markdown format or google doc  link to template",
+      "snippet"     : "openDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.General Guidelines  style guidelines, follow X.  explanation on peer review process t..."
+    } ,
+  
+    {
+      "title"    : "Tutorial 1",
+      "authors" : "Jane Doe",
+      "tags"     : "python, word-embedding",
+      "url"      : "/openDANES/pages/tutorial1.html",
+      "date"     : "2023-03-21",
+      "type"     : "tutorial",
+      "summary"     : "This tutorial will teach you how to create word embedding for cuneiform texts in python.",
+      "content"     : "Some contentThis tutorial uses the python programming language to create word embeddings with sklearn package.",
+      "snippet"     : "Some contentThis tutorial uses the python programming language to create word embeddings with sklearn package."
+    } ,
+  
+    {
+      "title"    : "Tutorial 2",
+      "authors" : "John Doe",
+      "tags"     : "recogito, annotation",
+      "url"      : "/openDANES/pages/tutorial2.html",
+      "date"     : "2023-03-22",
+      "type"     : "tutorial",
+      "summary"     : "This tutorial will teach you how to annotate named entity using the recogito software.",
+      "content"     : "Some content",
+      "snippet"     : "Some content"
+    } ,
+  
+    {
+      "title"    : "Tutorial 3",
+      "authors" : "Jane Doe, John Doe",
+      "tags"     : "R, visualization",
+      "url"      : "/openDANES/pages/tutorial3.html",
+      "date"     : "2023-03-23",
+      "type"     : "tutorial",
+      "summary"     : "This tutorial will teach you common visualizations methods in the R programming language.",
+      "content"     : "Some content",
+      "snippet"     : "Some content"
+    } ,
+  
+    {
+      "title"    : "Tutorials",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/nav/tutorials.html",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "{% include tags.html %}            {% assign pages = site.pages      sort: “date”      reverse %}        {% for item in pages %}    {% if item.type == &quot;tutorial&quot; %}      {% include card.html title=item.title authors=item.authors date=item.date tags=item.tags summary=item.summary url=item.url %}        {% endif %}  {% endfor %}",
+      "snippet"     : "{% include tags.html %}            {% assign pages = site.pages      sort: date      reverse %}        {% for item in pages %}    {% if item.type == &quot;tutorial&quot; %}      {% include card.htm..."
+    } ,
+  
+    {
+      "title"    : "White Papers",
+      "authors" : "openDANES",
+      "tags"     : "navigation bar",
+      "url"      : "/openDANES/nav/white-papers.html",
+      "date"     : "",
+      "type"     : "nav",
+      "summary"     : "",
+      "content"     : "{% include tags.html %}            {% assign pages = site.pages      sort: “date”      reverse %}        {% for item in pages %}    {% if item.type == &quot;white-paper&quot; %}      {% include card.html title=item.title authors=item.authors date=item.date tags=item.tags summary=item.summary url=item.url %}        {% endif %}  {% endfor %}",
+      "snippet"     : "{% include tags.html %}            {% assign pages = site.pages      sort: date      reverse %}        {% for item in pages %}    {% if item.type == &quot;white-paper&quot; %}      {% include card...."
+    } 
+  
 ]

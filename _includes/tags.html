@@ -1,7 +1,7 @@
 {% assign tags = '' %}
 {% for page in site.pages %}
   {% for tag in page.tags %}
-    {% unless tags contains tag %}
+    {% unless tags contains tag or tag == "navigation bar" %}
       {% assign tags = tags | append: tag | append: ',' %}
     {% endunless %}
   {% endfor %}

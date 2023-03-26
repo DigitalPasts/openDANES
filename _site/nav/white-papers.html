@@ -21,32 +21,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
     <!-- style css -->
     <link rel="stylesheet" href="/openDANES/assets/CSS/style_0.2.css">
-    <link rel="stylesheet" href="/openDANES/assets/CSS/card.css">
+    <link rel="stylesheet" href="/openDANES/assets/CSS/search-and-tags.css">
     <title>openDANES</title>
   </head>
   <body>
     <header>
 
-    <div class="logo">
+    <!-- <div class="logo">
       <a href="/openDANES/index.html">openDANES</a>
-    </div>
+    </div> -->
 
-    <div>
+    <div class="navigation">
       <ul>
+        <li><a href="/openDANES/index.html">openDANES</a></li>
         <li><a href="/openDANES/nav/about.html">About</a></li>
         <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
         <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
         <li><a href="/openDANES/nav/posters.html">Posters</a></li>
         <li><a href="/openDANES/nav/DANES-resources.html">DANES Resources</a></li>
         <li><a href="/openDANES/nav/submission-guidelines.html">Submission Guidelines</a></li>
+        <li><input type="text" id="search-input" placeholder="&#xf002"></li>
       </ul>
     </div>
 
 </header>
 
-
-    <h1>White Papers</h1>
     <section>
+      <!-- HTML elements for search -->
+<ul id="results-container"></ul>
+
+
+
+
+
+<!--  -->
+
+<script src="/openDANES/assets/js/simple-jekyll-search.js"></script>
+<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
+
+<script>
+  simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/openDANES/search.json',
+        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{snippet}</p>    </li>  </a>',
+        noResultsText: '<div id="no-results">No results found</div>',
+        fuzzy: false,
+        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
+      })
+</script>
+
+      <h1>White Papers</h1>
       
 
 
@@ -180,6 +205,8 @@
 
 
     
+    
+  
     
   
     

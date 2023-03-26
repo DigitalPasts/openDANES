@@ -262,9 +262,8 @@ header {
     // margin: 0 15px;
     display: flex;
     list-style: none;
-    position: absolute;
-    top: 0;
-    right: 0;
+    flex-wrap: nowrap;
+    align-items: center;
 
     li {
       margin: 0 3px;

@@ -198,9 +198,8 @@ header .logo a:hover {
 header ul {
     display: flex;
     list-style: none;
-    position: absolute;
-    top: 0;
-    right: 0;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 header ul li {
     margin: 0 3px;

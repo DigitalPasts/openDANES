@@ -1,31 +1,33 @@
 <!-- HTML elements for search -->
-<input type="text" id="search-input" placeholder="Search openDANES content..">
 <ul id="results-container"></ul>
 
 {% capture result_elem %}
-<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">
-  <a href="{url}">{title}</a>
-  <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
-    {authors}
-    {summary}
-    {tags}
-  </div>
-</div>
+  <a href="{url}">
+    <li class="result">
+      <h4 class="result-title">
+        {title}
+      </h4>
+      <p>{authors} | {tags}</p>
+      <p>{snippet}</p>
+    </li>
+  </a>
 {% endcapture %}
 
-{% capture not_found %}<p class="mt-5">No results found</p>{% endcapture %}
+
+
+<!-- {% capture not_found %}<p class="mt-5">No results found</p>{% endcapture %} -->
 
 <script src="{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
+<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
 
 <script>
   simpleJekyllSearch = new SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
-        limit: 10,
+        searchResultTemplate: '{{ result_elem | strip_newlines }}',
+        noResultsText: '<div id="no-results">No results found</div>',
         fuzzy: false,
-        exclude: ['Welcome']
+        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
       })
 </script>

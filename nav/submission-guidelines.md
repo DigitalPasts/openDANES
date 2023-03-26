@@ -1,6 +1,9 @@
 ---
 layout: default+toc
 title: Submission Guidelines
+type: nav
+authors: openDANES
+tags: navigation bar
 ---
 
 openDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.

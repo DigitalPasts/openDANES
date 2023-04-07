@@ -5,6 +5,58 @@ $card-hover-color: #bebebe;
 $font-main: 'Mukta', sans-serif;
 // styling
 
+.author-card {
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+  padding: 2.5%;
+  margin: 3% 0%;
+  width: 100%;
+  background-color: $card-hover-color;
+
+  .authors-container {
+    padding: 5px 0px;
+    font-size: larger;
+  }
+
+  .affiliations {
+    padding: 5px 0px;
+
+    p {
+      padding: 0px;
+    }
+  }
+
+  .dates {
+    padding: 5px 0px;
+    p {
+      padding: 0;
+      font-size: 1vw;
+    }
+  }
+
+  .peer-review {
+    padding: 5px 0px;
+
+    span.doi {
+      background-repeat: no-repeat;
+      display: block;
+      color: transparent;
+    }
+  }
+
+  .card-summary {
+    padding: 5px 0px;
+
+    p {
+      padding: 0px;
+    }
+  }
+
+  .difficulty p {
+    padding-bottom: 0px;
+  }
+}
+
 .cards {
 
   .card .invisible {
@@ -162,6 +214,10 @@ li #search-input {
   }
 
   .cards .card .visible {
+    margin: 10% 0%;
+  }
+
+  .author-card {
     margin: 10% 0%;
   }
 }

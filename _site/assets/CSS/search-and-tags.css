@@ -1,3 +1,46 @@
+.author-card {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 2.5%;
+    margin: 3% 0%;
+    width: 100%;
+    background-color: #bebebe;
+}
+.author-card .authors-container {
+    padding: 5px 0px;
+    font-size: larger;
+}
+.author-card .affiliations {
+    padding: 5px 0px;
+}
+.author-card .affiliations p {
+    padding: 0px;
+}
+.author-card .dates {
+    padding: 5px 0px;
+}
+.author-card .dates p {
+    padding: 0;
+    font-size: 1vw;
+}
+.author-card .peer-review {
+    padding: 5px 0px;
+}
+.author-card .peer-review span.doi {
+    background-repeat: no-repeat;
+    display: block;
+    color: transparent;
+}
+.author-card .card-summary {
+    padding: 5px 0px;
+}
+.author-card .card-summary p {
+    padding: 0px;
+}
+.author-card .difficulty p {
+    padding-bottom: 0px;
+}
+
 .cards .card .invisible {
     display: none;
 }
@@ -129,6 +172,10 @@ li #search-input:focus::placeholder {
     }
 
     .cards .card .visible {
+        margin: 10% 0%;
+    }
+
+    .author-card {
         margin: 10% 0%;
     }
 }

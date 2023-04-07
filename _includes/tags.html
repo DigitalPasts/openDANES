@@ -1,13 +1,13 @@
 {% assign tags = '' %}
 {% for page in site.pages %}
-  {% for tag in page.tags %}
-    {% unless tags contains tag or tag == "navigation bar" %}
-      {% assign tags = tags | append: tag | append: ',' %}
-    {% endunless %}
-  {% endfor %}
+  {% if page.type == include.type %}
+    {% for tag in page.tags %}
+        {% assign tags = tags | append: tag | append: ',' %}
+    {% endfor %}
+  {% endif %}
 {% endfor %}
 
-{% assign tag_list = tags | split: ',' | sort %}
+{% assign tag_list = tags | split: ',' | uniq | sort %}
 
 <div class="tags">
   <span class="tag clicked">All</span>

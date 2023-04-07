@@ -7,15 +7,15 @@
       </h3>
 
       <div class="card-meta">
-        <i class="fas fa-robot"></i>
+        <i class="fas fa-robot fa-sm"></i>
         {% for author in include.authors %}
           {%- if forloop.length > 0 -%}
-            {{ author }}{% unless forloop.last %}, {% endunless -%}
+            {{ author[1].name }}{% unless forloop.last %}, {% endunless -%}
           {%- endif -%}
         {% endfor %}
-        <i class="fas fa-calendar-alt"></i>
+        <i class="fas fa-calendar-alt fa-sm"></i>
         {{ include.date | date: "%B %d, %Y" }}
-        <i class="fas fa-hashtag"></i>
+        <i class="fas fa-hashtag fa-sm"></i>
         <span class="page-tags">
           {% for tag in include.tags %}
             {%- if forloop.length > 0 -%}

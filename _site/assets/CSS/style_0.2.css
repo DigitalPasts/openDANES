@@ -38,25 +38,34 @@ section {
 }
 section h2, section h3 {
     padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin: 15px 0;
     color: #0e1a40;
-    border-bottom: #0e1a40 solid 1px;
 }
 section h2 {
     font-size: 2.7vw;
+    border-bottom: #0e1a40 solid 1px;
 }
 section h2 i {
     font-size: inherit;
 }
 section h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;
+    padding-top: 10px;
 }
 section h3 i {
     font-size: inherit;
 }
+section blockquote {
+    font-style: italic;
+    padding-left: 3vw;
+    border-left: #0e1a40 solid;
+}
 section blockquote.prompt-tip {
     background-color: rgba(123, 247, 144, 0.2);
     border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: none;
 }
 section blockquote.prompt-tip p {
     display: flex;
@@ -72,6 +81,9 @@ section blockquote.prompt-tip ::before {
 section blockquote.prompt-info {
     background-color: #e1f5fe;
     border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: none;
 }
 section blockquote.prompt-info p {
     display: flex;
@@ -87,6 +99,9 @@ section blockquote.prompt-info ::before {
 section blockquote.prompt-warning {
     background-color: #fff3cd;
     border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: none;
 }
 section blockquote.prompt-warning p {
     display: flex;
@@ -102,6 +117,9 @@ section blockquote.prompt-warning ::before {
 section blockquote.prompt-danger {
     background-color: rgba(248, 215, 218, 0.56);
     border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: none;
 }
 section blockquote.prompt-danger p {
     display: flex;
@@ -110,6 +128,35 @@ section blockquote.prompt-danger p {
 section blockquote.prompt-danger ::before {
     content: "";
     color: #df3c30;
+    font: var(--fa-font-solid);
+    padding-right: 13px;
+    padding-top: 5px;
+}
+section div.highlight {
+    padding: 15px 0;
+}
+section div pre.highlight {
+    background-color: #0e1a40;
+    color: #bebebe;
+    border-radius: 0 0 5px 5px;
+    padding: 1vw;
+    font-family: "Source Code Pro", monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+section div.highlight > button {
+    height: fit-content;
+    padding: 5px 15px;
+    font-family: "Mukta", sans-serif;
+    background-color: #222f5b;
+    color: #bebebe;
+    border: none;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    text-align: right;
+    border-radius: 5px 5px 0 0;
+}
+section button span.code-button-emoticon {
     font: var(--fa-font-solid);
     padding-right: 13px;
     padding-top: 5px;
@@ -217,7 +264,7 @@ footer {
     background-color: #0e1a40;
     background-size: cover;
     width: 100vw;
-    height: 160px;
+    height: auto;
     font-family: "Mukta", sans-serif;
     color: #bebebe;
     display: flex;
@@ -292,10 +339,6 @@ footer div a:hover {
     header ul li {
         padding: 20px 7px;
     }
-
-    footer {
-        height: 200px;
-    }
 }
 @media (max-width: 900px) {
     section {
@@ -327,6 +370,17 @@ footer div a:hover {
     section .fig, section .fig a {
         font-size: 14px;
     }
+    section div pre.highlight {
+        flex-direction: column;
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    section div pre.highlight > button {
+        opacity: 1 !important;
+        width: fit-content;
+        align-self: center;
+        margin: 10px;
+    }
 
     header {
         height: 320px;
@@ -345,7 +399,6 @@ footer div a:hover {
     }
 
     footer {
-        height: 380px;
         flex-direction: column;
         text-align: justify;
         align-items: flex-start;
@@ -358,9 +411,5 @@ footer div a:hover {
 @media (max-width: 500px) {
     header {
         height: 320px;
-    }
-
-    footer {
-        height: 420px;
     }
 }

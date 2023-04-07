@@ -13,7 +13,6 @@ section .toc h2 {
     margin-bottom: 0;
 }
 section .toc ul {
-    height: 50vh;
     overflow: overlay;
 }
 section .toc ul li {
@@ -38,7 +37,6 @@ footer {
 @media (max-width: 1024px) {
     section .toc {
         padding: 0 2.5vw;
-        width: 15vw;
     }
     section .toc h2 {
         font-size: 1.5vw;

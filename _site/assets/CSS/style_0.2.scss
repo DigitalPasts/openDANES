@@ -187,6 +187,9 @@ section {
     font-family: $font-code;
     white-space: pre-wrap;
     word-break: break-all;
+    // fixing the style that came with the highlighting
+    width: 100%;
+    margin: 0;
   }
 
   div.highlight > button {

@@ -143,6 +143,8 @@ section div pre.highlight {
     font-family: "Source Code Pro", monospace;
     white-space: pre-wrap;
     word-break: break-all;
+    width: 100%;
+    margin: 0;
 }
 section div.highlight > button {
     height: fit-content;

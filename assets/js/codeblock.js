@@ -1,6 +1,7 @@
 var codeBlocks = document.querySelectorAll('pre.highlight');
 
 codeBlocks.forEach(function (codeBlock) {
+  codeBlock.classList.add('prettyprint')
   var copyButton = document.createElement('button');
   copyButton.className = 'copy';
   copyButton.type = 'button';

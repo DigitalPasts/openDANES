@@ -90,7 +90,7 @@ section {
   blockquote {
     font-style: italic;
     padding-left: 3vw;
-    border-left: $primary-color-dark solid;
+    border-left: $primary-color solid;
   }
 
   blockquote.prompt-tip {
@@ -441,6 +441,14 @@ footer {
   section {
     margin: 15px 10vw;
   }
+
+  blockquote {
+    padding-left: 5vw !important;
+  }
+
+  blockquote.prompt-tip, blockquote.prompt-info, blockquote.prompt-warning, blockquote.prompt-danger {
+    padding: 0 !important;
+  }
 }
 
 //for phone mode + landscape on small screens
@@ -524,5 +532,13 @@ footer {
 @media (max-width: 500px) {
   header {
     height: 320px;
+  }
+
+  blockquote {
+    padding-left: 10vw !important;
+  }
+
+  blockquote.prompt-tip, blockquote.prompt-info, blockquote.prompt-warning, blockquote.prompt-danger {
+    padding: 0 !important;
   }
 }

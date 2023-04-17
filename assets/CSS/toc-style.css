@@ -23,7 +23,7 @@ section .toc ul li {
     transition: border-left 0.3s ease-in-out;
 }
 section .toc ul li:hover {
-    border-left: 1px solid #0e1a40;
+    border-left: 1px solid #52053E;
 }
 section .content {
     margin: 0 20vw;

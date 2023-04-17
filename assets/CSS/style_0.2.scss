@@ -1,9 +1,13 @@
 // Variables
-$primary-color: #0e1a40;
-$primary-color-light: #222f5b;
-$secondary-color: #946b2d;
-$light-color: #bebebe;
-$dark-color: #333;
+$primary-color: #52053E;
+$primary-color-dark: #330327;
+$primary-color-light: #67074e;
+$secondary-color: #05878a;
+$secondary-color-dark: #074e67;
+$third-color: #5a175d;
+$contrast-color: #feda75;
+$light-color: #FEFBF1;
+
 $tip-prompt: rgb(123, 247, 144, 0.2);
 $tip-prompt-icon-color: #03b303;
 $info-prompt: #e1f5fe;
@@ -33,17 +37,17 @@ $icon-padding: 1px;
   }
 
   ::-webkit-scrollbar-thumb {
-  background: $primary-color-light;
+  background: $primary-color;
   border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-  background: $primary-color; 
+  background: $primary-color-light; 
   }
 
   body {
     overflow-x: hidden;
-    background-color: #efefef;
+    background-color: $light-color;
   }
 }
 
@@ -53,7 +57,6 @@ h1 {
   font-size: 3.2vw;
   padding: 15px;
   margin-top: 15px;
-  color: $primary-color;
   text-align: center;
 }
 
@@ -64,12 +67,11 @@ section {
   h2, h3 {
     padding-bottom: 10px;
     margin: 15px 0;
-    color: $primary-color;
   }
 
   h2 {
     font-size: 2.7vw;
-    border-bottom: $primary-color solid 1px;
+    border-bottom: $primary-color-dark solid 1px;
 
     i {
       font-size: inherit;
@@ -88,7 +90,7 @@ section {
   blockquote {
     font-style: italic;
     padding-left: 3vw;
-    border-left: $primary-color solid;
+    border-left: $primary-color-dark solid;
   }
 
   blockquote.prompt-tip {
@@ -96,7 +98,7 @@ section {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: $tip-prompt-icon-color solid 1px;
 
     p {
       display: flex;
@@ -117,7 +119,7 @@ section {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: $info-prompt-icon-color solid 1px;
 
     p {
       display: flex;
@@ -138,7 +140,7 @@ section {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: $warning-prompt-icon-color solid 1px;
 
     p {
       display: flex;
@@ -159,7 +161,7 @@ section {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: $danger-prompt-icon-color solid 1px;
 
     p {
       display: flex;
@@ -180,7 +182,7 @@ section {
   }
 
   div pre.highlight {
-    background-color: $primary-color;
+    background-color: black;
     color: $light-color;
     border-radius: 0 0 5px 5px;
     padding: 1vw;
@@ -196,7 +198,7 @@ section {
     height: fit-content;
     padding: 5px 15px;
     font-family: $font-main;
-    background-color: $primary-color-light;
+    background-color: $third-color;
     color: $light-color;
     border: none;
     cursor: pointer;
@@ -247,10 +249,10 @@ section {
 
   a {
     text-decoration: none;
-    color: $primary-color-light;
+    color: $primary-color-dark;
 
     &:hover {
-      color: $primary-color;
+      color: $primary-color-light;
     }
   }
 
@@ -307,7 +309,7 @@ header {
       top: 0;
 
       &:hover {
-        color: $secondary-color;
+        color: $contrast-color;
       }
     }
   }
@@ -329,7 +331,7 @@ header {
         color: $light-color;
 
         &:hover {
-          color: $secondary-color;
+          color: $contrast-color;
         }
       }
     }
@@ -353,7 +355,7 @@ footer {
     padding: 10px;
 
     h3 {
-      color: $secondary-color;
+      color: $contrast-color;
     }
   
     a {
@@ -366,7 +368,7 @@ footer {
       }
   
       &:hover {
-        color: $secondary-color;
+        color: $contrast-color;
         cursor: pointer;
       }
     }

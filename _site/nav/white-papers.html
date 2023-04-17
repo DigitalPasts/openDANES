@@ -33,7 +33,7 @@
 
     <div class="navigation">
       <ul>
-        <li><a href="/openDANES/index.html">openDANES</a></li>
+        <li><a href="/openDANES/index.html">OpenDANES</a></li>
         <li><a href="/openDANES/nav/about.html">About</a></li>
         <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
         <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
@@ -64,7 +64,7 @@
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '/openDANES/search.json',
-        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{snippet}</p>    </li>  </a>',
+        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a>',
         noResultsText: '<div id="no-results">No results found</div>',
         fuzzy: false,
         exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
@@ -80,11 +80,17 @@
 <div class="tags">
   <span class="tag clicked">All</span>
   
+  <span class="tag">OCR</span>
+  
   <span class="tag">R</span>
+  
+  <span class="tag">cuneiform</span>
   
   <span class="tag">pre-processing</span>
   
   <span class="tag">python</span>
+  
+  <span class="tag">stylometry</span>
   
 </div>
 
@@ -93,13 +99,73 @@
 <div class="cards">
   
     
-  
+
+      <div class="card">
+  <a href="/openDANES/pages/paper3.html">
+    <div class="card-body">
+
+      <h3 class="card-title">
+        Advantages and Disadvantages of Stylometric Analysis for Cuneiform Texts
+      </h3>
+
+      <div class="card-meta">
+        <i class="fas fa-robot fa-sm"></i>
+        Avital Romach, Shai Gordin
+        <i class="fas fa-calendar-alt fa-sm"></i>
+        April 16, 2023
+        <i class="fas fa-hashtag fa-sm"></i>
+        <span class="page-tags">
+          cuneiform, stylometry, python
+        </span>
+      </div>
+
+      <div class="card-summary">
+        <p>
+          An opinion piece on what insights can be gained from stylometric analysis into texts written using the cuneiform writing system, and what insights cannot be gained.
+        </p>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+
+    
     
   
     
-  
+
+      <div class="card">
+  <a href="/openDANES/pages/paper2.html">
+    <div class="card-body">
+
+      <h3 class="card-title">
+        Challenges in OCR for Cuneiform Texts
+      </h3>
+
+      <div class="card-meta">
+        <i class="fas fa-robot fa-sm"></i>
+        Shai Gordin, Avital Romach
+        <i class="fas fa-calendar-alt fa-sm"></i>
+        April 16, 2023
+        <i class="fas fa-hashtag fa-sm"></i>
+        <span class="page-tags">
+          cuneiform, OCR
+        </span>
+      </div>
+
+      <div class="card-summary">
+        <p>
+          An overview of the current challenges in cuneiform OCR
+        </p>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+
     
-  
     
   
     
@@ -120,7 +186,7 @@
         <i class="fas fa-robot fa-sm"></i>
         chatGPT
         <i class="fas fa-calendar-alt fa-sm"></i>
-        
+        April 07, 2023
         <i class="fas fa-hashtag fa-sm"></i>
         <span class="page-tags">
           python, R, pre-processing
@@ -147,6 +213,20 @@
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
 </div>
     </section>
     <footer>
@@ -161,7 +241,7 @@
   <div id="credits">
     <p>openDANES is released under a CC-BY license</p>
     <p>Hosted on Github Pages</p>
-    <p>last updated on April 07, 2023</p>
+    <p>last updated on April 16, 2023</p>
   </div>
   
 </footer>

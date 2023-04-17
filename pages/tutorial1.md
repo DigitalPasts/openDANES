@@ -20,7 +20,7 @@ tags:
   - ancient Greek
 summary: This is a demo tutorial created by chatGPT.
 reviewers: null
-difficulty: medium
+difficulty: intermediate
 doi: null
 ---
 

@@ -33,7 +33,7 @@
 
     <div class="navigation">
       <ul>
-        <li><a href="/openDANES/index.html">openDANES</a></li>
+        <li><a href="/openDANES/index.html">OpenDANES</a></li>
         <li><a href="/openDANES/nav/about.html">About</a></li>
         <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
         <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
@@ -64,7 +64,7 @@
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '/openDANES/search.json',
-        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{snippet}</p>    </li>  </a>',
+        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a>',
         noResultsText: '<div id="no-results">No results found</div>',
         fuzzy: false,
         exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
@@ -80,9 +80,17 @@
 <div class="tags">
   <span class="tag clicked">All</span>
   
+  <span class="tag">ALP</span>
+  
   <span class="tag">CLTK</span>
   
+  <span class="tag">LOD</span>
+  
   <span class="tag">ancient Greek</span>
+  
+  <span class="tag">cuneiform</span>
+  
+  <span class="tag">ontology</span>
   
   <span class="tag">python</span>
   
@@ -92,6 +100,78 @@
 
 <div class="cards">
   
+    
+  
+    
+  
+    
+
+      <div class="card">
+  <a href="/openDANES/pages/tutorial2.html">
+    <div class="card-body">
+
+      <h3 class="card-title">
+        Introduction to Linked Open Data for Ancient Near Eastern Studies
+      </h3>
+
+      <div class="card-meta">
+        <i class="fas fa-robot fa-sm"></i>
+        Shai Gordin
+        <i class="fas fa-calendar-alt fa-sm"></i>
+        April 16, 2023
+        <i class="fas fa-hashtag fa-sm"></i>
+        <span class="page-tags">
+          LOD, ontology
+        </span>
+      </div>
+
+      <div class="card-summary">
+        <p>
+          A tutorial introducing the main concepts and resources for applying linked open data to your databases and research pipelines.
+        </p>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+
+    
+    
+  
+    
+
+      <div class="card">
+  <a href="/openDANES/pages/tutorial3.html">
+    <div class="card-body">
+
+      <h3 class="card-title">
+        Quick guide to the Ancient Language Processing Python Library
+      </h3>
+
+      <div class="card-meta">
+        <i class="fas fa-robot fa-sm"></i>
+        Avital Romach
+        <i class="fas fa-calendar-alt fa-sm"></i>
+        April 16, 2023
+        <i class="fas fa-hashtag fa-sm"></i>
+        <span class="page-tags">
+          python, ALP, cuneiform
+        </span>
+      </div>
+
+      <div class="card-summary">
+        <p>
+          A tutorial introducing the main function currently available in the ALP python library and how to use them to preprocess and tokenize cuneiform texts.
+        </p>
+      </div>
+
+    </div>
+  </a>
+</div>
+
+
+    
     
   
     
@@ -110,7 +190,7 @@
         <i class="fas fa-robot fa-sm"></i>
         chatGPT
         <i class="fas fa-calendar-alt fa-sm"></i>
-        
+        April 06, 2023
         <i class="fas fa-hashtag fa-sm"></i>
         <span class="page-tags">
           python, CLTK, ancient Greek
@@ -147,6 +227,8 @@
   
     
   
+    
+  
 </div>
     </section>
     <footer>
@@ -161,7 +243,7 @@
   <div id="credits">
     <p>openDANES is released under a CC-BY license</p>
     <p>Hosted on Github Pages</p>
-    <p>last updated on April 07, 2023</p>
+    <p>last updated on April 16, 2023</p>
   </div>
   
 </footer>

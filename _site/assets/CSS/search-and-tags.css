@@ -1,10 +1,16 @@
 .author-card {
-    border: 1px solid #333;
+    border: 1px solid #074e67;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3% 0%;
     width: 100%;
-    background-color: #bebebe;
+    background-color: #82C3C4;
+}
+.author-card a {
+    color: #074e67;
+}
+.author-card a:hover {
+    color: #05878a;
 }
 .author-card .authors-container {
     padding: 5px 0px;
@@ -45,15 +51,18 @@
     display: none;
 }
 .cards .card .visible {
-    border: 1px solid #333;
+    border: 1px solid #330327;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3% 0%;
-    transition: background-color 0.3s ease-in-out;
+    background-color: #feda75;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
 }
 .cards .card .visible:hover {
-    background-color: #bebebe;
+    background-color: #82C3C4;
+    color: #074e67;
+    border-color: #074e67;
 }
 .cards .card .visible a {
     text-decoration: none;
@@ -65,7 +74,6 @@
 }
 .cards .card .visible a .card-body .card-meta {
     font-size: 1.15vw;
-    color: #888;
     margin-bottom: 10px;
 }
 .cards .card .visible a .card-body .card-meta i {
@@ -90,33 +98,39 @@
     padding-bottom: 2vw;
 }
 .tags span {
-    border: 1px solid #333;
+    border: 1px solid #330327;
     border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     padding: 0.4vw 0.8vw;
     margin: 0.5vw;
+    background-color: #feda75;
 }
 .tags span:hover {
-    background-color: #bebebe;
+    background-color: #82C3C4;
+    color: #074e67;
+    border-color: #074e67;
     cursor: pointer;
 }
-
-.clicked {
-    background-color: #bebebe;
-    transition: background-color 0.3s ease-in-out;
+.tags .clicked {
+    background-color: #82C3C4;
+    color: #074e67;
+    border-color: #074e67;
 }
 
 ul#results-container li.result {
     list-style-type: none;
-    border: 1px solid #333;
+    border: 1px solid #330327;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3%;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
+    background-color: #feda75;
 }
 ul#results-container li.result:hover {
-    background-color: #bebebe;
+    background-color: #82C3C4;
+    color: #074e67;
+    border-color: #074e67;
 }
 ul#results-container li.result p {
     padding: 5px;
@@ -125,6 +139,10 @@ ul#results-container li.result p {
 div#no-results {
     text-align: center;
     font-size: 40px;
+}
+
+::placeholder {
+    color: #feda75;
 }
 
 li #search-input {
@@ -145,13 +163,13 @@ li #search-input:hover:focus {
 }
 li #search-input:focus, li #search-input:not(:placeholder-shown) {
     font-family: "Mukta", sans-serif;
-    border: 2px solid #bebebe;
+    border: 2px solid #feda75;
     border-radius: 10px;
     width: 200px;
     padding: 0 10px;
     outline: none;
     background: none;
-    color: #bebebe;
+    color: #feda75;
 }
 li #search-input:focus + span, li #search-input:not(:placeholder-shown) + span {
     width: 200px;

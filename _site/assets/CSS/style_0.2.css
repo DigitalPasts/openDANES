@@ -9,18 +9,18 @@
     width: 4px;
 }
 * ::-webkit-scrollbar-track {
-    background: #bebebe;
+    background: #FEFBF1;
 }
 * ::-webkit-scrollbar-thumb {
-    background: #222f5b;
+    background: #52053E;
     border-radius: 5px;
 }
 * ::-webkit-scrollbar-thumb:hover {
-    background: #0e1a40;
+    background: #67074e;
 }
 * body {
     overflow-x: hidden;
-    background-color: #efefef;
+    background-color: #FEFBF1;
 }
 
 h1 {
@@ -28,7 +28,6 @@ h1 {
     font-size: 3.2vw;
     padding: 15px;
     margin-top: 15px;
-    color: #0e1a40;
     text-align: center;
 }
 
@@ -39,11 +38,10 @@ section {
 section h2, section h3 {
     padding-bottom: 10px;
     margin: 15px 0;
-    color: #0e1a40;
 }
 section h2 {
     font-size: 2.7vw;
-    border-bottom: #0e1a40 solid 1px;
+    border-bottom: #330327 solid 1px;
 }
 section h2 i {
     font-size: inherit;
@@ -58,14 +56,14 @@ section h3 i {
 section blockquote {
     font-style: italic;
     padding-left: 3vw;
-    border-left: #0e1a40 solid;
+    border-left: #330327 solid;
 }
 section blockquote.prompt-tip {
     background-color: rgba(123, 247, 144, 0.2);
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: #03b303 solid 1px;
 }
 section blockquote.prompt-tip p {
     display: flex;
@@ -83,7 +81,7 @@ section blockquote.prompt-info {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: #0070cb solid 1px;
 }
 section blockquote.prompt-info p {
     display: flex;
@@ -101,7 +99,7 @@ section blockquote.prompt-warning {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: #ef9c03 solid 1px;
 }
 section blockquote.prompt-warning p {
     display: flex;
@@ -119,7 +117,7 @@ section blockquote.prompt-danger {
     border-radius: 10px;
     font-style: normal;
     padding: 0;
-    border: none;
+    border: #df3c30 solid 1px;
 }
 section blockquote.prompt-danger p {
     display: flex;
@@ -136,8 +134,8 @@ section div.highlight {
     padding: 15px 0;
 }
 section div pre.highlight {
-    background-color: #0e1a40;
-    color: #bebebe;
+    background-color: black;
+    color: #FEFBF1;
     border-radius: 0 0 5px 5px;
     padding: 1vw;
     font-family: "Source Code Pro", monospace;
@@ -150,8 +148,8 @@ section div.highlight > button {
     height: fit-content;
     padding: 5px 15px;
     font-family: "Mukta", sans-serif;
-    background-color: #222f5b;
-    color: #bebebe;
+    background-color: #5a175d;
+    color: #FEFBF1;
     border: none;
     cursor: pointer;
     width: -webkit-fill-available;
@@ -192,10 +190,10 @@ section .fig a {
 }
 section a {
     text-decoration: none;
-    color: #222f5b;
+    color: #330327;
 }
 section a:hover {
-    color: #0e1a40;
+    color: #67074e;
 }
 section img {
     max-width: 100%;
@@ -208,13 +206,13 @@ section i {
 }
 
 header {
-    background-color: #0e1a40;
+    background-color: #52053E;
     background-size: cover;
     width: 100vw;
     height: 80px;
     padding: 10px;
     font-family: "Mukta", sans-serif;
-    color: #bebebe;
+    color: #FEFBF1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,12 +235,15 @@ header .logo a {
     position: absolute;
     padding: 20px 0;
     text-decoration: none;
-    color: #bebebe;
+    color: #FEFBF1;
     left: 40px;
     top: 0;
 }
 header .logo a:hover {
-    color: #946b2d;
+    color: #feda75;
+}
+header #title {
+    color: #feda75;
 }
 header ul {
     display: flex;
@@ -256,19 +257,19 @@ header ul li {
 }
 header ul li a {
     text-decoration: none;
-    color: #bebebe;
+    color: #FEFBF1;
 }
 header ul li a:hover {
-    color: #946b2d;
+    color: #feda75;
 }
 
 footer {
-    background-color: #0e1a40;
+    background-color: #52053E;
     background-size: cover;
     width: 100vw;
     height: auto;
     font-family: "Mukta", sans-serif;
-    color: #bebebe;
+    color: #FEFBF1;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -278,18 +279,18 @@ footer div {
     padding: 10px;
 }
 footer div h3 {
-    color: #946b2d;
+    color: #feda75;
 }
 footer div a {
     text-decoration: none;
-    color: #bebebe;
+    color: #FEFBF1;
 }
 footer div a i {
     font-size: 25px;
     padding: 1px;
 }
 footer div a:hover {
-    color: #946b2d;
+    color: #feda75;
     cursor: pointer;
 }
 

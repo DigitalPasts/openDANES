@@ -1,4 +1,14 @@
 // define variables
+$primary-color: #52053E;
+$primary-color-dark: #330327;
+$primary-color-light: #67074e;
+$secondary-color: #05878a;
+$secondary-color-dark: #074e67;
+$secondary-color-light: #82C3C4;
+$third-color: #5a175d;
+$contrast-color: #feda75;
+$light-color: #FEFBF1;
+
 $card-border-color: #333;
 $card-border-radius: 10px;
 $card-hover-color: #bebebe;
@@ -6,12 +16,20 @@ $font-main: 'Mukta', sans-serif;
 // styling
 
 .author-card {
-  border: 1px solid $card-border-color;
+  border: 1px solid $secondary-color-dark;
   border-radius: $card-border-radius;
   padding: 2.5%;
   margin: 3% 0%;
   width: 100%;
-  background-color: $card-hover-color;
+  background-color: $secondary-color-light;
+
+  a {
+    color: $secondary-color-dark;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
 
   .authors-container {
     padding: 5px 0px;
@@ -65,15 +83,18 @@ $font-main: 'Mukta', sans-serif;
 
   .card .visible{
 
-    border: 1px solid $card-border-color;
+    border: 1px solid $primary-color-dark;
     border-radius: $card-border-radius;
     padding: 2.5%;
     margin: 3% 0%;
-    transition: background-color 0.3s ease-in-out;
+    background-color: $contrast-color;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     
     &:hover {
-      background-color: $card-hover-color;
+      background-color: $secondary-color-light;
+      color: $secondary-color-dark;
+      border-color: $secondary-color-dark;
     }
     
     a {
@@ -88,7 +109,6 @@ $font-main: 'Mukta', sans-serif;
         
         .card-meta {
           font-size: 1.15vw;
-          color: #888;
           margin-bottom: 10px;
           
           i {
@@ -122,38 +142,46 @@ $font-main: 'Mukta', sans-serif;
   padding-bottom: 2vw;
 
   span {
-    border: 1px solid $card-border-color;
+    border: 1px solid $primary-color-dark;
     border-radius: $card-border-radius;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     padding: 0.4vw 0.8vw;
     margin: 0.5vw;
+    background-color: $contrast-color;
   
     &:hover {
-      background-color: $card-hover-color;
+      background-color: $secondary-color-light;
+      color: $secondary-color-dark;
+      border-color: $secondary-color-dark;
       cursor: pointer;
     }
+  }
 
+  .clicked {
+    background-color: $secondary-color-light;
+    color: $secondary-color-dark;
+    border-color: $secondary-color-dark;
   }
 
 }
 
-.clicked {
-  background-color: $card-hover-color;
-  transition: background-color 0.3s ease-in-out;
-}
+
 
 ul#results-container {
   li.result {
     list-style-type: none;
-    border: 1px solid $card-border-color;
+    border: 1px solid $primary-color-dark;
     border-radius: $card-border-radius;
     padding: 2.5%;
     margin: 3%;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
+    background-color: $contrast-color;
     
     &:hover {
-      background-color: $card-hover-color;
+      background-color: $secondary-color-light;
+      color: $secondary-color-dark;
+      border-color: $secondary-color-dark;
     }
 
     p {
@@ -167,6 +195,10 @@ div#no-results {
   font-size: 40px;
 }
 
+::placeholder {
+  color: $contrast-color;
+}
+
 li #search-input {
   border: none;
   background: none;
@@ -176,6 +208,7 @@ li #search-input {
   transition: all .25s ease-in .25s;
   color: transparent;
   line-height:25px;
+
   &:hover {
     cursor: pointer;
     &:focus {
@@ -184,13 +217,13 @@ li #search-input {
   }
   &:focus, &:not(:placeholder-shown) {
     font-family: $font-main;
-    border: 2px solid $card-hover-color;
+    border: 2px solid $contrast-color;
     border-radius: 10px;
     width: 200px;
     padding: 0 10px;
     outline: none;
     background:none;
-    color: $card-hover-color;
+    color: $contrast-color;
     + span {
       width: 200px;
       &::before {

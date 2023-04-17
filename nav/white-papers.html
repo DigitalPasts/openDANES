@@ -8,13 +8,13 @@ tags: navigation bar
 
 {% include tags.html type="white-paper" %}
 
-{% assign pages = site.pages | sort: "date" | reverse %}
+{% assign pages = site.pages | sort: "publish-date" | reverse %}
 
 <div class="cards">
   {% for item in pages %}
     {% if item.type == "white-paper" %}
 
-      {% include card.html title=item.title authors=item.authors date=item.date tags=item.tags summary=item.summary url=item.url %}
+      {% include card.html title=item.title authors=item.authors date=item.publish-date tags=item.tags summary=item.summary url=item.url %}
     
     {% endif %}
   {% endfor %}

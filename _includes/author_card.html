@@ -63,23 +63,25 @@
 
   <div class="peer-review">
     {% if include.reviewers != null %}
-
+    Reviewed by: 
       {% for reviewer in include.reviewers %}
-        Reviewed by: {{ reviewer[1].name }}
-        {% if reviewer[1].orcid != null %}
-          <a href="https://orcid.org/{{reviewer[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
-        {% endif %}
-        {% if reviewer[1].academia != null %}
-          <a href="{{reviewer[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
-        {% endif %}
-        {% if reviewer[1].github != null %}
-          <a href="{{reviewer[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
-        {% endif %}
-        <a href="https://doi.org/{{include.doi}}" target="_blank">
-          <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{{include.doi}}.svg);">doi</span>
-        </a>
-        
+        {%- if forloop.length > 0 -%}
+          {{ reviewer[1].name }}
+          {% if reviewer[1].orcid != null %}
+            <a href="https://orcid.org/{{reviewer[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+          {% endif %}
+          {% if reviewer[1].academia != null %}
+            <a href="{{reviewer[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+          {% endif %}
+          {% if reviewer[1].github != null %}
+            <a href="{{reviewer[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+          {% endif %}
+          {% unless forloop.last %}, {% endunless -%}
+        {%- endif -%}
       {% endfor %}
+      <a href="https://doi.org/{{include.doi}}" target="_blank">
+        <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{{include.doi}}.svg);">doi</span>
+      </a>
 
     {% else %}
       <i>Under peer review</i>

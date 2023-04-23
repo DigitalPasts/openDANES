@@ -6,7 +6,13 @@ $secondary-color: #05878a;
 $secondary-color-dark: #074e67;
 $third-color: #5a175d;
 $contrast-color: #feda75;
+$secondary-contrast-color: #e3ad5b;
+$secondary-contrast-color-dark: #9a6b23;
 $light-color: #FEFBF1;
+
+$table-color-head: rgb(254, 218, 117, .6);
+$table-color-dark: rgb(254, 218, 117, .3);
+$table-color-light: rgb(254, 218, 117, .1);
 
 $tip-prompt: rgb(123, 247, 144, 0.2);
 $tip-prompt-icon-color: #03b303;
@@ -64,7 +70,7 @@ section {
   font-family: $font-main;
   margin: 15px 20vw;
 
-  h2, h3 {
+  h2, h3, h4, h5, h6 {
     padding-bottom: 10px;
     margin: 15px 0;
   }
@@ -87,6 +93,15 @@ section {
     }
   }
   
+  h4, h5, h6 {
+    font-size: 1.7vw;
+    padding-top: 10px;
+
+    i {
+      font-size: inherit;
+    }
+  }
+
   blockquote {
     font-style: italic;
     padding-left: 3vw;
@@ -185,13 +200,13 @@ section {
     background-color: black;
     color: $light-color;
     border-radius: 0 0 5px 5px;
-    padding: 1vw;
     font-family: $font-code;
     white-space: pre-wrap;
     word-break: break-all;
     // fixing the style that came with the highlighting
     width: 100%;
     margin: 0;
+    padding: 1px;
   }
 
   div.highlight > button {
@@ -213,6 +228,14 @@ section {
     padding-top: 5px;
   }
 
+  // for inline code
+  code.language-plaintext.highlighter-rouge {
+    padding: 3px 5px;
+    border-radius: 4px;
+    background-color: $table-color-dark;
+    font-size: 1vw;
+  }
+
   p {
     padding: 15px 0;
     text-align: justify;
@@ -223,36 +246,47 @@ section {
       text-align: inherit !important;
       font-size: inherit !important;
     } 
-    
+
+    a {
+      text-decoration: none;
+      color: $secondary-color;
+      border-bottom: $secondary-color 1px dashed;
+      transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
+  
+      &:hover {
+        color: $secondary-contrast-color-dark;
+        border-bottom: $secondary-contrast-color-dark 1px dashed;
+      }
+    }  
+    a.footnote, a.reversefootnote {
+      border: none;
+    }
   }
 
   ul, ol {
-    padding: 15px 0;
+    padding: 15px;
     text-align: justify;
     font-size: 1.15vw;
 
     li {
       font-size: 1.15vw;
       text-align: justify;
+      padding: 0 5px;
     } 
-  } 
+  }
+
+  ul {
+    margin: 0 7.5px;
+  }
 
   .fig {
     font-size: 1vw;
-    padding: 15px 25px;
+    padding: 5px 25px 15px 25px;
     line-height: 1.4;
+    font-style: italic;
 
     a {
       font-size: 1vw;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: $primary-color-dark;
-
-    &:hover {
-      color: $primary-color-light;
     }
   }
 
@@ -265,6 +299,34 @@ section {
   i {
     font-size: $icon-size;
     padding: $icon-padding;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+
+    thead {
+      background-color: $table-color-head;
+      border-radius: 10px;
+    }
+
+    tbody {
+
+      tr {
+        background-color: $table-color-dark;
+        
+
+        &:nth-child(2n+1) {
+          background-color: $table-color-light;
+        }
+      }
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left !important;
+    }
   }
 }
 // rgba(6, 43, 94, 0.5)
@@ -402,8 +464,16 @@ footer {
       font-size: 3vw;
     }
 
+    h4, h5, h6 {
+      font-size: 2.5vw;
+    }
+
     p {
       font-size: 2vw !important; 
+    }
+
+    code.language-plaintext.highlighter-rouge {
+      font-size: 1.75vw !important;
     }
 
     ul, ol {
@@ -466,9 +536,17 @@ footer {
       font-size: 30px;
     }
 
+    h4, h5, h6 {
+      font-size: 25px;
+    }
+
     p {
       text-align: left;
       font-size: 17px !important;  
+    }
+
+    code.language-plaintext.highlighter-rouge {
+      font-size: 15px !important;
     }
 
     ul, ol {

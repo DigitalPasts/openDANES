@@ -5,6 +5,8 @@ $secondary-color: #05878a;
 $secondary-color-dark: #074e67;
 $third-color: #5a175d;
 $contrast-color: #feda75;
+$secondary-contrast-color: #e3ad5b;
+$secondary-contrast-color-dark: #9a6b23;
 $light-color: #FEFBF1;
 
 section {
@@ -14,6 +16,7 @@ section {
     position: fixed;
     width: 20vw;
     padding: 0 2.5vw;
+    transition: top 0.3s ease-in-out;
 
     h2 {
       font-size: 1.2vw;
@@ -25,27 +28,30 @@ section {
     ul {
 
       // height: 50vh;
-      overflow: overlay;
+      margin: 0;
+      display: contents;
 
       li {
         list-style: none;
         text-align: left;
         font-size: 1vw;
-        padding: 5px;
-
-        a {
-          transition: border-left 0.2s ease-in-out, padding-left 0.3s ease-in-out;
-          display: block;
-
-          &:hover {
-            border-left: 1px solid $primary-color-light;
-            padding-left: 5px;
-          }
-        }
-          
+        padding: 5px 0 0 10px;  
       }
     }
     
+    a, p a {
+      transition: border-left 0.2s ease-in-out, padding-left 0.3s ease-in-out;
+      display: block;
+      border: none;
+  
+      text-decoration: none;
+      color: $primary-color-dark;
+  
+      &:hover {
+        border-left: 1px solid $primary-color-light;
+        padding-left: 5px;
+      }
+    }
   }
 
   .content {

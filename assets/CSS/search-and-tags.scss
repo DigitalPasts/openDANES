@@ -7,6 +7,8 @@ $secondary-color-dark: #074e67;
 $secondary-color-light: #82C3C4;
 $third-color: #5a175d;
 $contrast-color: #feda75;
+$secondary-contrast-color: #e3ad5b;
+$secondary-contrast-color-dark: #9a6b23;
 $light-color: #FEFBF1;
 
 $card-border-color: #333;
@@ -14,6 +16,10 @@ $card-border-radius: 10px;
 $card-hover-color: #bebebe;
 $font-main: 'Mukta', sans-serif;
 // styling
+
+a {
+  text-decoration: none;
+}
 
 .author-card {
   border: 1px solid $secondary-color-dark;
@@ -83,13 +89,14 @@ $font-main: 'Mukta', sans-serif;
 
   .card .visible{
 
-    border: 1px solid $primary-color-dark;
+    border: 1px solid $secondary-contrast-color-dark;
     border-radius: $card-border-radius;
     padding: 2.5%;
     margin: 3% 0%;
-    background-color: $contrast-color;
+    background-color: $secondary-contrast-color;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
+    color: black;
     
     &:hover {
       background-color: $secondary-color-light;
@@ -142,12 +149,12 @@ $font-main: 'Mukta', sans-serif;
   padding-bottom: 2vw;
 
   span {
-    border: 1px solid $primary-color-dark;
+    border: 1px solid $secondary-contrast-color-dark;
     border-radius: $card-border-radius;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     padding: 0.4vw 0.8vw;
     margin: 0.5vw;
-    background-color: $contrast-color;
+    background-color: $secondary-contrast-color;
   
     &:hover {
       background-color: $secondary-color-light;
@@ -165,18 +172,21 @@ $font-main: 'Mukta', sans-serif;
 
 }
 
-
-
 ul#results-container {
   li.result {
     list-style-type: none;
-    border: 1px solid $primary-color-dark;
+    border: 1px solid $secondary-contrast-color-dark;
     border-radius: $card-border-radius;
     padding: 2.5%;
     margin: 3%;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
-    background-color: $contrast-color;
+    background-color: $secondary-contrast-color;
+    color: black;
+
+    h4 {
+      margin: 0;
+    }
     
     &:hover {
       background-color: $secondary-color-light;

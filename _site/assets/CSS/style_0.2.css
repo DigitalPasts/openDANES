@@ -35,7 +35,7 @@ section {
     font-family: "Mukta", sans-serif;
     margin: 15px 20vw;
 }
-section h2, section h3 {
+section h2, section h3, section h4, section h5, section h6 {
     padding-bottom: 10px;
     margin: 15px 0;
 }
@@ -51,6 +51,13 @@ section h3 {
     padding-top: 10px;
 }
 section h3 i {
+    font-size: inherit;
+}
+section h4, section h5, section h6 {
+    font-size: 1.7vw;
+    padding-top: 10px;
+}
+section h4 i, section h5 i, section h6 i {
     font-size: inherit;
 }
 section blockquote {
@@ -137,12 +144,12 @@ section div pre.highlight {
     background-color: black;
     color: #FEFBF1;
     border-radius: 0 0 5px 5px;
-    padding: 1vw;
     font-family: "Source Code Pro", monospace;
     white-space: pre-wrap;
     word-break: break-all;
     width: 100%;
     margin: 0;
+    padding: 1px;
 }
 section div.highlight > button {
     height: fit-content;
@@ -161,6 +168,12 @@ section button span.code-button-emoticon {
     padding-right: 13px;
     padding-top: 5px;
 }
+section code.language-plaintext.highlighter-rouge {
+    padding: 3px 5px;
+    border-radius: 4px;
+    background-color: rgba(254, 218, 117, 0.3);
+    font-size: 1vw;
+}
 section p {
     padding: 15px 0;
     text-align: justify;
@@ -171,29 +184,40 @@ section p a, section p i {
     text-align: inherit !important;
     font-size: inherit !important;
 }
+section p a {
+    text-decoration: none;
+    color: #05878a;
+    border-bottom: #05878a 1px dashed;
+    transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
+}
+section p a:hover {
+    color: #9a6b23;
+    border-bottom: #9a6b23 1px dashed;
+}
+section p a.footnote, section p a.reversefootnote {
+    border: none;
+}
 section ul, section ol {
-    padding: 15px 0;
+    padding: 15px;
     text-align: justify;
     font-size: 1.15vw;
 }
 section ul li, section ol li {
     font-size: 1.15vw;
     text-align: justify;
+    padding: 0 5px;
+}
+section ul {
+    margin: 0 7.5px;
 }
 section .fig {
     font-size: 1vw;
-    padding: 15px 25px;
+    padding: 5px 25px 15px 25px;
     line-height: 1.4;
+    font-style: italic;
 }
 section .fig a {
     font-size: 1vw;
-}
-section a {
-    text-decoration: none;
-    color: #330327;
-}
-section a:hover {
-    color: #67074e;
 }
 section img {
     max-width: 100%;
@@ -203,6 +227,25 @@ section img {
 section i {
     font-size: 25px;
     padding: 1px;
+}
+section table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+}
+section table thead {
+    background-color: rgba(254, 218, 117, 0.6);
+    border-radius: 10px;
+}
+section table tbody tr {
+    background-color: rgba(254, 218, 117, 0.3);
+}
+section table tbody tr:nth-child(2n+1) {
+    background-color: rgba(254, 218, 117, 0.1);
+}
+section table th, section table td {
+    padding: 10px;
+    text-align: left !important;
 }
 
 header {
@@ -314,8 +357,14 @@ footer div a:hover {
     section h3 {
         font-size: 3vw;
     }
+    section h4, section h5, section h6 {
+        font-size: 2.5vw;
+    }
     section p {
         font-size: 2vw !important;
+    }
+    section code.language-plaintext.highlighter-rouge {
+        font-size: 1.75vw !important;
     }
     section ul, section ol {
         font-size: 2vw !important;
@@ -364,9 +413,15 @@ footer div a:hover {
     section h3 {
         font-size: 30px;
     }
+    section h4, section h5, section h6 {
+        font-size: 25px;
+    }
     section p {
         text-align: left;
         font-size: 17px !important;
+    }
+    section code.language-plaintext.highlighter-rouge {
+        font-size: 15px !important;
     }
     section ul, section ol {
         text-align: left;

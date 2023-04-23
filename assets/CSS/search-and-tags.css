@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .author-card {
     border: 1px solid #074e67;
     border-radius: 10px;
@@ -51,13 +55,14 @@
     display: none;
 }
 .cards .card .visible {
-    border: 1px solid #330327;
+    border: 1px solid #9a6b23;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3% 0%;
-    background-color: #feda75;
+    background-color: #e3ad5b;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
+    color: black;
 }
 .cards .card .visible:hover {
     background-color: #82C3C4;
@@ -98,12 +103,12 @@
     padding-bottom: 2vw;
 }
 .tags span {
-    border: 1px solid #330327;
+    border: 1px solid #9a6b23;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     padding: 0.4vw 0.8vw;
     margin: 0.5vw;
-    background-color: #feda75;
+    background-color: #e3ad5b;
 }
 .tags span:hover {
     background-color: #82C3C4;
@@ -119,13 +124,17 @@
 
 ul#results-container li.result {
     list-style-type: none;
-    border: 1px solid #330327;
+    border: 1px solid #9a6b23;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3%;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
-    background-color: #feda75;
+    background-color: #e3ad5b;
+    color: black;
+}
+ul#results-container li.result h4 {
+    margin: 0;
 }
 ul#results-container li.result:hover {
     background-color: #82C3C4;

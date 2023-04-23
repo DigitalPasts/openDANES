@@ -24,6 +24,14 @@
     <!-- style css for table of contents -->
     <link rel="stylesheet" href="/openDANES/assets/CSS/toc-style.css">
     <link rel="stylesheet" href="/openDANES/assets/CSS/search-and-tags.css">
+
+    <!-- codeblock highlighting: https://github.com/highlightjs/highlight.js/ -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/sunburst.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+
     <title>openDANES</title>
   </head>
   <body>
@@ -54,7 +62,7 @@
       <div class="toc">
         <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
         <h2><i class="far fa-folder-open"></i> On this page</h2>
-        <ul><li><a href="#general-guidelines">General Guidelines</a></li><li><a href="#guidelines-for-tutorials">Guidelines for Tutorials</a></li><li><a href="#guidelines-for-white-papers">Guidelines for White Papers</a></li></ul>
+        <ul><li><a href="#submission-types-tutorials-and-white-papers">Submission Types: Tutorials and White Papers</a><ul><li><a href="#tutorials">Tutorials</a></li><li><a href="#white-papers">White Papers</a></li></ul></li><li><a href="#publication-process-and-peer-review">Publication Process and Peer Review</a><ul><li><a href="#initial-submission-and-review">Initial Submission and Review</a></li><li><a href="#temporary-online-publication">Temporary online publication</a></li><li><a href="#peer-review-process">Peer Review Process</a></li><li><a href="#final-publication">Final Publication</a></li></ul></li><li><a href="#formatting-guidelines">Formatting Guidelines</a><ul><li><a href="#manuscript-structure">Manuscript Structure</a></li><li><a href="#manuscript-formatting">Manuscript Formatting</a><ul><li><a href="#general-syntax-instructions">General Syntax Instructions</a></li><li><a href="#yaml-frontmatter">YAML Frontmatter</a></li><li><a href="#style-guidelines">Style Guidelines</a><ul><li><a href="#footnotes-links-and-citations">Footnotes, Links, and Citations</a></li></ul></li></ul></li><li><a href="#tutorial-validation">Tutorial Validation</a></li></ul></li></ul>
 
       </div>
       <div class="content">
@@ -83,50 +91,166 @@
 </script>
 
         <h1>Submission Guidelines</h1>
-        <p>openDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.</p>
+        <p>OpenDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.</p>
 
-<h2 id="general-guidelines">General Guidelines</h2>
+<h2 id="submission-types-tutorials-and-white-papers">Submission Types: Tutorials and White Papers</h2>
+
+<h3 id="tutorials">Tutorials</h3>
+
+<p>Tutorials are meant to be educational resources for students and scholars who wish to gain practical skills to study the ancient Near East using innovative computational methodologies and tools. Tutorials are meant to instruct the readers how to write code or use existing tools to gain new insight on ancient data and traditional research questions.</p>
+
+<p>Tutorials should avoid any unnecessary jargon, be it from computer and data science or from their field of speciality in ancient Near Eastern studies. Tutorials should be accessible to both students and scholars from the humanities and from compurter and data science. Notwithstanding, tutorials can indicate their level of difficulty (beginner, intermediate, or advanced), which refers to the technical skill required. Tutorials should aim to use up-to-date packages and tools in order to lengthen the usefullness of their instructions.</p>
+
+<h3 id="white-papers">White Papers</h3>
+
+<p><em>write what white papers should be</em>…</p>
+
+<h2 id="publication-process-and-peer-review">Publication Process and Peer Review</h2>
+
+<p>The submission process goes through the following steps:</p>
+
+<ol>
+  <li>Initial submission and review (by OpenDANES editorial board)</li>
+  <li>Temporary online publication of manuscript</li>
+  <li>Peer review process</li>
+  <li>Final publication (with DOI)</li>
+</ol>
+
+<h3 id="initial-submission-and-review">Initial Submission and Review</h3>
+
+<p>Submission are uploaded through the 
+  <a href="https://forms.gle/Y4VeAZhnegEtFQ9N6" target="_blank">the following google form</a>
+. Please read the full guidelines before submitting your manuscript.</p>
+
+<p>Upon submission, the manuscript goes through an initial review process by the OpenDANES <a href="/openDANES/nav/about.html#editorial-board">editorial board</a>. Three board members of relevant speciality will assess whether the tutorial or white paper’s scope are fitting to OpenDANES and are of sufficient academic rigor. Authors will be notified of board rejection or approval within a month from day of submission.</p>
+
+<h3 id="temporary-online-publication">Temporary online publication</h3>
+
+<p>One aspect of OpenDANES’ vision is that manuscripts, especially tutorials, are published while going through peer review process, in order for the authors to get possible feedback from experts as well as readers. Therefore, once the piece is approved by the editorial board, it will be made available online while going through peer review. However, it will not receive a DOI or be publicized until the peer review is completed. It will be clearly marked as going under peer review on the website.</p>
+
+<p>For this temporary online publication, authors may be requested to correct the formatting style of their pieces, in case of errors. On the formatting guidelines, <a href="#manuscript-formatting">see further below</a>. Furthermore, tutorials which include code or programs will be validated by the OpenDANES <a href="/openDANES/nav/about.html#editorial-team">editorial team</a>, and if it is not reproducible on other machines and operating systems, the author(s) will be notified and will need to correct their manuscript accordingly. For the tutorial validation process, <a href="#tutorial-validation">see further below</a>. If these are not corrected by the author upon request from the editorial team within a reasonable span of time, the manuscript will not be accepted for publication. Until these corrections are made, the peer review process does not begin as well.</p>
+
+<h3 id="peer-review-process">Peer Review Process</h3>
+
+<p>Each piece will be peer-reviewed by two experts in the field. OpenDANES employes an open peer-review process, meaning the peer-reviewers will know the author(s) and vice versa. The peer reviewers’s names will also appear on the published submission. Peer reviewers are given three months to review a manuscript.</p>
+
+<p>For the peer review process OpenDANES uses 
+  <a href="https://web.hypothes.is/" target="_blank">hypothes.is</a>
+, a web-based open source annotation tool. This annotation tool is implemented within the OpenDANES website, so that no installation or plugin is required. Peer reviewers and authors will be invited to the “OpenDANES Reviews” hypothes.is group, where the peer reviewers will be able to mark their comments and corrections on the web version of the piece, and the author will be able to then comment using hypothes.is and implement the changes requested. The “OpenDANES Reviews” hypothes.is group will be open for any who are interested to join it.</p>
+
+<p>After both peer reviewers have completed their review, if the manuscript is approved for publication, the corresponding author(s) will be notified via email and receive a month to comment and implement any corrections. Extension can be given if requested. Comments to the peer reviews should be made through hypothes.is, including justification for not applying changes that may have been suggested. If need be, some comments can be shared only with the OpenDANES editorial team and board through the resubmission form. Authors need to submit their corrected manuscript 
+  <a href="https://forms.gle/BZV1yg6CFsYPU4W59" target="_blank">through this resubmission form</a>
+.</p>
+
+<h3 id="final-publication">Final Publication</h3>
+
+<p>Following resubmission, the updated manuscript will be uploaded to the website by the editorial team. It will also receive a DOI, and be publicized in the DANES mailing list, DANES Discord channel, Twitter, and other relevant avenues.</p>
+
+<p>After this final submission, some tutorials may need to be updated as packages or programs change or cease to be functional. In such cases, the author(s) may contact the editorial team at the Digital Pasts Lab email (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>), or the editorial team may contact the authors if there is feedback from readers that the tutorial is no longer functional. In the latter case, the author(s) may choose to update their code or, if that is unfeasable, impossible, or unwanted, the tutorial will become depracted: it will still be published on the website but there will be a warning that the tutorial is out of date.</p>
+
+<h2 id="formatting-guidelines">Formatting Guidelines</h2>
+
+<h3 id="manuscript-structure">Manuscript Structure</h3>
+
+<p>We do not request submission in a specific structure. You can organize the content of your submission however you wish.</p>
+
+<p>However, we recommend for tutorials to have a clear structure, such as:</p>
 
 <ul>
-  <li>style guidelines, follow X.</li>
-  <li>explanation on peer review process through hypothesis, publication, and doi.</li>
+  <li>Introduction</li>
+  <li>Prerequisites (see further under Code Validation)</li>
+  <li>Instructions (main body of tutorial)</li>
+  <li>Caveats and/or Further Research</li>
+  <li>Further Reading</li>
+  <li>References and Notes</li>
 </ul>
 
-<h2 id="guidelines-for-tutorials">Guidelines for Tutorials</h2>
+<h3 id="manuscript-formatting">Manuscript Formatting</h3>
 
-<ul>
-  <li>accept submissions in markdown format</li>
-  <li>link to template</li>
-</ul>
+<p>Submissions are accepted in either <strong>markdown</strong> or <strong>google doc</strong> files. No other file formats are accepted. Images need to be uploaded separately in the submission form: please prepare them accordingly ahead of time.</p>
 
-<blockquote class="prompt-tip">
-  <p>this is a tip prompt</p>
-</blockquote>
+<p>We ask authors to follow certain guidelines when formatting their manuscripts, such as using particular syntax for codeblocks, links, figures and legends, etc., as well as filling up the YAML frontmatter, for both markdown and google doc submissions. This ensures the submissions will be displayed correctly on the OpenDANES journal website. Following these guidelines will significantly speed up the publication process and will be greatly appreciated.</p>
 
-<p>some text inbetween</p>
+<h4 id="general-syntax-instructions">General Syntax Instructions</h4>
 
-<blockquote class="prompt-info">
-  <p>this is an info prompt</p>
-</blockquote>
+<p>To assist the process of preparing the manuscript, there are templates available for <a href="/openDANES/assets/docs/submission_markdown_template.txt">markdown</a> and 
+  <a href="https://docs.google.com/document/d/e/2PACX-1vR6iQY97y0PKApP9eMZGPYFpgDezxVzr8ToCvt1KNBSuwscPG5Qx-G6wBXVRp8qqInqrn4vyu0PbpNv/pub" target="_blank">google doc</a>
+. These templates include examples of all the formatting types that may be needed (headings, lists, codeblocks, prompts, etc.). How they are then displayed can be viewed <a href="/openDANES/pages/submission_markdown_template.html">through this link</a>, where you can also copy the required syntax.</p>
 
-<p>some text inbetween</p>
+<h4 id="yaml-frontmatter">YAML Frontmatter</h4>
 
-<blockquote class="prompt-warning">
-  <p>this is a warning prompt</p>
-</blockquote>
+<p>In both the markdown and google doc templates, there is a YAML frontmatter which authors should fill up before submission according to these guidelines. The YAML frontmatter template is as follows:</p>
 
-<p>some text inbetween</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">default+toc</span>
+<span class="na">type</span><span class="pi">:</span> <span class="s">white-paper OR tutorial</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Write the title of your submission here</span>
+<span class="na">authors</span><span class="pi">:</span>
+  <span class="na">author1</span><span class="pi">:</span>
+    <span class="na">name</span><span class="pi">:</span> <span class="s">Your Name</span>
+    <span class="na">affiliation</span><span class="pi">:</span> <span class="s">affiliation</span>
+    <span class="na">email</span><span class="pi">:</span> <span class="s">email</span>
+    <span class="na">orcid</span><span class="pi">:</span> <span class="s">orcid number OR </span><span class="kc">null</span>
+    <span class="na">academia</span><span class="pi">:</span> <span class="s">link to academia page OR </span><span class="kc">null</span>
+    <span class="na">github</span><span class="pi">:</span> <span class="s">link to github OR </span><span class="kc">null</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">tag </span><span class="m">1</span>
+  <span class="pi">-</span> <span class="s">tag </span><span class="m">2</span>
+  <span class="pi">-</span> <span class="s">tag </span><span class="m">3</span>
+<span class="na">summary</span><span class="pi">:</span> <span class="s">a 1-2 sentences summary of the content of your submission.</span>
+<span class="na">difficulty</span><span class="pi">:</span> <span class="kc">null</span><span class="s"> OR beginner OR intermediate OR advanced</span>
+<span class="na">submit-date</span><span class="pi">:</span> <span class="s">YYYY-MM-DD</span>
+<span class="na">publish-date</span><span class="pi">:</span> <span class="kc">null</span>
+<span class="na">peer-review-date</span><span class="pi">:</span> <span class="kc">null</span>
+<span class="na">update-date</span><span class="pi">:</span> <span class="kc">null</span>
+<span class="na">reviewers</span><span class="pi">:</span> <span class="kc">null</span>
+<span class="na">doi</span><span class="pi">:</span> <span class="kc">null</span>
+<span class="nn">---</span>
+</code></pre></div></div>
 
-<blockquote class="prompt-danger">
-  <p>this is a danger prompt</p>
-</blockquote>
+<p>The following fields should be left as is: <code class="language-plaintext highlighter-rouge">layout</code>, <code class="language-plaintext highlighter-rouge">publish-date</code>, <code class="language-plaintext highlighter-rouge">peer-review-date</code>, <code class="language-plaintext highlighter-rouge">update-date</code>, <code class="language-plaintext highlighter-rouge">reviewers</code>, and <code class="language-plaintext highlighter-rouge">doi</code>. They will be updated by the editorial team as the submission progresses through the publication process.</p>
 
-<h2 id="guidelines-for-white-papers">Guidelines for White Papers</h2>
+<p>The following fields need to be changed by the author(s):</p>
 
-<ul>
-  <li>accept submissions in markdown format or google doc</li>
-  <li>link to template</li>
-</ul>
+<p><code class="language-plaintext highlighter-rouge">type</code>: please leave either white-paper or tutorial (not both).</p>
+
+<p><code class="language-plaintext highlighter-rouge">title</code>: replace “Write the title of your submission here” with the title of your submission.</p>
+
+<p><code class="language-plaintext highlighter-rouge">authors</code>: please fill up all author information. For multiple authors, add additional <code class="language-plaintext highlighter-rouge">author2</code>, <code class="language-plaintext highlighter-rouge">author3</code>, etc. Make sure to include all additional information (<code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">affiliation</code>, <code class="language-plaintext highlighter-rouge">email</code>, <code class="language-plaintext highlighter-rouge">orcid</code>, <code class="language-plaintext highlighter-rouge">academia</code>, <code class="language-plaintext highlighter-rouge">github</code>) for each author.</p>
+
+<p><code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">affiliation</code>, and <code class="language-plaintext highlighter-rouge">email</code> is mandatory. If one of the authors is an indepedent scholar, you can write after <code class="language-plaintext highlighter-rouge">affiliation</code> “Indepedent Scholar”.</p>
+
+<p><code class="language-plaintext highlighter-rouge">orcid</code>, <code class="language-plaintext highlighter-rouge">academia</code>, and <code class="language-plaintext highlighter-rouge">github</code> are not mandatory. If you do not have accounts in these sites, or you do not wish to share those, please leave them as <code class="language-plaintext highlighter-rouge">null</code>. For <code class="language-plaintext highlighter-rouge">orcid</code> please enter just your ORCID number (not the full URL). If you wish to include additional ways to contact you or view your works, you may contact the editorial team at the Digital Pasts Lab email (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>) and we will make those arrangements.</p>
+
+<p><code class="language-plaintext highlighter-rouge">tags</code>: please provide <strong>at least</strong> three hashtags that are relevant for the content of you submission. More can be added as well. When choosing your hashtags, please consult the existing hashtags which can be viewed on the <a href="/nav/tutorials.html">Tutorials</a> and <a href="/nav/white-papers.html">White Papers</a> pages. The editorial team may adapt your chosen hashtags to fit one of the hashtags already used on the website. A general guideline is having at least one hashtag give a clear indication of the language or time period of the data you are working with (e.g. cuneiform, egyptian, bronze-age), and at least one hashtag which is a digital humanities methodology or topic you are using or referring to (e.g. python, R, visualization).</p>
+
+<p><code class="language-plaintext highlighter-rouge">summary</code>: please replace the text with a short summary of the main points of your submission. This will be displayed on the website in search result cards and on the <a href="/nav/tutorials.html">Tutorials</a> and <a href="/nav/white-papers.html">White Papers</a> pages.</p>
+
+<p><code class="language-plaintext highlighter-rouge">difficulty</code>: if you are submitting a white paper, please leave here <code class="language-plaintext highlighter-rouge">null</code>. If you are submitting a tutorial, please indicate the level of difficulty of this tutorial, either <code class="language-plaintext highlighter-rouge">beginner</code>, <code class="language-plaintext highlighter-rouge">intermediate</code>, or <code class="language-plaintext highlighter-rouge">advanced</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">submit-date</code>: please enter the date in which you submitted your manuscript in YYYY-MM-DD formula.</p>
+
+<h4 id="style-guidelines">Style Guidelines</h4>
+
+<p>The OpenDANES journal follows the style guidelines of XXX. Please consult their manual and instructions for general English style guidelines.</p>
+
+<h5 id="footnotes-links-and-citations">Footnotes, Links, and Citations</h5>
+
+<p>If you are citing academic publications (articles, books, etc.), please include a <code class="language-plaintext highlighter-rouge">References</code> section at the end of you submission before the <code class="language-plaintext highlighter-rouge">Notes</code> (footnotes) section. The references should be fully formatted according to the guidelines of XXX.</p>
+
+<p>If you are citing online resources (github repositories, online databases, etc.) which do not have an academic citation, those can be referenced through a link. However, do <strong>give proper credit</strong>, when relevant, to the writers of the resource you are citing in the body of your text or in a footnote. In addition, please as much as possible <strong>use permenant links</strong> (URIs, DOIs) as opposed to temporary ones.</p>
+
+<p>Please avoid using too many footnotes, unless absolutely necessary (especially for tutorials).</p>
+
+<h3 id="tutorial-validation">Tutorial Validation</h3>
+
+<p>If you are submitting a tutorial, before initial publication on the OpenDANES journal your code or instructions will be validated by the OpenDANES editorial team.</p>
+
+<p>Ideally, tutorial instructions should be functional on Mac, Linux, or Windows operating systems. However. if your tutorial uses programs or code that are available in only some of those operating systems, you will need to declare it in the submission form so that the editorial team will only check your code on relevant operating system.</p>
+
+<p><strong>If your tutorial uses code that requires any dependencies and/or particular versions, please state so at the beginning of your tutorial</strong> in a <code class="language-plaintext highlighter-rouge">Prerequisites</code> section. Also, if any installation is required, please guide the reader through the installation process or refer to a credible source with installation guidelines (including for multiple operating systems, when relevant).</p>
+
+<p>Unless told otherwise, the editorial team will validate the tutorial on a Windows computer, Mac, and through Google Colab (when relevant). If the editorial team is unable to follow the instructions, they will send a report to the author(s) and the manuscript will not be published until those are addressed.</p>
 
       </div>
     </section>
@@ -142,13 +266,32 @@
   <div id="credits">
     <p>openDANES is released under a CC-BY license</p>
     <p>Hosted on Github Pages</p>
-    <p>last updated on April 16, 2023</p>
+    <p>last updated on April 22, 2023</p>
   </div>
   
 </footer>
 
+
+    <!-- javascript to place class on code element so highlighting will display correctly -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var highlightElements = document.querySelectorAll("div.highlighter-rouge");
+        for (var i = 0; i < highlightElements.length; i++) {
+          var langClass = highlightElements[i].classList;
+          var lang = Array.from(langClass).find(function(item) {
+            return item.startsWith("language-");
+          });
+          if (lang) {
+            var codeElements = highlightElements[i].querySelectorAll("code");
+            for (var j = 0; j < codeElements.length; j++) {
+              codeElements[j].classList.remove("language-css");
+              codeElements[j].classList.add(lang);
+            }
+          }
+        }
+      });
+    </script>
   </body>
   <script src="/openDANES/assets/js/codeblock.js"></script>
-  <!-- google script for highlighting code blocks, see https://github.com/googlearchive/code-prettify/blob/master/docs/getting_started.md -->
-  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
+  <script src="/openDANES/assets/js/toc-scroll.js"></script>
 </html>

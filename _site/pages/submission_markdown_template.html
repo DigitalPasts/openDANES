@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <!-- <meta name="description" content="The Digital Pasts Lab (DigPasts-Lab) is geared towards performing innovative, quality research in digital humanities, with an emphasis on historical research. We aim to create an interdisciplinary workspace among different humanities researchers and between humanities researchers and data scientists, which develops and enriches both worlds.">
+    <meta name="keywords" content="digital humanities, babylonian engine, assyriology, Akkademia, Atrahasis, digital assyriology, history, archaeology"> -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/openDANES/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/openDANES/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/openDANES/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/openDANES/favicon_io/site.webmanifest">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/269b02bfd4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <!-- style css -->
+    <link rel="stylesheet" href="/openDANES/assets/CSS/style_0.2.css">
+    <!-- style css for table of contents -->
+    <link rel="stylesheet" href="/openDANES/assets/CSS/toc-style.css">
+    <link rel="stylesheet" href="/openDANES/assets/CSS/search-and-tags.css">
+
+    <!-- codeblock highlighting: https://github.com/highlightjs/highlight.js/ -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/sunburst.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+
+    <title>openDANES</title>
+  </head>
+  <body>
+    <a name="top"></a>
+    <header>
+
+    <!-- <div class="logo">
+      <a href="/openDANES/index.html">openDANES</a>
+    </div> -->
+
+    <div class="navigation">
+      <ul>
+        <li><a href="/openDANES/index.html">OpenDANES</a></li>
+        <li><a href="/openDANES/nav/about.html">About</a></li>
+        <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
+        <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
+        <li><a href="/openDANES/nav/posters.html">Posters</a></li>
+        <li><a href="/openDANES/nav/DANES-resources.html">DANES Resources</a></li>
+        <li><a href="/openDANES/nav/submission-guidelines.html">Submission Guidelines</a></li>
+        <li><input type="text" id="search-input" placeholder="&#xf002"></li>
+      </ul>
+    </div>
+
+</header>
+
+
+    <section>
+      <div class="toc">
+        <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
+        <h2><i class="far fa-folder-open"></i> On this page</h2>
+        <ul><li><a href="#types-of-headings">Types of Headings</a></li><li><a href="#heading-2">Heading 2</a><ul><li><a href="#heading-3">Heading 3</a><ul><li><a href="#heading-4">Heading 4</a><ul><li><a href="#heading-5">Heading 5</a><ul><li><a href="#heading-6">Heading 6</a></li></ul></li></ul></li></ul></li></ul></li><li><a href="#lists">Lists</a></li><li><a href="#blockquotes">Blockquotes</a></li><li><a href="#prompts">Prompts</a></li><li><a href="#links">Links</a></li><li><a href="#footnotes">Footnotes</a></li><li><a href="#tables">Tables</a></li><li><a href="#inline-code-and-code-blocks">Inline code and code blocks</a></li><li><a href="#figures-and-legends">Figures and legends</a></li><li><a href="#notes">Notes</a></li></ul>
+
+      </div>
+      <div class="content">
+        <!-- HTML elements for search -->
+<ul id="results-container"></ul>
+
+
+
+
+
+<!--  -->
+
+<script src="/openDANES/assets/js/simple-jekyll-search.js"></script>
+<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
+
+<script>
+  simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/openDANES/search.json',
+        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a>',
+        noResultsText: '<div id="no-results">No results found</div>',
+        fuzzy: false,
+        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
+      })
+</script>
+
+        <h1>Write the title of your submission here</h1>
+        <h2 id="types-of-headings">Types of Headings</h2>
+
+<h1 id="heading-1">Heading 1</h1>
+
+<p>It is not recommended to use heading 1 as that will automatically be the title of your submission, and it will not be added to the table of contents. Please use Heading 2 and onwards.</p>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## Heading 2</span>
+</code></pre></div></div>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## Heading 3</span>
+</code></pre></div></div>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## Heading 4</span>
+</code></pre></div></div>
+
+<h5 id="heading-5">Heading 5</h5>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## Heading 5</span>
+</code></pre></div></div>
+
+<h6 id="heading-6">Heading 6</h6>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## Heading 6</span>
+</code></pre></div></div>
+
+<h2 id="lists">Lists</h2>
+
+<p>Ordered list:</p>
+
+<ol>
+  <li>first item</li>
+  <li>second item</li>
+  <li>third item</li>
+</ol>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> first item
+<span class="p">2.</span> second item
+<span class="p">3.</span> third item
+</code></pre></div></div>
+
+<p>Unordered list:</p>
+
+<ul>
+  <li>item</li>
+  <li>item</li>
+  <li>item</li>
+</ul>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">*</span> item
+<span class="p">*</span> item
+<span class="p">*</span> item
+</code></pre></div></div>
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<blockquote>
+  <p>This is a blockquote</p>
+</blockquote>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a blockquote</span>
+</code></pre></div></div>
+
+<h2 id="prompts">Prompts</h2>
+
+<blockquote class="prompt-tip">
+  <p>this is a tip prompt</p>
+</blockquote>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .prompt-tip }
+<span class="gt">&gt; this is a tip prompt</span>
+</code></pre></div></div>
+
+<blockquote class="prompt-info">
+  <p>this is an info prompt</p>
+</blockquote>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .prompt-info }
+<span class="gt">&gt; this is an info prompt</span>
+</code></pre></div></div>
+
+<blockquote class="prompt-warning">
+  <p>this is a warning prompt</p>
+</blockquote>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .prompt-warning }
+<span class="gt">&gt; this is a warning prompt</span>
+</code></pre></div></div>
+
+<blockquote class="prompt-danger">
+  <p>this is a danger prompt</p>
+</blockquote>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .prompt-danger }
+<span class="gt">&gt; this is a danger prompt</span>
+</code></pre></div></div>
+
+<h2 id="links">Links</h2>
+
+<p>Showing Link: Go to 
+  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">https://digitalpasts.github.io/openDANES/index.html</a>
+.</p>
+
+<p>In markdown syntax:</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sx">% include </span><span class="n">link</span><span class="p">.</span><span class="nf">html</span> <span class="n">url</span><span class="o">=</span><span class="s2">"https://digitalpasts.github.io/openDANES/index.html"</span> <span class="n">content</span><span class="o">=</span><span class="s2">""</span> <span class="o">%</span><span class="p">}</span><span class="o">.</span>
+</code></pre></div></div>
+
+<p>Link Embedded in text: Go to the 
+  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">OpenDANES journal</a>
+.</p>
+
+<p>In markdown syntax:</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sx">% include </span><span class="n">link</span><span class="p">.</span><span class="nf">html</span> <span class="n">url</span><span class="o">=</span><span class="s2">"https://digitalpasts.github.io/openDANES/index.html"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"OpenDANES journal"</span> <span class="o">%</span><span class="p">}</span><span class="o">.</span>
+</code></pre></div></div>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<p>This is a sentence with a footnote in the end.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> This is another sentence with a footnote in the end.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a sentence with a footnote in the end.[^1] This is another sentence with a footnote in the end.[^2]
+
+<span class="p">[</span><span class="ss">^1</span><span class="p">]:</span> <span class="sx">This</span> is the footnote of the first sentence.
+<span class="p">[</span><span class="ss">^2</span><span class="p">]:</span> <span class="sx">This</span> is the footnote of the second sentence.
+</code></pre></div></div>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Heading 1</th>
+      <th>Heading 2</th>
+      <th>Heading 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>value 1</td>
+      <td>value 4</td>
+      <td>value 7</td>
+    </tr>
+    <tr>
+      <td>value 2</td>
+      <td>value 5</td>
+      <td>value 8</td>
+    </tr>
+    <tr>
+      <td>value 3</td>
+      <td>value 6</td>
+      <td>value 9</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Heading 1 | Heading 2 | Heading 3 |
+|-----------|-----------|-----------|
+| value 1   | value 4   | value 7   |
+| value 2   | value 5   | value 8   |
+| value 3   | value 6   | value 9   |
+</code></pre></div></div>
+
+<h2 id="inline-code-and-code-blocks">Inline code and code blocks</h2>
+
+<p>This is <code class="language-plaintext highlighter-rouge">inline code</code>.</p>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is <span class="sb">`inline code`</span>.
+</code></pre></div></div>
+
+<p>This is a python codeblock:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span> <span class="n">install</span> <span class="n">cltk</span>
+</code></pre></div></div>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">python
+</span><span class="n">pip</span> <span class="n">install</span> <span class="n">cltk</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<p>For other programming languages, change <code class="language-plaintext highlighter-rouge">python</code> to the the appropriate language.</p>
+
+<h2 id="figures-and-legends">Figures and legends</h2>
+
+<p><img src="/openDANES/images/tutorials/Preprocessing Ancient Texts with the Classical Language Toolkit (CLTK)/image-1.jpg" alt="Image placeholder" /></p>
+
+<p class="fig">Figure 1: This is the logo of CLTK</p>
+
+<p>When referencing an image, please only change the name and type of your image (“image-1.jpg” below).</p>
+
+<p>In markdown syntax:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Image placeholder</span><span class="p">](</span><span class="sx">{{site.baseurl}}/images/tutorials/{{page.title}}/image-1.jpg</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>When adding a legend, please change only the content variable (“Figure 1: This is the logo of CLTK”) below.</p>
+
+<p>In markdown syntax:</p>
+
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sx">% include </span><span class="n">fig_legend</span><span class="p">.</span><span class="nf">html</span> <span class="n">content</span><span class="o">=</span><span class="s2">"Figure 1: This is the logo of CLTK"</span> <span class="o">%</span><span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="notes">Notes</h2>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This is the footnote of the first sentence. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>This is the footnote of the second sentence. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      </div>
+    </section>
+    <footer>
+
+  <div>
+    <h3>Contact us</h3>
+    <p>For any questions about openDANES, send us an email at the Digital Pasts Lab</p>
+    <p>Email: <a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a></p>
+    <a href="https://github.com/DigitalPasts" target="_blank"><i class="fab fa-github"></i></i></a><a href="https://twitter.com/DigPastsLab" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <div id="credits">
+    <p>openDANES is released under a CC-BY license</p>
+    <p>Hosted on Github Pages</p>
+    <p>last updated on April 22, 2023</p>
+  </div>
+  
+</footer>
+
+
+    <!-- javascript to place class on code element so highlighting will display correctly -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var highlightElements = document.querySelectorAll("div.highlighter-rouge");
+        for (var i = 0; i < highlightElements.length; i++) {
+          var langClass = highlightElements[i].classList;
+          var lang = Array.from(langClass).find(function(item) {
+            return item.startsWith("language-");
+          });
+          if (lang) {
+            var codeElements = highlightElements[i].querySelectorAll("code");
+            for (var j = 0; j < codeElements.length; j++) {
+              codeElements[j].classList.remove("language-css");
+              codeElements[j].classList.add(lang);
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+  <script src="/openDANES/assets/js/codeblock.js"></script>
+  <script src="/openDANES/assets/js/toc-scroll.js"></script>
+</html>

@@ -105,6 +105,9 @@ And that's it! With just a few lines of code, we've tokenized, part-of-speech ta
 
 ![CLTK logo]({{site.baseurl}}/images/tutorials/{{page.title}}/image-1.jpg)
 
+{% include fig_legend.html content="Figure 1: This is the logo of CLTK" %}
+
 > Why did the linguist break up with the CLTK? Because it kept tokenizing everything!
 
 Note: This demo tutorial used various markdown syntaxes including headers, code blocks, images, and blockquotes. Use these features to make your tutorials more organized and visually appealing. And don't forget to add a touch of humor to keep your readers engaged!
+

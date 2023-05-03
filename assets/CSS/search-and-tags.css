@@ -171,7 +171,7 @@ li #search-input:hover:focus {
     cursor: text;
 }
 li #search-input:focus, li #search-input:not(:placeholder-shown) {
-    font-family: "Mukta", sans-serif;
+    font-family: "Quattrocento", serif;
     border: 2px solid #feda75;
     border-radius: 10px;
     width: 200px;

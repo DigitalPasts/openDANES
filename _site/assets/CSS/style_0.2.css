@@ -24,7 +24,7 @@
 }
 
 h1 {
-    font-family: "Mukta", sans-serif;
+    font-family: "Taviraj", serif;
     font-size: 3.2vw;
     padding: 15px;
     margin-top: 15px;
@@ -32,7 +32,7 @@ h1 {
 }
 
 section {
-    font-family: "Mukta", sans-serif;
+    font-family: "Taviraj", serif;
     margin: 15px 20vw;
 }
 section h2, section h3, section h4, section h5, section h6 {
@@ -154,7 +154,7 @@ section div pre.highlight {
 section div.highlight > button {
     height: fit-content;
     padding: 5px 15px;
-    font-family: "Mukta", sans-serif;
+    font-family: "Taviraj", serif;
     background-color: #5a175d;
     color: #FEFBF1;
     border: none;
@@ -254,7 +254,7 @@ header {
     width: 100vw;
     height: 80px;
     padding: 10px;
-    font-family: "Mukta", sans-serif;
+    font-family: "Taviraj", serif;
     color: #FEFBF1;
     display: flex;
     align-items: center;
@@ -308,7 +308,7 @@ footer {
     background-size: cover;
     width: 100vw;
     height: auto;
-    font-family: "Mukta", sans-serif;
+    font-family: "Taviraj", serif;
     color: #FEFBF1;
     display: flex;
     align-items: center;

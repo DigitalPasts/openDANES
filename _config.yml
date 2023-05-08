@@ -13,3 +13,9 @@ baseurl: "/openDANES"
 # markdown: kramdown
 # highlighter: rouge
 #   input: GFM
+
+analytics:
+  provider               : "google-gtag"
+  google:
+    measurement_id          : "G-3EDJ22Y1C2"
+    anonymize_ip         : # true, false (default)

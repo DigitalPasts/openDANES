@@ -20,6 +20,7 @@ analytics:
     measurement_id          : "G-3EDJ22Y1C2"
     anonymize_ip         : # true, false (default)
 
-html:
- comments:
-    hypothesis: true
+extra:
+  hypothesis:
+    open_sidebar: true
+    theme: 'clean'

@@ -386,6 +386,10 @@ footer div a:hover {
     blockquote.prompt-tip, blockquote.prompt-info, blockquote.prompt-warning, blockquote.prompt-danger {
         padding: 0 !important;
     }
+
+    header {
+        height: 320px;
+    }
 }
 @media (max-width: 700px) {
     h1 {
@@ -430,9 +434,6 @@ footer div a:hover {
         margin: 10px;
     }
 
-    header {
-        height: 320px;
-    }
     header .logo {
         padding: 0;
         width: 100vw;

@@ -531,6 +531,10 @@ footer {
   blockquote.prompt-tip, blockquote.prompt-info, blockquote.prompt-warning, blockquote.prompt-danger {
     padding: 0 !important;
   }
+
+  header {
+    height: 320px;
+  }
 }
 
 //for phone mode + landscape on small screens
@@ -589,7 +593,6 @@ footer {
   }
   
   header {
-    height: 320px;
 
     .logo {
       padding: 0;

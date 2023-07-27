@@ -68,6 +68,13 @@ a {
     }
   }
 
+  .deprecated {
+    p {
+      font-size: x-large !important;
+      font-weight: bold;
+    }
+  }
+
   .card-summary {
     padding: 5px 0px;
 

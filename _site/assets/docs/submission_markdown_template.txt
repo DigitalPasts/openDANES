@@ -24,6 +24,7 @@ peer-review-date: null
 update-date: null
 reviewers: null
 doi: null
+deprecated: null
 ---
 
 ## Types of Headings
@@ -76,13 +77,11 @@ Unordered list:
 
 ## Links
 
-Showing Link: Go to 
-  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">https://digitalpasts.github.io/openDANES/index.html</a>
-.
+Showing Link: Go to <"https://digitalpasts.github.io/openDANES/index.html">.
 
-Link Embedded in text: Go to the 
-  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">OpenDANES journal</a>
-.
+Link Embedded in text: Go to the {% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="OpenDANES journal." %}
+
+All period, commas, etc., must appear inside the content parameter, not outside of it.
 
 ## Footnotes
 
@@ -115,10 +114,8 @@ For other programming languages, change `python` to the the appropriate language
 
 ![Image placeholder](/openDANES/images/tutorials//image-1.jpg)
 
-<p class="fig">Figure 1: This is the logo of CLTK</p>
+{% include fig_legend.html content="Figure 1: This is the logo of CLTK" %}
 
 When referencing an image, please only change the name and type of your image ("image-1.jpg" above).
 
 When adding a legend, please change only the content variable ("Figure 1: This is the logo of CLTK") above.
-
-## Notes

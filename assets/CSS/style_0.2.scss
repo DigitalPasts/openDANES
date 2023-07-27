@@ -351,31 +351,31 @@ header {
   // top: 0;
   // left: 0;
   
-  .logo {
-    padding: 0 15px;
+  // .logo {
+  //   padding: 0 15px;
 
-    img {
-      max-height: 80px;
-      object-fit: contain;
-      padding: 5px 5px;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+  //   img {
+  //     max-height: 70px;
+  //     // object-fit: contain;
+  //     // padding: 5px 5px;
+  //     // position: absolute;
+  //     // left: 0;
+  //     // top: 0;
+  //   }
 
-    a {
-      position: absolute;
-      padding: 20px 0;
-      text-decoration: none;
-      color: $light-color;
-      left: 40px;
-      top: 0;
+  //   // a {
+  //   //   position: absolute;
+  //   //   padding: 20px 0;
+  //   //   text-decoration: none;
+  //   //   color: $light-color;
+  //   //   left: 40px;
+  //   //   top: 0;
 
-      &:hover {
-        color: $contrast-color;
-      }
-    }
-  }
+  //   //   &:hover {
+  //   //     color: $contrast-color;
+  //   //   }
+  //   // }
+  // }
 
   ul {
     // float: right;
@@ -384,14 +384,24 @@ header {
     list-style: none;
     flex-wrap: nowrap;
     align-items: center;
+    margin: 0;
+    padding: 0 !important;
 
     li {
       margin: 0 3px;
       padding: 20px 17px;
 
+      img {
+          max-height: 70px;
+        }
+      
+
       a {
         text-decoration: none;
         color: $light-color;
+        transition: color 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
 
         &:hover {
           color: $contrast-color;
@@ -424,6 +434,7 @@ footer {
     a {
       text-decoration: none;
       color: $light-color;
+      transition: color 0.3s ease-in-out;
 
       i {
         font-size: $icon-size;

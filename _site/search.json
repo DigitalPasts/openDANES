@@ -1,211 +1,181 @@
 [
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "Online Resources for Digital Ancient Near Eastern Studies",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/nav/DANES-resources.html",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "The following provides a list of digital, online resources for studying the ancient Near East.While this list is meant to be comprehensive, please contact us to let us know if anything is missed!Databases(list of databases…)Projects(list of projects…)Repositories(list of repositories…)",
-      "snippet"     : "The following provides a list of digital, online resources for studying the ancient Near East.While this list is meant to be comprehensive, please contact us to let us know if anything is missed!Da..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "About openDANES",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/nav/about.html",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies (DANES) network. We are a peer-reviewed academic venue that publishes high-quality tutorials and research papers employing the cutting edge computational approaches to ancient Near Eastern texts, art, and artefacts.In recent years, the field of Near Eastern studies has undergone a digital revolution, with comprehensive online repositories making the digital publishing of ancient artefacts, texts, and art a more sustainable and common practice (LINK). Moreover, the application of computational methods, from quantitative and statistical analyses to more advanced natural language processing (NLP) and machine learning (ML) models, has opened up new possibilities for answering novel and complex questions about ancient civilizations.At OpenDANES, we are committed to promoting scholarship and advancing pedagogical tools and code. We welcome novice and advance level tutorials, original research articles, project reviews, and resources that address a wide range of topics related to the intersection of computational approaches and the study of the Ancient Near East. Our peer-review process is rigorous and transparent, ensuring the highest quality standards for the papers we publish.Thank you for visiting OpenDANES. We look forward to receiving your submissions and continuing to build a vibrant community of scholars and students in this exciting and rapidly evolving field.Editorial BoardWhen a manuscript is submitted to the OpenDANES journal, it goes through an initial review process by the OpenDANES editorial board. Three board members of the relevant speciality assess whether the tutorial or white paper’s scope are fitting to OpenDANES and are of sufficient academic rigor. For the full review process, see our submission guidelines.The editorial board members are:Editorial TeamOur editorial team is in charge of being in contact with authors through the process of submission, contacting and assigning peer reviewers, and validating code and manuscripts, and uploading successful submissions to the website.The editorial team members are:",
-      "snippet"     : "Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies (DANES) network. We are a peer-reviewed academic venue that publishes high-quality tutorials and research paper..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "Open Digital Ancient Near Eastern Studies",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional Near Eastern studies, with a focus on the critical use of digital text analysis and visual analysis of ancient Near Eastern objects. We publish tutorials, original research articles, project reviews, and annotated resources that explore the intersection of computational methods and the study of the ancient Near East. Our open access peer-reviewed content represents high quality scholarship in the field of Digital Ancient Near Eastern Studies. Join us in advancing the digital revolution in the study and dissemination of the ancient world, and submitting your work to OpenDANES.",
-      "snippet"     : "Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional Near Eastern st..."
-    } ,
+
   
+
     
+
+      
+      
+
+      {
+        "title"    : "Preprocessing Ancient Texts - Challenges and Comparisons of Python and R Resources",
+        "authors" : "chatGPT",
+        "tags"     : "python, R, pre-processing",
+        "url"      : "/openDANES/pages/paper1.html",
+        "type"     : "white-paper",
+        "summary"     : "This is an example paper created by chatGPT."
+      } ,
+
     
-    {
-      "title"    : "Preprocessing Ancient Texts - Challenges and Comparisons of Python and R Resources",
-      "authors" : "chatGPT",
-      "tags"     : "python, R, pre-processing",
-      "url"      : "/openDANES/pages/paper1.html",
-      "type"     : "white-paper",
-      "summary"     : "This is an example paper created by chatGPT.",
-      "content"     : "chatGPT                                                                                      1                                                                                                                           1 openAI            Submitted on: April 07, 2023    Published on: April 07, 2023          Peer reviewed: April 07, 2023                    Reviewed by:       chatGPT                                                                            doi                            This is an example paper created by chatGPT.                      #python              #R              #pre-processing              About this paperAll the text contained in this paper, except for this section, was created by chatGPT. It was generated by the following prompt:  We are developing a website called openDANES, a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies.  Can you write an example white paper that will include all possible markdown syntax? (different heading types, tip prompts, images, etc.). This will be used as a template example.  The example white paper should be about current challenges in preprocessing ancient texts using available online resources, particularly comparing current resources in python versus current resources in R.  As this is a demo, please include jokes to make it funny and entertaining!Then, for the peer-review process, a new conversation with chatGPT was started where the following prompt was given:  I need you to perform an academic peer review for a white paper submitted to openDANES, a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies.  Please critically answer the following questions:      should the paper be published in openDANES?    are there any corrections you would suggest to the text, which would make it clearer or strengthen the points the author is making? Please write them out.    are the jokes funny enough? If not, can you improve them?  Then the original version of this paper was copy-pasted.ChatGPT provided the following answers:  Overall, the paper is well-written, informative, and engaging. It addresses an important and timely topic, and provides a useful comparison of Python and R resources for preprocessing ancient texts. Below are my answers to the three questions posed:  (1) Yes, the paper should be published in openDANES. It meets the platform’s criteria of providing tutorials and white papers about using computational methodologies for ancient Near Eastern studies.  (2) There are no major corrections that I would suggest. However, I have a few minor suggestions that may strengthen the points the author is making:      The introduction could benefit from a more specific statement of the problem or research question that the paper addresses.    In the Python section, the author mentions sentiment analysis and questions its usefulness for ancient texts. It may be helpful to provide an example or explanation of why this is the case.    In the R section, the author could expand on the benefits of the tidytext and quanteda packages. What specific features or functionalities do these packages offer?    (3) The jokes are light-hearted and add to the overall tone of the paper. I don’t think they detract from the content, and therefore don’t need to be improved.  Overall, the paper is a valuable contribution to the field of ancient Near Eastern studies and computational methodologies.Then, we asked chatGPT to rewrite the paper with the suggested corrections. The text below is the result of that peer-review.The text has not been adapted whatsoever by a human. This is purely meant as an example of how a formatted paper looks like.Preprocessing Ancient Texts: Challenges and Comparisons of Python and R ResourcesIntroductionAs the field of ancient Near Eastern studies becomes increasingly reliant on computational methodologies, scholars are faced with the challenge of preprocessing ancient texts using available online resources. In this white paper, we will explore the current challenges of preprocessing ancient texts and compare the available resources in Python and R. Specifically, we aim to answer the question: which language is better for preprocessing ancient texts - Python or R?The Challenge of Preprocessing Ancient TextsPreprocessing ancient texts presents a unique set of challenges that are not encountered when working with modern texts. For one thing, ancient texts often come in a variety of languages, many of which are no longer spoken. Additionally, ancient texts may be damaged or incomplete, making them difficult to read or understand. And let’s not forget the challenge of deciphering ancient scripts!But fear not, intrepid scholars! With the help of computational methodologies, we can overcome these challenges and gain new insights into the ancient world.Python Resources for Preprocessing Ancient TextsPython has a wealth of resources available for preprocessing ancient texts, including the Natural Language Toolkit (NLTK) and the TextBlob library. These tools can be used to tokenize text and perform part-of-speech tagging. However, while Python also has the capability to perform sentiment analysis, it is unlikely to be useful for ancient texts since we have no way of knowing how the authors were feeling.Of course, as with any programming language, there are some quirks to be aware of. As the saying goes, “Python is the second-best language for everything.” But don’t let that discourage you - with a little perseverance, you can accomplish great things in Python.R Resources for Preprocessing Ancient TextsR is another popular language for preprocessing ancient texts, with resources like the tidytext package and the quanteda package. These tools can be used to perform a variety of text analysis tasks, such as word frequency analysis and topic modeling.The tidytext package offers functionality for performing sentiment analysis specifically for texts in English, which may be useful for some ancient texts written in English. The quanteda package provides a variety of text processing and analysis functionalities, including tokenization, part-of-speech tagging, and keyword extraction. It also offers support for many different languages and scripts.However, R has its own quirks and challenges. As one wise person once said, “R is like a drug. Once you start using it, you can’t stop.” So be careful when delving into the world of R - you may find yourself unable to escape!Comparing Python and R ResourcesAs we have seen, both Python and R offer valuable resources for preprocessing ancient texts. Which language is better for this task ultimately depends on your specific needs and preferences. Python may be more intuitive for those who are new to programming, while R may be better suited for those who are already familiar with statistics and data analysis.ConclusionIn conclusion, preprocessing ancient texts presents a unique set of challenges, but with the help of computational methodologies, we can overcome these challenges and gain new insights into the ancient world. Python and R both have their own strengths and quirks, so the best choice depends on your specific needs and preferences.And remember, when in doubt, just keep laughing - because as the great scholar Confucius once said, “Everything has beauty, but not everyone sees it.”",
-      "snippet"     : "chatGPT                                                                                      1                                                                                                       ..."
-    } ,
+
   
+
     
+
+      
+      
+
+      {
+        "title"    : "Challenges in OCR for Cuneiform Texts",
+        "authors" : "Shai Gordin, Avital Romach",
+        "tags"     : "cuneiform, OCR",
+        "url"      : "/openDANES/pages/paper2.html",
+        "type"     : "white-paper",
+        "summary"     : "An overview of the current challenges in cuneiform OCR"
+      } ,
+
     
-    {
-      "title"    : "Challenges in OCR for Cuneiform Texts",
-      "authors" : "Shai Gordin, Avital Romach",
-      "tags"     : "cuneiform, OCR",
-      "url"      : "/openDANES/pages/paper2.html",
-      "type"     : "white-paper",
-      "summary"     : "An overview of the current challenges in cuneiform OCR",
-      "content"     : "Shai Gordin                                                                                      1                                                                                                                                                           2                                                                                                                                                                                                                           ,           Avital Romach                                                                                                                                                                                                                  2                                                                                                       3                                                                                                                                                     1 Ariel University                2 Digital Pasts Lab                3 Yale University            Submitted on: April 16, 2023    Published on: April 16, 2023          Peer reviewed: April 16, 2023                    Reviewed by:       chatGPT                                                                            doi                            An overview of the current challenges in cuneiform OCR                      #cuneiform              #OCR              Optical Character Recognition (OCR) has made significant progress in recent years, but it still faces significant challenges when it comes to cuneiform texts. Cuneiform was the first system of writing developed by humans, used by ancient civilizations in Mesopotamia, and is a complex script with over 1,000 characters. In this paper, we will discuss the challenges of OCR for cuneiform texts, as well as some potential solutions.Character RecognitionCuneiform characters are typically composed of wedge-shaped marks impressed into clay tablets. OCR software faces difficulties in recognizing these characters due to the complexity of the shapes, which can have many variations. Additionally, the script has no clear distinction between upper and lowercase letters, making it difficult for OCR software to differentiate between them. The lack of standardization in character shape and size also poses a significant challenge for OCR.Contextual AnalysisCuneiform texts often contain ligatures, where two or more characters are merged into a single glyph. This merging can create ambiguity in the interpretation of individual characters, which can lead to errors in OCR. Contextual analysis is essential for resolving these ambiguities, but it can be challenging to implement in OCR software.Training DataOCR software relies heavily on training data to recognize characters accurately. However, obtaining a large dataset of cuneiform characters for training can be difficult due to the scarcity of cuneiform texts. Additionally, the variation in character shapes and sizes makes it challenging to create a comprehensive training set.SolutionsSeveral potential solutions have been proposed to address these challenges in OCR for cuneiform texts. One solution is to create specialized OCR software specifically for cuneiform texts, which can incorporate contextual analysis and machine learning algorithms trained on a small dataset of cuneiform characters. Another solution is to develop software that combines OCR with manual verification by experts in cuneiform texts.",
-      "snippet"     : "Shai Gordin                                                                                      1                                                                                                   ..."
-    } ,
+
   
+
     
+
+      
+      
+
+      {
+        "title"    : "Advantages and Disadvantages of Stylometric Analysis for Cuneiform Texts",
+        "authors" : "Avital Romach, Shai Gordin",
+        "tags"     : "cuneiform, stylometry, python",
+        "url"      : "/openDANES/pages/paper3.html",
+        "type"     : "white-paper",
+        "summary"     : "An opinion piece on what insights can be gained from stylometric analysis into texts written using the cuneiform writing system, and what insights cannot be gained."
+      } ,
+
     
-    {
-      "title"    : "Advantages and Disadvantages of Stylometric Analysis for Cuneiform Texts",
-      "authors" : "Avital Romach, Shai Gordin",
-      "tags"     : "cuneiform, stylometry, python",
-      "url"      : "/openDANES/pages/paper3.html",
-      "type"     : "white-paper",
-      "summary"     : "An opinion piece on what insights can be gained from stylometric analysis into texts written using the cuneiform writing system, and what insights cannot be gained.",
-      "content"     : "Avital Romach                                                                                      1                                                                                                                                                           2                                                                                                                                                                                                     ,           Shai Gordin                                                                                                                                                                                                                  2                                                                                                       3                                                                                                                                                                           1 Yale University                2 Digital Pasts Lab                3 Ariel University            Submitted on: April 16, 2023    Published on: April 16, 2023                      Under peer review                      An opinion piece on what insights can be gained from stylometric analysis into texts written using the cuneiform writing system, and what insights cannot be gained.                      #cuneiform              #stylometry              #python              Stylometry is the study of an author’s writing style, and it has become an increasingly popular method for analyzing cuneiform texts. However, as with any method, stylometric analysis has its advantages and disadvantages. In this paper, we will discuss the benefits and drawbacks of using stylometric analysis for cuneiform texts.AdvantagesAuthor AttributionOne of the significant advantages of stylometric analysis is that it can be used to attribute authorship to texts. This is particularly useful in cuneiform studies, where many texts are anonymous or have uncertain authorship. By analyzing the style of writing, scholars can determine whether multiple texts were written by the same author or whether a specific text can be attributed to a particular author.Dating TextsStylometric analysis can also be used to estimate the dates of texts. Cuneiform texts were produced over a period of thousands of years, and dating them accurately can be challenging. However, by analyzing the style of writing, scholars can place texts into different time periods and gain insights into the evolution of cuneiform writing.Identification of Textual RelationshipsAnother advantage of stylometric analysis is that it can be used to identify relationships between texts. By analyzing the style of writing, scholars can determine whether two texts were written by the same author, or whether they were written by different authors with similar writing styles.DisadvantagesLimitations of the MethodStylometric analysis is not a perfect method for analyzing texts, and it has its limitations. For example, it assumes that an author’s writing style remains consistent over time, which may not always be the case. Additionally, it can be challenging to determine the appropriate statistical thresholds for identifying similarities and differences in writing styles.Limited DataStylometric analysis relies heavily on having a significant amount of data available for analysis. However, cuneiform texts are scarce, and it can be challenging to obtain enough texts to conduct meaningful stylometric analysis. This limitation can lead to inaccuracies in the analysis and limit the potential insights gained from the analysis.Difficulty of InterpretationFinally, stylometric analysis can be challenging to interpret, particularly when it comes to cuneiform texts. Cuneiform writing is complex, and its evolution over time can make it difficult to determine whether two texts were written by the same author or whether they have similar writing styles.ConclusionIn conclusion, stylometric analysis has many advantages when it comes to analyzing cuneiform texts, such as author attribution, dating texts, and identifying textual relationships. However, it also has limitations, such as the assumption of consistency in writing style, the need for significant amounts of data, and the difficulty of interpretation. As with any method, it is essential to consider the advantages and disadvantages of stylometric analysis carefully and to use it in conjunction with other analytical methods for a comprehensive understanding of cuneiform texts.",
-      "snippet"     : "Avital Romach                                                                                      1                                                                                                 ..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "Posters",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/nav/posters.html",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "A selection of posters presented in the DANES conferences!DANES 2023",
-      "snippet"     : "A selection of posters presented in the DANES conferences!DANES 2023"
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "",
-      "authors" : "",
-      "tags"     : "",
-      "url"      : "/openDANES/search.json",
-      "type"     : "",
-      "summary"     : "",
-      "content"     : "[  {% for page in site.pages %}    {% assign author_names = ‘’ | split: ‘’ %}    {% for author in page.authors %}      {% assign author_name = author[1].name | split: “, “ %}      {% assign author_names = author_names | concat: author_name %}    {% endfor %}    {      “title”    : “{{ page.title | escape }}”,      “authors” : “{{ author_names | join: ‘, ‘ }}”,      “tags”     : “{{ page.tags | join: ‘, ‘ }}”,      “url”      : “{{ site.baseurl }}{{ page.url }}”,      “type”     : “{{ page.type }}”,      “summary”     : “{{ page.summary }}”,      “content”     : “{{ page.content | markdownify | strip_html | strip_newlines | strip | escape }}”,      “snippet”     : “{{ page.content | markdownify | strip_html | strip_newlines | strip | remove_chars | escape | truncate: 200 }}”    } {% unless forloop.last %},{% endunless %}  {% endfor %}]",
-      "snippet"     : "[  {% for page in site.pages %}    {% assign author_names =  | split:  %}    {% for author in page.authors %}      {% assign author_name = author[1].name | split: ,  %}      {% assign author_names ..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "Submission Guidelines",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/nav/submission-guidelines.html",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "OpenDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.Submission Types: Tutorials and White PapersTutorialsTutorials are meant to be educational resources for students and scholars who wish to gain practical skills to study the ancient Near East using innovative computational methodologies and tools. Tutorials are meant to instruct the readers how to write code or use existing tools to gain new insight on ancient data and traditional research questions.Tutorials should avoid any unnecessary jargon, be it from computer and data science or from their field of speciality in ancient Near Eastern studies. Tutorials should be accessible to both students and scholars from the humanities and from compurter and data science. Notwithstanding, tutorials can indicate their level of difficulty (beginner, intermediate, or advanced), which refers to the technical skill required. Tutorials should aim to use up-to-date packages and tools in order to lengthen the usefullness of their instructions.White Paperswrite what white papers should be…Publication Process and Peer ReviewThe submission process goes through the following steps:  Initial submission and review (by OpenDANES editorial board)  Temporary online publication of manuscript  Peer review process  Final publication (with DOI)Initial Submission and ReviewSubmission are uploaded through the {% include link.html url=”https://forms.gle/Y4VeAZhnegEtFQ9N6” content=”the following google form” %}. Please read the full guidelines before submitting your manuscript.Upon submission, the manuscript goes through an initial review process by the OpenDANES editorial board. Three board members of relevant speciality will assess whether the tutorial or white paper’s scope are fitting to OpenDANES and are of sufficient academic rigor. Authors will be notified of board rejection or approval within a month from day of submission.Temporary online publicationOne aspect of OpenDANES’ vision is that manuscripts, especially tutorials, are published while going through peer review process, in order for the authors to get possible feedback from experts as well as readers. Therefore, once the piece is approved by the editorial board, it will be made available online while going through peer review. However, it will not receive a DOI or be publicized until the peer review is completed. It will be clearly marked as going under peer review on the website.For this temporary online publication, authors may be requested to correct the formatting style of their pieces, in case of errors. On the formatting guidelines, see further below. Furthermore, tutorials which include code or programs will be validated by the OpenDANES editorial team, and if it is not reproducible on other machines and operating systems, the author(s) will be notified and will need to correct their manuscript accordingly. For the tutorial validation process, see further below. If these are not corrected by the author upon request from the editorial team within a reasonable span of time, the manuscript will not be accepted for publication. Until these corrections are made, the peer review process does not begin as well.Peer Review ProcessEach piece will be peer-reviewed by two experts in the field. OpenDANES employes an open peer-review process, meaning the peer-reviewers will know the author(s) and vice versa. The peer reviewers’s names will also appear on the published submission. Peer reviewers are given three months to review a manuscript.For the peer review process OpenDANES uses {% include link.html url=”https://web.hypothes.is/” content=”hypothes.is” %}, a web-based open source annotation tool. This annotation tool is implemented within the OpenDANES website, so that no installation or plugin is required. Peer reviewers and authors will be invited to the “OpenDANES Reviews” hypothes.is group, where the peer reviewers will be able to mark their comments and corrections on the web version of the piece, and the author will be able to then comment using hypothes.is and implement the changes requested. The “OpenDANES Reviews” hypothes.is group will be open for any who are interested to join it.After both peer reviewers have completed their review, if the manuscript is approved for publication, the corresponding author(s) will be notified via email and receive a month to comment and implement any corrections. Extension can be given if requested. Comments to the peer reviews should be made through hypothes.is, including justification for not applying changes that may have been suggested. If need be, some comments can be shared only with the OpenDANES editorial team and board through the resubmission form. Authors need to submit their corrected manuscript {% include link.html url=”https://forms.gle/BZV1yg6CFsYPU4W59” content=”through this resubmission form” %}.Final PublicationFollowing resubmission, the updated manuscript will be uploaded to the website by the editorial team. It will also receive a DOI, and be publicized in the DANES mailing list, DANES Discord channel, Twitter, and other relevant avenues.After this final submission, some tutorials may need to be updated as packages or programs change or cease to be functional. In such cases, the author(s) may contact the editorial team at the Digital Pasts Lab email (digpasts@gmail.com), or the editorial team may contact the authors if there is feedback from readers that the tutorial is no longer functional. In the latter case, the author(s) may choose to update their code or, if that is unfeasable, impossible, or unwanted, the tutorial will become depracted: it will still be published on the website but there will be a warning that the tutorial is out of date.Formatting GuidelinesManuscript StructureWe do not request submission in a specific structure. You can organize the content of your submission however you wish.However, we recommend for tutorials to have a clear structure, such as:  Introduction  Prerequisites (see further under Code Validation)  Instructions (main body of tutorial)  Caveats and/or Further Research  Further Reading  References and NotesManuscript FormattingSubmissions are accepted in either markdown or google doc files. No other file formats are accepted. Images need to be uploaded separately in the submission form: please prepare them accordingly ahead of time.We ask authors to follow certain guidelines when formatting their manuscripts, such as using particular syntax for codeblocks, links, figures and legends, etc., as well as filling up the YAML frontmatter, for both markdown and google doc submissions. This ensures the submissions will be displayed correctly on the OpenDANES journal website. Following these guidelines will significantly speed up the publication process and will be greatly appreciated.General Syntax InstructionsTo assist the process of preparing the manuscript, there are templates available for markdown and {% include link.html url=”https://docs.google.com/document/d/e/2PACX-1vR6iQY97y0PKApP9eMZGPYFpgDezxVzr8ToCvt1KNBSuwscPG5Qx-G6wBXVRp8qqInqrn4vyu0PbpNv/pub” content=”google doc” %}. These templates include examples of all the formatting types that may be needed (headings, lists, codeblocks, prompts, etc.). How they are then displayed can be viewed through this link, where you can also copy the required syntax.YAML FrontmatterIn both the markdown and google doc templates, there is a YAML frontmatter which authors should fill up before submission according to these guidelines. The YAML frontmatter template is as follows:---layout: default+toctype: white-paper OR tutorialtitle: Write the title of your submission hereauthors:  author1:    name: Your Name    affiliation: affiliation    email: email    orcid: orcid number OR null    academia: link to academia page OR null    github: link to github OR nulltags:  - tag 1  - tag 2  - tag 3summary: a 1-2 sentences summary of the content of your submission.difficulty: null OR beginner OR intermediate OR advancedsubmit-date: YYYY-MM-DDpublish-date: nullpeer-review-date: nullupdate-date: nullreviewers: nulldoi: null---The following fields should be left as is: layout, publish-date, peer-review-date, update-date, reviewers, and doi. They will be updated by the editorial team as the submission progresses through the publication process.The following fields need to be changed by the author(s):type: please leave either white-paper or tutorial (not both).title: replace “Write the title of your submission here” with the title of your submission.authors: please fill up all author information. For multiple authors, add additional author2, author3, etc. Make sure to include all additional information (name, affiliation, email, orcid, academia, github) for each author.name, affiliation, and email is mandatory. If one of the authors is an indepedent scholar, you can write after affiliation “Indepedent Scholar”.orcid, academia, and github are not mandatory. If you do not have accounts in these sites, or you do not wish to share those, please leave them as null. For orcid please enter just your ORCID number (not the full URL). If you wish to include additional ways to contact you or view your works, you may contact the editorial team at the Digital Pasts Lab email (digpasts@gmail.com) and we will make those arrangements.tags: please provide at least three hashtags that are relevant for the content of you submission. More can be added as well. When choosing your hashtags, please consult the existing hashtags which can be viewed on the Tutorials and White Papers pages. The editorial team may adapt your chosen hashtags to fit one of the hashtags already used on the website. A general guideline is having at least one hashtag give a clear indication of the language or time period of the data you are working with (e.g. cuneiform, egyptian, bronze-age), and at least one hashtag which is a digital humanities methodology or topic you are using or referring to (e.g. python, R, visualization).summary: please replace the text with a short summary of the main points of your submission. This will be displayed on the website in search result cards and on the Tutorials and White Papers pages.difficulty: if you are submitting a white paper, please leave here null. If you are submitting a tutorial, please indicate the level of difficulty of this tutorial, either beginner, intermediate, or advanced.submit-date: please enter the date in which you submitted your manuscript in YYYY-MM-DD formula.Style GuidelinesThe OpenDANES journal follows the style guidelines of XXX. Please consult their manual and instructions for general English style guidelines.Footnotes, Links, and CitationsIf you are citing academic publications (articles, books, etc.), please include a References section at the end of you submission before the Notes (footnotes) section. The references should be fully formatted according to the guidelines of XXX.If you are citing online resources (github repositories, online databases, etc.) which do not have an academic citation, those can be referenced through a link. However, do give proper credit, when relevant, to the writers of the resource you are citing in the body of your text or in a footnote. In addition, please as much as possible use permenant links (URIs, DOIs) as opposed to temporary ones.Please avoid using too many footnotes, unless absolutely necessary (especially for tutorials).Tutorial ValidationIf you are submitting a tutorial, before initial publication on the OpenDANES journal your code or instructions will be validated by the OpenDANES editorial team.Ideally, tutorial instructions should be functional on Mac, Linux, or Windows operating systems. However. if your tutorial uses programs or code that are available in only some of those operating systems, you will need to declare it in the submission form so that the editorial team will only check your code on relevant operating system.If your tutorial uses code that requires any dependencies and/or particular versions, please state so at the beginning of your tutorial in a Prerequisites section. Also, if any installation is required, please guide the reader through the installation process or refer to a credible source with installation guidelines (including for multiple operating systems, when relevant).Unless told otherwise, the editorial team will validate the tutorial on a Windows computer, Mac, and through Google Colab (when relevant). If the editorial team is unable to follow the instructions, they will send a report to the author(s) and the manuscript will not be published until those are addressed.",
-      "snippet"     : "OpenDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.Submission Types: Tutorials and White PapersTutorialsTutorials are meant to be educat..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "Write the title of your submission here",
-      "authors" : "Your Name",
-      "tags"     : "tag 1, tag 2, tag 3",
-      "url"      : "/openDANES/pages/submission_markdown_template.html",
-      "type"     : "white-paper OR tutorial",
-      "summary"     : "a 1-2 sentences summary of the content of your submission.",
-      "content"     : "Types of HeadingsHeading 1It is not recommended to use heading 1 as that will automatically be the title of your submission, and it will not be added to the table of contents. Please use Heading 2 and onwards.Heading 2In markdown syntax:## Heading 2Heading 3In markdown syntax:## Heading 3Heading 4In markdown syntax:## Heading 4Heading 5In markdown syntax:## Heading 5Heading 6In markdown syntax:## Heading 6ListsOrdered list:  first item  second item  third itemIn markdown syntax:1. first item2. second item3. third itemUnordered list:  item  item  itemIn markdown syntax:* item* item* itemBlockquotes  This is a blockquoteIn markdown syntax:&amp;gt; This is a blockquotePrompts  this is a tip promptIn markdown syntax:{: .prompt-tip }&amp;gt; this is a tip prompt  this is an info promptIn markdown syntax:{: .prompt-info }&amp;gt; this is an info prompt  this is a warning promptIn markdown syntax:{: .prompt-warning }&amp;gt; this is a warning prompt  this is a danger promptIn markdown syntax:{: .prompt-danger }&amp;gt; this is a danger promptLinksShowing Link: Go to {% include link.html url=”https://digitalpasts.github.io/openDANES/index.html” content=”” %}.In markdown syntax:{% raw %}{% include link.html url=&quot;https://digitalpasts.github.io/openDANES/index.html&quot; content=&quot;&quot; %}.{% endraw %}Link Embedded in text: Go to the {% include link.html url=”https://digitalpasts.github.io/openDANES/index.html” content=”OpenDANES journal” %}.In markdown syntax:{% raw %}{% include link.html url=&quot;https://digitalpasts.github.io/openDANES/index.html&quot; content=&quot;OpenDANES journal&quot; %}.{% endraw %}FootnotesThis is a sentence with a footnote in the end.1 This is another sentence with a footnote in the end.2In markdown syntax:This is a sentence with a footnote in the end.[^1] This is another sentence with a footnote in the end.[^2][^1]: This is the footnote of the first sentence.[^2]: This is the footnote of the second sentence.Tables            Heading 1      Heading 2      Heading 3                  value 1      value 4      value 7              value 2      value 5      value 8              value 3      value 6      value 9      In markdown syntax:| Heading 1 | Heading 2 | Heading 3 ||-----------|-----------|-----------|| value 1   | value 4   | value 7   || value 2   | value 5   | value 8   || value 3   | value 6   | value 9   |Inline code and code blocksThis is inline code.In markdown syntax:This is `inline code`.This is a python codeblock:pip install cltkIn markdown syntax:```pythonpip install cltk```For other programming languages, change python to the the appropriate language.Figures and legends{% include fig_legend.html content=”Figure 1: This is the logo of CLTK” %}When referencing an image, please only change the name and type of your image (“image-1.jpg” below).In markdown syntax:{% raw %}![Image placeholder]({{site.baseurl}}/images/tutorials/{{page.title}}/image-1.jpg){% endraw %}When adding a legend, please change only the content variable (“Figure 1: This is the logo of CLTK”) below.In markdown syntax:{% raw %}{% include fig_legend.html content=&quot;Figure 1: This is the logo of CLTK&quot; %}{% endraw %}Notes            This is the footnote of the first sentence. &amp;#8617;              This is the footnote of the second sentence. &amp;#8617;",
-      "snippet"     : "Types of HeadingsHeading 1It is not recommended to use heading 1 as that will automatically be the title of your submission, and it will not be added to the table of contents. Please use Heading 2 ..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "",
-      "authors" : "",
-      "tags"     : "",
-      "url"      : "/openDANES/assets/docs/submission_markdown_template.txt",
-      "type"     : "",
-      "summary"     : "",
-      "content"     : "Example YAML (for explanations on how to fill this YAML, see submission guidelines)layout: default+toctype: white-paper OR tutorialtitle: Write the title of your submission hereauthors:  author1:    name: Your Name    affiliation: affiliation    email: email    orcid: orcid number OR null    academia: link to academia page OR null    github: link to github OR nulltags:  tag 1  tag 2  tag 3summary: a 1-2 sentences summary of the content of your submission.difficulty: null OR beginner OR intermediate OR advancedsubmit-date: YYYY-MM-DDpublish-date: nullpeer-review-date: nullupdate-date: nullreviewers: nulldoi: null—Types of HeadingsHeading 1It is not recommended to use heading 1 as that will automatically be the title of your submission, and it will not be added to the table of contents. Please use Heading 2 and onwards.Heading 2Heading 3Heading 4Heading 5Heading 6ListsOrdered list:  first item  second item  third itemUnordered list:  item  item  itemBlockquotes  This is a blockquotePrompts  this is a tip prompt  this is an info prompt  this is a warning prompt  this is a danger promptLinksShowing Link: Go to {% include link.html url=”https://digitalpasts.github.io/openDANES/index.html” content=”” %}.Link Embedded in text: Go to the {% include link.html url=”https://digitalpasts.github.io/openDANES/index.html” content=”OpenDANES journal” %}.FootnotesThis is a sentence with a footnote in the end.1 This is another sentence with a footnote in the end.2Tables            Heading 1      Heading 2      Heading 3                  value 1      value 4      value 7              value 2      value 5      value 8              value 3      value 6      value 9      Inline code and code blocksThis is inline code.This is a python codeblock:pip install cltkFor other programming languages, change python to the the appropriate language.Figures and legends{% include fig_legend.html content=”Figure 1: This is the logo of CLTK” %}When referencing an image, please only change the name and type of your image (“image-1.jpg” above).When adding a legend, please change only the content variable (“Figure 1: This is the logo of CLTK”) above.Notes            This is the footnote of the first sentence. &amp;#8617;              This is the footnote of the second sentence. &amp;#8617;",
-      "snippet"     : "Example YAML (for explanations on how to fill this YAML, see submission guidelines)layout: default+toctype: white-paper OR tutorialtitle: Write the title of your submission hereauthors:  author1:  ..."
-    } ,
+
   
+
     
+
+      
+      
+
+      {
+        "title"    : "Preprocessing Ancient Texts with the Classical Language Toolkit (CLTK)",
+        "authors" : "chatGPT",
+        "tags"     : "python, CLTK, ancient Greek",
+        "url"      : "/openDANES/pages/tutorial1.html",
+        "type"     : "tutorial",
+        "summary"     : "This is a demo tutorial created by chatGPT."
+      } ,
+
     
-    {
-      "title"    : "Preprocessing Ancient Texts with the Classical Language Toolkit (CLTK)",
-      "authors" : "chatGPT",
-      "tags"     : "python, CLTK, ancient Greek",
-      "url"      : "/openDANES/pages/tutorial1.html",
-      "type"     : "tutorial",
-      "summary"     : "This is a demo tutorial created by chatGPT.",
-      "content"     : "{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi %}About this tutorialAll the text contained in this tutorial, except for this section, was created by chatGPT. It was generated by the following prompt:  We are developing a website called openDANES, a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies.  Can you write a demo tutorial that will include all possible markdown syntax? (all heading types, code blocks, images, etc.). This will be used as a template example.  The demo tutorial should be about preprocessing ancient texts using the The Classical Language Toolkit (CLTK) python library.  As this is a demo, please include jokes to make it funny and entertaining!The code in this tutorial has not been validated and the text itself has not been edited only the link to the image displayed in the tutorial has been adapted to display correctly. This is purely meant as an example of how a formatted tutorial looks like.Preprocessing Ancient Texts with the Classical Language Toolkit (CLTK)Are you tired of manually preprocessing ancient texts for your research in Near Eastern studies? Fear not! The Classical Language Toolkit (CLTK) is here to help!What is CLTK?The CLTK is a Python library that provides natural language processing (NLP) tools for ancient languages, including Greek, Latin, Sanskrit, and Old English. With the CLTK, you can tokenize, lemmatize, and part-of-speech tag texts, as well as perform other common NLP tasks.Installing CLTKBefore we get started, make sure you have Python 3 installed. Then, you can install the CLTK using pip:pip install cltkLoading TextsOnce you have the CLTK installed, you can start loading texts. Let’s load the Iliad by Homer:import cltkfrom cltk.corpus.utils.importer import CorpusImportercorpus_importer = CorpusImporter(&#39;greek&#39;)corpus_importer.import_corpus(&#39;tlg&#39;) # import the TLG corpuscorpus_importer.import_corpus(&#39;phi5&#39;) # import the PHI5 corpusfrom cltk.corpus.readers import get_corpus_readerreader = get_corpus_reader(corpus_name=&#39;tlg&#39;, language=&#39;greek&#39;)iliad = reader.raw(&#39;tlg0012.tlg001&#39;) # load the IliadTokenizing TextsNow that we have the Iliad loaded, let’s tokenize it:from cltk.tokenize.word import WordTokenizertokenizer = WordTokenizer(&#39;greek&#39;)tokens = tokenizer.tokenize(iliad)Part-of-Speech TaggingWe can also perform part-of-speech tagging on the tokens:from cltk.tag.pos import POSTagtagger = POSTag(&#39;greek&#39;)tagged_tokens = tagger.tag_ngram_123_backoff(tokens)Lemmatizing TextsFinally, we can lemmatize the tokens:from cltk.lemmatize.backoff import BackoffGreekLemmatizerlemmatizer = BackoffGreekLemmatizer()lemmas = [lemmatizer.lemmatize(token) for token in tokens]And that’s it! With just a few lines of code, we’ve tokenized, part-of-speech tagged, and lemmatized an ancient Greek text. Now, go forth and preprocess with ease!{% include fig_legend.html content=”Figure 1: This is the logo of CLTK” %}  Why did the linguist break up with the CLTK? Because it kept tokenizing everything!Note: This demo tutorial used various markdown syntaxes including headers, code blocks, images, and blockquotes. Use these features to make your tutorials more organized and visually appealing. And don’t forget to add a touch of humor to keep your readers engaged!",
-      "snippet"     : "{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page..."
-    } ,
+
   
+
     
+
+      
+      
+
+      {
+        "title"    : "Introduction to Linked Open Data for Ancient Near Eastern Studies",
+        "authors" : "Shai Gordin",
+        "tags"     : "LOD, ontology",
+        "url"      : "/openDANES/pages/tutorial2.html",
+        "type"     : "tutorial",
+        "summary"     : "A tutorial introducing the main concepts and resources for applying linked open data to your databases and research pipelines."
+      } ,
+
     
-    {
-      "title"    : "Introduction to Linked Open Data for Ancient Near Eastern Studies",
-      "authors" : "Shai Gordin",
-      "tags"     : "LOD, ontology",
-      "url"      : "/openDANES/pages/tutorial2.html",
-      "type"     : "tutorial",
-      "summary"     : "A tutorial introducing the main concepts and resources for applying linked open data to your databases and research pipelines.",
-      "content"     : "{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi %}Linked Open Data (LOD) is a method of publishing and interlinking structured data on the internet. In recent years, LOD has gained traction in the field of ancient Near Eastern studies, with several projects using LOD to connect disparate datasets and provide new insights into the ancient world. In this paper, we will provide an overview of LOD and its potential applications in ancient Near Eastern studies.What is Linked Open Data?Linked Open Data is a method of publishing data on the internet that allows for easy sharing and integration with other datasets. The key features of LOD are:  URI identification: Data is identified using a unique URI (Uniform Resource Identifier), allowing it to be easily referenced and linked to other datasets.  Structured data: Data is structured using RDF (Resource Description Framework) or other standards, allowing for easy parsing and integration with other datasets.  Open access: Data is made available under an open license, allowing for easy reuse and sharing.LOD allows for the creation of a “web of data,” where different datasets are linked together to create a more comprehensive view of a particular subject.Applications in Ancient Near Eastern StudiesLOD has many potential applications in ancient Near Eastern studies, including:Integration of DatasetsOne of the primary advantages of LOD is its ability to integrate datasets from different sources. For example, the Cuneiform Digital Library Initiative (CDLI) has created an LOD version of its database, allowing researchers to easily integrate CDLI data with other datasets, such as the Open Richly Annotated Cuneiform Corpus (ORACC)1. This integration allows for new insights into the ancient world by combining data from different sources.Visualization of DataLOD can also be used to create visualizations of data, allowing for easier analysis and understanding of complex datasets. For example, the Neo-Assyrian Text Corpus Project (NATCP) has created an LOD version of its corpus, which can be visualized using tools such as the Open Semantic Network Analysis Platform (OSNAP)2. This visualization allows researchers to see connections between texts and themes, providing new insights into the Neo-Assyrian Empire.Publication of DataFinally, LOD allows for the easy publication of data, making it accessible to a wider audience. For example, the OpenAIRE project has created an LOD version of the Open Access Digital Library of Information Science and Technology (OADLIST)3. This allows for easy integration of OADLIST data with other datasets, as well as easier access to OADLIST data for researchers and the general public.ConclusionIn conclusion, Linked Open Data has many potential applications in ancient Near Eastern studies, including integration of datasets, visualization of data, and publication of data. By creating a “web of data,” LOD allows for new insights into the ancient world and easier access to data for researchers and the general public.Footnotes:            S. Tinnefeld et al., “Integrating Cuneiform Texts and Images: The Cuneiform Digital Library Initiative and the Open Richly Annotated Cuneiform Corpus,” in Proceedings of the Digital Humanities Conference, pp. 411-414, 2016. &amp;#8617;              J. Dahl et al., “Semantic Networks for Ancient Assyria: The Neo-Assyrian Text Corpus Project and the Open Semantic Network Analysis Platform,” in Journal of Ancient Near Eastern History, vol. 3, pp. 65-89, 2016. &amp;#8617;              A. Ioannidis et al., “OpenAIRE LOD Services: Scholarly Communication Data as Linked Data,” in Proceedings of the International Conference on Dublin Core and Metadata Applications, pp. &amp;#8617;",
-      "snippet"     : "{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page..."
-    } ,
+
   
+
     
+
+      
+      
+
+      {
+        "title"    : "Quick guide to the Ancient Language Processing Python Library",
+        "authors" : "Avital Romach",
+        "tags"     : "python, ALP, cuneiform",
+        "url"      : "/openDANES/pages/tutorial3.html",
+        "type"     : "tutorial",
+        "summary"     : "A tutorial introducing the main function currently available in the ALP python library and how to use them to preprocess and tokenize cuneiform texts."
+      } ,
+
     
-    {
-      "title"    : "Quick guide to the Ancient Language Processing Python Library",
-      "authors" : "Avital Romach",
-      "tags"     : "python, ALP, cuneiform",
-      "url"      : "/openDANES/pages/tutorial3.html",
-      "type"     : "tutorial",
-      "summary"     : "A tutorial introducing the main function currently available in the ALP python library and how to use them to preprocess and tokenize cuneiform texts.",
-      "content"     : "{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi %}The Ancient Language Processing (ALP) Python library provides a set of tools for processing and analyzing ancient texts. In this tutorial, we will introduce the main functions currently available in the ALP library and show how to use them to preprocess and tokenize cuneiform texts.InstallationTo install the ALP library, you can use pip:pip install alpPreprocessingThe first step in processing a cuneiform text is to preprocess it. This involves removing any unwanted characters or formatting, such as line breaks or page numbers. The preprocess function in the ALP library takes a string as input and returns a cleaned version of the string.import alptext = &quot;1. [...]\n2. [...]\n3. [...]&quot;clean_text = alp.preprocess(text)print(clean_text)Output:[...][...][...]TokenizationOnce the text has been preprocessed, the next step is to tokenize it into individual words or signs. The tokenize function in the ALP library takes a string as input and returns a list of tokens.import alptext = &quot;[...] [x] [...] [y]&quot;tokens = alp.tokenize(text)print(tokens)Output:[&#39;[...]&#39;, &#39;[x]&#39;, &#39;[...]&#39;, &#39;[y]&#39;]The tokenize function can also handle multi-line texts and remove duplicates:import alptext = &quot;1. [...] [x]\n2. [...] [y]\n3. [...] [x]&quot;tokens = alp.tokenize(text, remove_duplicates=True)print(tokens)Output:[&#39;[...]&#39;, &#39;[x]&#39;, &#39;[y]&#39;]Part-of-Speech TaggingThe ALP library also provides a function for part-of-speech (POS) tagging of cuneiform texts. The pos_tag function takes a list of tokens as input and returns a list of tuples, where each tuple contains a token and its corresponding POS tag.import alptokens = [&#39;[...]&#39;, &#39;[x]&#39;, &#39;[...]&#39;, &#39;[y]&#39;]pos_tags = alp.pos_tag(tokens)print(pos_tags)Output:[(&#39;[...]&#39;, &#39;X&#39;), (&#39;[x]&#39;, &#39;N&#39;), (&#39;[...]&#39;, &#39;X&#39;), (&#39;[y]&#39;, &#39;N&#39;)]ConclusionIn this tutorial, we have introduced the main functions available in the ALP Python library and shown how to use them to preprocess and tokenize cuneiform texts. The ALP library provides a set of tools for processing and analyzing ancient texts that can be used in various research projects.",
-      "snippet"     : "{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page..."
-    } ,
+
   
+
     
+      {} ,
+
     
-    {
-      "title"    : "Tutorials",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/nav/tutorials.html",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "{% include tags.html type=”tutorial” %}            {% assign pages = site.pages      sort: “publish-date”      reverse %}        {% for item in pages %}    {% if item.type == &quot;tutorial&quot; %}      {% include card.html title=item.title authors=item.authors date=item.publish-date tags=item.tags summary=item.summary url=item.url %}        {% endif %}  {% endfor %}",
-      "snippet"     : "{% include tags.html type=tutorial %}            {% assign pages = site.pages      sort: publish-date      reverse %}        {% for item in pages %}    {% if item.type == &quot;tutorial&quot; %}   ..."
-    } ,
+
   
+
     
+      {} 
+
     
-    {
-      "title"    : "White Papers",
-      "authors" : "",
-      "tags"     : "navigation bar",
-      "url"      : "/openDANES/nav/white-papers.html",
-      "type"     : "nav",
-      "summary"     : "",
-      "content"     : "{% include tags.html type=”white-paper” %}            {% assign pages = site.pages      sort: “publish-date”      reverse %}        {% for item in pages %}    {% if item.type == &quot;white-paper&quot; %}      {% include card.html title=item.title authors=item.authors date=item.publish-date tags=item.tags summary=item.summary url=item.url %}        {% endif %}  {% endfor %}",
-      "snippet"     : "{% include tags.html type=white-paper %}            {% assign pages = site.pages      sort: publish-date      reverse %}        {% for item in pages %}    {% if item.type == &quot;white-paper&quot;..."
-    } 
+
   
 ]

@@ -29,9 +29,10 @@ reviewers:
     github: https://github.com/openai
 difficulty: null
 doi: 10.5281/zenodo.6411251
+deprecated: null
 ---
 
-{%- include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi -%}
+{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi deprecated=page.deprecated %}
 
 ## About this paper
 

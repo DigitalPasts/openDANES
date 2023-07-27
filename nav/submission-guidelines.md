@@ -31,7 +31,7 @@ The submission process goes through the following steps:
 
 ### Initial Submission and Review
 
-Submission are uploaded through the {% include link.html url="https://forms.gle/Y4VeAZhnegEtFQ9N6" content="the following google form." %} Please read the full guidelines before submitting your manuscript.
+Submission are uploaded through the {% include link.html url="https://forms.gle/Y4VeAZhnegEtFQ9N6" content="the following google form" %}. Please read the full guidelines before submitting your manuscript.
 
 Upon submission, the manuscript goes through an initial review process by the OpenDANES [editorial board]({{site.baseurl}}/nav/about.html#editorial-board). Three board members of relevant speciality will assess whether the tutorial or white paper's scope are fitting to OpenDANES and are of sufficient academic rigor. Authors will be notified of board rejection or approval within a month from day of submission.
 
@@ -45,9 +45,9 @@ For this temporary online publication, authors may be requested to correct the f
 
 Each piece will be peer-reviewed by two experts in the field. OpenDANES employes an open peer-review process, meaning the peer-reviewers will know the author(s) and vice versa. The peer reviewers's names will also appear on the published submission. Peer reviewers are given three months to review a manuscript.
 
-For the peer review process OpenDANES uses {% include link.html url="https://web.hypothes.is/" content="hypothes.is," %} a web-based open source annotation tool. This annotation tool is implemented within the OpenDANES website, so that no installation or plugin is required. Peer reviewers and authors will be invited to the "OpenDANES Reviews" hypothes.is group, where the peer reviewers will be able to mark their comments and corrections on the web version of the piece, and the author will be able to then comment using hypothes.is and implement the changes requested. The "OpenDANES Reviews" hypothes.is group will be open for any who are interested to join it.
+For the peer review process OpenDANES uses {% include link.html url="https://web.hypothes.is/" content="hypothes.is" %}, a web-based open source annotation tool. This annotation tool is implemented within the OpenDANES website, so that no installation or plugin is required. Peer reviewers and authors will be invited to the "OpenDANES Reviews" hypothes.is group, where the peer reviewers will be able to mark their comments and corrections on the web version of the piece, and the author will be able to then comment using hypothes.is and implement the changes requested. The "OpenDANES Reviews" hypothes.is group will be open for any who are interested to join it.
 
-After both peer reviewers have completed their review, if the manuscript is approved for publication, the corresponding author(s) will be notified via email and receive a month to comment and implement any corrections. Extension can be given if requested. Comments to the peer reviews should be made through hypothes.is, including justification for not applying changes that may have been suggested. If need be, some comments can be shared only with the OpenDANES editorial team and board through the resubmission form. Authors need to submit their corrected manuscript {% include link.html url="https://forms.gle/BZV1yg6CFsYPU4W59" content="through this resubmission form." %}
+After both peer reviewers have completed their review, if the manuscript is approved for publication, the corresponding author(s) will be notified via email and receive a month to comment and implement any corrections. Extension can be given if requested. Comments to the peer reviews should be made through hypothes.is, including justification for not applying changes that may have been suggested. If need be, some comments can be shared only with the OpenDANES editorial team and board through the resubmission form. Authors need to submit their corrected manuscript {% include link.html url="https://forms.gle/BZV1yg6CFsYPU4W59" content="through this resubmission form" %}.
 
 ### Final Publication
 
@@ -78,7 +78,7 @@ We ask authors to follow certain guidelines when formatting their manuscripts, s
 
 #### General Syntax Instructions
 
-To assist the process of preparing the manuscript, there are templates available for [markdown]({{site.baseurl}}/assets/docs/submission_markdown_template.txt) and {% include link.html url="https://docs.google.com/document/d/e/2PACX-1vR6iQY97y0PKApP9eMZGPYFpgDezxVzr8ToCvt1KNBSuwscPG5Qx-G6wBXVRp8qqInqrn4vyu0PbpNv/pub" content="google doc." %} These templates include examples of all the formatting types that may be needed (headings, lists, codeblocks, prompts, etc.). How they are then displayed can be viewed [through this link]({{site.baseurl}}/pages/submission_markdown_template.html), where you can also copy the required syntax.
+To assist the process of preparing the manuscript, there are templates available for [markdown]({{site.baseurl}}/assets/docs/submission_markdown_template.txt) and {% include link.html url="https://docs.google.com/document/d/e/2PACX-1vR6iQY97y0PKApP9eMZGPYFpgDezxVzr8ToCvt1KNBSuwscPG5Qx-G6wBXVRp8qqInqrn4vyu0PbpNv/pub" content="google doc" %}. These templates include examples of all the formatting types that may be needed (headings, lists, codeblocks, prompts, etc.). How they are then displayed can be viewed [through this link]({{site.baseurl}}/pages/submission_markdown_template.html), where you can also copy the required syntax.
 
 #### YAML Frontmatter
 
@@ -109,11 +109,10 @@ peer-review-date: null
 update-date: null
 reviewers: null
 doi: null
-deprecated: null
 ---
 ```
 
-The following fields should be left as is: `layout`, `publish-date`, `peer-review-date`, `update-date`, `reviewers`, `doi`, and `deprecated`. They will be updated by the editorial team as the submission progresses through the publication process.
+The following fields should be left as is: `layout`, `publish-date`, `peer-review-date`, `update-date`, `reviewers`, and `doi`. They will be updated by the editorial team as the submission progresses through the publication process.
 
 The following fields need to be changed by the author(s):
 

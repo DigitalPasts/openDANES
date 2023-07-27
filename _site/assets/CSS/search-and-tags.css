@@ -41,10 +41,6 @@ a {
     display: block;
     color: transparent;
 }
-.author-card .deprecated p {
-    font-size: x-large !important;
-    font-weight: bold;
-}
 .author-card .card-summary {
     padding: 5px 0px;
 }

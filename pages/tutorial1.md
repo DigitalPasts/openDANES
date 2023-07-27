@@ -22,10 +22,9 @@ summary: This is a demo tutorial created by chatGPT.
 reviewers: null
 difficulty: intermediate
 doi: null
-deprecated: null
 ---
 
-{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi deprecated=page.deprecated %}
+{% include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi %}
 
 ## About this tutorial
 

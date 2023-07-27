@@ -263,27 +263,41 @@ header {
     font-size: 25px;
     font-weight: bold;
 }
+header .logo {
+    padding: 0 15px;
+}
+header .logo img {
+    max-height: 80px;
+    object-fit: contain;
+    padding: 5px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+header .logo a {
+    position: absolute;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #FEFBF1;
+    left: 40px;
+    top: 0;
+}
+header .logo a:hover {
+    color: #feda75;
+}
 header ul {
     display: flex;
     list-style: none;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 0;
-    padding: 0 !important;
 }
 header ul li {
     margin: 0 3px;
     padding: 20px 17px;
 }
-header ul li img {
-    max-height: 70px;
-}
 header ul li a {
     text-decoration: none;
     color: #FEFBF1;
-    transition: color 0.3s ease-in-out;
-    display: flex;
-    justify-content: center;
 }
 header ul li a:hover {
     color: #feda75;
@@ -310,7 +324,6 @@ footer div h3 {
 footer div a {
     text-decoration: none;
     color: #FEFBF1;
-    transition: color 0.3s ease-in-out;
 }
 footer div a i {
     font-size: 25px;

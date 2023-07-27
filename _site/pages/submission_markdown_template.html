@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EDJ22Y1C2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-    
-          gtag('config', 'G-3EDJ22Y1C2');
-        </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,14 +38,13 @@
     <a name="top"></a>
     <header>
 
+    <!-- <div class="logo">
+      <a href="/openDANES/index.html">openDANES</a>
+    </div> -->
+
     <div class="navigation">
       <ul>
-        <!-- <li><a href="/openDANES/index.html">OpenDANES</a></li> -->
-        <li class="logo">
-          <a href="/openDANES/index.html">
-            <img src="/openDANES/images/openDANES-logo.png" alt="logo">
-          </a>
-        </li>
+        <li><a href="/openDANES/index.html">OpenDANES</a></li>
         <li><a href="/openDANES/nav/about.html">About</a></li>
         <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
         <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
@@ -229,21 +219,23 @@
 
 <h2 id="links">Links</h2>
 
-<p>Showing Link: Go to <a href="https://digitalpasts.github.io/openDANES/index.html">https://digitalpasts.github.io/openDANES/index.html</a>.</p>
+<p>Showing Link: Go to 
+  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">https://digitalpasts.github.io/openDANES/index.html</a>
+.</p>
 
 <p>In markdown syntax:</p>
 
-<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">digitalpasts</span><span class="p">.</span><span class="nf">github</span><span class="p">.</span><span class="nf">io</span><span class="o">/</span><span class="n">openDANES</span><span class="o">/</span><span class="n">index</span><span class="p">.</span><span class="nf">html</span><span class="o">&gt;.</span>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sx">% include </span><span class="n">link</span><span class="p">.</span><span class="nf">html</span> <span class="n">url</span><span class="o">=</span><span class="s2">"https://digitalpasts.github.io/openDANES/index.html"</span> <span class="n">content</span><span class="o">=</span><span class="s2">""</span> <span class="o">%</span><span class="p">}</span><span class="o">.</span>
 </code></pre></div></div>
 
-<p>Link Embedded in text: Go to the <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">OpenDANES journal.</a></p>
+<p>Link Embedded in text: Go to the 
+  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">OpenDANES journal</a>
+.</p>
 
 <p>In markdown syntax:</p>
 
-<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sx">% include </span><span class="n">link</span><span class="p">.</span><span class="nf">html</span> <span class="n">url</span><span class="o">=</span><span class="s2">"https://digitalpasts.github.io/openDANES/index.html"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"OpenDANES journal."</span> <span class="o">%</span><span class="p">}</span>
+<div class="language-rb highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sx">% include </span><span class="n">link</span><span class="p">.</span><span class="nf">html</span> <span class="n">url</span><span class="o">=</span><span class="s2">"https://digitalpasts.github.io/openDANES/index.html"</span> <span class="n">content</span><span class="o">=</span><span class="s2">"OpenDANES journal"</span> <span class="o">%</span><span class="p">}</span><span class="o">.</span>
 </code></pre></div></div>
-
-<p>All period, commas, etc., must appear inside the content parameter, not outside of it.</p>
 
 <h2 id="footnotes">Footnotes</h2>
 
@@ -364,14 +356,14 @@
   <div id="credits">
     <p>openDANES is released under a CC-BY license</p>
     <p>Hosted on Github Pages</p>
-    <p>last updated on July 27, 2023</p>
+    <p>last updated on May 03, 2023</p>
   </div>
   
 </footer>
 
 
     <!-- javascript to place class on code element so highlighting will display correctly -->
-        <script>
+    <script>
       document.addEventListener("DOMContentLoaded", function(event) {
         var highlightElements = document.querySelectorAll("div.highlighter-rouge");
         for (var i = 0; i < highlightElements.length; i++) {
@@ -392,5 +384,4 @@
   </body>
   <script src="/openDANES/assets/js/codeblock.js"></script>
   <script src="/openDANES/assets/js/toc-scroll.js"></script>
-  <script src="https://hypothes.is/embed.js" async></script>
 </html>

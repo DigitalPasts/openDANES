@@ -15,6 +15,11 @@ $card-border-color: #333;
 $card-border-radius: 10px;
 $card-hover-color: #bebebe;
 $font-main: 'Taviraj', serif;
+
+$font-size: 1.5vw;
+$font-size-smaller: 1.3vw; 
+$font-size-smallest: 1.1vw;
+
 // styling
 
 a {
@@ -39,7 +44,7 @@ a {
 
   .authors-container {
     padding: 5px 0px;
-    font-size: larger;
+    font-size: $font-size;
   }
 
   .affiliations {
@@ -54,7 +59,7 @@ a {
     padding: 5px 0px;
     p {
       padding: 0;
-      font-size: 1vw;
+      font-size: $font-size-smaller;
     }
   }
 
@@ -115,7 +120,7 @@ a {
         }
         
         .card-meta {
-          font-size: 1.15vw;
+          font-size: $font-size-smaller;
           margin-bottom: 10px;
           
           i {
@@ -128,7 +133,7 @@ a {
         }
         
         .card-summary {
-          font-size: 16px;
+          font-size: $font-size-smaller;
           line-height: 1.5;
           
           p {

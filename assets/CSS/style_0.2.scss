@@ -25,6 +25,9 @@ $danger-prompt-icon-color: #df3c30;
 
 $font-main: 'Taviraj', serif;
 $font-code: 'Source Code Pro', monospace;
+$font-size: 1.5vw;
+$font-size-smaller: 1.3vw; 
+$font-size-smallest: 1.1vw;
 $icon-size: 25px;
 $icon-padding: 1px;
 
@@ -234,13 +237,13 @@ section {
     padding: 3px 5px;
     border-radius: 4px;
     background-color: $table-color-dark;
-    font-size: 1vw;
+    font-size: $font-size-smallest;
   }
 
   p {
     padding: 15px 0;
     text-align: justify;
-    font-size: 1.15vw;
+    font-size: $font-size;
 
     a, i {
       padding: none !important;
@@ -267,10 +270,10 @@ section {
   ul, ol {
     padding: 15px;
     text-align: justify;
-    font-size: 1.15vw;
+    font-size: $font-size;
 
     li {
-      font-size: 1.15vw;
+      font-size: $font-size;
       text-align: justify;
       padding: 0 5px;
     } 
@@ -281,13 +284,13 @@ section {
   }
 
   .fig {
-    font-size: 1vw;
+    font-size: $font-size-smaller;
     padding: 5px 25px 15px 25px;
     line-height: 1.4;
     font-style: italic;
 
     a {
-      font-size: 1vw;
+      font-size: $font-size-smaller;
     }
   }
 
@@ -420,12 +423,13 @@ footer {
   font-family: $font-main;
   color: $light-color;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   padding: 20px;
 
   div{
     padding: 10px;
+    flex: 1 1 0px;
 
     h3 {
       color: $contrast-color;

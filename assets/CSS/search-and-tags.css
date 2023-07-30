@@ -18,7 +18,7 @@ a {
 }
 .author-card .authors-container {
     padding: 5px 0px;
-    font-size: larger;
+    font-size: 1.5vw;
 }
 .author-card .affiliations {
     padding: 5px 0px;
@@ -31,7 +31,7 @@ a {
 }
 .author-card .dates p {
     padding: 0;
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 .author-card .peer-review {
     padding: 5px 0px;
@@ -78,7 +78,7 @@ a {
     font-size: 2vw;
 }
 .cards .card .visible a .card-body .card-meta {
-    font-size: 1.15vw;
+    font-size: 1.3vw;
     margin-bottom: 10px;
 }
 .cards .card .visible a .card-body .card-meta i {
@@ -88,7 +88,7 @@ a {
     margin-left: 1.2rem;
 }
 .cards .card .visible a .card-body .card-summary {
-    font-size: 16px;
+    font-size: 1.3vw;
     line-height: 1.5;
 }
 .cards .card .visible a .card-body .card-summary p {

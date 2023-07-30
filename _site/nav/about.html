@@ -50,41 +50,17 @@
         <li><a href="/openDANES/nav/posters.html">Posters</a></li>
         <li><a href="/openDANES/nav/DANES-resources.html">DANES Resources</a></li>
         <li><a href="/openDANES/nav/submission-guidelines.html">Submission Guidelines</a></li>
-        <li><input type="text" id="search-input" placeholder="&#xf002"></li>
+        <li><a href="/openDANES/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
       </ul>
     </div>
 
 </header>
 
     <section>
-      <!-- HTML elements for search -->
-<ul id="results-container"></ul>
+      <h1>About OpenDANES</h1>
+      <p>We are a peer-reviewed academic venue that publishes high-quality tutorials and research papers. Our intent is to engage all levels of interested students and scholars, from beginners to advanced. Tutorials range from introductory digital literacy to instructions on cutting edge computational approaches to ancient Near Eastern texts, art, and artefacts.</p>
 
-
-
-
-
-<!--  -->
-
-<script src="/openDANES/assets/js/simple-jekyll-search.js"></script>
-<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
-
-<script>
-  simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/openDANES/search.json',
-        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a>',
-        noResultsText: '<div id="no-results">No results found</div>',
-        fuzzy: false,
-        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-      })
-</script>
-
-      <h1>About openDANES</h1>
-      <p>Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies (DANES) network. We are a peer-reviewed academic venue that publishes high-quality tutorials and research papers employing the cutting edge computational approaches to ancient Near Eastern texts, art, and artefacts.</p>
-
-<p>In recent years, the field of Near Eastern studies has undergone a digital revolution, with comprehensive online repositories making the digital publishing of ancient artefacts, texts, and art a more sustainable and common practice <strong>(LINK)</strong>. Moreover, the application of computational methods, from quantitative and statistical analyses to more advanced natural language processing (NLP) and machine learning (ML) models, has opened up new possibilities for answering novel and complex questions about ancient civilizations.</p>
+<p>In recent years, the field of Near Eastern studies has undergone a digital revolution, with comprehensive online repositories making the digital publishing of ancient artefacts, texts, and art a more sustainable and common practice (<a href="/openDANES/nav/DANES-resources.html">see the online resources page</a>). Moreover, the application of computational methods, from quantitative and statistical analyses to more advanced natural language processing (NLP) and machine learning (ML) models, has opened up new possibilities for answering novel and complex questions about ancient civilizations.</p>
 
 <p>At OpenDANES, we are committed to promoting scholarship and advancing pedagogical tools and code. We welcome novice and advance level tutorials, original research articles, project reviews, and resources that address a wide range of topics related to the intersection of computational approaches and the study of the Ancient Near East. Our peer-review process is rigorous and transparent, ensuring the highest quality standards for the papers we publish.</p>
 
@@ -92,22 +68,42 @@
 
 <h2 id="editorial-board">Editorial Board</h2>
 
-<p>When a manuscript is submitted to the OpenDANES journal, it goes through an initial review process by the OpenDANES editorial board. Three board members of the relevant speciality assess whether the tutorial or white paper’s scope are fitting to OpenDANES and are of sufficient academic rigor. For the full review process, see <a href="/openDANES/nav/submission-guidelines.html">our submission guidelines</a>.</p>
+<p>When a manuscript is submitted to the OpenDANES platform, it goes through an initial review process by the OpenDANES editorial board. Three board members of the relevant specialty assess whether the tutorial or white paper’s scope are fitting to OpenDANES and are of sufficient academic rigor. For the full review process, see <a href="/openDANES/nav/submission-guidelines.html">our submission guidelines</a>.</p>
 
-<p>The editorial board members are:</p>
+<p>The editorial board includes members from varied fields within ancient Near Eastern Studies, who combine computational methods in their research:</p>
+
+<ul>
+  <li><a href="https://fu-berlin.academia.edu/MarineB%C3%A9ranger" target="_blank">Marine Béranger</a>
+ (FU Berlin)</li>
+  <li><a href="https://ariel.academia.edu/ShaiGordin" target="_blank">Shai Gordin</a>
+ (Digital Pasts Lab)</li>
+  <li><a href="https://www.geschkult.fu-berlin.de/e/aegyptologie/personen/Professorinnen-und-Professoren/Lincke/index.html" target="_blank">Eliese-Sophia Lincke</a>
+ (FU Berlin)</li>
+  <li><a href="https://researchportal.helsinki.fi/en/persons/aleksi-sahala" target="_blank">Aleksi Sahala</a>
+ (University of Helsinki)</li>
+</ul>
 
 <h2 id="editorial-team">Editorial Team</h2>
 
-<p>Our editorial team is in charge of being in contact with authors through the process of submission, contacting and assigning peer reviewers, and validating code and manuscripts, and uploading successful submissions to the website.</p>
+<p>Our editorial team is in charge of being in contact with authors through the process of submission, assigning peer reviewers, validating code and manuscripts, and uploading successful submissions to the website.</p>
 
 <p>The editorial team members are:</p>
+
+<ul>
+  <li><a href="https://github.com/stavkl" target="_blank">Stav Klein</a>
+ (Digital Pasts Lab and Tel Aviv University): code validation, website maintenance.</li>
+  <li><a href="https://yale.academia.edu/AvitalRomach" target="_blank">Avital Romach</a>
+ (Yale University): website development, design and maintenance.</li>
+  <li><a href="https://uni-heidelberg.academia.edu/LuisDanielSaenzSantos" target="_blank">Luis Sáenz</a>
+ (Heidelberg University): contact person, peer-review process.</li>
+</ul>
 
     </section>
     <footer>
 
   <div id="credits">
     <h3>Contact us</h3>
-    <p>For any questions about OpenDANES, send us an email at the
+    <p>For any questions about OpenDANES, or to join the DANES discord channel or mailing list, send us an email at the
       <a href="https://digitalpasts.github.io/" target="_blank">Digital Pasts Lab</a>
       (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>)</p>
     <p>
@@ -123,7 +119,7 @@
     <p>Hosted on
       <a href="https://github.com/DigitalPasts/openDANES" target="_blank">Github Pages</a>
     </p>
-    <p>Last updated on July 30, 2023</p>
+    <p>Last updated on July 31, 2023</p>
   </div>
   
 </footer>

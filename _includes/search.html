@@ -1,8 +1,61 @@
 <!-- HTML elements for search -->
-<ul id="results-container"></ul>
+
+<div class="search-area">
+  <input type="text" id="search-input" placeholder="Dig through the findings...">
+  <ul id="results-container"></ul>
 
 {% capture result_elem %}
-  <a href="{url}">
+
+  <div class="card visible">
+    <a href="{url}">
+      <div class="card-body">
+
+        <div class="card-image">
+          <img src="{{ site.baseurl }}/images/{type}s/{title}/banner-image.png" alt="Image not available">
+        </div>
+
+        <div class="card-content">
+
+          <h3 class="card-title">
+            {title}
+          </h3>
+    
+          <div class="card-meta">
+            <i class="fas fa-robot fa-sm"></i>
+            {authors}
+            <i class="fas fa-calendar-alt fa-sm"></i>
+            {publish-date}
+            <i class="fas fa-hashtag fa-sm"></i>
+
+            <span class="page-tags">
+              {tags}
+            </span>
+
+            <!-- {% if doi != null %}
+              <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{doi}.svg);">{doi}</span>
+            {% else %}
+              <p><span class="card-peer-review" style="
+                font-style: italic;
+                font-size: 1.3vw;
+            ">Under peer review</span></p>
+            {% endif %} -->
+          </div>
+    
+          <div class="card-summary">
+            <p>
+              {summary}
+            </p>
+          </div>
+          
+        </div>
+
+      </div>
+    </a>
+  </div>
+
+
+
+  <!-- <a href="{url}">
     <li class="result">
       <h4 class="result-title">
         {title}
@@ -10,8 +63,11 @@
       <p>{authors} | {tags}</p>
       <p>{summary}</p>
     </li>
-  </a>
+  </a> -->
 {% endcapture %}
+</div>
+
+
 
 
 

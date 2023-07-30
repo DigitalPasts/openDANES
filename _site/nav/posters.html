@@ -61,7 +61,7 @@
         <li><a href="/openDANES/nav/posters.html">Posters</a></li>
         <li><a href="/openDANES/nav/DANES-resources.html">DANES Resources</a></li>
         <li><a href="/openDANES/nav/submission-guidelines.html">Submission Guidelines</a></li>
-        <li><input type="text" id="search-input" placeholder="&#xf002"></li>
+        <li><a href="/openDANES/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
       </ul>
     </div>
 
@@ -76,30 +76,6 @@
 
       </div>
       <div class="content">
-        <!-- HTML elements for search -->
-<ul id="results-container"></ul>
-
-
-
-
-
-<!--  -->
-
-<script src="/openDANES/assets/js/simple-jekyll-search.js"></script>
-<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
-
-<script>
-  simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/openDANES/search.json',
-        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a>',
-        noResultsText: '<div id="no-results">No results found</div>',
-        fuzzy: false,
-        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-      })
-</script>
-
         <h1>Posters</h1>
         <p>A selection of posters presented in the DANES conferences!</p>
 
@@ -111,7 +87,7 @@
 
   <div id="credits">
     <h3>Contact us</h3>
-    <p>For any questions about OpenDANES, send us an email at the
+    <p>For any questions about OpenDANES, or to join the DANES discord channel or mailing list, send us an email at the
       <a href="https://digitalpasts.github.io/" target="_blank">Digital Pasts Lab</a>
       (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>)</p>
     <p>
@@ -127,7 +103,7 @@
     <p>Hosted on
       <a href="https://github.com/DigitalPasts/openDANES" target="_blank">Github Pages</a>
     </p>
-    <p>Last updated on July 30, 2023</p>
+    <p>Last updated on July 31, 2023</p>
   </div>
   
 </footer>

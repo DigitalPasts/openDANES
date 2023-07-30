@@ -276,6 +276,18 @@ section {
       font-size: $font-size;
       text-align: justify;
       padding: 0 5px;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        border-bottom: $secondary-color 1px dashed;
+        transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
+    
+        &:hover {
+          color: $secondary-contrast-color-dark;
+          border-bottom: $secondary-contrast-color-dark 1px dashed;
+        }
+      }
     } 
   }
 

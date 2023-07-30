@@ -53,7 +53,9 @@ section {
   
       &:hover {
         border-left: 1px solid $primary-color-light;
+        border-bottom: none;
         padding-left: 5px;
+        color: $primary-color-dark;
       }
     }
   }

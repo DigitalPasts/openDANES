@@ -32,7 +32,9 @@ section .toc a, section .toc p a {
 }
 section .toc a:hover, section .toc p a:hover {
     border-left: 1px solid #67074e;
+    border-bottom: none;
     padding-left: 5px;
+    color: #330327;
 }
 section .content {
     margin: 0 20vw;

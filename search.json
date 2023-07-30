@@ -25,9 +25,15 @@ layout: none
       "title"    : "{{ page.title | escape }}",
       "authors" : "{{ author_names | join: ', ' }}",
       "tags"     : "{{ page.tags | join: ', ' }}",
+      "doi"       : "{{ page.doi }}",
+      "submit-date" : "{{ page.submit-date }}",
+      "publish-date" : "{{ page.publish-date }}",
+      "peer-review-date" : "{{ page.peer-review-date }}",
+      "update-date" : "{{ page.update-date }}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "type"     : "{{ page.type }}",
-      "summary"     : "{{ page.summary }}"
+      "summary"     : "{{ page.summary }}",
+      "content"     : "{{ page.content | markdownify | strip_html | strip_newlines | strip | escape }}"
     } {% unless forloop.last %},{% endunless %}
 
   {% endif %}

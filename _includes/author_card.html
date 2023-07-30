@@ -1,110 +1,128 @@
 <div class="author-card">
-  <div class="authors-container">
-    <!-- assign and number author affiliations -->
-    {% assign affiliations = '' | split: '' %}
 
-    {% for author in include.authors %}
-      {% assign affiliation = author[1].affiliation | split: ", " %}
-      {% assign affiliations = affiliations | concat: affiliation %}
-    {% endfor %}
+  <div class="author-box1">
 
-    {% assign unique_affiliations = affiliations | uniq %}
-
-    {% for author in include.authors %}
-      {%- if forloop.length > 0 -%}
-        <!-- <div class="author-container"> -->
-          {{ author[1].name }}
-
-          {% assign affiliation_count = 0 %}
-          {% for affiliation in unique_affiliations %}
-            {% assign affiliation_count = affiliation_count | plus: 1 %}
-            {% assign author_affiliations = author[1].affiliation | split: ", " %}
-            {% for author_affiliation in author_affiliations %}
-              {% if author_affiliation == affiliation %}
-                <sup>{{ affiliation_count }}</sup> 
-              {% endif %}
-            {% endfor %}
-          {% endfor %}
-
-          {% if author[1].orcid != null %}
-            <a href="https://orcid.org/{{author[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
-          {% endif %}
-          {% if author[1].academia != null %}
-            <a href="{{author[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
-          {% endif %}
-          {% if author[1].github != null %}
-            <a href="{{author[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
-          {% endif %}
-
-          {% unless forloop.last %}, {% endunless -%}
-        <!-- </div> -->
-      {%- endif -%}
-    {% endfor %}
-  </div>
-
-  <div class="affiliations">
-    {% assign affiliation_count = 0 %}
-    {% for affiliation in unique_affiliations %}
-      {% assign affiliation_count = affiliation_count | plus: 1 %}
-      <p><sup>{{ affiliation_count }}</sup> {{affiliation}}</p>
-    {% endfor %}
-  </div>
-
-  <div class="dates">
-    <p>Submitted on: {{ include.date | date: "%B %d, %Y" }}</p>
-    <p>Published on: {{ include.publish-date | date: "%B %d, %Y" }}</p>
-    {% if include.peer-review-date != null %}
-      <p>Peer reviewed: {{ include.peer-review-date | date: "%B %d, %Y" }}</p>
-    {% endif %}
-    {% if include.update-date != null %}
-      <p>Last update: {{ include.update-date | date: "%B %d, %Y" }}</p>
-    {% endif %}
-  </div>
-
-  <div class="peer-review">
-    {% if include.reviewers != null %}
-    Reviewed by: 
-      {% for reviewer in include.reviewers %}
+    <div class="authors-container">
+      <!-- assign and number author affiliations -->
+      {% assign affiliations = '' | split: '' %}
+  
+      {% for author in include.authors %}
+        {% assign affiliation = author[1].affiliation | split: ", " %}
+        {% assign affiliations = affiliations | concat: affiliation %}
+      {% endfor %}
+  
+      {% assign unique_affiliations = affiliations | uniq %}
+  
+      {% for author in include.authors %}
         {%- if forloop.length > 0 -%}
-          {{ reviewer[1].name }}
-          {% if reviewer[1].orcid != null %}
-            <a href="https://orcid.org/{{reviewer[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
-          {% endif %}
-          {% if reviewer[1].academia != null %}
-            <a href="{{reviewer[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
-          {% endif %}
-          {% if reviewer[1].github != null %}
-            <a href="{{reviewer[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
-          {% endif %}
-          {% unless forloop.last %}, {% endunless -%}
+          <!-- <div class="author-container"> -->
+            {{ author[1].name }}
+  
+            {% assign affiliation_count = 0 %}
+            {% for affiliation in unique_affiliations %}
+              {% assign affiliation_count = affiliation_count | plus: 1 %}
+              {% assign author_affiliations = author[1].affiliation | split: ", " %}
+              {% for author_affiliation in author_affiliations %}
+                {% if author_affiliation == affiliation %}
+                  <sup>{{ affiliation_count }}</sup> 
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+  
+            {% if author[1].orcid != null %}
+              <a href="https://orcid.org/{{author[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+            {% endif %}
+            {% if author[1].academia != null %}
+              <a href="{{author[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+            {% endif %}
+            {% if author[1].github != null %}
+              <a href="{{author[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+            {% endif %}
+  
+            {% unless forloop.last %}, {% endunless -%}
+          <!-- </div> -->
         {%- endif -%}
       {% endfor %}
-      <a href="https://doi.org/{{include.doi}}" target="_blank">
-        <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{{include.doi}}.svg);">doi</span>
-      </a>
-
-    {% else %}
-      <i>Under peer review</i>
-    {% endif %}
-    
-  </div>
-
-  <div class="card-summary">
-    <p>
-      {{ include.summary }}
-    </p>
-    <p>
-      {% for tag in include.tags %}
-        #{{ tag }}
+    </div>
+  
+    <div class="affiliations">
+      {% assign affiliation_count = 0 %}
+      {% for affiliation in unique_affiliations %}
+        {% assign affiliation_count = affiliation_count | plus: 1 %}
+        <p><sup>{{ affiliation_count }}</sup> {{affiliation}}</p>
       {% endfor %}
-    </p>
+    </div>
+  
+    <div class="dates">
+      <p>Submitted on: {{ include.date | date: "%B %d, %Y" }}</p>
+      <p>Published on: {{ include.publish-date | date: "%B %d, %Y" }}</p>
+      {% if include.peer-review-date != null %}
+        <p>Peer reviewed: {{ include.peer-review-date | date: "%B %d, %Y" }}</p>
+      {% endif %}
+      {% if include.update-date != null %}
+        <p>Last update: {{ include.update-date | date: "%B %d, %Y" }}</p>
+      {% endif %}
+    </div>
+  
+    <div class="peer-review">
+      {% if include.reviewers != null %}
+      Reviewed by: 
+        {% for reviewer in include.reviewers %}
+          {%- if forloop.length > 0 -%}
+            {{ reviewer[1].name }}
+            {% if reviewer[1].orcid != null %}
+              <a href="https://orcid.org/{{reviewer[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+            {% endif %}
+            {% if reviewer[1].academia != null %}
+              <a href="{{reviewer[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+            {% endif %}
+            {% if reviewer[1].github != null %}
+              <a href="{{reviewer[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+            {% endif %}
+            <!-- {% unless forloop.last %}, {% endunless -%} -->
+          {%- endif -%}
+        {% endfor %}
+        <a href="https://doi.org/{{include.doi}}" target="_blank">
+          <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{{include.doi}}.svg);">doi</span>
+        </a>
+  
+      {% else %}
+        <i>Under peer review</i>
+      {% endif %}
+      
+    </div>
+
   </div>
 
-  {% if include.difficulty != null %}
-    <div class="difficulty">
+  <div class="author-box2">
+
+    {% if include.deprecated != null %}
+      <div class="deprecated">
+          <i>This tutorial is deprecated!</i>
+      </div>
+    {% endif %}
+
+    <div class="card-summary">
       <p>
-        Difficulty level: {{include.difficulty}}
+        <b>Summary:</b> {{ include.summary }}
       </p>
     </div>
-  {% endif %}
+
+    <div class="card-tags">
+      <p>
+        {% for tag in include.tags %}
+          #{{ tag }}
+        {% endfor %}
+      </p>
+    </div>
+
+    {% if include.difficulty != null %}
+      <div class="difficulty">
+        <p>
+          Difficulty level: {{include.difficulty}}
+        </p>
+      </div>
+    {% endif %}
+
+  </div>
 </div>

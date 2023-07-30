@@ -154,13 +154,13 @@ In markdown syntax:
 
 ## Links
 
-Showing Link: Go to <https://digitalpasts.github.io/openDANES/index.html>.
+Showing Link: Go to {% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="" %}.
 
 In markdown syntax:
 
 {% raw %}
 ```rb
-<https://digitalpasts.github.io/openDANES/index.html>.
+{% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="" %}
 ```
 {% endraw %}
 
@@ -173,8 +173,6 @@ In markdown syntax:
 {% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="OpenDANES journal" %}.
 ```
 {% endraw %}
-
-All period, commas, etc., must appear inside the content parameter, not outside of it.
 
 ## Footnotes
 

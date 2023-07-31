@@ -32,6 +32,11 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/style_0.2.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/search-and-tags.css">
     <title>openDANES</title>
+
+    {% if page.mathjax %}
+    {% include mathjax.html %}
+    {% endif %}
+
   </head>
   <body>
     {% include navigation.html %}

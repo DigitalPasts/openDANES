@@ -14,7 +14,7 @@ tags: navigation bar
   {% for item in pages %}
     {% if item.type == "tutorial" %}
 
-      {% include card.html title=item.title authors=item.authors date=item.publish-date tags=item.tags summary=item.summary url=item.url %}
+      {% include card.html title=item.title authors=item.authors date=item.publish-date tags=item.tags summary=item.summary url=item.url item_type="tutorials" doi=item.doi %}
     
     {% endif %}
   {% endfor %}

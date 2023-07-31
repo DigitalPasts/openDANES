@@ -2,33 +2,48 @@
   <a href="{{ site.baseurl }}{{ include.url }}">
     <div class="card-body">
 
-      <h3 class="card-title">
-        {{ include.title }}
-      </h3>
-
-      <div class="card-meta">
-        <i class="fas fa-robot fa-sm"></i>
-        {% for author in include.authors %}
-          {%- if forloop.length > 0 -%}
-            {{ author[1].name }}{% unless forloop.last %}, {% endunless -%}
-          {%- endif -%}
-        {% endfor %}
-        <i class="fas fa-calendar-alt fa-sm"></i>
-        {{ include.date | date: "%B %d, %Y" }}
-        <i class="fas fa-hashtag fa-sm"></i>
-        <span class="page-tags">
-          {% for tag in include.tags %}
-            {%- if forloop.length > 0 -%}
-              {{ tag }}{% unless forloop.last %}, {% endunless -%}
-            {%- endif -%}
-          {% endfor %}
-        </span>
+      <div class="card-image">
+        <img src="{{ site.baseurl }}/images/{{ include.item_type }}/{{ include.title }}/banner-image.png" alt="Image not available">
       </div>
 
-      <div class="card-summary">
-        <p>
-          {{ include.summary }}
-        </p>
+      <div class="card-content">
+
+        <h3 class="card-title">
+          {{ include.title }}
+        </h3>
+  
+        <div class="card-meta">
+          <i class="fas fa-robot fa-sm"></i>
+          {% for author in include.authors %}
+            {%- if forloop.length > 0 -%}
+              {{ author[1].name }}{% unless forloop.last %}, {% endunless -%}
+            {%- endif -%}
+          {% endfor %}
+          <i class="fas fa-calendar-alt fa-sm"></i>
+          {{ include.date | date: "%B %d, %Y" }}
+          <i class="fas fa-hashtag fa-sm"></i>
+
+          <span class="page-tags">
+            {% for tag in include.tags %}
+              {%- if forloop.length > 0 -%}
+                {{ tag }}{% unless forloop.last %}, {% endunless -%}
+              {%- endif -%}
+            {% endfor %}
+          </span>
+
+          {% if include.doi != null %}
+            <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{{include.doi}}.svg);">doi</span>
+          {% else %}
+            <p><span><i>Under peer review</i></span></p>
+          {% endif %}
+        </div>
+  
+        <div class="card-summary">
+          <p>
+            {{ include.summary }}
+          </p>
+        </div>
+        
       </div>
 
     </div>

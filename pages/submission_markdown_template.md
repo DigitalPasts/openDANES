@@ -160,7 +160,7 @@ In markdown syntax:
 
 {% raw %}
 ```rb
-{% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="" %}.
+{% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="" %}
 ```
 {% endraw %}
 

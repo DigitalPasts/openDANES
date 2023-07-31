@@ -15,13 +15,26 @@ $card-border-color: #333;
 $card-border-radius: 10px;
 $card-hover-color: #bebebe;
 $font-main: 'Taviraj', serif;
+
+$font-size: 1.5vw;
+$font-size-smaller: 1.3vw; 
+$font-size-smallest: 1.1vw;
+$font-size-bigger: 1.7vw;
+
 // styling
 
 a {
   text-decoration: none;
 }
 
+span.doi {
+  background-repeat: no-repeat;
+  display: block;
+  color: transparent;
+}
+
 .author-card {
+  display: flex;
   border: 1px solid $secondary-color-dark;
   border-radius: $card-border-radius;
   padding: 2.5%;
@@ -29,8 +42,25 @@ a {
   width: 100%;
   background-color: $secondary-color-light;
 
+  .author-box1, .author-box2 {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .author-box1 {
+    padding-right: 5px;
+    // justify-content: space-between;
+  }
+
+  .author-box2 {
+    padding-left: 5px;
+  }
+
   a {
     color: $secondary-color-dark;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
       color: $secondary-color;
@@ -39,7 +69,7 @@ a {
 
   .authors-container {
     padding: 5px 0px;
-    font-size: larger;
+    font-size: larger//$font-size-bigger;
   }
 
   .affiliations {
@@ -47,6 +77,7 @@ a {
 
     p {
       padding: 0px;
+      font-size: $font-size-smaller;
     }
   }
 
@@ -54,18 +85,12 @@ a {
     padding: 5px 0px;
     p {
       padding: 0;
-      font-size: 1vw;
+      font-size: $font-size-smaller;
     }
   }
 
   .peer-review {
     padding: 5px 0px;
-
-    span.doi {
-      background-repeat: no-repeat;
-      display: block;
-      color: transparent;
-    }
   }
 
   .card-summary {
@@ -79,9 +104,22 @@ a {
   .difficulty p {
     padding-bottom: 0px;
   }
+
+  .deprecated p {
+    font-size: $font-size-bigger;
+  }
 }
 
 .cards {
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    padding: 0;
+  }
 
   .card .invisible {
     display: none;
@@ -97,17 +135,32 @@ a {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     color: black;
+    display: flex;
     
     &:hover {
       background-color: $secondary-color-light;
       color: $secondary-color-dark;
       border-color: $secondary-color-dark;
     }
+
+    .card-image {
+
+      max-width: 25%;
+      margin-right: 15px;
+      margin-top: 5px;
+
+      img {
+        padding: 0px;
+        object-fit: contain;
+        border-radius: $card-border-radius;
+      }
+    }
     
     a {
       text-decoration: none;
       
       .card-body {
+
         h3.card-title {
           margin-top: 0;
           text-decoration: none;
@@ -115,7 +168,7 @@ a {
         }
         
         .card-meta {
-          font-size: 1.15vw;
+          font-size: $font-size-smaller;
           margin-bottom: 10px;
           
           i {
@@ -128,7 +181,7 @@ a {
         }
         
         .card-summary {
-          font-size: 16px;
+          font-size: $font-size-smaller;
           line-height: 1.5;
           
           p {
@@ -172,21 +225,82 @@ a {
 
 }
 
-ul#results-container {
-  li.result {
-    list-style-type: none;
+// ul#results-container {
+
+//   li.result {
+//     list-style-type: none;
+//     border: 1px solid $secondary-contrast-color-dark;
+//     border-radius: $card-border-radius;
+//     padding: 2.5%;
+//     margin: 3%;
+//     background-color: $secondary-contrast-color;
+//     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+//     h4 {
+//       margin: 0;
+//     }
+    
+//     &:hover {
+//       background-color: $secondary-color-light;
+//       color: $secondary-color-dark;
+//       border-color: $secondary-color-dark;
+//     }
+
+//     p {
+//       padding: 5px;
+//     }
+//   }
+// }
+
+div#no-results {
+  text-align: center;
+  font-size: 40px;
+}
+
+// ::placeholder {
+//   color: $contrast-color;
+// }
+
+.search-area {
+  text-align: center;
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    // color: black;
+    // transition: color 0.3s ease-in-out;
+
+    // &:hover {
+    //   color: $secondary-color-dark;
+    // }
+  }
+
+  p {
+    padding: 0;
+    // color: black;
+    // transition: color 0.3s ease-in-out;
+
+    // &:hover {
+    //   color: $secondary-color-dark;
+    // }
+  }
+
+  #results-container {
+
+    padding: 0;
+    margin: 0;
+
+   .card {
+
     border: 1px solid $secondary-contrast-color-dark;
     border-radius: $card-border-radius;
     padding: 2.5%;
-    margin: 3%;
+    margin: 3% 0%;
+    background-color: $secondary-contrast-color;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
-    background-color: $secondary-contrast-color;
     color: black;
-
-    h4 {
-      margin: 0;
-    }
+    display: flex;
     
     &:hover {
       background-color: $secondary-color-light;
@@ -194,30 +308,86 @@ ul#results-container {
       border-color: $secondary-color-dark;
     }
 
-    p {
-      padding: 5px;
+    .card-image {
+
+      max-width: 25%;
+      margin-right: 15px;
+      margin-top: 5px;
+
+      img {
+        padding: 0px;
+        object-fit: contain;
+        border-radius: $card-border-radius;
+      }
+    }
+    
+    a {
+      text-decoration: none;
+      
+      .card-body {
+
+        display: flex;
+        color: black;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $secondary-color-dark;
+        }
+
+        h3.card-title {
+          margin-top: 0;
+          text-decoration: none;
+          font-size: 2vw;
+        }
+        
+        .card-meta {
+          font-size: $font-size-smaller;
+          margin-bottom: 10px;
+          
+          i {
+            margin-right: 5px;
+  
+            &:not(:first-child) {
+              margin-left: 1.2rem;
+            }
+          }
+        }
+        
+        .card-summary {
+          font-size: $font-size-smaller;
+          line-height: 1.5;
+          
+          p {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }
-
-div#no-results {
-  text-align: center;
-  font-size: 40px;
 }
 
-::placeholder {
-  color: $contrast-color;
-}
 
-li #search-input {
-  border: none;
+input#search-input {
+  border: 2px solid $primary-color-light;
+  border-radius: 10px;
+  padding: 5px 10px;
   background: none;
-  font: var(--fa-font-solid);
-  width: 40px;
-  height: 40px;
+  outline: none;
+  // font: var(--fa-font-solid);
+  width: 50%;
+  // height: 100px;
   transition: all .25s ease-in .25s;
   color: transparent;
   line-height:25px;
+
+  &::placeholder {
+    color: $primary-color;
+    font-family: $font-main;
+    font-size: $font-size-bigger;
+    text-align: center;
+    opacity: .75;
+  }
 
   &:hover {
     cursor: pointer;
@@ -227,13 +397,15 @@ li #search-input {
   }
   &:focus, &:not(:placeholder-shown) {
     font-family: $font-main;
-    border: 2px solid $contrast-color;
+    font-size: $font-size-bigger;
+    border: 2px solid $primary-color-light;
     border-radius: 10px;
-    width: 200px;
-    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
     outline: none;
     background:none;
-    color: $contrast-color;
+    color: $primary-color-light;
     + span {
       width: 200px;
       &::before {
@@ -256,8 +428,48 @@ li #search-input {
     margin: 1vw;
   }
 
-  .cards .card .visible {
-    margin: 10% 0%;
+  .author-card {
+    flex-direction: column;
+  }
+
+  input#search-input {
+    width: 85%;
+  }
+
+  input#search-input::placeholder {
+    font-size: 20px;
+  }
+
+  input#search-input:focus, input#search-input:not(:placeholder-shown) {
+    font-size: 20px;
+  }
+
+  .search-area #results-container .card a .card-body h3.card-title {
+    font-size: 30px;
+  }
+
+  .search-area #results-container .card a .card-body .card-meta {
+    font-size: 3vw;
+  }
+
+  .card-body {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+
+    .card-meta {
+      font-size: 3vw;
+    }
+  }
+
+  .cards .card .visible .card-image {
+    margin-right: 0;
+    max-width: 50%;
+  }
+
+  .search-area #results-container .card .card-image {
+    margin-right: 0;
+    max-width: 50%;
   }
 
   .author-card {

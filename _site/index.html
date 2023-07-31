@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EDJ22Y1C2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'G-3EDJ22Y1C2');
+        </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,66 +37,63 @@
     <header>
 
     <!-- <div class="logo">
-      <a href="/openDANES/index.html">openDANES</a>
+      <img src="/openDANES/images/favicon_io/android-chrome-512x512.png" alt="logo">
+      <a href="/openDANES/index.html">OpenDANES</a>
     </div> -->
 
     <div class="navigation">
       <ul>
-        <li><a href="/openDANES/index.html">OpenDANES</a></li>
+        <li><a href="/openDANES/index.html"><img src="/openDANES/favicon_io/android-chrome-512x512.png" alt="logo"></a></li>
         <li><a href="/openDANES/nav/about.html">About</a></li>
         <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
         <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
         <li><a href="/openDANES/nav/posters.html">Posters</a></li>
         <li><a href="/openDANES/nav/DANES-resources.html">DANES Resources</a></li>
         <li><a href="/openDANES/nav/submission-guidelines.html">Submission Guidelines</a></li>
-        <li><input type="text" id="search-input" placeholder="&#xf002"></li>
+        <li><a href="/openDANES/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
       </ul>
     </div>
 
 </header>
 
     <section>
-      <!-- HTML elements for search -->
-<ul id="results-container"></ul>
-
-
-
-
-
-<!--  -->
-
-<script src="/openDANES/assets/js/simple-jekyll-search.js"></script>
-<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
-
-<script>
-  simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/openDANES/search.json',
-        searchResultTemplate: '  <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a>',
-        noResultsText: '<div id="no-results">No results found</div>',
-        fuzzy: false,
-        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-      })
-</script>
-
       <h1>Open Digital Ancient Near Eastern Studies</h1>
-      <p>Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional Near Eastern studies, with a focus on the critical use of digital text analysis and visual analysis of ancient Near Eastern objects. We publish tutorials, original research articles, project reviews, and annotated resources that explore the intersection of computational methods and the study of the ancient Near East. Our open access peer-reviewed content represents high quality scholarship in the field of Digital Ancient Near Eastern Studies. Join us in advancing the digital revolution in the study and dissemination of the ancient world, and submitting your work to OpenDANES.</p>
+      <p>Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional historical, archaeological and philological methods. The network also focuses on the critical use of digital text analysis and visual analysis of ancient Near Eastern objects.</p>
+
+<p><img src="/openDANES/images/Babel_tower_homepage.jpg" alt="Tower of Babel" /></p>
+
+<p class="fig">Mosaic of tower of Babel construction from Monreale Cathedral</p>
+
+<p>We publish tutorials, original research articles, project reviews, and annotated resources that explore the intersection of computational methods and the study of the ancient Near East. Our open access peer-reviewed content represents high quality scholarship in the field of Digital Ancient Near Eastern Studies. Join us in advancing the digital revolution in the study and dissemination of the ancient world, and submit your work to OpenDANES.</p>
+
+<p>The Digital Ancient Near Eastern Studies (DANES) network is a consortium of scholars who study the ancient Near East and scholars from computer and data science. Our purpose is to teach, learn, and share best practices of using computational methods and tools to rediscover our past. The network has an annual conference and working groups. It was initiated in 2023 with our 
+  <a href="https://digitalpasts.github.io/DANES/" target="_blank">opening conference</a>
+.</p>
+
+<p>To stay updated with the network’s activities and take part in active discussions, see the contact us details below to join our discord community and mailing list.</p>
 
     </section>
     <footer>
 
-  <div>
+  <div id="credits">
     <h3>Contact us</h3>
-    <p>For any questions about openDANES, send us an email at the Digital Pasts Lab</p>
-    <p>Email: <a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a></p>
-    <a href="https://github.com/DigitalPasts" target="_blank"><i class="fab fa-github"></i></i></a><a href="https://twitter.com/DigPastsLab" target="_blank"><i class="fab fa-twitter"></i></a>
+    <p>For any questions about OpenDANES, or to join the DANES discord channel or mailing list, send us an email at the
+      <a href="https://digitalpasts.github.io/" target="_blank">Digital Pasts Lab</a>
+      (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>)</p>
+    <p>
+      <a href="https://github.com/DigitalPasts" target="_blank"><i class="fab fa-github"></i></i></a> <a href="https://twitter.com/DigPastsLab" target="_blank"><i class="fab fa-twitter"></i></a>
+    </p>
   </div>
 
   <div id="credits">
-    <p>openDANES is released under a CC-BY license</p>
-    <p>Hosted on Github Pages</p>
-    <p>last updated on May 03, 2023</p>
+    <p>OpenDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies</p>
+    <p>Released under a 
+      <a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC-BY 4.0 license</a>
+    </p>
+    <p>Hosted on
+      <a href="https://github.com/DigitalPasts/openDANES" target="_blank">Github Pages</a>
+    </p>
+    <p>Last updated on July 31, 2023</p>
   </div>
   
 </footer>
@@ -95,4 +101,5 @@
   </body>
   <script src="/openDANES/assets/js/tag_click.js"></script>
   <script src="/openDANES/assets/js/codeblock.js"></script>
+  <script src="https://hypothes.is/embed.js" async></script>
 </html>

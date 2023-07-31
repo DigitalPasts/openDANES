@@ -8,7 +8,7 @@ section .toc {
     transition: top 0.3s ease-in-out;
 }
 section .toc h2 {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -20,7 +20,7 @@ section .toc ul {
 section .toc ul li {
     list-style: none;
     text-align: left;
-    font-size: 1vw;
+    font-size: 1.1vw;
     padding: 5px 0 0 10px;
 }
 section .toc a, section .toc p a {
@@ -32,7 +32,9 @@ section .toc a, section .toc p a {
 }
 section .toc a:hover, section .toc p a:hover {
     border-left: 1px solid #67074e;
+    border-bottom: none;
     padding-left: 5px;
+    color: #330327;
 }
 section .content {
     margin: 0 20vw;

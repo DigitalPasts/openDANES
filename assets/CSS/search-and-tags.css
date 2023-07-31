@@ -2,7 +2,14 @@ a {
     text-decoration: none;
 }
 
+span.doi {
+    background-repeat: no-repeat;
+    display: block;
+    color: transparent;
+}
+
 .author-card {
+    display: flex;
     border: 1px solid #074e67;
     border-radius: 10px;
     padding: 2.5%;
@@ -10,8 +17,21 @@ a {
     width: 100%;
     background-color: #82C3C4;
 }
+.author-card .author-box1, .author-card .author-box2 {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.author-card .author-box1 {
+    padding-right: 5px;
+}
+.author-card .author-box2 {
+    padding-left: 5px;
+}
 .author-card a {
     color: #074e67;
+    transition: color 0.3s ease-in-out;
 }
 .author-card a:hover {
     color: #05878a;
@@ -25,21 +45,17 @@ a {
 }
 .author-card .affiliations p {
     padding: 0px;
+    font-size: 1.3vw;
 }
 .author-card .dates {
     padding: 5px 0px;
 }
 .author-card .dates p {
     padding: 0;
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 .author-card .peer-review {
     padding: 5px 0px;
-}
-.author-card .peer-review span.doi {
-    background-repeat: no-repeat;
-    display: block;
-    color: transparent;
 }
 .author-card .card-summary {
     padding: 5px 0px;
@@ -50,7 +66,17 @@ a {
 .author-card .difficulty p {
     padding-bottom: 0px;
 }
+.author-card .deprecated p {
+    font-size: 1.7vw;
+}
 
+.cards h3 {
+    padding: 0;
+    margin: 0;
+}
+.cards p {
+    padding: 0;
+}
 .cards .card .invisible {
     display: none;
 }
@@ -63,11 +89,22 @@ a {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     color: black;
+    display: flex;
 }
 .cards .card .visible:hover {
     background-color: #82C3C4;
     color: #074e67;
     border-color: #074e67;
+}
+.cards .card .visible .card-image {
+    max-width: 25%;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.cards .card .visible .card-image img {
+    padding: 0px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 .cards .card .visible a {
     text-decoration: none;
@@ -78,7 +115,7 @@ a {
     font-size: 2vw;
 }
 .cards .card .visible a .card-body .card-meta {
-    font-size: 1.15vw;
+    font-size: 1.3vw;
     margin-bottom: 10px;
 }
 .cards .card .visible a .card-body .card-meta i {
@@ -88,7 +125,7 @@ a {
     margin-left: 1.2rem;
 }
 .cards .card .visible a .card-body .card-summary {
-    font-size: 16px;
+    font-size: 1.3vw;
     line-height: 1.5;
 }
 .cards .card .visible a .card-body .card-summary p {
@@ -122,73 +159,130 @@ a {
     border-color: #074e67;
 }
 
-ul#results-container li.result {
-    list-style-type: none;
-    border: 1px solid #9a6b23;
-    border-radius: 10px;
-    padding: 2.5%;
-    margin: 3%;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    width: 100%;
-    background-color: #e3ad5b;
-    color: black;
-}
-ul#results-container li.result h4 {
-    margin: 0;
-}
-ul#results-container li.result:hover {
-    background-color: #82C3C4;
-    color: #074e67;
-    border-color: #074e67;
-}
-ul#results-container li.result p {
-    padding: 5px;
-}
-
 div#no-results {
     text-align: center;
     font-size: 40px;
 }
 
-::placeholder {
-    color: #feda75;
+.search-area {
+    text-align: center;
+}
+.search-area h3 {
+    padding: 0;
+    margin: 0;
+}
+.search-area p {
+    padding: 0;
+}
+.search-area #results-container {
+    padding: 0;
+    margin: 0;
+}
+.search-area #results-container .card {
+    border: 1px solid #9a6b23;
+    border-radius: 10px;
+    padding: 2.5%;
+    margin: 3% 0%;
+    background-color: #e3ad5b;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    width: 100%;
+    color: black;
+    display: flex;
+}
+.search-area #results-container .card:hover {
+    background-color: #82C3C4;
+    color: #074e67;
+    border-color: #074e67;
+}
+.search-area #results-container .card .card-image {
+    max-width: 25%;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.search-area #results-container .card .card-image img {
+    padding: 0px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.search-area #results-container .card a {
+    text-decoration: none;
+}
+.search-area #results-container .card a .card-body {
+    display: flex;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+.search-area #results-container .card a .card-body:hover {
+    color: #074e67;
+}
+.search-area #results-container .card a .card-body h3.card-title {
+    margin-top: 0;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.search-area #results-container .card a .card-body .card-meta {
+    font-size: 1.3vw;
+    margin-bottom: 10px;
+}
+.search-area #results-container .card a .card-body .card-meta i {
+    margin-right: 5px;
+}
+.search-area #results-container .card a .card-body .card-meta i:not(:first-child) {
+    margin-left: 1.2rem;
+}
+.search-area #results-container .card a .card-body .card-summary {
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+.search-area #results-container .card a .card-body .card-summary p {
+    margin: 0;
 }
 
-li #search-input {
-    border: none;
+input#search-input {
+    border: 2px solid #67074e;
+    border-radius: 10px;
+    padding: 5px 10px;
     background: none;
-    font: var(--fa-font-solid);
-    width: 40px;
-    height: 40px;
+    outline: none;
+    width: 50%;
     transition: all 0.25s ease-in 0.25s;
     color: transparent;
     line-height: 25px;
 }
-li #search-input:hover {
+input#search-input::placeholder {
+    color: #52053E;
+    font-family: "Taviraj", serif;
+    font-size: 1.7vw;
+    text-align: center;
+    opacity: 0.75;
+}
+input#search-input:hover {
     cursor: pointer;
 }
-li #search-input:hover:focus {
+input#search-input:hover:focus {
     cursor: text;
 }
-li #search-input:focus, li #search-input:not(:placeholder-shown) {
+input#search-input:focus, input#search-input:not(:placeholder-shown) {
     font-family: "Taviraj", serif;
-    border: 2px solid #feda75;
+    font-size: 1.7vw;
+    border: 2px solid #67074e;
     border-radius: 10px;
-    width: 200px;
-    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
     outline: none;
     background: none;
-    color: #feda75;
+    color: #67074e;
 }
-li #search-input:focus + span, li #search-input:not(:placeholder-shown) + span {
+input#search-input:focus + span, input#search-input:not(:placeholder-shown) + span {
     width: 200px;
 }
-li #search-input:focus + span::before, li #search-input:not(:placeholder-shown) + span::before {
+input#search-input:focus + span::before, input#search-input:not(:placeholder-shown) + span::before {
     width: 2px;
     opacity: 0;
     transition: all 0.25s ease-in;
 }
-li #search-input:focus::placeholder {
+input#search-input:focus::placeholder {
     color: transparent;
 }
 
@@ -198,8 +292,47 @@ li #search-input:focus::placeholder {
         margin: 1vw;
     }
 
-    .cards .card .visible {
-        margin: 10% 0%;
+    .author-card {
+        flex-direction: column;
+    }
+
+    input#search-input {
+        width: 85%;
+    }
+
+    input#search-input::placeholder {
+        font-size: 20px;
+    }
+
+    input#search-input:focus, input#search-input:not(:placeholder-shown) {
+        font-size: 20px;
+    }
+
+    .search-area #results-container .card a .card-body h3.card-title {
+        font-size: 30px;
+    }
+
+    .search-area #results-container .card a .card-body .card-meta {
+        font-size: 3vw;
+    }
+
+    .card-body {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-body .card-meta {
+        font-size: 3vw;
+    }
+
+    .cards .card .visible .card-image {
+        margin-right: 0;
+        max-width: 50%;
+    }
+
+    .search-area #results-container .card .card-image {
+        margin-right: 0;
+        max-width: 50%;
     }
 
     .author-card {

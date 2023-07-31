@@ -3,20 +3,40 @@ layout: none
 ---
 [
   {% for page in site.pages %}
+
+  {% if page.type == null %}
+    {} {% unless forloop.last %},{% endunless %}
+
+  {% elsif page.type == "nav" %}
+    {} {% unless forloop.last %},{% endunless %}
+
+  {% elsif page.type == "white-paper OR tutorial" %}
+    {} {% unless forloop.last %},{% endunless %}
+
+  {% else %}
+
     {% assign author_names = '' | split: '' %}
     {% for author in page.authors %}
       {% assign author_name = author[1].name | split: ", " %}
       {% assign author_names = author_names | concat: author_name %}
     {% endfor %}
+
     {
       "title"    : "{{ page.title | escape }}",
       "authors" : "{{ author_names | join: ', ' }}",
       "tags"     : "{{ page.tags | join: ', ' }}",
+      "doi"       : "{{ page.doi }}",
+      "submit-date" : "{{ page.submit-date }}",
+      "publish-date" : "{{ page.publish-date }}",
+      "peer-review-date" : "{{ page.peer-review-date }}",
+      "update-date" : "{{ page.update-date }}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "type"     : "{{ page.type }}",
       "summary"     : "{{ page.summary }}",
-      "content"     : "{{ page.content | markdownify | strip_html | strip_newlines | strip | escape }}",
-      "snippet"     : "{{ page.content | markdownify | strip_html | strip_newlines | strip | remove_chars | escape | truncate: 200 }}"
+      "content"     : "{{ page.content | markdownify | strip_html | strip_newlines | strip | escape }}"
     } {% unless forloop.last %},{% endunless %}
+
+  {% endif %}
+
   {% endfor %}
 ]

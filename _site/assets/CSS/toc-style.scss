@@ -9,6 +9,10 @@ $secondary-contrast-color: #e3ad5b;
 $secondary-contrast-color-dark: #9a6b23;
 $light-color: #FEFBF1;
 
+$font-size: 1.5vw;
+$font-size-smaller: 1.3vw; 
+$font-size-smallest: 1.1vw;
+
 section {
   margin: 15px 0;
 
@@ -19,7 +23,7 @@ section {
     transition: top 0.3s ease-in-out;
 
     h2 {
-      font-size: 1.2vw;
+      font-size: $font-size-smaller;
       border-bottom: none;
       padding-bottom: 0;
       margin-bottom: 0;
@@ -34,7 +38,7 @@ section {
       li {
         list-style: none;
         text-align: left;
-        font-size: 1vw;
+        font-size: $font-size-smallest;
         padding: 5px 0 0 10px;  
       }
     }
@@ -49,7 +53,9 @@ section {
   
       &:hover {
         border-left: 1px solid $primary-color-light;
+        border-bottom: none;
         padding-left: 5px;
+        color: $primary-color-dark;
       }
     }
   }

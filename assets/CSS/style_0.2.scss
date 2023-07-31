@@ -25,6 +25,9 @@ $danger-prompt-icon-color: #df3c30;
 
 $font-main: 'Taviraj', serif;
 $font-code: 'Source Code Pro', monospace;
+$font-size: 1.5vw;
+$font-size-smaller: 1.3vw; 
+$font-size-smallest: 1.1vw;
 $icon-size: 25px;
 $icon-padding: 1px;
 
@@ -234,13 +237,13 @@ section {
     padding: 3px 5px;
     border-radius: 4px;
     background-color: $table-color-dark;
-    font-size: 1vw;
+    font-size: $font-size-smallest;
   }
 
   p {
     padding: 15px 0;
     text-align: justify;
-    font-size: 1.15vw;
+    font-size: $font-size;
 
     a, i {
       padding: none !important;
@@ -267,12 +270,24 @@ section {
   ul, ol {
     padding: 15px;
     text-align: justify;
-    font-size: 1.15vw;
+    font-size: $font-size;
 
     li {
-      font-size: 1.15vw;
+      font-size: $font-size;
       text-align: justify;
       padding: 0 5px;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        border-bottom: $secondary-color 1px dashed;
+        transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
+    
+        &:hover {
+          color: $secondary-contrast-color-dark;
+          border-bottom: $secondary-contrast-color-dark 1px dashed;
+        }
+      }
     } 
   }
 
@@ -281,13 +296,13 @@ section {
   }
 
   .fig {
-    font-size: 1vw;
+    font-size: $font-size-smaller;
     padding: 5px 25px 15px 25px;
     line-height: 1.4;
     font-style: italic;
 
     a {
-      font-size: 1vw;
+      font-size: $font-size-smaller;
     }
   }
 
@@ -351,31 +366,31 @@ header {
   // top: 0;
   // left: 0;
   
-  .logo {
-    padding: 0 15px;
+  // .logo {
+  //   padding: 0 15px;
 
-    img {
-      max-height: 80px;
-      object-fit: contain;
-      padding: 5px 5px;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+  //   img {
+  //     max-height: 70px;
+  //     // object-fit: contain;
+  //     // padding: 5px 5px;
+  //     // position: absolute;
+  //     // left: 0;
+  //     // top: 0;
+  //   }
 
-    a {
-      position: absolute;
-      padding: 20px 0;
-      text-decoration: none;
-      color: $light-color;
-      left: 40px;
-      top: 0;
+  //   // a {
+  //   //   position: absolute;
+  //   //   padding: 20px 0;
+  //   //   text-decoration: none;
+  //   //   color: $light-color;
+  //   //   left: 40px;
+  //   //   top: 0;
 
-      &:hover {
-        color: $contrast-color;
-      }
-    }
-  }
+  //   //   &:hover {
+  //   //     color: $contrast-color;
+  //   //   }
+  //   // }
+  // }
 
   ul {
     // float: right;
@@ -384,14 +399,24 @@ header {
     list-style: none;
     flex-wrap: nowrap;
     align-items: center;
+    // margin: 0;
+    // padding: 0 !important;
 
     li {
       margin: 0 3px;
       padding: 20px 17px;
 
+      img {
+          max-height: 70px;
+        }
+      
+
       a {
         text-decoration: none;
         color: $light-color;
+        transition: color 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
 
         &:hover {
           color: $contrast-color;
@@ -410,12 +435,13 @@ footer {
   font-family: $font-main;
   color: $light-color;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   padding: 20px;
 
   div{
     padding: 10px;
+    flex: 1 1 0px;
 
     h3 {
       color: $contrast-color;
@@ -424,6 +450,7 @@ footer {
     a {
       text-decoration: none;
       color: $light-color;
+      transition: color 0.3s ease-in-out;
 
       i {
         font-size: $icon-size;
@@ -520,6 +547,10 @@ footer {
   blockquote.prompt-tip, blockquote.prompt-info, blockquote.prompt-warning, blockquote.prompt-danger {
     padding: 0 !important;
   }
+
+  header {
+    height: 320px;
+  }
 }
 
 //for phone mode + landscape on small screens
@@ -578,7 +609,6 @@ footer {
   }
   
   header {
-    height: 320px;
 
     .logo {
       padding: 0;

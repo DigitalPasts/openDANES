@@ -26,7 +26,7 @@ Finally, the information integrated in this database will be uploaded to an open
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
 Franziska Pannach, [GCDH](https://www.gcdh.de/en/welcome/)
-Theresa Blaschke, [MCDCI](https://www.uni-marburg.de/de/mcdci)
+and Theresa Blaschke, [MCDCI](https://www.uni-marburg.de/de/mcdci)
 
 Dumuzi is presented in different ways in Near Eastern myths. He is described as wild bull or man, sometimes he is part of a dedicated family structure or a separated entity. This poster presents eigth different views on the Mesopotamian deity, modelled as minimal (or shallow) ontologies, used to compare Dumuzi’s diverse representations. 
 

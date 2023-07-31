@@ -49,14 +49,14 @@ For instance, “Dumuzi is a shepherd.” is a statement that appears in some na
 |Innana-Dumuzi-Balaĝ (BE 30/1, 7)       |Fritz (2003), 131-132
 |Dumuzi-Durtur-Eršema (CT 15, pl. 20-21) |Cohen (1981), Ershemma No. 88 | 
 
-**Table 1: Textual Sources of the myth variants and their corresponding references**
+**<center>Table 1: Textual Sources of the myth variants and their corresponding references</center>**
 
 To compare different world views on Dumuzi, eight mythical variants in which Dumuzi and his death (listed in Table 1) are the main topic were selected. The domain knowledge we can assert from these myth variants is extracted according to the Hylistic (Zgoll, 2019) theory. Subsequently, it is modelled in shallow domain ontologies.
 
 Important concepts and their shallow hierarchies (e.g. lord isA ruler isA person) are modelled as ontology classes. Characters, like Dumuzi or Innana, are modelled as individuals of the respective ontology. Character attributes and aliases are modelled as data properties, as shown in Figure 1. Relationships between entities of classes, like isBrotherOf() are modelled as object properties. Ontology labels are available in English and German. The individuals are linked to open data sources, Wikidata ID and Pleiades ID (for geolocations). A visualisation of a small example ontology is given in Figure: Dumuzi-Durtur-Eršema in the poster.
 
 ![Figure 1: Dumuzi individual object and data properties in myth "Dumuzi-Durtur-Eršema"](../images/posters/DANES2023/fig_2_pannach_blaschke.png)
-**Figure 1: Dumuzi individual object and data properties in myth “Dumuzi-Durtur-Eršema”**
+**<center>Figure 1: Dumuzi individual object and data properties in myth “Dumuzi-Durtur-Eršema”</center>**
 
 The resulting ontologies are freely available as ttl-files and can be used for inter-myth and intra-myth comparison – i.e. comparing variants of the same myth or comparison of different myths. In this project, two measures are applied for overall domain comparison: The class overlap can provide an answer to the question “Which kinds of entities appear in the myth variant?” The individual overlap determines which characters are part of the stories, e.g. “Is this story only about Dumuzi or does Innana appear as well?” Individuals are matched by their labels, aliases or Wikidata ID. We define class overlap as
 

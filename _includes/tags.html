@@ -7,10 +7,6 @@
   {% endif %}
 {% endfor %}
 
-{% if page.mathjax %}
-  {% include mathjax.html %}
-{% endif %}
-
 {% assign tag_list = tags | split: ',' | uniq | sort %}
 
 <div class="tags">

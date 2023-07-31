@@ -4,6 +4,8 @@ title: Posters
 type: nav
 authors: openDANES
 tags: navigation bar
+tags: [MathJax, Mathematic]
+mathjax: true
 ---
 
 A selection of posters presented in the DANES conferences!

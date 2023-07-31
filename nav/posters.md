@@ -10,7 +10,7 @@ A selection of posters presented in the DANES conferences!
 
 ## DANES 2023
 ### Material Culture fornt he Middle Babylonain Period (McMiB)
-Dr. Sara Arroyo Cuadra, Universidad Nacional de Educación a Distancia (UNED).
+Sara Arroyo Cuadra, Universidad Nacional de Educación a Distancia (UNED).
 
 This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
 
@@ -23,7 +23,8 @@ Finally, the information integrated in this database will be uploaded to an open
 ![Material Culture fornt he Middle Babylonain Period (McMiB)](../images/posters/DANES2023/McMiB_Sara.jpg)
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
-Franziska Pannach (Göttingen Centre for Digital Humanities), Theresa Blaschke (Marburg Center for Digital Culture and Infrastructure)
+Franziska Pannach, [GCDH](https://www.gcdh.de/en/welcome/)
+Theresa Blaschke, [MCDCI](https://www.uni-marburg.de/de/mcdci)
 
 Dumuzi is presented in different ways in Near Eastern myths. He is described as wild bull or man, sometimes he is part of a dedicated family structure or a separated entity. This poster presents eigth different views on the Mesopotamian deity, modelled as minimal (or shallow) ontologies, used to compare Dumuzi’s diverse representations. 
 
@@ -52,7 +53,8 @@ To compare different world views on Dumuzi, eight mythical variants in which Dum
 
 Important concepts and their shallow hierarchies (e.g. lord isA ruler isA person) are modelled as ontology classes. Characters, like Dumuzi or Innana, are modelled as individuals of the respective ontology. Character attributes and aliases are modelled as data properties, as shown in Figure 1. Relationships between entities of classes, like isBrotherOf() are modelled as object properties. Ontology labels are available in English and German. The individuals are linked to open data sources, Wikidata ID and Pleiades ID (for geolocations). A visualisation of a small example ontology is given in Figure: Dumuzi-Durtur-Eršema in the poster.
 
-![Figure 1: Dumuzi individual object and data properties in myth “Dumuzi-Durtur-Eršema ](../images/posters/DANES2023/fig_2_pannach_blaschke.png)
+![Figure 1: Dumuzi individual object and data properties in myth "Dumuzi-Durtur-Eršema"](../images/posters/DANES2023/fig_2_pannach_blaschke.png)
+**Figure 1: Dumuzi individual object and data properties in myth “Dumuzi-Durtur-Eršema”**
 
 The resulting ontologies are freely available as ttl-files and can be used for inter-myth and intra-myth comparison – i.e. comparing variants of the same myth or comparison of different myths. In this project, two measures are applied for overall domain comparison: The class overlap can provide an answer to the question “Which kinds of entities appear in the myth variant?” The individual overlap determines which characters are part of the stories, e.g. “Is this story only about Dumuzi or does Innana appear as well?” Individuals are matched by their labels, aliases or Wikidata ID. We define class overlap as
 
@@ -82,3 +84,42 @@ Zgoll, C. (2019): Tractatus mythologicus: Theorie und Methodik zur Erforschung v
 Zgoll, A. and Zgoll, C. (2020): Mythische Sphärenwechsel: Methodisch neue Zugänge zu antiken Mythen in Orient und Okzident. Berlin, Boston: De Gruyter. https://doi.org/10.1515/9783110652543.
 
 ![Pannach & Blaschke, "Beloved, Brother, Friend: Comparing..."](../images/posters/DANES2023/Poster_Pannach_Blaschke%20-%20Franzi.jpg)
+
+### Towards binarization of Iron Age ostraca from multispectral weakly-annotated imaging
+Ohr Dallal, [TAU](https://en.cs.tau.ac.il/computer)
+
+Image binarization is one of the essential and preliminary steps towards many document processing tasks. We aim to binarize Iron Age Hebrew ostraca, which are of great importance to the historical study of ancient Israel and Judah. To this end, a new and unique dataset is introduced, consisting of multispectral ostraca images taken at different camera wavelengths. The data poses severe challenges such as faded text, degradations, contrast variation and characters rarity. The task is further complicated by sparse and partial labels, where only a fraction of image pixels is manually annotated by human experts. The underlined assumption of this research is that the multispectral signature of the ink differs from the one of the clay, due to material difference.  We propose to apply end-to-end deep neural networks (DNN) for exploiting complex shape and spectral cues available in the data, which allow for better discrimination of ink and background and possibly even the reconstruction of ink invisible to the naked-eye. We develop and test DNN binarization models, based on segmentation feedforward convolutional neural networks, alongside methods for pre-processing and enriching the data representation through weakly-supervised learning, semi-supervised learning and visual augmentations. These techniques are employed to deal with the available data sparsity and improve generalization performance. We show the contribution of the multispectral nature of the data and demonstrate the effectiveness of our method on Arad ostraca unearthed in the Judahite desert dated ca. 600 BCE.
+
+![ostraca_binarization_poster_DANES_2023](../images/posters/DANES2023/ostraca_binarization_poster_DANES_2023.jpg)
+
+### Universal dependencies for Hittite
+Maria Molina, [TAU](https://en.cs.tau.ac.il/computer)
+
+In the recent years universal dependencies (UD) became the standard for digital treebanks, they are an essential part of annotated linguistic corpora, and they are widely used for comparison of language features in linguistic research. Historical corpora develop treebanks slower than corpora of modern languages. However, there have already been published some very good examples of historical treebanks [^1], including those with UD annotation, e.g., for Ancient Greek and Latin [^2], Old East Slavic, Old and Middle Russian [^3], Old French [^4]. An attempt to build a UD treebank for Hittite was undertaken already in 2017 by G.Inglese and M.Molina [^5] in the framework of the PROIEL [^6]. Finally, a small UD-annotated treebank based on examples from [^7] was developed and published in 2022 by E.Andersen and B.Rozonoyer [^8],[^9].
+
+The authors of the [^8],[^9] treebank based their annotation on Inglese [^11], taking into account experience and data of our PROIEL experiment [^5]. The concern here is that they did not account for some certain Hittite features, such as second position clitic particles ‑(m)a, ‑(y)a, and ‑pat (using instead the discourse feature after [^11]), while in recent years following the publication of [^11] there have been extensive research on 2P particles in Hittite, particularly including ‑pat [^12],[^13],[^14]. The treebank [^7] does not include lemmas with both a Hittite word and a Sumerian/Akkadian heterogram in cases of variations in writing of the word (that was suggested in [8], but never realized in practice before this work). However, the biggest problem of the existing Hittite UD treebank is that it is completely taken out of context being just a set of sentences out of a tutorial [^7].
+
+The Annotated Corpus of Hittite Clauses (ACHC), [^10] was first launched in 2015 on the basis of the Hittite letters and instructions (not digitalized before). It was syntactically annotated for the word order (SOV/OSV). It was also annotated as a constituency treebank, with morphological mark-up and the UD prep annotation accomplished on ca. 1500 clauses. Now the time came to develop the UD annotation in the whole corpus of letters and instructions, finally putting the Hittite grammar in context.
+
+This paper describes the UD annotation for ACHC. It is an ongoing project, starting from previously achieved number of UD-annotated clauses. In comparison to [^7], we add a layer of mark-up including separate fields for both Hittite and heterogram lemmas, and indexation for clitic chains. All the tokens are provided by glosses and translation into English. The clauses represent Hittite of letters and instructions – the closest possible genre to oral speech (for a dead cuneiform language).
+
+UD distinguishes 17 universal part-of-speech definitions (UPOS) – the categories widely attested in the world’s languages, and Hittite is not an exclusion, – such as noun, verb, adjective, or adverb. There are also standard morphological features, like pronoun, numeral, possessive, or gender types. Additional features in UD may be defined in language-specific documentation for use in individual languages. The latter is highly relevant for Hittite, as there must be language-specific tags not only for clitic chains and heterograms, but also for ergativity features and subject expressed with -za. There are also grammatical relations, including syntactic and semantic roles, that connect a head of phrase and a dependent word. In UD standard 37 types are defined for the universal use. In my paper I discuss the Hittite specific set of grammatical relations. In general, it is strongly recommended to keep universal tags as much as possible, to support the comparability of the languages, but Hittite certainly demands particular solutions discussed in this work, as well as in [^8] and [^15], which are planned for realization in ACHC.
+
+#### References
+[^1]: Eva Pettersson and Beáta Megyesi (2018). The HistCorp Collection of Historical Corpora and Resources. // Proceedings of the Digital Humanities in the Nordic Countries 3rd Conference, Helsinki, Finland, March 7-9, 2018.
+[^2]: The Ancient Greek and Latin Dependency Treebank (AGLDT). http://perseusdl.github.io/treebank_data
+[^3]: UD for Old East Slavic. https://universaldependencies.org/orv/index.html
+[^4]: Sophie Prévost, Achim Stein. 2013. Syntactic Reference Corpus of Medieval French (SRCMF) [version number]. ENS de Lyon/ILR Stuttgart.
+[^5]: Guglielmo Inglese, Maria Molina, and Hanne Eckhoff. 2018. Incorporating Hittite into PROIEL: a pilot project. // Andrew U. Frank, Christine Ivanovic, Francesco Mambrini, Marco Passarotti, and Caroline Sporlede, eds., Proceedings of the Second Workshop on Corpus-based Research in the Humanities, pp. 95–104.
+[^6]: PROIEL. https://proiel.github.io
+[^7]: Harry A. Hoffner, Jr. and H. Craig Melchert. 2008. A Grammar of the Hittite Language. Part 2: Tutorial. Eisenbrauns.
+[^8]: Erik Andersen, Ben Rozonoyer. 2020. A Small Universal Dependencies Treebank for Hittite. Proceedings of the Fourth Workshop on Universal Dependencies (UDW 2020), pages 1–7. Barcelona, Spain (Online), December 13, 2020
+[^9]: UD Hittite HitTB. 2022. https://universaldependencies.org/treebanks/hit_hittb/index.html
+[^10]: Maria Molina. The Annotated Corpus of Hittite Clauses (ACHC). 2015-. http://hittitecorpus.com
+[^11]: Guglielmo Inglese. 2015. Towards a Hittite Treebank. Basic Challenges and Methodological Remarks. // M. Passarotti, F. Mambrini, and C. Sporleder, editors, Proceedings of the Workshop on Corpus-Based Research in the Humanities (CRH).
+[^12]: Molina, Maria (2016). “Emphatic enclitic =pat in Hittite: function analysis and semantics of foci”. In: Indo-European linguistics and classical philology — XX. Proceedings of the 20th Conference in Memory of Professor Joseph M. Tronsky 20–22 June 2016. St. Petersburg, 2016, 739–754. https://tronsky.iling.spb.ru/static/tronsky2016_01.pdf
+[^13]: Molina, Maria (2017). “Identificational foci in Hittite marked by =pat”. Talk at the 50th Meeting of Societas Linguistica Europea (SLE 2017), 10–13 September 2017, Zurich.
+[^14}]: Molina, Maria (2018). Word order in Hittite: corpus methods and analysis from typological perspective. PhD Diss. Moscow: Institute of Linguistics, Russian Academy of Sciences.
+[^15]: Maria Molina and Alexei Molin. 2016. In a Lacuna: Building a Syntactically Annotated Corpus for a Dead Cuneiform Language (on the basis of Hittite). // Computational Linguistics and Intellectual Technologies: Proceedings of the International Conference “Dialogue 2016”.
+[^16]: Universal Dependencies. https://aclanthology.org/2021.cl-2.11.pdf,
+[^17]: UD 2.0 Specification. https://arxiv.org/pdf/2004.10643.pdf

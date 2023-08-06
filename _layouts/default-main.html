@@ -32,6 +32,16 @@
     <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/style_0.2.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/CSS/search-and-tags.css">
     <title>openDANES</title>
+
+    <!-- displaying math formulae -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    {% if page.mathjax %}
+      {% include mathjax.html %}
+    {% endif %}
+
   </head>
   <body>
     {% include navigation.html %}

@@ -36,7 +36,7 @@ $icon-padding: 1px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  line-height: 1.6;
+  // line-height: 1.6;
 
   ::-webkit-scrollbar {
   width: 4px;
@@ -310,6 +310,11 @@ section {
     max-width: 100%;
     height: auto;
     padding: 0 2.5vw;
+    transition: max-width 0.3s ease-in-out;
+
+    &:hover {
+      max-width: 130%;
+    }
   }
 
   i {

@@ -4,7 +4,6 @@ title: Posters
 type: nav
 authors: openDANES
 tags: navigation bar
-tags: [MathJax, Mathematic]
 mathjax: true
 ---
 
@@ -58,11 +57,7 @@ Important concepts and their shallow hierarchies (e.g. lord isA ruler isA person
 ![Figure 1: Dumuzi individual object and data properties in myth "Dumuzi-Durtur-Eršema"](../images/posters/DANES2023/fig_2_pannach_blaschke.png)
 **<center>Figure 1: Dumuzi individual object and data properties in myth “Dumuzi-Durtur-Eršema”</center>**
 
-The resulting ontologies are freely available as ttl-files and can be used for inter-myth and intra-myth comparison – i.e. comparing variants of the same myth or comparison of different myths. In this project, two measures are applied for overall domain comparison: The class overlap can provide an answer to the question “Which kinds of entities appear in the myth variant?” The individual overlap determines which characters are part of the stories, e.g. “Is this story only about Dumuzi or does Innana appear as well?” Individuals are matched by their labels, aliases or Wikidata ID. We define class overlap as
-
-$CO = \frac{|C₁∩C₂|}{|C₁∪C₂|}$
-
-, where C1 and C2 are classes of ontology O1 and O2 respectively. Individual overlap is measured accordingly.
+The resulting ontologies are freely available as ttl-files and can be used for inter-myth and intra-myth comparison – i.e. comparing variants of the same myth or comparison of different myths. In this project, two measures are applied for overall domain comparison: The class overlap can provide an answer to the question “Which kinds of entities appear in the myth variant?” The individual overlap determines which characters are part of the stories, e.g. “Is this story only about Dumuzi or does Innana appear as well?” Individuals are matched by their labels, aliases or Wikidata ID. We define class overlap as $CO = \frac{\vert C_1 \cap C_2 \vert}{\vert C_1 \cup C_2 \vert}$, where C1 and C2 are classes of ontology O1 and O2 respectively. Individual overlap is measured accordingly.
 
 The results of these two comparisons are presented in distances matrices below. We observe the highest class overlap between the variants in “Innana-Dumuzi-Eršema (BM 15821)” and “Innana-Dumuzi Lament (CUNES 53-08-060)” with a value of 0.55. For individual overlap, i.e. the number of entities appearing in both sequences, the pair “Dumuzi-Durtur-Eršema (CT 15, pl. 20-21)” and “Innana-Dumuzi-Balaĝ (BE 30/1, 7)” have the highest value of 0.5. 
 

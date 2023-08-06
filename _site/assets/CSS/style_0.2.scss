@@ -317,6 +317,14 @@ section {
     }
   }
 
+  img.not-enlarge {
+    transition: none;
+
+    &:hover {
+      max-width: 100%;
+    }
+  }
+
   i {
     font-size: $icon-size;
     padding: $icon-padding;

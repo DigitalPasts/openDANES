@@ -237,6 +237,12 @@ section img {
 section img:hover {
     max-width: 130%;
 }
+section img.not-enlarge {
+    transition: none;
+}
+section img.not-enlarge:hover {
+    max-width: 100%;
+}
 section i {
     font-size: 25px;
     padding: 1px;

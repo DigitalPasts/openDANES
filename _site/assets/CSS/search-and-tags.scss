@@ -153,6 +153,11 @@ span.doi {
         padding: 0px;
         object-fit: contain;
         border-radius: $card-border-radius;
+        transition: none;
+
+        &:hover {
+          max-width: 100% !important;
+        }
       }
     }
     
@@ -318,6 +323,11 @@ div#no-results {
         padding: 0px;
         object-fit: contain;
         border-radius: $card-border-radius;
+        transition: none;
+
+        &:hover {
+          max-width: 100% !important;
+        }
       }
     }
     

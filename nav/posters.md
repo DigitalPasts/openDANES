@@ -16,7 +16,7 @@ Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/20511
 
 This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
 
-Click [here](../images/posters/DANES2023/arroyo/arroyo_poster.pdfimages/posters/DANES2023/arroyo/arroyo_poster.pdf)){:target="_blank"} 
+Click [here](../images/posters/DANES2023/arroyo/arroyo_poster.pdf)){:target="_blank"} 
 
 ![poster](../images/posters/DANES2023/arroyo/McMiB_Sara.jpg)
 

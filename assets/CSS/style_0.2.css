@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    line-height: 1.6;
 }
 * ::-webkit-scrollbar {
     width: 4px;
@@ -233,6 +232,16 @@ section img {
     max-width: 100%;
     height: auto;
     padding: 0 2.5vw;
+    transition: max-width 0.3s ease-in-out;
+}
+section img:hover {
+    max-width: 130%;
+}
+section img.not-enlarge {
+    transition: none;
+}
+section img.not-enlarge:hover {
+    max-width: 100%;
 }
 section i {
     font-size: 25px;
@@ -479,5 +488,12 @@ footer div a:hover {
 
     blockquote.prompt-tip, blockquote.prompt-info, blockquote.prompt-warning, blockquote.prompt-danger {
         padding: 0 !important;
+    }
+
+    img {
+        transition: none;
+    }
+    img:hover {
+        max-width: 100% !important;
     }
 }

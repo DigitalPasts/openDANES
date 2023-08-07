@@ -7,5 +7,5 @@ authors: openDANES
 
 {% include search.html %}
 
-![image here]({{site.baseurl}}/images/temp_search_image.jpg)
+![image here]({{site.baseurl}}/images/temp_search_image.jpg){: .not-enlarge}
 

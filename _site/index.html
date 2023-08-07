@@ -32,6 +32,29 @@
     <link rel="stylesheet" href="/openDANES/assets/CSS/style_0.2.css">
     <link rel="stylesheet" href="/openDANES/assets/CSS/search-and-tags.css">
     <title>openDANES</title>
+
+    <!-- displaying math formulae -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  
+
   </head>
   <body>
     <header>
@@ -60,7 +83,7 @@
       <h1>Open Digital Ancient Near Eastern Studies</h1>
       <p>Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional historical, archaeological and philological methods. The network also focuses on the critical use of digital text analysis and visual analysis of ancient Near Eastern objects.</p>
 
-<p><img src="/openDANES/images/Babel_tower_homepage.jpg" alt="Tower of Babel" /></p>
+<p><img src="/openDANES/images/Babel_tower_homepage.jpg" alt="Tower of Babel" class="not-enlarge" /></p>
 
 <p class="fig">Mosaic of tower of Babel construction from Monreale Cathedral</p>
 
@@ -93,7 +116,7 @@
     <p>Hosted on
       <a href="https://github.com/DigitalPasts/openDANES" target="_blank">Github Pages</a>
     </p>
-    <p>Last updated on July 31, 2023</p>
+    <p>Last updated on August 06, 2023</p>
   </div>
   
 </footer>

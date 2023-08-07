@@ -159,6 +159,7 @@ While this list is meant to be comprehensive, please contact us to let us know i
 
 ## PDFs Repositories
   - [ETANA Core Texts](https://etana.org/coretexts/search?keyword=&subject=&title=&creator=botta&format=All): It contains many old publications.
+  - Nouvelles Assyriologiques Brèves et Utilitaires ([NABU](https://sepoa.fr/nabu/))
   - [HathiTrust](https://www.hathitrust.org/): A general repository for old publications and collections. 
   - [Archive](https://archive.org/): ALso a general repository for old publications and media.
   - Aula Orientalis (AuOr)
@@ -176,11 +177,11 @@ While this list is meant to be comprehensive, please contact us to let us know i
   - Dictionaries
     - A Concise Dictionary of Akkadian ([CDA](https://stars.library.ucf.edu/ancientneareast/126))
     - The Chicago Assyrian Dictionary([CAD](https://stars.library.ucf.edu/ancientneareast/120)
-  - Nouvelles Assyriologiques Brèves et Utilitaires ([NABU](https://sepoa.fr/nabu/))
 
 ## online Dictionaries
 - [Encyclopaedia Iranica](https://stars.library.ucf.edu/ancientneareast/73)
 - ePensilvannia Sumerian Dictionary ([ePSD](http://oracc.museum.upenn.edu/epsd2/index.html))
+- Akkadian Dictionary ([eBL: Dictionary](https://www.ebl.lmu.de/dictionary)
 
 ## Other
 - Fonts

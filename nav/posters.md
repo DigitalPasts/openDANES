@@ -25,22 +25,42 @@ Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, 
 
 Dumuzi is presented in different ways in Near Eastern myths. He is described as wild bull or man, sometimes he is part of a dedicated family structure or a separated entity. This poster presents eigth different views on the Mesopotamian deity, modelled as minimal (or shallow) ontologies, used to compare Dumuzi’s diverse representations. 
 
+[Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
+
+![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi.jpg)
+
 ### Towards Binarization of Iron Age Ostraca from Multispectral Weakly-Annotated Imaging
 Ohr Dallal, ([TAU](https://en.cs.tau.ac.il/computer)), 
 
 Image binarization is one of the essential and preliminary steps towards many document processing tasks. We aim to binarize Iron Age Hebrew ostraca, which are of great importance to the historical study of ancient Israel and Judah. To this end, a new and unique dataset is introduced, consisting of multispectral ostraca images taken at different camera wavelengths. 
 
+[Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
+
+![poster](../images/posters/DANES2023/ohr/ostraca_binarization_poster_DANES_2023.jpg)
+
 ### Universal dependencies for Hittite
-Maria Molina ([TAU](https://en.cs.tau.ac.il/computer)
+Maria Molina ([TAU](https://en.cs.tau.ac.il/computer))
 
 In the recent years universal dependencies (UD) became the standard for digital treebanks, they are an essential part of annotated linguistic corpora, and they are widely used for comparison of language features in linguistic research. This paper describes the UD annotation for Annotated Corpus of Hittite Clauses (ACHC). It is an ongoing project, starting from previously achieved number of UD-annotated clauses.
+
+[Downloadable link](../images/posters/DANES2023/ACHC/Annotated corpus of Hittite clauses.pdf){:target="_blank"} to the abstract and poster.
+
+![poster](../images/posters/DANES2023/ACHC/ACHC-poster.jpg)
 
 ### FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories
 Adam Anderson ([UC Berkeley](https://bids.berkeley.edu/people/adam-g-anderson))
 
 This project is inspired by the durability of the data preserved in the oldest writing system known to mankind, called cuneiform. There are approximately a half-million artifacts with cuneiform writing spread all over the planet. Many of these objects are not even photographed, let alone translated. Scholars in this field have made a number of relational text databases, in order to identify these objects housed in museums and private collections, and while these databases have helped create a system of identificaiton and textual analysis, they have yet to be linked together to each other and to the existing scholarship. FactGrid is a Wikibase triplestore designed for historical research, which makes this the ideal hub for linking the existing scholarship, both primary and secondary sources, for every cuneiform artifact in publication.
 
+[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.pdf){:target="_blank"} to the abstract and poster.
+
+![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.jpg)
+
 ### Wokflow of Cune-iiif-orm
 Gustav Ryberg Smidt, Katrien De Graef, Lise Foket ([Ghent University](https://research.flw.ugent.be/en/projects/cune-iiif-orm-towards-internationally-image-interoperable-corpus-cuneiform-tablets)) & Hendrik Hameeuw ([KU Leuven](https://www.kuleuven.be/wieiswie/en/person/00045269))
 
 The strategy of the project is to create digital versions of OB tablets within IIIF, publish them in both physical and digital editions and analyse a large corpus of OB cuneiform tablets with computational methods.
+
+[Downloadable link](..images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
+
+![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.jpg)

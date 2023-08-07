@@ -17,14 +17,13 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - Ancient Mesopotamian Gods and Goddesses ([AMGG](http://oracc.museum.upenn.edu/amgg/))
 - Archives Babyloniennes ([Archibab](https://www.archibab.fr/))
 - Babylonische Medizin ([BabMed](https://www.geschkult.fu-berlin.de/e/babmed/index.html))
-- The Cuneiform Commentaries Project (CCP)
-- The Cuneiform Digital Library Initiative (CDLI)
-- Database of Neo-Sumerian Texts (BDTNS)
-- The Electronic Text Corpus of Sumerian Literature (ETCSL)
+- The Cuneiform Commentaries Project (Official: [CCP](https://ccp.yale.edu/); ORACC: [CCPo](http://oracc.museum.upenn.edu/ccpo/pager) )
+- Database of Neo-Sumerian Texts ([BDTNS](http://bdtns.filol.csic.es/index.php?p=formulario_urIII))
+- The Electronic Text Corpus of Sumerian Literature ([ETCSL](https://etcsl.orinst.ox.ac.uk/)) [discontinued]
 - Ebla Digital Archives
 - Emar Online Database
 - Prosobab
-- State Archives of Assyria Online
+- State Archives of Assyria Online ([SAAo](http://oracc.museum.upenn.edu/saao/))
 - Sources of Early Akkadian Literature (SEAL)
 - Ancient Records of Middle Eastern Polities (ARMEP)
 - Digital Archive of the Annual Review of the Royal Inscriptions of  (ARRIM Digital Archive)Mesopotamia
@@ -158,10 +157,9 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - [Virtual Tours of the Pergamon](https://artsandculture.google.com/partner/pergamonmuseum-staatliche-museen-zu-berlin)
 
 ## PDFs Repositories
+### Assyriological Literature
   - [ETANA Core Texts](https://etana.org/coretexts/search?keyword=&subject=&title=&creator=botta&format=All): It contains many old publications.
   - Nouvelles Assyriologiques Brèves et Utilitaires ([NABU](https://sepoa.fr/nabu/))
-  - [HathiTrust](https://www.hathitrust.org/): A general repository for old publications and collections. 
-  - [Archive](https://archive.org/): ALso a general repository for old publications and media.
   - Aula Orientalis (AuOr)
   - Assyriological Studies ([AS](https://isac.uchicago.edu/research/publications/assyriological-studies))
   - Cuneiform Publications
@@ -174,14 +172,19 @@ While this list is meant to be comprehensive, please contact us to let us know i
     - PBS (University of Pennsylvania, Publications of the Babylonian Section)
     - VAB (Vorderasiatsche Bibliothek)
   - Orbis Biblicus et Orientalis ([OBO](https://www.zora.uzh.ch/view/subjects/OBO.html))
-  - Dictionaries
-    - A Concise Dictionary of Akkadian ([CDA](https://stars.library.ucf.edu/ancientneareast/126))
-    - The Chicago Assyrian Dictionary ([CAD](https://stars.library.ucf.edu/ancientneareast/120))
+
+### General Literature
+  - [HathiTrust](https://www.hathitrust.org/): A general repository for old publications and collections. 
+  - [Archive](https://archive.org/): ALso a general repository for old publications and media.
+
+### Dictionaries
+- A Concise Dictionary of Akkadian ([CDA](https://stars.library.ucf.edu/ancientneareast/126))
+- The Chicago Assyrian Dictionary ([CAD](https://stars.library.ucf.edu/ancientneareast/120))
 
 ## online Dictionaries
 - [Encyclopaedia Iranica](https://stars.library.ucf.edu/ancientneareast/73)
 - ePensilvannia Sumerian Dictionary ([ePSD](http://oracc.museum.upenn.edu/epsd2/index.html))
-- Akkadian Dictionary ([eBL: Dictionary](https://www.ebl.lmu.de/dictionary)
+- Akkadian Dictionary ([eBL: Dictionary](https://www.ebl.lmu.de/dictionary))
 
 ## Other
 - Fonts

@@ -176,7 +176,7 @@ While this list is meant to be comprehensive, please contact us to let us know i
   - Orbis Biblicus et Orientalis ([OBO](https://www.zora.uzh.ch/view/subjects/OBO.html))
   - Dictionaries
     - A Concise Dictionary of Akkadian ([CDA](https://stars.library.ucf.edu/ancientneareast/126))
-    - The Chicago Assyrian Dictionary([CAD](https://stars.library.ucf.edu/ancientneareast/120)
+    - The Chicago Assyrian Dictionary ([CAD](https://stars.library.ucf.edu/ancientneareast/120))
 
 ## online Dictionaries
 - [Encyclopaedia Iranica](https://stars.library.ucf.edu/ancientneareast/73)

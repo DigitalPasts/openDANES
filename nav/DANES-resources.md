@@ -16,6 +16,7 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - Achaemenid Royal Inscriptions online ([ARIo](http://oracc.museum.upenn.edu/ario/))
 - Ancient Mesopotamian Gods and Goddesses ([AMGG](http://oracc.museum.upenn.edu/amgg/))
 - Archives Babyloniennes ([Archibab](https://www.archibab.fr/))
+- Babylonische Medizin ([BabMed](https://www.geschkult.fu-berlin.de/e/babmed/index.html))
 - The Cuneiform Commentaries Project (CCP)
 - The Cuneiform Digital Library Initiative (CDLI)
 - Database of Neo-Sumerian Texts (BDTNS)

@@ -34,7 +34,7 @@ Ohr Dallal, ([TAU](https://en.cs.tau.ac.il/computer)),
 
 Image binarization is one of the essential and preliminary steps towards many document processing tasks. We aim to binarize Iron Age Hebrew ostraca, which are of great importance to the historical study of ancient Israel and Judah. To this end, a new and unique dataset is introduced, consisting of multispectral ostraca images taken at different camera wavelengths. 
 
-[Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
+[Downloadable link](../images/posters/DANES2023/ohr/ohr_abstract+poster.pdf){:target="_blank"} to the abstract and poster.
 
 ![poster](../images/posters/DANES2023/ohr/ostraca_binarization_poster_DANES_2023.jpg)
 

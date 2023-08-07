@@ -142,6 +142,7 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - Text Corpus of Middle Assyrian (TCMA)
 - Textual Sources of the Assyrian Empire (TSAE)
 - The X Catalogue (Xcat)
+  
 ## Repositories
 - The Open Richly Annotated Cuneiform Corpus ([ORACC](http://oracc.museum.upenn.edu/))
 - Cuneiform Digital Library Initative ([CDLI](https://cdli.mpiwg-berlin.mpg.de/))
@@ -155,7 +156,7 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - [Digital Collection of the British Musem](https://www.britishmuseum.org/collection)
 - [Virtual Tours of the Pergamon](https://artsandculture.google.com/partner/pergamonmuseum-staatliche-museen-zu-berlin)
 
-### PDFs Repositories
+## PDFs Repositories
   - [ETANA Core Texts](https://etana.org/coretexts/search?keyword=&subject=&title=&creator=botta&format=All): It contains many old publications.
   - [HathiTrust](https://www.hathitrust.org/): A general repository for old publications and collections. 
   - [Archive](https://archive.org/): ALso a general repository for old publications and media.
@@ -180,7 +181,7 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - [Encyclopaedia Iranica](https://stars.library.ucf.edu/ancientneareast/73)
 - ePensilvannia Sumerian Dictionary ([ePSD](http://oracc.museum.upenn.edu/epsd2/index.html))
 
-### Other
+## Other
 - Fonts
 - Input method
 - Keyboard layout

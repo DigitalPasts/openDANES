@@ -105,6 +105,10 @@ span.doi {
     padding: 0px;
     object-fit: contain;
     border-radius: 10px;
+    transition: none;
+}
+.cards .card .visible .card-image img:hover {
+    max-width: 100% !important;
 }
 .cards .card .visible a {
     text-decoration: none;
@@ -203,6 +207,10 @@ div#no-results {
     padding: 0px;
     object-fit: contain;
     border-radius: 10px;
+    transition: none;
+}
+.search-area #results-container .card .card-image img:hover {
+    max-width: 100% !important;
 }
 .search-area #results-container .card a {
     text-decoration: none;

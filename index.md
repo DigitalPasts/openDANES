@@ -9,7 +9,7 @@ authors: openDANES
 
 Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional historical, archaeological and philological methods. The network also focuses on the critical use of digital text analysis and visual analysis of ancient Near Eastern objects.
 
-![Tower of Babel]({{site.baseurl}}/images/Babel_tower_homepage.jpg)
+![Tower of Babel]({{site.baseurl}}/images/Babel_tower_homepage.jpg){: .not-enlarge}
 
 {% include fig_legend.html content="Mosaic of tower of Babel construction from Monreale Cathedral" %}
 

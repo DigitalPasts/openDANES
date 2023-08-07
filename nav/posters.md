@@ -12,7 +12,7 @@ A selection of posters presented in the DANES conferences!
 
 ### Material Culture from the Middle Babylonain Period (McMiB)
 
-Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/205113/detalle)),
+Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/205113/detalle))
 
 This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
 
@@ -52,7 +52,7 @@ Adam Anderson ([UC Berkeley](https://bids.berkeley.edu/people/adam-g-anderson))
 
 This project is inspired by the durability of the data preserved in the oldest writing system known to mankind, called cuneiform. There are approximately a half-million artifacts with cuneiform writing spread all over the planet. Many of these objects are not even photographed, let alone translated. Scholars in this field have made a number of relational text databases, in order to identify these objects housed in museums and private collections, and while these databases have helped create a system of identificaiton and textual analysis, they have yet to be linked together to each other and to the existing scholarship. FactGrid is a Wikibase triplestore designed for historical research, which makes this the ideal hub for linking the existing scholarship, both primary and secondary sources, for every cuneiform artifact in publication.
 
-[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.pdf){:target="_blank"} to the abstract and poster.
+[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.pdf){:target="_blank"} to the poster.
 
 ![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.jpg)
 

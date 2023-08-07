@@ -10,7 +10,7 @@ A selection of posters presented in the DANES conferences!
 
 ## DANES 2023
 
-### *Material Culture from the Middle Babylonain Period (McMiB)*
+### Material Culture from the Middle Babylonain Period (McMiB)
 
 Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/205113/detalle)),
 

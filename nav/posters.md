@@ -13,7 +13,9 @@ A selection of posters presented in the DANES conferences!
 - Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/205113/detalle)), *Material Culture from the Middle Babylonain Period (McMiB)*
 
 
-    This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
+This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
+
+{% include link.html url="{{site.baseurl}}/images/posters/DANES2023/arroyo/arroyo_poster.pdf" content="Downloadable link" %} to the abstract and poster.
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
 Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, ([MCDCI](https://www.uni-marburg.de/de/mcdci)),

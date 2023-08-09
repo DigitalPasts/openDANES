@@ -154,23 +154,23 @@ In markdown syntax:
 
 ## Links
 
-Showing Link: Go to {% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="" %}.
+Showing Link: Go to <https://digitalpasts.github.io/openDANES/index.html>{:target="_blank"}.
 
 In markdown syntax:
 
 {% raw %}
-```rb
-{% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="" %}
+```md
+<https://digitalpasts.github.io/openDANES/index.html>{:target="_blank"}
 ```
 {% endraw %}
 
-Link Embedded in text: Go to the {% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="OpenDANES journal" %}.
+Link Embedded in text: Go to the [OpenDANES journal](https://digitalpasts.github.io/openDANES/index.html){:target="_blank"}.
 
 In markdown syntax:
 
 {% raw %}
-```rb
-{% include link.html url="https://digitalpasts.github.io/openDANES/index.html" content="OpenDANES journal" %}.
+```md
+[OpenDANES journal](https://digitalpasts.github.io/openDANES/index.html){:target="_blank"}.
 ```
 {% endraw %}
 

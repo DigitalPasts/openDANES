@@ -15,7 +15,7 @@ A selection of posters presented in the DANES conferences!
 
 This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
 
-{% include link.html url="https://digitalpasts.github.io/openDANES/images/posters/DANES2023/arroyo/arroyo_poster.pdf" content="Downloadable link" %} to the abstract and poster.
+[Downloadable link](https://digitalpasts.github.io/openDANES/images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
 Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, ([MCDCI](https://www.uni-marburg.de/de/mcdci)),

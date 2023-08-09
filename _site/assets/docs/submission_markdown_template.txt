@@ -76,13 +76,9 @@ Unordered list:
 
 ## Links
 
-Showing Link: Go to 
-  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">https://digitalpasts.github.io/openDANES/index.html</a>
-.
+Showing Link: Go to <https://digitalpasts.github.io/openDANES/index.html>{:target="_blank"}.
 
-Link Embedded in text: Go to the 
-  <a href="https://digitalpasts.github.io/openDANES/index.html" target="_blank">OpenDANES journal</a>
-.
+Link Embedded in text: Go to the [OpenDANES journal](https://digitalpasts.github.io/openDANES/index.html){:target="_blank"}.
 
 ## Footnotes
 

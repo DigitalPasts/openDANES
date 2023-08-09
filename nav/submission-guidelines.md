@@ -72,7 +72,7 @@ We do not request submission in a specific structure. However, we recommend for 
 
 ### Manuscript Formatting
 
-Submissions are accepted in either **markdown** or **google doc** files. No other file formats are accepted. Images need to be uploaded separately in the submission form: please prepare them accordingly ahead of time.
+Submissions are accepted in either **markdown** or **Google Doc** files. No other file formats are accepted. Images need to be uploaded separately in the submission form: please prepare them accordingly ahead of time.
 
 We ask authors to follow certain guidelines when formatting their manuscripts, such as using particular syntax for codeblocks, links, figures and legends, etc., as well as filling up the YAML frontmatter,[^1] for both markdown and google doc submissions. This ensures the submissions will be displayed correctly on the OpenDANES website. Following these guidelines would significantly speed up the publication process and is greatly appreciated.
 
@@ -80,7 +80,7 @@ We ask authors to follow certain guidelines when formatting their manuscripts, s
 
 #### General Syntax Instructions
 
-To assist the process of preparing the manuscript, there are templates available for [markdown]({{site.baseurl}}/assets/docs/submission_markdown_template.txt) and [Google Doc](https://docs.google.com/document/d/e/2PACX-1vR6iQY97y0PKApP9eMZGPYFpgDezxVzr8ToCvt1KNBSuwscPG5Qx-G6wBXVRp8qqInqrn4vyu0PbpNv/pub){:target="blank"}. These templates include examples of all the formatting types that may be needed (headings, lists, codeblocks, prompts, etc.). How they are then displayed on the OpenDANES platform can be viewed [through this link]({{site.baseurl}}/pages/submission_markdown_template.html), where you can also copy the required syntax.
+To assist the process of preparing the manuscript, there are templates available for [markdown]({{site.baseurl}}/assets/docs/submission_markdown_template.txt) and [Google Doc](https://docs.google.com/document/d/1vEN10AzFCHdKRRkDYXInWEWKYjQINlsNfoLSkMvsYzA/edit?usp=sharing){:target="blank"}. In order to write in the Google Doc, make a local copy by going to file > Make a copy. These templates include examples of all the formatting types that may be needed (headings, lists, codeblocks, prompts, etc.). How they are then displayed on the OpenDANES platform can be viewed [through this link]({{site.baseurl}}/pages/submission_markdown_template.html), where you can also copy the required syntax.
 
 For mathematical formulae, please use LaTeX syntax that is supported by [mathjax](https://www.mathjax.org/){:target="_blank"}. The syntax can be consulted through the tables [in the following link](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject){:target="_blank"}. 
 
@@ -140,7 +140,7 @@ The following fields **need to be changed** by the author(s):
 
 #### Style Guidelines and Citations
 
-The OpenDANES platform follows the style guidelines of the Programming Historian. Please consult their Specific Writing Guidelines section in their author guidelines (https://programminghistorian.org/en/author-guidelines#b-specific-writing-guidelines)
+The OpenDANES platform follows the style guidelines of the Programming Historian. Please consult their Specific Writing Guidelines section in their [author guidelines](https://programminghistorian.org/en/author-guidelines#b-specific-writing-guidelines){:target="_blank"}.
 
 If you are citing academic publications (articles, books, etc.), please include a `References` section at the end of you submission before the `Notes` (footnotes) section. The references should be fully formatted according to the Programming Historian guidelines linked above.
 

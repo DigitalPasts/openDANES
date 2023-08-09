@@ -10,12 +10,12 @@ span.doi {
 
 .author-card {
     display: flex;
-    border: 1px solid #074e67;
+    border: 1px solid #9a6b23;
     border-radius: 10px;
     padding: 2.5%;
     margin: 3% 0%;
     width: 100%;
-    background-color: #82C3C4;
+    background-color: #e3ad5b;
 }
 .author-card .author-box1, .author-card .author-box2 {
     flex: 1 1 0px;
@@ -30,11 +30,11 @@ span.doi {
     padding-left: 5px;
 }
 .author-card a {
-    color: #074e67;
+    color: #9a6b23;
     transition: color 0.3s ease-in-out;
 }
 .author-card a:hover {
-    color: #05878a;
+    color: #5c4015;
 }
 .author-card .authors-container {
     padding: 5px 0px;
@@ -86,15 +86,14 @@ span.doi {
     padding: 2.5%;
     margin: 3% 0%;
     background-color: #e3ad5b;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     color: black;
     display: flex;
 }
 .cards .card .visible:hover {
-    background-color: #82C3C4;
-    color: #074e67;
-    border-color: #074e67;
+    background-color: #ece7e6;
+    border-color: #968e8c;
 }
 .cards .card .visible .card-image {
     max-width: 25%;
@@ -146,21 +145,19 @@ span.doi {
 .tags span {
     border: 1px solid #9a6b23;
     border-radius: 10px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     padding: 0.4vw 0.8vw;
     margin: 0.5vw;
     background-color: #e3ad5b;
 }
 .tags span:hover {
-    background-color: #82C3C4;
-    color: #074e67;
-    border-color: #074e67;
+    background-color: #ece7e6;
+    border-color: #968e8c;
     cursor: pointer;
 }
 .tags .clicked {
-    background-color: #82C3C4;
-    color: #074e67;
-    border-color: #074e67;
+    background-color: #ece7e6;
+    border-color: #968e8c;
 }
 
 div#no-results {
@@ -194,9 +191,9 @@ div#no-results {
     display: flex;
 }
 .search-area #results-container .card:hover {
-    background-color: #82C3C4;
-    color: #074e67;
-    border-color: #074e67;
+    background-color: #ece7e6;
+    color: #968e8c;
+    border-color: #968e8c;
 }
 .search-area #results-container .card .card-image {
     max-width: 25%;
@@ -221,7 +218,7 @@ div#no-results {
     transition: color 0.3s ease-in-out;
 }
 .search-area #results-container .card a .card-body:hover {
-    color: #074e67;
+    color: #968e8c;
 }
 .search-area #results-container .card a .card-body h3.card-title {
     margin-top: 0;

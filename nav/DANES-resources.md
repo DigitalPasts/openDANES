@@ -10,22 +10,18 @@ The following provides a list of digital, online resources for studying the anci
 
 While this list is meant to be comprehensive, please contact us to let us know if anything is missed!
 
-## Digital Projects and Databses
+## Datasets and Databses
 
 - [Achemenet](http://www.achemenet.com/en/)
-- Achaemenid Royal Inscriptions online ([ARIo](http://oracc.museum.upenn.edu/ario/))
-- Ancient Mesopotamian Gods and Goddesses ([AMGG](http://oracc.museum.upenn.edu/amgg/))
 - Archives Babyloniennes ([Archibab](https://www.archibab.fr/))
 - Babylonische Medizin ([BabMed](https://www.geschkult.fu-berlin.de/e/babmed/index.html))
-- The Cuneiform Commentaries Project (Official: [CCP](https://ccp.yale.edu/); ORACC: [CCPo](http://oracc.museum.upenn.edu/ccpo/pager) )
+- The Cuneiform Commentaries Project (Official: [CCP](https://ccp.yale.edu/)
 - Database of Neo-Sumerian Texts ([BDTNS](http://bdtns.filol.csic.es/index.php?p=formulario_urIII))
 - The Electronic Text Corpus of Sumerian Literature ([ETCSL](https://etcsl.orinst.ox.ac.uk/)) [discontinued]
 - Ebla Digital Archives
 - Emar Online Database
 - Prosobab
-- State Archives of Assyria Online ([SAAo](http://oracc.museum.upenn.edu/saao/))
 - Sources of Early Akkadian Literature (SEAL)
-- Ancient Records of Middle Eastern Polities (ARMEP)
 - Digital Archive of the Annual Review of the Royal Inscriptions of  (ARRIM Digital Archive)Mesopotamia
 - Ashurbanipal Library Project (AsbP)
 - The Nineveh Medical Encyclopaedia (NinMed)

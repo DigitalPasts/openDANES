@@ -25,7 +25,7 @@ Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, 
 
 Dumuzi is presented in different ways in Near Eastern myths. He is described as wild bull or man, sometimes he is part of a dedicated family structure or a separated entity. This poster presents eigth different views on the Mesopotamian deity, modelled as minimal (or shallow) ontologies, used to compare Dumuzi’s diverse representations. 
 
-[Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
+[Downloadable link](../images/posters/DANES2023/pannach-blaschke/pannach_blaschke.pdf){:target="_blank"} to the abstract and poster.
 
 ![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi.jpg)
 
@@ -43,7 +43,7 @@ Maria Molina ([TAU](https://en.cs.tau.ac.il/computer))
 
 In the recent years universal dependencies (UD) became the standard for digital treebanks, they are an essential part of annotated linguistic corpora, and they are widely used for comparison of language features in linguistic research. This paper describes the UD annotation for Annotated Corpus of Hittite Clauses (ACHC). It is an ongoing project, starting from previously achieved number of UD-annotated clauses.
 
-[Downloadable link](../images/posters/DANES2023/ACHC/Annotated corpus of Hittite clauses.pdf){:target="_blank"} to the abstract and poster.
+[Downloadable link](../images/posters/DANES2023/ACHC/ACHC.pdf){:target="_blank"} to the abstract and poster.
 
 ![poster](../images/posters/DANES2023/ACHC/ACHC-poster.jpg)
 
@@ -54,7 +54,7 @@ This project is inspired by the durability of the data preserved in the oldest w
 
 [Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.pdf){:target="_blank"} to the poster.
 
-![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.jpg)
+![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.png)
 
 ### Wokflow of Cune-iiif-orm
 Gustav Ryberg Smidt, Katrien De Graef, Lise Foket ([Ghent University](https://research.flw.ugent.be/en/projects/cune-iiif-orm-towards-internationally-image-interoperable-corpus-cuneiform-tablets)) & Hendrik Hameeuw ([KU Leuven](https://www.kuleuven.be/wieiswie/en/person/00045269))

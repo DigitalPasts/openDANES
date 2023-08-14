@@ -30,7 +30,5 @@ Our editorial team is in charge of being in contact with authors through the pro
 
 The editorial team members are:
 
-
-- [Stav Klein](https://github.com/stavkl){:target="_blank"} (Digital Pasts Lab and Tel Aviv University): code validation, website maintenance.
 - [Avital Romach](https://yale.academia.edu/AvitalRomach){:target="_blank"} (Yale University): website development, design and maintenance.
 - [Luis Sáenz](https://uni-heidelberg.academia.edu/LuisDanielSaenzSantos){:target="_blank"} (Heidelberg University): contact person, peer-review process.

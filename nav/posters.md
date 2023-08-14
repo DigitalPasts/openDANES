@@ -52,7 +52,7 @@ Adam Anderson ([UC Berkeley](https://bids.berkeley.edu/people/adam-g-anderson))
 
 This project is inspired by the durability of the data preserved in the oldest writing system known to mankind, called cuneiform. There are approximately a half-million artifacts with cuneiform writing spread all over the planet. Many of these objects are not even photographed, let alone translated. Scholars in this field have made a number of relational text databases, in order to identify these objects housed in museums and private collections, and while these databases have helped create a system of identificaiton and textual analysis, they have yet to be linked together to each other and to the existing scholarship. FactGrid is a Wikibase triplestore designed for historical research, which makes this the ideal hub for linking the existing scholarship, both primary and secondary sources, for every cuneiform artifact in publication.
 
-[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.pdf){:target="_blank"} to the poster.
+[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.pdf){:target="_blank"} to the poster.
 
 ![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.png)
 
@@ -61,6 +61,6 @@ Gustav Ryberg Smidt, Katrien De Graef, Lise Foket ([Ghent University](https://re
 
 The strategy of the project is to create digital versions of OB tablets within IIIF, publish them in both physical and digital editions and analyse a large corpus of OB cuneiform tablets with computational methods.
 
-[Downloadable link](..images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
+[Downloadable link](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
 
 ![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.jpg)

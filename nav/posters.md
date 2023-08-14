@@ -18,7 +18,7 @@ This poster aims to show the main objectives to be developed within the project 
 
 [Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/arroyo/McMiB_Sara.jpg)
+![poster](../images/posters/DANES2023/arroyo/McMiB_Sara-min.jpg)
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
 Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, ([MCDCI](https://www.uni-marburg.de/de/mcdci)),
@@ -27,7 +27,7 @@ Dumuzi is presented in different ways in Near Eastern myths. He is described as 
 
 [Downloadable link](../images/posters/DANES2023/pannach-blaschke/pannach_blaschke.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi.jpg)
+![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi-min.jpg)
 
 ### Towards Binarization of Iron Age Ostraca from Multispectral Weakly-Annotated Imaging
 Ohr Dallal, ([TAU](https://en.cs.tau.ac.il/computer)), 
@@ -36,7 +36,7 @@ Image binarization is one of the essential and preliminary steps towards many do
 
 [Downloadable link](../images/posters/DANES2023/ohr/ohr_abstract+poster.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/ohr/ostraca_binarization_poster_DANES_2023.jpg)
+![poster](../images/posters/DANES2023/ohr/ostraca_binarization_poster_DANES_2023-min.jpg)
 
 ### Universal dependencies for Hittite
 Maria Molina ([TAU](https://en.cs.tau.ac.il/computer))
@@ -45,7 +45,7 @@ In the recent years universal dependencies (UD) became the standard for digital 
 
 [Downloadable link](../images/posters/DANES2023/ACHC/ACHC.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/ACHC/ACHC-poster.jpg)
+![poster](../images/posters/DANES2023/ACHC/ACHC-poster-min.jpg)
 
 ### FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories
 Adam Anderson ([UC Berkeley](https://bids.berkeley.edu/people/adam-g-anderson))
@@ -54,7 +54,7 @@ This project is inspired by the durability of the data preserved in the oldest w
 
 [Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.pdf){:target="_blank"} to the poster.
 
-![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.png)
+![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023-min.jpg)
 
 ### Wokflow of Cune-iiif-orm
 Gustav Ryberg Smidt, Katrien De Graef, Lise Foket ([Ghent University](https://research.flw.ugent.be/en/projects/cune-iiif-orm-towards-internationally-image-interoperable-corpus-cuneiform-tablets)) & Hendrik Hameeuw ([KU Leuven](https://www.kuleuven.be/wieiswie/en/person/00045269))
@@ -63,4 +63,4 @@ The strategy of the project is to create digital versions of OB tablets within I
 
 [Downloadable link](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
 
-![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.jpg)
+![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm-min.jpg)

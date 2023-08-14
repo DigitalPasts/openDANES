@@ -16,9 +16,7 @@ Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/20511
 
 This poster aims to show the main objectives to be developed within the project "Material culture from Middle Babylonian period (McMiB): digitalization and democratization of the access to the cultural heritage of the Ancient Near East", funded thanks to a "María Zambrano" Postdoctoral Fellowship.
 
-[Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
-
-![poster](../images/posters/DANES2023/arroyo/McMiB_Sara.jpg)
+[Downloadable link](https://digitalpasts.github.io/openDANES/images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
 Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, ([MCDCI](https://www.uni-marburg.de/de/mcdci)),
@@ -60,7 +58,3 @@ This project is inspired by the durability of the data preserved in the oldest w
 Gustav Ryberg Smidt, Katrien De Graef, Lise Foket ([Ghent University](https://research.flw.ugent.be/en/projects/cune-iiif-orm-towards-internationally-image-interoperable-corpus-cuneiform-tablets)) & Hendrik Hameeuw ([KU Leuven](https://www.kuleuven.be/wieiswie/en/person/00045269))
 
 The strategy of the project is to create digital versions of OB tablets within IIIF, publish them in both physical and digital editions and analyse a large corpus of OB cuneiform tablets with computational methods.
-
-[Downloadable link](..images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
-
-![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.jpg)

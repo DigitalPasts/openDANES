@@ -19,10 +19,10 @@ When a manuscript is submitted to the OpenDANES platform, it goes through an ini
 
 The editorial board includes members from varied fields within ancient Near Eastern Studies, who combine computational methods in their research:
 
-- {% include link.html url="https://fu-berlin.academia.edu/MarineB%C3%A9ranger" content="Marine Béranger" %} (FU Berlin)
-- {% include link.html url="https://ariel.academia.edu/ShaiGordin" content="Shai Gordin" %} (Digital Pasts Lab)
-- {% include link.html url="https://www.geschkult.fu-berlin.de/e/aegyptologie/personen/Professorinnen-und-Professoren/Lincke/index.html" content="Eliese-Sophia Lincke" %} (FU Berlin)
-- {% include link.html url="https://researchportal.helsinki.fi/en/persons/aleksi-sahala" content="Aleksi Sahala" %} (University of Helsinki)
+- [Marine Béranger](https://fu-berlin.academia.edu/MarineB%C3%A9ranger){:target="_blank"} (FU Berlin)
+- [Shai Gordin](https://ariel.academia.edu/ShaiGordin){:target="_blank"} (Digital Pasts Lab)
+- [Eliese-Sophia Lincke](https://www.geschkult.fu-berlin.de/e/aegyptologie/personen/Professorinnen-und-Professoren/Lincke/index.html){:target="_blank"} (FU Berlin)
+- [Aleksi Sahala](https://researchportal.helsinki.fi/en/persons/aleksi-sahala){:target="_blank"} (University of Helsinki)
 
 ## Editorial Team
 
@@ -30,6 +30,7 @@ Our editorial team is in charge of being in contact with authors through the pro
 
 The editorial team members are:
 
-- {% include link.html url="https://github.com/stavkl" content="Stav Klein" %} (Digital Pasts Lab and Tel Aviv University): code validation, website maintenance.
-- {% include link.html url="https://yale.academia.edu/AvitalRomach" content="Avital Romach" %} (Yale University): website development, design and maintenance.
-- {% include link.html url="https://uni-heidelberg.academia.edu/LuisDanielSaenzSantos" content="Luis Sáenz" %} (Heidelberg University): contact person, peer-review process.
+
+- [Stav Klein](https://github.com/stavkl){:target="_blank"} (Digital Pasts Lab and Tel Aviv University): code validation, website maintenance.
+- [Avital Romach](https://yale.academia.edu/AvitalRomach){:target="_blank"} (Yale University): website development, design and maintenance.
+- [Luis Sáenz](https://uni-heidelberg.academia.edu/LuisDanielSaenzSantos){:target="_blank"} (Heidelberg University): contact person, peer-review process.

@@ -2,13 +2,17 @@
 $primary-color: #52053E;
 $primary-color-dark: #330327;
 $primary-color-light: #67074e;
-$secondary-color: #05878a;
-$secondary-color-dark: #074e67;
-$secondary-color-light: #82C3C4;
+$secondary-color: #d7ccc8;
+$secondary-color-dark: #968e8c;
+$secondary-color-light: #ece7e6;
+// $secondary-color: #05878a;
+// $secondary-color-dark: #074e67;
+// $secondary-color-light: #82C3C4;
 $third-color: #5a175d;
 $contrast-color: #feda75;
 $secondary-contrast-color: #e3ad5b;
 $secondary-contrast-color-dark: #9a6b23;
+$secondary-contrast-color-darker: #5c4015;
 $light-color: #FEFBF1;
 
 $card-border-color: #333;
@@ -35,12 +39,12 @@ span.doi {
 
 .author-card {
   display: flex;
-  border: 1px solid $secondary-color-dark;
+  border: 1px solid $secondary-contrast-color-dark;
   border-radius: $card-border-radius;
   padding: 2.5%;
   margin: 3% 0%;
   width: 100%;
-  background-color: $secondary-color-light;
+  background-color: $secondary-contrast-color;
 
   .author-box1, .author-box2 {
     flex: 1 1 0px;
@@ -59,11 +63,11 @@ span.doi {
   }
 
   a {
-    color: $secondary-color-dark;
+    color: $secondary-contrast-color-dark;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: $secondary-color;
+      color: $secondary-contrast-color-darker;
     }
   }
 
@@ -132,14 +136,13 @@ span.doi {
     padding: 2.5%;
     margin: 3% 0%;
     background-color: $secondary-contrast-color;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     color: black;
     display: flex;
     
     &:hover {
       background-color: $secondary-color-light;
-      color: $secondary-color-dark;
       border-color: $secondary-color-dark;
     }
 
@@ -209,14 +212,13 @@ span.doi {
   span {
     border: 1px solid $secondary-contrast-color-dark;
     border-radius: $card-border-radius;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     padding: 0.4vw 0.8vw;
     margin: 0.5vw;
     background-color: $secondary-contrast-color;
   
     &:hover {
       background-color: $secondary-color-light;
-      color: $secondary-color-dark;
       border-color: $secondary-color-dark;
       cursor: pointer;
     }
@@ -224,7 +226,6 @@ span.doi {
 
   .clicked {
     background-color: $secondary-color-light;
-    color: $secondary-color-dark;
     border-color: $secondary-color-dark;
   }
 

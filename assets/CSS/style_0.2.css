@@ -208,8 +208,8 @@ section ul li, section ol li {
 }
 section ul li a, section ol li a {
     text-decoration: none;
-    color: #d7ccc8;
-    border-bottom: #d7ccc8 1px dashed;
+    color: #05878a;
+    border-bottom: #05878a 1px dashed;
     transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
 }
 section ul li a:hover, section ol li a:hover {

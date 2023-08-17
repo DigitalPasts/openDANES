@@ -4,25 +4,106 @@ title: Online Resources for Digital Ancient Near Eastern Studies
 type: nav
 authors: openDANES
 tags: navigation bar
+egyptology: <i class="fa-solid fa-ankh"></i>
+assyriology: <i>𒍣</i>
+archaeology: <i class="fa-solid fa-person-digging"></i>
+semitic-studies: 𐤀
+classics: <i class="fa-solid fa-landmark"></i>
 ---
 
 The following provides a list of digital, online resources for studying the ancient Near East.
 
 While this list is meant to be comprehensive, please contact us to let us know if anything is missed!
 
-## Datasets and Databses
+{{ page.archaeology }}  Archaeology
 
-- [Achemenet](http://www.achemenet.com/en/)
-- Archives Babyloniennes ([Archibab](https://www.archibab.fr/))
-- Babylonische Medizin ([BabMed](https://www.geschkult.fu-berlin.de/e/babmed/index.html))
-- The Cuneiform Commentaries Project (Official: [CCP](https://ccp.yale.edu/)
-- Database of Neo-Sumerian Texts ([BDTNS](http://bdtns.filol.csic.es/index.php?p=formulario_urIII))
-- The Electronic Text Corpus of Sumerian Literature ([ETCSL](https://etcsl.orinst.ox.ac.uk/)) [discontinued]
+{{ page.assyriology }}  Assyriology
+
+{{ page.classics }} Classics (ancient Greece and Rome)
+
+{{ page.egyptology }} Egyptology
+
+{{ page.semitic-studies }}  Semitic Studies
+
+<div id="output"></div>
+
+<!-- ## Datasets and Databases
+
+- **Achemenet** {{ page.assyriology }} {{ page.classics }}
+
+<http://www.achemenet.com/en/>{:target="_blank"}
+
+An online dataset of primary sources for the study of the Achaemenid empire (550-330 BCE). It includes online text editions of Aramaic, Akkadian, Egyptian, Elamite, Greek, and Lycian documents, as well as images, drawings, and descriptions of relevant Achaemenid period sites.
+
+Initiator(s): Pierre Briant
+
+Number of sources: ca. 4,000 texts
+
+Is downloadable: no
+
+- **Archives Babyloniennes** (Archibab) {{ page.assyriology }}
+
+<https://www.archibab.fr/>{:target="_blank"}
+
+An online dataset of textual editions of documents from the Old Babylonian period (20<sup>th</sup>-17<sup>th</sup> centuries BCE). In addition to online edition, it includes a searchable bibliography of secondary publications relevant to the period, information on seals, and a link to a dataset on prices and wages for the period prepared by Howard Farber.
+
+Initiator(s): Dominique Charpin
+
+Number of sources: ca. 23,000 texts
+
+Is downloadable: no
+
+- **Babylonische Medizin** (BabMed) {{ page.assyriology }}
+
+<https://www.geschkult.fu-berlin.de/e/babmed/Corpora/index.html>{:target="_blank"}
+
+The Babylonische Medizin project aims to comprehensively study cuneiform medical texts, in comparison with later medical traditions in the Babylonian Talmud and the Greco-Roman traditions. As part of the project, they publish online editions of cuneiform medical texts that have yet to be edited before.
+
+Initiator(s): Markham J. Geller, J. Cale Johnson
+
+Number of sources: unspecified
+
+Is downloadable: no
+
+- **The Cuneiform Commentaries Project** (CCP) {{ page.assyriology }}
+
+<https://ccp.yale.edu/>{:target="_blank"}
+
+Cuneiform commentaries are hermeneutical texts dedicated to explaining learned Mesopotamian texts. They are approximately 900 cuneiform commentaries, all from the first millennium BCE. The CCP projects has a catalogue for each commentary, as well as lemmatized textual editions for some of the corpus. The project portal also includes introductory materials into the commentaries' history, typology, techniques, etc.
+
+Initiator(s): Eckart Frahm, Enrique Jiménez
+
+Number of sources: 882 texts in database; 205 texts with editions
+
+Is downloadable: yes, through [ORACC](http://oracc.museum.upenn.edu/ccpo/json/ccpo.zip){:target="_blank"}
+
+- **Database of Neo-Sumerian Texts** (BDTNS) {{ page.assyriology }}
+
+<http://bdtns.filol.csic.es/index.php?p=home>{:target="_blank"}
+
+The BDTNS project collects Sumerian administrative texts from the Ur III period (21<sup>th</sup> century BCE). This period provides an unprecedented amount of records documenting the complex bureaucratical system of the Ur III empire--there are estimated to be ca. 120,000 administrative documents from this period, today spread across museums world wide. The website includes textual editions, photographs, and metadata.
+
+Initiator(s): Manuel Molina, Marcel Sigrist
+
+Number of sources: 104,570 texts overall; 68,529 with hand-copy or edition
+
+Is downloadable: yes, through CDLI data dump (see below)
+
+- **The Electronic Text Corpus of Sumerian Literature** (ETCSL) {{ page.assyriology }}
+
+<https://etcsl.orinst.ox.ac.uk/>{:target="_blank"}
+
+Initiator(s): 
+
+Number of sources: 
+
+Is downloadable: 
+
 - Ebla Digital Archives
 - Emar Online Database
 - Prosobab
 - Sources of Early Akkadian Literature (SEAL)
-- Digital Archive of the Annual Review of the Royal Inscriptions of  (ARRIM Digital Archive)Mesopotamia
+- Digital Archive of the Annual Review of the Royal Inscriptions of  (ARRIM Digital Archive) Mesopotamia
 - Ashurbanipal Library Project (AsbP)
 - The Nineveh Medical Encyclopaedia (NinMed)
 - Reading the Library of Ashurbanipal project (RLAsb)
@@ -186,4 +267,4 @@ While this list is meant to be comprehensive, please contact us to let us know i
 - Fonts
 - Input method
 - Keyboard layout
-- Akkadian Verb Conjugatior
+- Akkadian Verb Conjugatior -->

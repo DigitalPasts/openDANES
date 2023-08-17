@@ -18,7 +18,7 @@ This poster aims to show the main objectives to be developed within the project 
 
 [Downloadable link](../images/posters/DANES2023/arroyo/arroyo_poster.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/arroyo/McMiB_Sara.jpg)
+![poster](../images/posters/DANES2023/arroyo/McMiB_Sara-min.jpg)
 
 ### Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies
 Franziska Pannach ([GCDH](https://www.gcdh.de/en/welcome/)) & Theresa Blaschke, ([MCDCI](https://www.uni-marburg.de/de/mcdci)),
@@ -27,7 +27,7 @@ Dumuzi is presented in different ways in Near Eastern myths. He is described as 
 
 [Downloadable link](../images/posters/DANES2023/pannach-blaschke/pannach_blaschke.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi.jpg)
+![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi-min.jpg)
 
 ### Towards Binarization of Iron Age Ostraca from Multispectral Weakly-Annotated Imaging
 Ohr Dallal, ([TAU](https://en.cs.tau.ac.il/computer)), 
@@ -36,7 +36,7 @@ Image binarization is one of the essential and preliminary steps towards many do
 
 [Downloadable link](../images/posters/DANES2023/ohr/ohr_abstract+poster.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/ohr/ostraca_binarization_poster_DANES_2023.jpg)
+![poster](../images/posters/DANES2023/ohr/ostraca_binarization_poster_DANES_2023-min.jpg)
 
 ### Universal dependencies for Hittite
 Maria Molina ([TAU](https://en.cs.tau.ac.il/computer))
@@ -45,22 +45,22 @@ In the recent years universal dependencies (UD) became the standard for digital 
 
 [Downloadable link](../images/posters/DANES2023/ACHC/ACHC.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/ACHC/ACHC-poster.jpg)
+![poster](../images/posters/DANES2023/ACHC/ACHC-poster-min.jpg)
 
 ### FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories
 Adam Anderson ([UC Berkeley](https://bids.berkeley.edu/people/adam-g-anderson))
 
 This project is inspired by the durability of the data preserved in the oldest writing system known to mankind, called cuneiform. There are approximately a half-million artifacts with cuneiform writing spread all over the planet. Many of these objects are not even photographed, let alone translated. Scholars in this field have made a number of relational text databases, in order to identify these objects housed in museums and private collections, and while these databases have helped create a system of identificaiton and textual analysis, they have yet to be linked together to each other and to the existing scholarship. FactGrid is a Wikibase triplestore designed for historical research, which makes this the ideal hub for linking the existing scholarship, both primary and secondary sources, for every cuneiform artifact in publication.
 
-[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA_Poster_2022-Adam-Anderson.pdf){:target="_blank"} to the poster.
+[Downloadable link](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.pdf){:target="_blank"} to the poster.
 
-![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023.png)
+![poster](../images/posters/DANES2023/factgrid/FactGrid_AWCA-DANES_2023-min.jpg)
 
 ### Wokflow of Cune-iiif-orm
 Gustav Ryberg Smidt, Katrien De Graef, Lise Foket ([Ghent University](https://research.flw.ugent.be/en/projects/cune-iiif-orm-towards-internationally-image-interoperable-corpus-cuneiform-tablets)) & Hendrik Hameeuw ([KU Leuven](https://www.kuleuven.be/wieiswie/en/person/00045269))
 
 The strategy of the project is to create digital versions of OB tablets within IIIF, publish them in both physical and digital editions and analyse a large corpus of OB cuneiform tablets with computational methods.
 
-[Downloadable link](..images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
+[Downloadable link](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.pdf){:target="_blank"} to the poster.
 
-![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm.jpg)
+![poster](../images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm-min.jpg)

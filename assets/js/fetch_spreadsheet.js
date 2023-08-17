@@ -1,3 +1,8 @@
+// to set up the api credentials, follow instructions here:
+// https://developers.google.com/sheets/api/quickstart/js
+// and/or here:
+// https://phppot.com/javascript/google-sheets-javascript/
+
 // Replace with your actual API key and spreadsheet ID
 const apiKey = 'AIzaSyAjeOqhGmy1Ptl5ZdKMjfmkfaoOhekGd0w';
 const spreadsheetId = '1WD3KdRPNvbXeaQAusb_MsOStyNha8XnA6Op_CWtD-OQ';
@@ -50,12 +55,18 @@ async function fetchAndDisplayData() {
       section.innerHTML = `<h2 id="${headingId}">${resourceType}</h2>`;
 
       const items = sortedData[resourceType]; // Get the items for the current resourceType
+
+      // Sort the items alphabetically by Resource Title (assuming it's in the second column)
+      items.sort((a, b) => {
+        const resourceTitleA = a[1];
+        const resourceTitleB = b[1];
+        return resourceTitleA.localeCompare(resourceTitleB);
+      });
       
       for (let index = 0; index < items.length; index++) {
         const row = items[index];
 
-      // sortedData[resourceType].forEach(row => {
-        const [resourceType, resourceTitle, abbreviation, fields, url, summary, initiators, numSources, isDownloadable] = row;
+        const [resourceType, resourceTitle, abbreviation, fields, url, summary, initiators, numSources, isDownloadable, citation] = row;
 
         const item = document.createElement('div');
 
@@ -63,7 +74,7 @@ async function fetchAndDisplayData() {
         const formattedFields = fields ? fields.split('; ').map(fieldName => fieldIcons[fieldName]).join(' ') : '';
         title.innerHTML = `
           <span style="font-weight: bold">${resourceTitle}</span>
-          ${abbreviation ? ` (${abbreviation})` : ''}
+          ${abbreviation ? ` (${abbreviation})` : ''} | 
           ${formattedFields}
         `;
 
@@ -74,6 +85,7 @@ async function fetchAndDisplayData() {
           <p>Initiator(s): ${initiators}</p>
           ${numSources ? `<p>Number of sources: ${numSources}</p>` : ''}
           <p>Is downloadable: ${isDownloadable}</p>
+          ${citation ? `<p>Citation: ${citation}</p>` : ''}
         `;
 
         section.appendChild(item);

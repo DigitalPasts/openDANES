@@ -4,7 +4,9 @@
 // https://phppot.com/javascript/google-sheets-javascript/
 
 // Replace with your actual API key and spreadsheet ID
-const apiKey = process.env.API_KEY;
+
+const { apiKey } = require('./variables');
+// const apiKey = process.env.API_KEY;
 const spreadsheetId = '1WD3KdRPNvbXeaQAusb_MsOStyNha8XnA6Op_CWtD-OQ';
 const sheetName = 'Sheet1'; // Change to your desired sheet name
 

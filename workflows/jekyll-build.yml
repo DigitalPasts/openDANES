@@ -25,3 +25,7 @@ jobs:
         
       - name: Build Jekyll Site
         run: bundle exec jekyll build  # Command to build your Jekyll site
+
+      - name: Use Secret in Workflow
+        env:
+          API_KEY: ${{ secrets.API_KEY }}

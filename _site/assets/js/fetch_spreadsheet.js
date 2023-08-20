@@ -5,13 +5,13 @@
 
 // Replace with your actual API key and spreadsheet ID
 
-const { apiKey } = require('./variables');
 // const apiKey = process.env.API_KEY;
 const spreadsheetId = '1WD3KdRPNvbXeaQAusb_MsOStyNha8XnA6Op_CWtD-OQ';
 const sheetName = 'Sheet1'; // Change to your desired sheet name
 
 // URL to fetch data from the Google Sheets API
-const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetName}?key=${apiKey}`;
+// const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetName}?key=${apiKey}`;
+const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWVF2lzLMsHqa9Zowd9qWO38KD6BsrOFfozbdG_Whpm-wZecUcOt7XyuE34QLocEWjM5aXZdYryuf3/pub?output=csv';
 
 const fieldIcons = {
   egyptology: '<i class="fa-solid fa-ankh"></i>',
@@ -32,9 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
 async function fetchAndDisplayData() {
   try {
     const response = await fetch(url);
-    const data = await response.json();
+    const csvText = await response.text();
     
-    const values = data.values;
+    // Convert CSV data to an array of arrays
+    const rows = csvText.split('\n').map(row => row.split(','));
+
+    const values = rows;
 
     const sortedData = {}; // An object to store data sorted by Resource Type
 

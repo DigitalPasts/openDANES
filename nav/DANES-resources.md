@@ -11,19 +11,30 @@ semitic-studies: 𐤀
 classics: <i class="fa-solid fa-landmark"></i>
 ---
 
-The following provides a list of digital, online resources for studying the ancient Near East.
+The following page includes a list of digital, free to use, online resources for studying the ancient Near East. It is divided into six main categories.
 
-While this list is meant to be comprehensive, please contact us to let us know if anything is missed!
+- **Databases**: datasets that are explorable through online interfaces and some are downloadable
+- **Datasets**: which are downloadable for further study, but without online interfaces
+- **Tools**: online applications which aid study and research, and require no background in programming
+- **Programming Resources**: primarily code repositories for computationally studying the ancient Near East
+- **Academic Resources**: online repositories of free articles, books, and other high-quality academic content
+- **Dictionaries and Abbreviations**: pedagogical resources for studying the ancient Near East at the modern age
 
-{{ page.archaeology }}  Archaeology
+The resources can be related to one or more of the following fields, and they are marked as such by identifying characters:
 
-{{ page.assyriology }}  Assyriology
+- {{ page.archaeology }}  Archaeology
 
-{{ page.classics }} Classics (ancient Greece and Rome)
+- {{ page.assyriology }}  Assyriology
 
-{{ page.egyptology }} Egyptology
+- {{ page.classics }} Classics (ancient Greece and Rome)
 
-{{ page.semitic-studies }}  Semitic Studies
+- {{ page.egyptology }} Egyptology
+
+- {{ page.semitic-studies }}  Semitic Studies
+
+The resources presented on this page are also available to download and further explore and search in a [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WD3KdRPNvbXeaQAusb_MsOStyNha8XnA6Op_CWtD-OQ/edit?usp=sharing){:target="_blank"}.
+
+While this list is meant to be comprehensive, it is a constant work in progress. If you know of a resource that is missing here, or, you notice a mistake in our data, please let us know! We receive feedback through the following [Google form](https://forms.gle/f75pQGTQYMADkr3D7){:target="_blank"}. It should not take more than five minutes to fill out, and your help is vital to aid our community grow and better share our knowledge.
 
 <div id="output"></div>
 

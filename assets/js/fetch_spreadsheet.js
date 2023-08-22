@@ -9,7 +9,7 @@ const sheetName = 'Sheet1'; // Change to your desired sheet name
 
 // URL to fetch data from the Google Sheets API
 // const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${sheetName}?key=${apiKey}`;
-const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWVF2lzLMsHqa9Zowd9qWO38KD6BsrOFfozbdG_Whpm-wZecUcOt7XyuE34QLocEWjM5aXZdYryuf3/pub?output=csv';
+const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWVF2lzLMsHqa9Zowd9qWO38KD6BsrOFfozbdG_Whpm-wZecUcOt7XyuE34QLocEWjM5aXZdYryuf3/pub?output=tsv';
 
 const fieldIcons = {
   egyptology: '<i class="fa-solid fa-ankh"></i>',
@@ -33,7 +33,7 @@ async function fetchAndDisplayData() {
     const csvText = await response.text();
     
     // Convert CSV data to an array of arrays
-    const rows = csvText.split('\n').map(row => row.split(','));
+    const rows = csvText.split('\n').map(row => row.split('\t'));
 
     const values = rows;
 
@@ -68,6 +68,8 @@ async function fetchAndDisplayData() {
       
       for (let index = 0; index < items.length; index++) {
         const row = items[index];
+
+        console.log(row)
 
         const [resourceType, resourceTitle, abbreviation, fields, url, summary, initiators, numSources, isDownloadable, citation] = row;
 

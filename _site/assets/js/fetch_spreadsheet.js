@@ -12,12 +12,12 @@ const sheetName = 'Sheet1'; // Change to your desired sheet name
 const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWVF2lzLMsHqa9Zowd9qWO38KD6BsrOFfozbdG_Whpm-wZecUcOt7XyuE34QLocEWjM5aXZdYryuf3/pub?output=tsv';
 
 const fieldIcons = {
-  egyptology: '<i class="fa-solid fa-ankh"></i>',
+  egyptology: '<i style="font-family:FontAwesome;font-style:normal;"></i>',
   assyriology: '<i>𒍣</i>',
-  archaeology: '<i class="fa-solid fa-person-digging"></i>',
-  'semitic-studies': '𐤀',
-  classics: '<i class="fa-solid fa-landmark"></i>'
-  // Add more mappings here as needed
+  archaeology: '<i style="font-family:FontAwesome;font-style:normal;"></i>',
+  'semitic-studies': '<i style="font-size:x-large">𐤀</i>',
+  classics: '<i style="font-family:FontAwesome;font-style:normal;"></i>',
+  'anatolian-studies': '<i class="luwian">𔐀</i>'
 };
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -69,7 +69,7 @@ async function fetchAndDisplayData() {
       for (let index = 0; index < items.length; index++) {
         const row = items[index];
 
-        const [resourceType, resourceTitle, abbreviation, fields, url, summary, initiators, numSources, isDownloadable, citation, comments] = row;
+        const [resourceType, resourceTitle, abbreviation, fields, url, dataType, summary, initiators, numSources, isDownloadable, downloadTips, citation, contributors, comments] = row;
 
         const item = document.createElement('div');
 
@@ -84,11 +84,13 @@ async function fetchAndDisplayData() {
         item.innerHTML = `
           ${title.outerHTML}
           <p><a href="${url}" target="_blank">${url}</a></p>
+          ${dataType ? `<p>Data Type(s): ${dataType}</p>` : ''}
           <p>${summary}</p>
           <p>Initiator(s): ${initiators}</p>
           ${numSources ? `<p>Number of sources: ${numSources}</p>` : ''}
-          <p>Is downloadable: ${isDownloadable}</p>
+          <p>Is downloadable: ${isDownloadable}${downloadTips ? `; ${downloadTips}` : ''}
           ${citation ? `<p>Citation: ${citation}</p>` : ''}
+          ${contributors ? `<p>This entry was contributed by: ${contributors}</p>` : ''}
         `;
 
         section.appendChild(item);

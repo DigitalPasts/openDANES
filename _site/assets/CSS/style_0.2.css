@@ -266,6 +266,11 @@ section table th, section table td {
     padding: 10px;
     text-align: left !important;
 }
+section .luwian {
+    font-family: "Noto Sans Anatolian Hieroglyphs", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
 
 header {
     background-color: #52053E;

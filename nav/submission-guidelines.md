@@ -31,6 +31,8 @@ The submission process goes through the following steps:
 3. Peer review process
 4. Final publication (with DOI)
 
+![submission-process]({{site.baseurl}}/images/submission-process.png)
+
 ### Initial Submission and Review
 
 Submissions are uploaded through the [the following google form](https://forms.gle/Y4VeAZhnegEtFQ9N6){:target="_blank"}. Please read the full guidelines before submitting your manuscript.

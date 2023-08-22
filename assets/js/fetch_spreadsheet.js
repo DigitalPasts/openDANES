@@ -69,9 +69,7 @@ async function fetchAndDisplayData() {
       for (let index = 0; index < items.length; index++) {
         const row = items[index];
 
-        console.log(row)
-
-        const [resourceType, resourceTitle, abbreviation, fields, url, summary, initiators, numSources, isDownloadable, citation] = row;
+        const [resourceType, resourceTitle, abbreviation, fields, url, summary, initiators, numSources, isDownloadable, citation, comments] = row;
 
         const item = document.createElement('div');
 

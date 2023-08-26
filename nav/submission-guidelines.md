@@ -8,6 +8,8 @@ tags: navigation bar
 
 OpenDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.
 
+![]({{site.baseurl}}/images/decoration/Thèbes._Hypogées._Manuscrit_sur_papyrus_en_caractères_hiéroglyphiques._Première_partie_(NYPL_b14212718-1268002).jpg){: .not-enlarge}
+
 ## Submission Types: Tutorials and White Papers
 
 ### Tutorials
@@ -161,3 +163,5 @@ Ideally, tutorial instructions should be functional on Mac, Linux, or Windows op
 The editorial team will validate the tutorial on a Windows computer, Mac, and through Google Colab (when relevant). If the editorial team is unable to follow the instructions, they will send a report to the author(s) and the manuscript will not be published until the issues are addressed.
 
 We thank you for your cooperation and appreciate the hard work of all those who wish to contribute to the OpenDANES platform!
+
+## Notes

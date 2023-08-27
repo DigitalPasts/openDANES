@@ -9,7 +9,7 @@ authors: openDANES
 
 Welcome to OpenDANES, the official portal of the Digital Ancient Near Eastern Studies Network. Our mission is to promote the integration of computational approaches with traditional historical, archaeological and philological methods. The network also focuses on the critical use of digital text analysis and visual analysis of ancient Near Eastern objects.
 
-![]({{site.baseurl}}/images/decoration/imagine_ai_image2.png){: .not-enlarge}
+![]({{site.baseurl}}/images/decoration/imagine_ai_image4.png){: .not-enlarge}
 
 We publish tutorials, original research articles, project reviews, and annotated resources that explore the intersection of computational methods and the study of the ancient Near East. Our open access peer-reviewed content represents high quality scholarship in the field of Digital Ancient Near Eastern Studies. Join us in advancing the digital revolution in the study and dissemination of the ancient world, and submit your work to OpenDANES.
 

@@ -38,7 +38,7 @@ span.doi {
 }
 .author-card .authors-container {
     padding: 5px 0px;
-    font-size: larger;
+    font-size: 1.7vw;
 }
 .author-card .affiliations {
     padding: 5px 0px;
@@ -59,6 +59,7 @@ span.doi {
 }
 .author-card .card-summary {
     padding: 5px 0px;
+    font-size: 1.3vw;
 }
 .author-card .card-summary p {
     padding: 0px;
@@ -299,6 +300,9 @@ input#search-input:focus::placeholder {
 
     .author-card {
         flex-direction: column;
+    }
+    .author-card .author-box1 .authors-container {
+        font-size: 20px !important;
     }
 
     input#search-input {

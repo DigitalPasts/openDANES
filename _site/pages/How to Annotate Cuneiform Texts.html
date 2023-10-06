@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EDJ22Y1C2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'G-3EDJ22Y1C2');
+        </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <!-- <meta name="description" content="The Digital Pasts Lab (DigPasts-Lab) is geared towards performing innovative, quality research in digital humanities, with an emphasis on historical research. We aim to create an interdisciplinary workspace among different humanities researchers and between humanities researchers and data scientists, which develops and enriches both worlds.">
+    <meta name="keywords" content="digital humanities, babylonian engine, assyriology, Akkademia, Atrahasis, digital assyriology, history, archaeology"> -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/openDANES/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/openDANES/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/openDANES/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/openDANES/favicon_io/site.webmanifest">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/269b02bfd4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <!-- style css -->
+    <link rel="stylesheet" href="/openDANES/assets/CSS/style_0.2.css">
+    <!-- style css for table of contents -->
+    <link rel="stylesheet" href="/openDANES/assets/CSS/toc-style.css">
+    <link rel="stylesheet" href="/openDANES/assets/CSS/search-and-tags.css">
+
+    <!-- codeblock highlighting: https://github.com/highlightjs/highlight.js/ -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/sunburst.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- displaying math formulae -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+    <title>openDANES</title>
+
+    
+
+  </head>
+  <body>
+    <a name="top"></a>
+    <header>
+
+    <!-- <div class="logo">
+      <img src="/openDANES/images/favicon_io/android-chrome-512x512.png" alt="logo">
+      <a href="/openDANES/index.html">OpenDANES</a>
+    </div> -->
+
+    <div class="navigation">
+      <ul>
+        <li><a href="/openDANES/index.html"><img src="/openDANES/favicon_io/android-chrome-512x512.png" alt="logo"></a></li>
+        <li><a href="/openDANES/nav/about.html">About</a></li>
+        <li><a href="/openDANES/nav/tutorials.html">Tutorials</a></li>
+        <li><a href="/openDANES/nav/white-papers.html">White Papers</a></li>
+        <li><a href="/openDANES/nav/posters.html">Posters</a></li>
+        <li><a href="/openDANES/nav/DANES-resources.html">DANES Resources</a></li>
+        <li><a href="/openDANES/nav/submission-guidelines.html">Submission Guidelines</a></li>
+        <li><a href="/openDANES/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+      </ul>
+    </div>
+
+</header>
+
+
+    <section>
+      <div class="toc">
+        <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
+        <h2><i class="far fa-folder-open"></i> On this page</h2>
+      
+        <ul><li><a href="#lesson-overview">Lesson Overview</a></li><li><a href="#structure-of-a-cuneiform-text">Structure of a cuneiform text </a></li><li><a href="#the-purpose-of-annotating">The Purpose of Annotating</a></li><li><a href="#the-stages-of-annotating">The Stages of Annotating</a><ul><li><a href="#preprocessing-the-raw-text">Preprocessing the Raw Text</a></li><li><a href="#making-the-annotations">Making the Annotations</a></li><li><a href="#issues-to-consider-when-annotating">Issues to Consider When Annotating</a></li><li><a href="#choosing-how-to-present-results">Choosing How to Present Results</a></li></ul></li><li><a href="#final-observations">Final Observations</a></li></ul>
+
+      
+      </div>
+      <div class="content">
+        <h1>How to Annotate Cuneiform Texts</h1>
+        <div class="author-card">
+
+  <div class="author-box1">
+
+    <div class="authors-container">
+      <!-- assign and number author affiliations -->
+      
+  
+      
+  
+      
+  
+      <!-- <div class="author-container"> -->
+            Matthew Ong
+  
+            
+            
+              
+              
+              
+                
+                  <sup>1</sup> 
+                
+              
+            
+  
+            
+              <a href="https://orcid.org/0000-0003-2566-9205" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+            
+            
+              <a href="https://independent.academia.edu/MatthewOng4" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+            
+            
+              <a href="https://github.com/megamattc" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+            
+  
+            <!-- </div> -->
+    </div>
+  
+    <div class="affiliations">
+      
+      
+        
+        <p><sup>1</sup> UC Berkeley</p>
+      
+    </div>
+  
+    <div class="dates">
+      <p>Submitted on: October 02, 2023</p>
+      <p>Published on: October 06, 2023</p>
+      
+      
+    </div>
+  
+    <div class="peer-review">
+      
+        <i>Under peer review</i>
+      
+      
+    </div>
+
+  </div>
+
+  <div class="author-box2">
+
+    
+
+    <div class="card-summary">
+      <p>
+        <b>Summary:</b> A high level overview of how to annotate a cuneiform text for linguistic content.
+      </p>
+    </div>
+
+    <div class="card-tags">
+      <p>
+        
+          #cuneiform
+        
+          #annotation
+        
+          #linguistics
+        
+      </p>
+    </div>
+
+    
+      <div class="difficulty">
+        <p>
+          Difficulty level: beginner
+        </p>
+      </div>
+    
+
+  </div>
+</div>
+<h2 id="lesson-overview">Lesson Overview</h2>
+
+<p>This tutorial presents a high level overview of how to annotate a
+cuneiform text for linguistic content. Exactly what we mean by
+‘annotation’ will be discussed shortly. The tutorial does not focus on a
+particular language or a particular genre, and instead deals with
+general features of the cuneiform writing system that a person will need
+to deal with when annotating. A number of applications of annotating
+cuneiform texts will also be discussed.</p>
+
+<!-- ![Tablet XI of the Standard Babylonian Epic of Gilgamesh (K.3375)](/openDANES/images/tutorials/How to Annotate Cuneiform Texts/K3375_Gilgamesh.png)
+
+<p class="fig">Tablet XI of the Standard Babylonian Epic of Gilgamesh (K.3375)</p> -->
+
+<h2 id="structure-of-a-cuneiform-text">Structure of a cuneiform text </h2>
+
+<p>Cuneiform is a writing system developed in southern
+<a href="https://en.wikipedia.org/wiki/Mesopotamia" target="_blank">Mesopotamia</a> towards the end
+of the fourth millennium BCE. It consists of wedge-like signs made upon
+clay tablets (and other material like stone or metal), where a
+particular sign can represent an entire word (i.e. a
+<a href="https://en.wikipedia.org/wiki/Logogram" target="_blank">logogram</a> or a syllable such as
+<em>ba</em>, <em>ak</em>, or <em>ram</em>). Some cuneiform signs can also serve as a
+<a href="https://en.wiktionary.org/wiki/determinative" target="_blank">determinative</a> (also
+known as a classifier), i.e. a special unspoken marker telling the
+reader what class of objects the following word belongs to. Thus there
+are determinatives indicating that the following word is a kind of
+person, a human settlement, a river, an object made out of wood, or a
+kind of drink. Note that the cuneiform writing system was used to
+express several spoken languages of the ancient Middle East, including
+<a href="https://en.wikipedia.org/wiki/Sumerian_language" target="_blank">Sumerian</a>,
+<a href="https://en.wikipedia.org/wiki/Akkadian_language" target="_blank">Akkadian</a>,
+<a href="https://en.wikipedia.org/wiki/Hittite_language" target="_blank">Hittite</a>,
+<a href="https://en.wikipedia.org/wiki/Elamite_language" target="_blank">Elamite</a>, and
+<a href="https://en.wikipedia.org/wiki/Hurrian_language" target="_blank">Hurrian</a>.</p>
+
+<p>Because it is sometimes difficult or unnecessary to represent the exact
+visual appearance of a cuneiform table in modern print media (say, via
+photographs or hand drawings), we often represent the written content
+using the western alphabet in what is known as <em>transliteration</em>.
+Transliteration tells the reader either what a particular sign on the
+tablet ‘is’ (i.e. what it looks like), how to pronounce the sign in
+context (sometimes called the reading of the sign), or both. When a sign
+is transcribed using capital letters, it means we are only commenting on
+what the sign looks like. When lower case letters are used, it indicates
+how the sign is to be pronounced. If we write within square or curly
+brackets, it means the sign is either broken or a determinative,
+respectively.</p>
+
+<p>For example, the sign transcribed as KUR looks like three triangle
+wedges arranged in the shape of a mountain. But this sign can be
+pronounced different ways depending on context. It can be read ‘mat’,
+‘kur’, ‘nat’, and ‘šad’, among other things. When we write {KUR}, we
+mean that the KUR sign functions as a determinative signaling that the
+word following it is a type of land or mountainous area.</p>
+
+<p><img src="/openDANES/images/tutorials/How to Annotate Cuneiform Texts/KUR.png" alt="Drawing of the KUR sign" /></p>
+
+<p class="fig">Drawing of the KUR sign</p>
+
+<p>We usually use dashes between transliterated signs to indicate they
+belong to the same word. Thus the sequence <em>a-me-el šar-ri</em> represents
+two words, and in Akkadian it means ‘man of the king’.</p>
+
+<p>Finally, note that when we want to express the exact pronunciation of
+the words in a cuneiform text, we take the transliteration and convert
+it to <em>normalization</em>. This format also uses the Latin alphabet, but it
+dispenses with the dash signs telling us which signs are used to write a
+word, and instead just gives us the word itself. Using the above
+example, the normalization of <em>a-me-el šar-ri</em> would be <em>amēl šarri</em>. It
+is a reconstructed linguistic form, based on writing standards and
+scholarly conventions. Thus, for example, the macron sign above the
+vowel ‘e’ indicates this vowel is long.</p>
+
+<h2 id="the-purpose-of-annotating">The Purpose of Annotating</h2>
+
+<p>Annotation is when a human editor adds notes or other markers to a text
+to indicate additional linguistic information about it, whether that
+deals with semantics (i.e. meaning), morphology (the structure of
+words), syntax (the structure of phrases and sentences), or phonology
+(the sound of words). Generally it is understood that the editor
+provides the same level of information for all the words in a text and
+not just a few.</p>
+
+<p>Providing annotations for a cuneiform text serves a number of uses, such
+as</p>
+
+<ul>
+  <li>
+    <p>Providing linguistic data for <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">machine
+learning</a> algorithms
+seeking to model properties of the underlying language.</p>
+  </li>
+  <li>
+    <p>Illustrating for students of the language how to grammatically
+analyze a text, or as a check against the students’ own analyses.</p>
+  </li>
+  <li>
+    <p>Providing empirical data to a researcher who wants to ask questions
+involving the systematic recording of all the linguistic data in a
+large number of texts, or questions involving linguistic patterns
+that emerge only upon processing the data by a machine.</p>
+  </li>
+  <li>
+    <p>Giving the annotator themselves an opportunity to work through a
+corpus in detail, much like an editor does when preparing a new
+print edition of a text.</p>
+  </li>
+</ul>
+
+<h2 id="the-stages-of-annotating">The Stages of Annotating</h2>
+
+<h3 id="preprocessing-the-raw-text">Preprocessing the Raw Text</h3>
+
+<p>Annotating a cuneiform text generally requires that it first be
+available in transliteration or normalization (depending on the specific
+purposes of the annotator). In what follows we will speak only of
+transliterations, with the understanding that we mean both
+transliterations and normalizations unless otherwise noted. If a
+cuneiform text has been edited in a print journal or other scholarly
+publication, it will come with a transliteration. Increasingly,
+transliterations of cuneiform texts are also available online as part of
+a digital database. Sometimes the database simply displays the text to
+you in your browser (i.e. as part of an HTML file) and you will have to
+<a href="https://doi.org/10.46430/phen0065" target="_blank">scrape</a> the transliteration from the
+site using a variety of data processing tools. But often times the
+database also allows you to download the transliteration in a text file.
+In fact, you should check if the database has their entire collection of
+transliterations available for download as a ZIP archive (see <a href="https://digitalpasts.github.io/openDANES/nav/DANES-resources.html" target="_blank">OpenDANES
+resources</a>
+for downloadable datasets), as annotation is usually a process applied
+to an entire group of texts rather than just one.</p>
+
+<p>Here is an example of transliteration and metadata for a third
+millennium BCE Sumerian economic text (DC II/2, pl. 41 no. 5), as found
+in the <a href="http://bdtns.filol.csic.es/" target="_blank">Database of Neo-Sumerian Texts
+(BDTNS)</a>.</p>
+
+<p><img src="/openDANES/images/tutorials/How to Annotate Cuneiform Texts/BDTNS_P109176.png" alt="DC II/2, pl. 41 no. 5" /></p>
+
+<p>The basic file format needed for the annotation is a plain text file
+with only the transliteration (hence no HTLM markup or other meta-data).
+You need to make sure that each word in the text (which may include
+determinatives) is separated by spaces from the preceding and following
+word, which allows the annotation program to split up the text file into
+word-size units. This important preliminary step is called
+<em>tokenization</em>, and the broken-up items in the text are called <em>tokens</em>.
+Note that depending on your purposes, you may choose to reduce or
+eliminate symbols in the text denoting unreadable signs (e.g. the symbol
+‘x’) or other comments indicating layout of the text and tablet (such as
+‘rest of tablet broken’).</p>
+
+<p>An example of how your transliteration should look is given below. The
+text <a href="http://oracc.org/saao/P313422/" target="_blank">SAA 5, 114</a> is an Akkadian letter
+from the archives of Sargon II (r. 722-705 BCE), and was published
+online with other texts from the Neo-Assyrian royal archives as an
+<a href="http://oracc.museum.upenn.edu/" target="_blank">Oracc project</a>. A normalized version of
+the text is also given for comparison:</p>
+
+<blockquote>
+  <p>a-na LUGAL EN-ia ARAD-ka {m}gab-bu-ana-aš-šur {KUR}u₂-ra-ar-ṭa-a.a
+e-mu-qe-šu₂ ina {KUR}u₂-a-za-na up-tah-hi-ir o be₂-et pa-ni-šu₂-ni la
+aš₂-me {m}me-la-ar-ṭu-a {LU₂}A-šu₂ {m}a-ba-li-u₂-qu-nu {LU₂}EN.NAM ša
+{KUR}x x+x-pa a-di e-mu-qe-šu₂-nu x x+x x x x x x x x x KUR-MEŠ
+i-za-qu-pu LUGAL be-li₂ lu-u u₂-da LUGAL EN lu-u la i-qab-bi ma-a ki-i
+taš-mu-u-ni ma-a a-ta-a la taš-pu-ra</p>
+</blockquote>
+
+<blockquote>
+  <p>ana šarri bēlīya urdaka Gabbu-ana-Aššur Urarṭaya emūqēšu ina Wazana
+uptahhir o bēt pānīšūni lā ašme Melarṭua māršu Abaliuqunu pāhutu ša
+{KUR}x x+x-pa adi emūqēšunu x x+x x x x x x x x x mātāti izaqqupu
+šarru bēlī lū ūda šarru bēlī lū lā iqabbi mā kî tašmûni mā atâ lā
+tašpura</p>
+</blockquote>
+
+<p>Note in this example that we have removed all special marks and comments
+describing breakage in the tablet or reconstructed parts of the text.
+This makes later stages of the annotation and machine learning process
+simpler. We should understand, however, that this is a choice we need to
+explain when presenting the results of our annotations. If your project
+needs treat these features of online editions differently, you may have
+to adjust later stages of your workflow accordingly.</p>
+
+<p>If you are annotating multiple cuneiform texts, a good practice to have
+each text in its own file, where the file is titled in a way that you
+(or the computer, if using a processing script) can easily identify what
+the text is. This may mean using numerical indices in the file names
+whose interpretation you record in a separate list. Alternatively, you
+can often put all of the transliterations in a single file, separated by
+empty lines and special comments identifying the text. Each approach has
+its advantages depending on your purpose for annotating and the tools
+you use.</p>
+
+<h3 id="making-the-annotations">Making the Annotations</h3>
+
+<p>To create the annotation meta-data for a transliteration you need a
+program that will allow you to view the text and add special symbols and
+notation to it. By now there are a number of free programs aimed at
+humanists seeking to add all sorts of meta-data to digitized texts,
+freely available for download or use online as a web application. Some
+of these programs are mainly used for highlighting thematic relations
+between passages or phrases in a text or for connecting entities
+mentioned in the text to an external specialized vocabulary such as a
+database of maps or biographies. In our case (doing linguistic
+annotations), you want to make sure your tool can annotate <em>lemmas</em>,
+<em>syntactic dependencies</em>, and <em>morphological features</em> at the minimum.
+Hopefully it will also allow you to create your own set of labels as
+part of a custom semantic annotation framework. The first three items
+are the bread and butter of what basic linguistic annotation consists
+of, and are briefly explained below.</p>
+
+<p>Lemmas, roughly speaking, are the basic stems of words which remain
+after one removes prefixes and suffixes used to denote things like
+plurality and grammatical case (in the case of nouns) or person and
+tense (in the case of verbs). In English, the lemma of <em>cats</em> is <em>cat</em>
+because we removed the -s ending signalling plurality. For similar
+reasons, the lemma of the verb <em>liked</em> is <em>like</em>. Note that in general
+we are not seeking to do a full etymological reduction of a word to a
+basic root (such as <em>prevention</em> -&gt; ‘<em>vent</em>’ or <em>skyscraper</em> -&gt;
+<em>scrape</em>), but rather seek the basic form of a word abstracted from all
+the ways it can appear in different grammatical contexts while still
+being regarded as the ‘same’ word. Thus the lemma of a noun abstracts
+away whether the noun is singular or plural, or the subject or object of
+a verb, and the lemma of a verb abstracts away whether that verb appears
+in present or past tense, or the first person or third, or as an
+imperative or an indicative form, etc.</p>
+
+<p>This admittedly vague definition of a lemma reflects its primary use as
+a lexicographic tool (allowing a human or computer to group disparate
+word forms under a single heading) rather than a precise morphological
+one. A certain amount of language-specific convention is involved, and
+if you are unsure how to lemmatize the items appearing in your cuneiform
+texts, you should consult other annotation projects in the relevant
+language.</p>
+
+<p>Syntactic dependencies indicate grammatical dependencies among words and
+phrases such as subject and object of a verb, an adjective modifying a
+noun, or a conjunction connecting two full sentences. The term
+‘dependency’ is used because it signals an asymmetric relation between
+two words or phrases, one of them the <em>head</em> and the other the
+<em>dependent</em>. One may think of annotating syntactic dependencies as
+essentially constructing a directed graph or tree over a sentence or
+larger span of text, and a good annotation tool allows you to specify
+dependencies between tokens in a text by connecting them with arrows.
+Nevertheless, at the level of the annotation file the program usually
+encodes dependencies using numerical indices assigned to each token to
+indicate their position in the sentence. Thus each token not only gets
+an index telling you where it is in the sentence (first word in the
+sentence, or second word, or third word, etc.) but also a second index
+telling you which other token in the sentence is its head.</p>
+
+<blockquote class="prompt-warning">
+  <p>You must take care when reading the annotation file that you know what such an index means, i.e. whether it signs a head token or dependent token!</p>
+</blockquote>
+
+<p>Note also that we have been vague about exactly what grammatical
+framework one should use when creating syntactic dependencies. This is
+because there is more than one framework available, and even within one
+framework, technical revisions are periodically made by experts which
+entail changing the name. Because it was designed to reflect
+cross-linguistic commonalities in syntactic structure, the <a href="https://universaldependencies.org/" target="_blank">Universal
+Dependencies</a> (UD) framework is
+frequently used by annotators who wish their corpus to be compatible
+with other projects regardless of language. You should check what other
+people annotating in your language are doing before deciding upon a
+framework.</p>
+
+<p><img src="/openDANES/images/tutorials/How to Annotate Cuneiform Texts/UDGraph.png" alt="Graph showing syntactic dependencies in the Universal Dependencies (UD) format" /></p>
+
+<p class="fig">Graph showing syntactic dependencies in the Universal Dependencies (UD) format.</p>
+
+<p>Morphological feature labelling is the task of identifying certain
+morphemes, or parts of a word, conveying specific grammatical and
+semantic information. The goal is to itemize aspects of the shape of the
+word with what it means. Annotators generally think in terms of
+feature-value pairs, whereby a feature is a certain category such as
+grammatical number or gender, verb tense, or definiteness, and a value
+is what variant of the category the word expresses via a particular
+morpheme. Thus in the English word <em>cats</em>, the plural suffix -s signals
+the value ‘plural’ within the category of grammatical number. In
+<em>liked</em>, the -d suffix indicates the value ‘past’ in the category of
+tense. When one uses an annotation tool, feature-value pairs are often
+encoded via a specific label set involving an equal sign, such as
+‘Gender=Masculine’ or ‘Tense=Past’, or simply a plus sign (e.g. ‘+Past’
+means a verb in the past tense). Nevertheless, in the context of
+languages written in cuneiform, there are still no exact conventions for
+how to represent these features and their values in a label set for
+annotation. Thus if you wish your annotation scheme to be compatible
+with other projects, you should check to see what they use and match
+their schema before beginning annotation.</p>
+
+<p>With these things in mind, an annotation program with a graphical
+interface is practically essential for doing annotations efficiently.
+One currently popular program is
+<a href="https://inception-project.github.io/" target="_blank">Inception</a>, a downloadable Java
+applet that works offline through your internet browser. Besides
+allowing both syntactic and morphological annotation, Inception also
+allows semantic role labelling and user-defined label schemes which can
+be exported in various formats. Other tools you may consider are
+<a href="https://brat.nlplab.org/" target="_blank">Brat</a>,
+<a href="https://webanno.github.io/webanno/" target="_blank">WebAnno</a> (which is essentially a
+web-based version of Inception), and
+<a href="https://www.mpi.nl/tools/elan/docs/manual/Sec_Weblicht.html" target="_blank">WebLicht</a>,
+another online annotating platform more geared towards well-documented
+languages like English. All of these programs are easy to set-up and
+use, though you should note the data formats they use for input and
+output, as this may affect other parts of your work-flow.</p>
+
+<h3 id="issues-to-consider-when-annotating">Issues to Consider When Annotating</h3>
+
+<p>If you have not previously annotated a cuneiform text in the specific
+language at hand, it would be good to check how others have annotated in
+that language, both in the hopes of making your work compatible with
+theirs, as well as becoming familiar with the difficulties they faced in
+applying their annotation scheme. Unless you are highly experienced with
+the language using modern linguistic categories, you may find that your
+initial label set for morphological features turns out to be
+inefficient, or your understanding of a certain syntactic structure
+turns out to be wrong (or at least problematic). Looking at what others
+have done may save you time and effort in the long run. At the same
+time, no annotation scheme currently used for a cuneiform language fits
+for the grammatical particularities of that language perfectly, whether
+at the level of theoretical description or practical implementation.
+Depending on the type of text you are working with, you may find
+deviating from the conventions of other annotators or even needing to
+invent conventions yourself. What is most important is that you have
+reasons you can cite for what you do and that you explain those reasons
+somewhere in the documentation that accompanies your work. Not only will
+this make it easier for others to understand what you did, it will also
+help you to remember your own policies and be consistent in your work.</p>
+
+<p>Here are some examples of projects that use linguistic annotations in different languages written in cuneiform: on Anatolian languages like Luwian and Hittite see the <a href="https://www.ediana.gwi.uni-muenchen.de/corpus.php" target="_blank">eDiAna project</a> and <a href="https://www.hethport.uni-wuerzburg.de/HFR/annotation.php" target="_blank">Hittite Festival Rituals</a>, respectively; for Akkadian, Sumerian, Persian and Urartian see the <a href="http://oracc.museum.upenn.edu/doc/help/lemmatising/index.html" target="_blank">ORACC lemmatization guidlines</a>, and for Sumerian specifically see the <a href="https://etcsl.orinst.ox.ac.uk/edition2/lemmatisation.php" target="_blank">ETCSL project conventions</a>.</p>
+
+<p>A second issue is whether to approach annotation sub-task by sub-task or
+document by document. If you intend to annotate many documents for
+several features (e.g. syntactic dependencies <em>and</em> morphological
+dependencies <em>and</em> lemmatization), you can either annotate all of the
+documents for a single feature first, and then go back and go over the
+documents for the second feature, etc., or you can do all of the
+features for a single document while it is still in front of you before
+going on to the second document, etc. Depending on the tools and
+knowledge you bring to your work, one method may be more efficient than
+the other. If the syntactic dependencies of a corpus are particularly
+difficult to do, you may opt to first go through and do the morphology
+before tackling the syntax alone. If you are working with someone who
+does not know the grammar of the language well but can find the lemmas
+for all the tokens in the text on their own, you could delegate the task
+of lemmatization to them while you do the dependencies and morphology.
+While these kinds of considerations are relevant to annotating many
+sorts of languages beyond cuneiform ones, in the case of cuneiform
+languages there is one thing to keep in mind. Unless the type of text
+you are annotating is particularly simple morphosyntactically, it will
+likely take you some effort to understand what the text is saying even
+in transliteration (or normalization). Thus going over the text multiple
+times for different annotation tasks may be less efficient that doing
+everything at once while the meaning of the text is still fresh in your
+mind.</p>
+
+<p>Finally, be aware of accompanying datasets or machine learning tools
+that can accelerate your work. If your transliterations come from an
+online database, they may also come with lemmatization data as part of a
+JSON file or separate glossary. If you already had to extract the raw
+text from such a JSON file, it is only a little more work to grab the
+lemmas that go with the tokens as well. Similarly, if you are making
+annotations of a corpus to train a natural language processing model on it (say a syntactic parser or morphologizer), you can actually start training your model on the portion of the corpus you have annotated early on and then
+apply its predictions to the rest of the corpus. Going through and
+correcting the model’s predictions is often faster than going through
+the whole raw corpus unaided. This technique, known as <em>bootstrapping</em>,
+is particularly effective when repeated multiple times, early on, for a
+large corpus.</p>
+
+<h3 id="choosing-how-to-present-results">Choosing How to Present Results</h3>
+
+<p>Unless you are annotating cuneiform texts for private purposes and do
+not want to share you data, you should consider how to share your work
+with others on the internet. <a href="github.com" target="_blank">GitHub</a> is an online platform
+mainly designed for people writing code they wish to share with others
+in a controlled, version-specific way. As an annotator, you can use it
+as a convenient place to store your data and any associated processing
+scripts, keeping your data project private, open to all, or only to
+invited users. The system is designed to synchronize with particular
+folders on your local computer, so that the process of backing up data
+or uploading newer versions is easy and allows you to compare current
+and older versions of files. GitHub is a good place to provide your data
+if you envision yourself working on multiple projects in the future, or
+if you have scripts or other associated code that you need to present
+alongside the annotations themselves.</p>
+
+<p>If you have annotated your texts in the Universal Dependencies format,
+you can also make your data available on the <a href="universaldependencies.org" target="_blank">UD
+website</a> (which actually stores its data on
+GitHub) alongside annotated corpora from dozens of other languages. You
+do need to make sure your annotations conform to their format
+specifications. This website already features corpora of Akkadian,
+Biblical Hebrew, and Hittite.</p>
+
+<h2 id="final-observations">Final Observations</h2>
+
+<p>While annotating itself has some immediate uses, it is often done as
+part of a larger language processing task, research program, or
+pedagogical project. We mentioned some of these uses earlier on, among
+which were applications to machine learning and language model
+development. It is worth noting that many of the cutting-edge computer
+algorithms and research efforts in natural language processing are
+geared towards modern languages with large online data sets such as
+English, even if they are not restricted to only those languages. No
+cuneiform language comes close to the size of such corpora in terms of
+raw text, let alone text that has been properly transliterated or
+otherwise made suitable for annotation. This means that the challenges
+of applying machine learning and developing language models for
+cuneiform languages are somewhat different from someone working on
+English. There are fewer pre-existing annotated corpora that one can use
+to jump-start ones own annotations. Many natural language processing
+packages assume that you are interested in working with a popular modern
+language, and often come with large data sets from those languages
+built-in, without clearly explaining how to apply their code to a
+low-resource language starting from the ground up. Unless you are an
+experienced programmer, you will likely find it very helpful to have
+guidance from someone more experienced in natural language processing or
+data science, or to look at some of the online proceedings from NLP
+workshops aimed at humanists and specialists in less common languages.
+One recent workshop at <a href="https://newnlp.princeton.edu/" target="_blank">Princeton</a>
+illustrates how to develop an NLP project for new languages using
+<a href="https://spacy.io/" target="_blank">spacy</a>. On a broader level, one may also consider
+the <a href="https://dhsi.org/" target="_blank">Digital Humanities Summer Institute</a> with its
+various course offerings. What may be the most helpful in the beginning,
+however, is finding someone else who has begun an annotation project in
+your language by searching GitHub and getting guidance from them.</p>
+
+      </div>
+    </section>
+    <footer>
+
+  <div id="credits">
+    <h3>Contact us</h3>
+    <p>For any questions about OpenDANES, or to join the DANES discord channel or mailing list, send us an email at the
+      <a href="https://digitalpasts.github.io/" target="_blank">Digital Pasts Lab</a>
+      (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>)</p>
+    <p>
+      <a href="https://github.com/DigitalPasts" target="_blank"><i class="fab fa-github"></i></i></a> <a href="https://twitter.com/DigPastsLab" target="_blank"><i class="fab fa-twitter"></i></a>
+    </p>
+  </div>
+
+  <div id="credits">
+    <p>OpenDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies</p>
+    <p>Released under a 
+      <a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC-BY 4.0 license</a>
+    </p>
+    <p>Hosted on
+      <a href="https://github.com/DigitalPasts/openDANES" target="_blank">Github Pages</a>
+    </p>
+    <p>Last updated on October 06, 2023</p>
+  </div>
+  
+</footer>
+
+
+    <!-- javascript to place class on code element so highlighting will display correctly -->
+        <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var highlightElements = document.querySelectorAll("div.highlighter-rouge");
+        for (var i = 0; i < highlightElements.length; i++) {
+          var langClass = highlightElements[i].classList;
+          var lang = Array.from(langClass).find(function(item) {
+            return item.startsWith("language-");
+          });
+          if (lang) {
+            var codeElements = highlightElements[i].querySelectorAll("code");
+            for (var j = 0; j < codeElements.length; j++) {
+              codeElements[j].classList.remove("language-css");
+              codeElements[j].classList.add(lang);
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+  <script src="/openDANES/assets/js/codeblock.js"></script>
+  <script src="/openDANES/assets/js/toc-scroll.js"></script>
+  <script src="https://hypothes.is/embed.js" async></script>
+
+</html>

@@ -80,6 +80,8 @@ Submissions are accepted in either **markdown** or **Google Doc** files. No othe
 
 We ask authors to follow certain guidelines when formatting their manuscripts, such as using particular syntax for codeblocks, links, figures and legends, etc., as well as filling up the YAML frontmatter,[^1] for both markdown and google doc submissions. This ensures the submissions will be displayed correctly on the OpenDANES website. Following these guidelines would significantly speed up the publication process and is greatly appreciated.
 
+Furthermore, during submission, authors are requested to add a small image that will be displayed with their contribution on the Tutorials / White Papers pages and in the search results. It is recommended to find a small image that is mostly square. If an appropriate image cannot be found by the author(s), the OpenDANES editorial team will help find one together with the author(s).
+
 [^1]: [YAML](https://en.wikipedia.org/wiki/YAML){:target="_blank"} frontmatter defines variables and metadata that is necessary to display correctly the published submission on the website.
 
 #### General Syntax Instructions

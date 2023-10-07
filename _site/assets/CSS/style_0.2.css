@@ -171,12 +171,12 @@ section code.language-plaintext.highlighter-rouge {
     padding: 3px 5px;
     border-radius: 4px;
     background-color: rgba(254, 218, 117, 0.3);
-    font-size: 1.1vw;
+    font-size: 14px;
 }
 section p {
     padding: 15px 0;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 18px;
 }
 section p a, section p i {
     padding: none !important;
@@ -199,10 +199,10 @@ section p a.footnote, section p a.reversefootnote {
 section ul, section ol {
     padding: 15px;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 18px;
 }
 section ul li, section ol li {
-    font-size: 1.5vw;
+    font-size: 18px;
     text-align: justify;
     padding: 0 5px;
 }
@@ -220,13 +220,13 @@ section ul {
     margin: 0 7.5px;
 }
 section .fig {
-    font-size: 1.3vw;
+    font-size: 16px;
     padding: 5px 25px 15px 25px;
     line-height: 1.4;
     font-style: italic;
 }
 section .fig a {
-    font-size: 1.3vw;
+    font-size: 16px;
 }
 section img {
     max-width: 100%;

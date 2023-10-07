@@ -20,10 +20,10 @@ $card-border-radius: 10px;
 $card-hover-color: #bebebe;
 $font-main: 'Taviraj', serif;
 
-$font-size: 1.5vw;
-$font-size-smaller: 1.3vw; 
-$font-size-smallest: 1.1vw;
-$font-size-bigger: 1.7vw;
+$font-size: 18px; // 1.5vw;
+$font-size-smaller: 16px; // 1.3vw; 
+$font-size-smallest: 14px; // 1.1vw;
+$font-size-bigger: 20px; // 1.7vw;
 
 // styling
 
@@ -140,7 +140,8 @@ span.doi {
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     color: black;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
     
     &:hover {
       background-color: $secondary-color-light;
@@ -149,7 +150,6 @@ span.doi {
 
     .card-image {
 
-      max-width: 25%;
       margin-right: 15px;
       margin-top: 5px;
 
@@ -304,31 +304,33 @@ div#no-results {
     padding: 2.5%;
     margin: 3% 0%;
     background-color: $secondary-contrast-color;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     width: 100%;
     color: black;
-    display: flex;
     
     &:hover {
       background-color: $secondary-color-light;
-      color: $secondary-color-dark;
       border-color: $secondary-color-dark;
     }
 
-    .card-image {
+    .card-body {
+      display: grid !important;
+      grid-template-columns: 1fr 5fr;
 
-      max-width: 25%;
-      margin-right: 15px;
-      margin-top: 5px;
+      .card-image {
 
-      img {
-        padding: 0px;
-        object-fit: contain;
-        border-radius: $card-border-radius;
-        transition: none;
-
-        &:hover {
-          max-width: 100% !important;
+        margin-right: 15px;
+        margin-top: 5px;
+  
+        img {
+          padding: 0px;
+          object-fit: contain;
+          border-radius: $card-border-radius;
+          transition: none;
+  
+          &:hover {
+            max-width: 100% !important;
+          }
         }
       }
     }
@@ -470,10 +472,15 @@ input#search-input {
     font-size: 3vw;
   }
 
-  .card-body {
+  .search-area #results-container .card .card-body, .card-body {
     margin: 0;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
+
+    .card-content {
+      padding: 10px;
+    }
 
     .card-meta {
       font-size: 3vw;

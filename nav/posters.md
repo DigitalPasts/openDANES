@@ -26,7 +26,7 @@ Dumuzi is presented in different ways in Near Eastern myths. He is described as 
 
 ### FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories
 
-Adam Anderson ([UC Berkeley](https://dlab.berkeley.edu/people/adam-anderson){:target="_blank"})
+Adam Anderson ([UC Berkeley](https://orcid.org/0000-0002-4135-8426){:target="_blank"})
 
 <a href="https://doi.org/10.5281/zenodo.8273419" target="_blank">
   <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/10.5281/zenodo.8273419.svg);">doi</span>
@@ -40,7 +40,7 @@ This project is inspired by the durability of the data preserved in the oldest w
 
 ### Material Culture from the Middle Babylonain Period (McMiB)
 
-Sara Arroyo Cuadra ([UNED](https://portalcientifico.uned.es/investigadores/205113/detalle){:target="_blank"})
+Sara Arroyo Cuadra ([UNED](https://orcid.org/0000-0003-1006-9370){:target="_blank"})
 
 <a href="https://doi.org/10.5281/zenodo.8273344" target="_blank">
   <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/10.5281/zenodo.8273344.svg);">doi</span>
@@ -54,7 +54,7 @@ This poster aims to show the main objectives to be developed within the project 
 
 ### Towards Binarization of Iron Age Ostraca from Multispectral Weakly-Annotated Imaging
 
-Ohr Dallal (Tel Aviv University), Shira Faigenbaum-Golovin ([Duke University](https://math.duke.edu/shira-faigenbaum-golovin){:target="_blank"}), Israel Finkelstein ([Haifa University](https://samc.haifa.ac.il/prof-israel-finkelstein/?lang=en&csrt=13587117137429980830){:target="_blank"}), Nachum Dershowitz ([Tel Aviv University](https://www.cs.tau.ac.il/~nachumd/Homepage.html){:target="_blank"})
+Ohr Dallal (Tel Aviv University), Shira Faigenbaum-Golovin ([Duke University](https://scholar.google.co.il/citations?user=2vtqicoAAAAJ&hl=iw){:target="_blank"}), Israel Finkelstein ([Haifa University](https://samc.haifa.ac.il/prof-israel-finkelstein/?lang=en&csrt=13587117137429980830){:target="_blank"}), Nachum Dershowitz ([Tel Aviv University](https://www.cs.tau.ac.il/~nachumd/Homepage.html){:target="_blank"})
 
 <a href="https://doi.org/10.5281/zenodo.8273426" target="_blank">
   <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/10.5281/zenodo.8273426.svg);">doi</span>
@@ -68,7 +68,7 @@ Image binarization is one of the essential and preliminary steps towards many do
 
 ### Universal dependencies for Hittite
 
-Maria Molina ([Tel Aviv University](https://telaviv.academia.edu/MariaMolina/CurriculumVitae){:target="_blank"})
+Maria Molina ([Tel Aviv University](https://orcid.org/0000-0001-5524-1117){:target="_blank"})
 
 <a href="https://doi.org/10.5281/zenodo.8273313" target="_blank">
   <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/10.5281/zenodo.8273313.svg);">doi</span>
@@ -82,7 +82,7 @@ In the recent years universal dependencies (UD) became the standard for digital 
 
 ### Workflow of Cune-iiif-orm
 
-Gustav Ryberg Smidt ([Ghent University](https://research.flw.ugent.be/nl/gustavryberg.smidt){:target="_blank"}), Katrien De Graef ([Ghent University](https://research.flw.ugent.be/en/katrien.degraef){:target="_blank"}), Lise Foket ([Ghent University](https://research.flw.ugent.be/nl/lise.foket){:target="_blank"}) & Hendrik Hameeuw ([KU Leuven](https://www.kuleuven.be/wieiswie/en/person/00045269){:target="_blank"})
+Gustav Ryberg Smidt ([Ghent University](https://orcid.org/0000-0002-0107-7021){:target="_blank"}), Katrien De Graef ([Ghent University](https://orcid.org/0000-0001-6690-9098){:target="_blank"}), Lise Foket ([Ghent University](https://orcid.org/0000-0001-5149-1346){:target="_blank"}) & Hendrik Hameeuw ([KU Leuven](https://orcid.org/0000-0002-5406-5323){:target="_blank"})
 
 <a href="https://doi.org/10.5281/zenodo.8273384" target="_blank">
   <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/10.5281/zenodo.8273384.svg);">doi</span>

@@ -14,7 +14,7 @@ OpenDANES currently welcomes submissions for tutorials and white papers in Engli
 
 ### Tutorials
 
-Tutorials are meant to be educational resources for students and scholars who wish to gain practical skills studying the ancient Near East using computational methodologies and tools. Tutorials are meant to instruct the readers how to write code or use existing tools to gain new insight on ancient data and traditional research questions.
+Tutorials are meant to be an [open educational resource](https://en.wikipedia.org/wiki/Open_educational_resources){:target="_blank"} for students and scholars who wish to gain practical skills studying the ancient Near East using computational methodologies and tools. Tutorials are meant to instruct the readers how to write code or use existing tools to gain new insight on ancient data and traditional research questions.
 
 Tutorials should avoid any unnecessary jargon, be it from computer and data science or from their field of specialty in ancient Near Eastern studies. Tutorials should be accessible to both students and scholars from the humanities and from computer and data science. Notwithstanding, tutorials will include their level of difficulty (beginner, intermediate, or advanced), which refers to the technical skill required. Authors should aim to use up-to-date packages and tools. Updates will be allowed on a case-by-case basis, and especially in the event of deprecated code or tools.
 

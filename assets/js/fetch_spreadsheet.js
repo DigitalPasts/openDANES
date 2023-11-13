@@ -69,7 +69,7 @@ async function fetchAndDisplayData() {
       for (let index = 0; index < items.length; index++) {
         const row = items[index];
 
-        const [resourceType, resourceTitle, abbreviation, fields, url, dataType, summary, initiators, numSources, isDownloadable, downloadTips, citation, contributors, comments] = row;
+        const [resourceType, resourceTitle, abbreviation, fields, url, dataType, summary, initiators, numSources, isDownloadable, downloadTips, copyrights, copyrightsURL, citation, contributors, comments] = row;
 
         const item = document.createElement('div');
 
@@ -89,6 +89,7 @@ async function fetchAndDisplayData() {
           <p>Initiator(s): ${initiators}</p>
           ${numSources ? `<p>Number of sources: ${numSources}</p>` : ''}
           <p>Is downloadable: ${isDownloadable}${downloadTips ? `; ${downloadTips}` : ''}
+          ${copyrights ? `<p>Copyright: <a href="${copyrightsURL}" target="_blank">${copyrights}</a></p>` : ''}
           ${citation ? `<p>Citation: ${citation}</p>` : ''}
           ${contributors ? `<p>This entry was contributed by: ${contributors}</p>` : ''}
         `;

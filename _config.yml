@@ -8,8 +8,8 @@ BEn-new: "https://ben-digpasts.com/"
 BEn-new-demo: "https://ben-digpasts.com/demo"
 github: "https://github.com/DigitalPasts"
 dig-pasts: "https://digitalpasts.github.io/index.html"
-url: "https://digitalpasts.github.io"
-baseurl: "/openDANES"
+url: ""
+baseurl: "https://opendanes.org"
 # markdown: kramdown
 # highlighter: rouge
 #   input: GFM

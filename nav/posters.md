@@ -20,9 +20,9 @@ Franziska Pannach ([University of Göttingen](https://orcid.org/0000-0003-4216-8
 
 Dumuzi is presented in different ways in Near Eastern myths. He is described as wild bull or man, sometimes he is part of a dedicated family structure or a separated entity. This poster presents eigth different views on the Mesopotamian deity, modelled as minimal (or shallow) ontologies, used to compare Dumuzi’s diverse representations. 
 
-[Downloadable link](../images/posters/DANES2023/pannach-blaschke/pannach_blaschke.pdf){:target="_blank"} to the abstract and poster.
+[Downloadable link]({{site.baseurl}}/images/posters/DANES2023/pannach-blaschke/pannach_blaschke.pdf){:target="_blank"} to the abstract and poster.
 
-![poster](../images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi-min.jpg)
+![poster]({{site.baseurl}}/images/posters/DANES2023/pannach-blaschke/Poster_Pannach_Blaschke-Franzi-min.jpg)
 
 ### FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories
 

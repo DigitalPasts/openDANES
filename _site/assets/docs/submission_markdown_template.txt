@@ -109,7 +109,7 @@ For other programming languages, change `python` to the the appropriate language
 
 ## Figures and legends
 
-![Image placeholder](/openDANES/images/tutorials//image-1.jpg)
+![Image placeholder](/images/tutorials//image-1.jpg)
 
 <p class="fig">Figure 1: This is the logo of CLTK</p>
 

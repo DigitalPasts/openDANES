@@ -5,7 +5,6 @@
     <div class="authors-container">
       <!-- assign and number author affiliations -->
       {% assign affiliations = '' | split: '' %}
-  
       {% for author in include.authors %}
         {% assign affiliation = author[1].affiliation | split: ", " %}
         {% assign affiliations = affiliations | concat: affiliation %}

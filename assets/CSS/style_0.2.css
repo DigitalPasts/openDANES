@@ -196,6 +196,9 @@ section p a:hover {
 section p a.footnote, section p a.reversefootnote {
     border: none;
 }
+section p a.image-link {
+    border-bottom: none;
+}
 section ul, section ol {
     padding: 15px;
     text-align: justify;

@@ -7,7 +7,7 @@ authors: openDANES
 
 We are a peer-reviewed academic venue that publishes high-quality tutorials and research papers. Our intent is to engage all levels of interested students and scholars, from beginners to advanced. Tutorials range from introductory digital literacy to instructions on cutting edge computational approaches to ancient Near Eastern texts, art, and artefacts.
 
-![]({{site.baseurl}}/images/decoration/Layard 1849 The Monuments of Nineveh Volume 1_Page_054.jpg){: .not-enlarge}
+<a target="blank" class="image-link" href="https://archive.org/details/the-monuments-of-nineveh.-from-drawings-made-on-the-spot/mode/2up">![]({{site.baseurl}}/images/decoration/Layard 1849 The Monuments of Nineveh Volume 1_Page_054.jpg){: .not-enlarge}</a>
 
 In recent years, the field of Near Eastern studies has undergone a digital revolution, with comprehensive online repositories making the digital publishing of ancient artefacts, texts, and art a more sustainable and common practice ([see the online resources page]({{site.baseurl}}/nav/DANES-resources.html)). Moreover, the application of computational methods, from quantitative and statistical analyses to more advanced natural language processing (NLP) and machine learning (ML) models, has opened up new possibilities for answering novel and complex questions about ancient civilizations.
 

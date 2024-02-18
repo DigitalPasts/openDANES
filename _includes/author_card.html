@@ -3,65 +3,93 @@
   <div class="author-box1">
 
     <div class="authors-container">
-      <!-- assign and number author affiliations -->
-      {% assign affiliations = '' | split: '' %}
-      {% for author in include.authors %}
-        {% assign affiliation = author[1].affiliation | split: ", " %}
-        {% assign affiliations = affiliations | concat: affiliation %}
-      {% endfor %}
-  
-      {% assign unique_affiliations = affiliations | uniq %}
-  
-      {% for author in include.authors %}
-        {%- if forloop.length > 0 -%}
-          <!-- <div class="author-container"> -->
-            {{ author[1].name }}
-  
-            {% assign affiliation_count = 0 %}
-            {% for affiliation in unique_affiliations %}
-              {% assign affiliation_count = affiliation_count | plus: 1 %}
-              {% assign author_affiliations = author[1].affiliation | split: ", " %}
-              {% for author_affiliation in author_affiliations %}
-                {% if author_affiliation == affiliation %}
-                  <sup>{{ affiliation_count }}</sup> 
-                {% endif %}
+
+      <div class="card-image-authors">
+        {% if include.banner-image-source != null %}
+          <a href="{{include.banner-image-source}}" target="_blank" rel="noopener noreferrer">
+            <img class="not-enlarge" src="{{ site.baseurl }}/images/{{ include.item_type }}s/{{ include.title }}/banner-image.png" alt="Image not available">
+          </a>
+        {% else %}
+          <img class="not-enlarge" src="{{ site.baseurl }}/images/{{ include.item_type }}s/{{ include.title }}/banner-image.png" alt="Image not available">
+        {% endif %}
+      </div>
+
+      <div class="authors">
+        <div class="author-names">
+                  <!-- assign and number author affiliations -->
+        {% assign affiliations = '' | split: '' %}
+        {% for author in include.authors %}
+          {% assign affiliation = author[1].affiliation | split: ", " %}
+          {% assign affiliations = affiliations | concat: affiliation %}
+        {% endfor %}
+    
+        {% assign unique_affiliations = affiliations | uniq %}
+    
+        {% for author in include.authors %}
+          {%- if forloop.length > 0 -%}
+            <!-- <div class="author-container"> -->
+              {{ author[1].name }}
+    
+              {% assign affiliation_count = 0 %}
+              {% for affiliation in unique_affiliations %}
+                {% assign affiliation_count = affiliation_count | plus: 1 %}
+                {% assign author_affiliations = author[1].affiliation | split: ", " %}
+                {% for author_affiliation in author_affiliations %}
+                  {% if author_affiliation == affiliation %}
+                    <sup>{{ affiliation_count }}</sup> 
+                  {% endif %}
+                {% endfor %}
               {% endfor %}
-            {% endfor %}
-  
-            {% if author[1].orcid != null %}
-              <a href="https://orcid.org/{{author[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
-            {% endif %}
-            {% if author[1].academia != null %}
-              <a href="{{author[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
-            {% endif %}
-            {% if author[1].github != null %}
-              <a href="{{author[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
-            {% endif %}
-  
-            {% unless forloop.last %}, {% endunless -%}
-          <!-- </div> -->
-        {%- endif -%}
-      {% endfor %}
+    
+              {% if author[1].orcid != null %}
+                <a href="https://orcid.org/{{author[1].orcid}}" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+              {% endif %}
+              {% if author[1].academia != null %}
+                <a href="{{author[1].academia}}" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              {% endif %}
+              {% if author[1].github != null %}
+                <a href="{{author[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+              {% endif %}
+    
+              {% unless forloop.last %}; {% endunless -%}
+            <!-- </div> -->
+          {%- endif -%}
+        {% endfor %}
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="affiliations">
+          {% assign affiliation_count = 0 %}
+          {% for affiliation in unique_affiliations %}
+            {%- if forloop.length > 0 -%}
+              {% assign affiliation_count = affiliation_count | plus: 1 %}
+                <sup>{{ affiliation_count }}</sup> {{affiliation}}
+              {% unless forloop.last %}; {% endunless -%}
+            {%- endif -%}
+          {% endfor %}
+        </div>
+
+        <hr>
+      
+        <div class="dates">
+          <p>Submitted on: {{ include.date | date: "%B %d, %Y" }}</p>
+          <p>Published on: {{ include.publish-date | date: "%B %d, %Y" }}</p>
+          {% if include.peer-review-date != null %}
+            <p>Peer reviewed: {{ include.peer-review-date | date: "%B %d, %Y" }}</p>
+          {% endif %}
+          {% if include.update-date != null %}
+            <p>Last update: {{ include.update-date | date: "%B %d, %Y" }}</p>
+          {% endif %}
+        </div>
+      </div>
+      
     </div>
+  </div>
+
+  <div class="author-box2">
   
-    <div class="affiliations">
-      {% assign affiliation_count = 0 %}
-      {% for affiliation in unique_affiliations %}
-        {% assign affiliation_count = affiliation_count | plus: 1 %}
-        <p><sup>{{ affiliation_count }}</sup> {{affiliation}}</p>
-      {% endfor %}
-    </div>
-  
-    <div class="dates">
-      <p>Submitted on: {{ include.date | date: "%B %d, %Y" }}</p>
-      <p>Published on: {{ include.publish-date | date: "%B %d, %Y" }}</p>
-      {% if include.peer-review-date != null %}
-        <p>Peer reviewed: {{ include.peer-review-date | date: "%B %d, %Y" }}</p>
-      {% endif %}
-      {% if include.update-date != null %}
-        <p>Last update: {{ include.update-date | date: "%B %d, %Y" }}</p>
-      {% endif %}
-    </div>
+    
   
     <div class="peer-review">
       {% if include.reviewers != null %}
@@ -91,9 +119,9 @@
       
     </div>
 
-  </div>
+  
 
-  <div class="author-box2">
+  
 
     {% if include.deprecated != null %}
       <div class="deprecated">

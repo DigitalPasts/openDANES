@@ -2,6 +2,7 @@
 layout: default+toc
 type: white-paper
 title: Digital Ancient Near Eastern Studies - A Transition to Arts and Crafts
+banner-image-source: https://commons.wikimedia.org/wiki/File:Two_experimental_models_for_Babbages_Analytical_Engine,_c_1870._(9663806882).jpg
 authors:
   author1:
     name: Shai Gordin
@@ -60,7 +61,7 @@ doi: null
 deprecated: null
 ---
 
-{%- include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi deprecated=page.deprecated -%}
+{%- include author_card.html title=page.title item_type=page.type banner-image-source=page.banner-image-source authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi deprecated=page.deprecated -%}
 
 > “The use of electronic data-processing devices for research in the fields of linguistics and philology is by now fairly common.” (Hans G. Güterbock, “The Hittite Computer Analysis Project”, from the [1967-1968 annual report of the Oriental Institute](https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/ar/61-70/67-68b/67-68b_CHD.pdf){:target="_blank"}, currently the [Institute for the Study of Ancient Cultures](https://isac.uchicago.edu/){:target="_blank"})
 

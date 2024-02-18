@@ -267,6 +267,10 @@ section {
     a.footnote, a.reversefootnote {
       border: none;
     }
+
+    a.image-link {
+      border-bottom: none;
+    }
   }
 
   ul, ol {

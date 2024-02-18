@@ -16,6 +16,7 @@ span.doi {
     margin: 3% 0%;
     width: 100%;
     background-color: #e3ad5b;
+    flex-direction: column;
 }
 .author-card .author-box1, .author-card .author-box2 {
     flex: 1 1 0px;
@@ -39,12 +40,28 @@ span.doi {
 .author-card .authors-container {
     padding: 5px 0px;
     font-size: 20px;
+    display: flex;
+}
+.author-card .authors-container .authors {
+    padding-left: 15px;
+}
+.author-card .authors-container .card-image-authors {
+    max-width: 15%;
+}
+.author-card .authors-container .card-image-authors img {
+    padding: 0;
+    border-radius: 10px;
+}
+.author-card .authors-container hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1.5px solid #9a6b23;
+    margin: 10px 0;
+    padding: 0;
 }
 .author-card .affiliations {
-    padding: 5px 0px;
-}
-.author-card .affiliations p {
-    padding: 0px;
+    padding: 0 0 5px 0;
     font-size: 16px;
 }
 .author-card .dates {
@@ -65,7 +82,7 @@ span.doi {
     padding: 0px;
 }
 .author-card .difficulty p {
-    padding-bottom: 0px;
+    padding: 0px;
 }
 .author-card .deprecated p {
     font-size: 20px;
@@ -304,6 +321,14 @@ input#search-input:focus::placeholder {
     }
     .author-card .author-box1 .authors-container {
         font-size: 20px !important;
+    }
+    .author-card .author-box1 .authors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .author-card .author-box1 .authors-container .card-image-authors {
+        max-width: 100%;
+        padding: 10px;
     }
 
     input#search-input {

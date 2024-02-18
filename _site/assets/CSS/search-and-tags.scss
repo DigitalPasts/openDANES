@@ -45,6 +45,7 @@ span.doi {
   margin: 3% 0%;
   width: 100%;
   background-color: $secondary-contrast-color;
+  flex-direction: column;
 
   .author-box1, .author-box2 {
     flex: 1 1 0px;
@@ -74,15 +75,34 @@ span.doi {
   .authors-container {
     padding: 5px 0px;
     font-size: $font-size-bigger;
+    display: flex;
+
+    .authors {
+      padding-left: 15px;
+    }
+    
+    .card-image-authors {
+      max-width: 15%;
+
+      img {
+        padding: 0;
+        border-radius: 10px;
+      } 
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1.5px solid #9a6b23;
+      margin: 10px 0;
+      padding: 0;
+    }
   }
 
   .affiliations {
-    padding: 5px 0px;
-
-    p {
-      padding: 0px;
-      font-size: $font-size-smaller;
-    }
+    padding: 0 0 5px 0;
+    font-size: $font-size-smaller;
   }
 
   .dates {
@@ -107,7 +127,7 @@ span.doi {
   }
 
   .difficulty p {
-    padding-bottom: 0px;
+    padding: 0px;
   }
 
   .deprecated p {
@@ -449,6 +469,16 @@ input#search-input {
       .authors-container {
         font-size: 20px !important;
       }
+
+      .authors-container {
+        flex-direction: column;
+        align-items: center;
+        
+      .card-image-authors {
+        max-width: 100%;
+        padding: 10px;
+      }
+    }
     }
   }
 

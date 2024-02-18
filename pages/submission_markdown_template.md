@@ -2,6 +2,7 @@
 layout: default+toc
 type: white-paper OR tutorial
 title: Write the title of your submission here
+banner-image-source: null
 authors:
   author1:
     name: Your Name

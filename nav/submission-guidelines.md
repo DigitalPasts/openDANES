@@ -8,7 +8,7 @@ tags: navigation bar
 
 OpenDANES currently welcomes submissions for tutorials and white papers in English, but also German and Spanish.
 
-![]({{site.baseurl}}/images/decoration/Thèbes._Hypogées._Manuscrit_sur_papyrus_en_caractères_hiéroglyphiques._Première_partie_(NYPL_b14212718-1268002).jpg){: .not-enlarge}
+<a target="blank" class="image-link" href="https://commons.wikimedia.org/wiki/File:Th%C3%A8bes._Hypog%C3%A9es._Manuscrit_sur_papyrus_en_caract%C3%A8res_hi%C3%A9roglyphiques._Premi%C3%A8re_partie_(NYPL_b14212718-1268002).jpg">![]({{site.baseurl}}/images/decoration/Thèbes._Hypogées._Manuscrit_sur_papyrus_en_caractères_hiéroglyphiques._Première_partie_(NYPL_b14212718-1268002).jpg){: .not-enlarge}</a>
 
 ## Submission Types: Tutorials and White Papers
 
@@ -99,6 +99,7 @@ In both the markdown and google doc templates, there is a YAML frontmatter which
 layout: default+toc
 type: white-paper OR tutorial
 title: Write the title of your submission here
+banner-image-source: link to source OR null
 authors:
   author1:
     name: Your Name
@@ -128,7 +129,9 @@ The following fields **need to be changed** by the author(s):
 
 `type`: please leave either white-paper or tutorial (not both).
 
-`title`: replace "Write the title of your submission here" with the title of your submission. 
+`title`: replace "Write the title of your submission here" with the title of your submission.
+
+`banner-image-source`: publications in OpenDANES appear alongside a thumbnail image that you will be asked to upload with your submission. To properly accredit the image source, please provide a link in this field to where you found the image and/or its copyright information. We recommend using images from [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page){:target="blank"}. If you are using an image from elsewhere, please ensure you have the copyright to use the image. The displayed thumbnail will be linked to the URL provided. If you own the copyright for your image, you can leave this field with `null`. If you would like to specify a license for the reuse of your image, please provide a URL with the license details. Unless specified otherwise, content and images are published on OpenDANES with a [CC-BY 4 license](https://creativecommons.org/licenses/by/4.0/deed.en){:target="blank"}. 
 
 `authors`: please fill out all author information. For multiple authors, add additional `author2`, `author3`, etc. Make sure to include all additional information (`name`, `affiliation`, `email`, `orcid`, `academia`, `github`) for each author.
 

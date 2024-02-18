@@ -2,6 +2,7 @@
 layout: default+toc
 type: white-paper
 title: Preprocessing Ancient Texts - Challenges and Comparisons of Python and R Resources
+banner-image-source: null
 authors:
   author1:
     name: chatGPT
@@ -32,7 +33,7 @@ doi: 10.5281/zenodo.6411251
 deprecated: null
 ---
 
-{%- include author_card.html authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi deprecated=page.deprecated -%}
+{%- include author_card.html title=page.title item_type=page.type banner-image-source=page.banner-image-source authors=page.authors date=page.submit-date publish-date=page.publish-date peer-review-date=page.peer-review-date update-date=page.update-date tags=page.tags summary=page.summary reviewers=page.reviewers difficulty=page.difficulty doi=page.doi deprecated=page.deprecated -%}
 
 ## About this paper
 

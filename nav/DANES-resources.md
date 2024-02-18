@@ -12,7 +12,7 @@ classics: <i style="font-family:FontAwesome;font-style:normal;"></i>
 anatolian-studies: <i class="luwian">𔐀</i>
 ---
 
-![]({{site.baseurl}}/images/decoration/Layard_1853_The-Monuments-of-Nineveh_Vol-1_Pl-2_Niniveh.jpg){: .not-enlarge}
+<a target="blank" class="image-link" href="https://archive.org/details/the-monuments-of-nineveh.-from-drawings-made-on-the-spot/mode/2up">![]({{site.baseurl}}/images/decoration/Layard_1853_The-Monuments-of-Nineveh_Vol-1_Pl-2_Niniveh.jpg){: .not-enlarge}</a>
 
 The following page includes a list of digital, free to use, online resources for studying the ancient Near East. It is divided into six main categories.
 

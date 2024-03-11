@@ -269,6 +269,15 @@ section table th, section table td {
     padding: 10px;
     text-align: left !important;
 }
+section .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+section .video-container iframe {
+    border-radius: 10px;
+}
 section .luwian {
     font-family: "Noto Sans Anatolian Hieroglyphs", sans-serif;
     font-weight: bold;

@@ -35,11 +35,11 @@ doi: null
 
 ## Introduction
 
-When we started looking into gamification of the ancient Near East, we wanted to talk to so-called stakeholders and [Nebuchadnezzar](https://store.steampowered.com/app/1157220/Nebuchadnezzar/){:target="blank"} were first on that list. Since there are only two people behind the game, both of them are well versed with its development. This gives us the unique opportunity to understand all the steps that go into researching and building such a game.
+When we started looking into gamification of the ancient Near East, we wanted to talk to so-called stakeholders and Nepos Games, the creators of [Nebuchadnezzar](https://store.steampowered.com/app/1157220/Nebuchadnezzar/){:target="blank"}, were first on that list. Since there are only two people behind the game, both of them are well versed with its development. This gives us the unique opportunity to understand all the steps that go into researching and building such a game.
 
 Gustav was lucky enough to sit down with Joseph, one of the programmers of the Nebuchadnezzar game. Together with his colleague in Nepos Games, they developed a city builder game based on ancient Mesopotamia. The interview will give you the chance to look behind the curtain through small snippets of videos with commentary and gameplay, to help you better visualize what is going on.
 
-The game was published in February 2021 on Steam and currently has one DLC (downloadable content) called the "The Adventures of Sargon." Our two game-makers met at a company working on Truck simulators, which is exactly what it sounds like: a simulator of driving a long-haul truck. Nebuchadnezzar is slightly different; it is a city builder game where the player must construct a functional city and complete a number of missions tailored to the period of Mesopotamian history they represent.
+The game was published in February 2021 on Steam and currently has one DLC (downloadable content) called the "The Adventures of Sargon." Our two game-makers met at a company working on Truck simulators, which is exactly what it sounds like: a simulator of driving a long-haul truck. Nebuchadnezzar is different; it is a city builder game where the player must construct a functional city and complete a number of missions tailored to the period of Mesopotamian history they represent.
 
 ## The Game
 
@@ -72,7 +72,7 @@ For many people, simply hearing the word infrastructure makes them slightly nod 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/rMbMAfDqG7Q?si=sc4TLZM_AVSFFblC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-The new DLC introduces some interesting aspects into a city builder game--mainly warfare. It’s a heavy industry, as it needs materials, food and a workforce. And that’s of course not really different from anything else in the game. So, economically it requires the same considerations as the other parts of the game, but invading another city is a whole different ball game.
+The new DLC introduces some interesting aspects into a city builder game--mainly warfare. It’s a heavy industry, as it needs materials, food and a workforce. And that’s of course not really different from anything else in the game. So, economically it requires the same considerations as the other parts of the game, but actually invading another city is a whole different ball game.
 
 <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/dpB_DXLWhUc?si=fk5QOzcImv3puIDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

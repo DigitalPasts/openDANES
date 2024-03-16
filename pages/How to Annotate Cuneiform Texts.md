@@ -18,7 +18,7 @@ summary: A high level overview of how to annotate a cuneiform text for linguisti
 difficulty: beginner
 submit-date: 2023-10-02
 publish-date: 2023-10-06
-peer-review-date: 2024-03-15
+peer-review-date: 2024-03-16
 update-date: null
 reviewers:
   reviewer1:

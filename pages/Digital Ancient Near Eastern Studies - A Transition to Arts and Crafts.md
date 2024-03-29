@@ -10,7 +10,7 @@ authors:
     email: shaigo@ariel.ac.il
     orcid: 0000-0002-8359-382X
     academia: https://ariel.academia.edu/ShaiGordin
-    github: null
+    github: https://github.com/DigitalPasts 
   author2:
     name: Avital Romach
     affiliation: Yale University
@@ -54,10 +54,20 @@ summary: A brief history of computational studies of the ancient Near East, and 
 difficulty: null
 submit-date: 2024-02-16
 publish-date: 2024-02-16
-peer-review-date: null
+peer-review-date: 2024-03-29
 update-date: null
-reviewers: null
-doi: null
+reviewers:
+  reviewer1:
+    name: Massimo Maiocchi
+    affiliation: Ca' Foscari University of Venice
+    orcid: 0000-0002-7703-2137
+    academia: https://unive.academia.edu/MassimoMaiocchi
+    github: https://github.com/MMaiocchi
+  reviewer2:
+    name: Michele Cammarosano
+    affiliation: University of Naples ‘L’Orientale’
+    orcid: 0000-0003-3571-9544
+doi: 10.5281/zenodo.10894909
 deprecated: null
 ---
 
@@ -84,6 +94,8 @@ In this piece, we argue that _it is worthwhile_ to dedicate the time to learn th
 ## Foundations
 
 The early pioneers created large databases which are the baselines for many computational works performed today, such as (in alphabetical order) the [Coptic Scriptorium](https://copticscriptorium.org){:target="_blank"}, Cuneiform Digital Library Initiative ([CDLI](https://cdli.mpiwg-berlin.mpg.de/){:target="_blank"}), Hethitologie-Portal Mainz ([HPM](https://www.hethport.uni-wuerzburg.de/){:target="_blank"}), the Open Richly Annotated Cuneiform Corpus ([ORACC](http://oracc.museum.upenn.edu/){:target="_blank"}), [Papyri.info](https://papyri.info){:target="_blank"}, the [Perseus digital library](https://www.perseus.tufts.edu/hopper/){:target="_blank"}, and Thesaurus Linguae Aegyptiae ([TLA](https://thesaurus-linguae-aegyptiae.de){:target="_blank"}), to name a few. Most of these efforts were placed at digitizing ancient sources. This was a colossal effort with the technology of the time, when storage space was limited, when punch-cards were frustrating, when non-Latin characters were not supported.
+
+The first wave of digitization now seems lost to recent history, with many mixed results that cannot be fully surveyed here (see Sahala 2021, ch. 2). Centers like the Centres de [mécanographie](https://fr.wikipedia.org/wiki/M%C3%A9canographie){:target="_blank"} documentaire pour l’archéologie (CDMA, later CADA) initiated in 1957 by Jean-Claude Gardin, were not only the first to make machine readable versions of Mesopotamian texts (Plutniak 2018), but also published computational historical studies using, for example, graph theory and network analysis (Gardin & Garelli 1961 on Old Assyrian commercial networks). Other foundational projects, that continue until this very day in different iterations, include the Neo-Assyrian letters of Simo Parpola in Helsinki during the 1960’s (now the [Neo-Assyrian Text Corpus Project](https://assyriologia.fi/natcp/){:target="_blank"}, and the related Munich [MOCCI](https://www.en.ag.geschichte.uni-muenchen.de/research/mocci/index.html){:target="_blank"} project), and Buccellati’s [Cybernetica Mesopotamica](https://cyb-mes.net/1-history.htm){:target="_blank"} (see its many [publications](https://cyb-mes.net/5-scholarly.htm){:target="_blank"}, as well as a [topical index](https://cyb-mes.net/ind_topical.htm){:target="_blank"}).
 
 Criticism was not lacking towards these revolutionary endeavors. Were digitization and computational studies worth the effort? Was new knowledge obtained that could not have been gathered otherwise? Such setbacks conceptually made it seem as though the computer revolution has not fundamentally touched upon the fields of the ancient Near East. There are still general misunderstandings regarding the inherent differences between print publications (which include PDF versions), and plain-text digital scholarly editions that are also published on online platforms (see Sahle 2016).
 
@@ -176,11 +188,17 @@ Anderson, Adam, Shai Gordin, Stav Klein, Bin Li, Yudong Liu & Marco C. Passarott
 
 Clark, Shmuel & Shai Gordin. 2023. ‘The Mesopotamian Ancient Place-Names Almanac (MAPA): A Gazetteer of the Uruk Urbanscape in the Age of Empires.’ Journal of Open Humanities Data 9(1), p. 20. <https://doi.org/10.5334/johd.146>{:target="_blank"}
 
+Gardin, Jean-Claude & Paul Garelli. 1961. ‘Étude des établissements assyriens en Cappadoce par ordinateur’. Annales 16 (5): 837–76.
+
 Gordin, Shai, Shmuel Clark & Avital Romach. 2022. ‘MAPA: A Linked Open Data Gazetteer of the Southern Babylonian Landscape’. _Interdisciplinary Digital Engagement in Arts & Humanities_ 3(2). <https://doi.org/10.21428/f1f23564.8d442eea>{:target="_blank"}
 
 Homburg, Timo, Tim Brandes, Eva-Maria Huber & Michael A. Hedderich. 2023. ‘From an Analog to a Digital Workflow: An Introductory Approach to Digital Editions in Assyriology’. Cuneiform Digital Library Bulletin 2023 (4). <https://cdli.mpiwg-berlin.mpg.de/articles/cdlb/2023-4>{:target="_blank"}
 
 Li, Bin & Shai Gordin (eds.). 2023. Proceedings of ALT2023: First Workshop on Ancient Language Translation (ALT). Macau, China: Asia-Pacific Association for Machine Translation. <https://aclanthology.org/2023.alt-1.pdf>{:target="_blank"}
+
+Plutniak, Sébastien. 2018. ‘Aux prémices des humanités numériques ? La première analyse automatisée d’un réseau économique ancien (Gardin & Garelli, 1961). Réalisation, conceptualisation, réception’. ARCS - Analyse de réseaux pour les sciences sociales / Network Analysis for Social Sciences Volume 2 (September). <https://doi.org/10.46298/arcs.9236>{:target="_blank"}.
+
+Sahala, Aleksi. 2021. ‘Contributions to Computational Assyriology’. Helsinki: University of Helsinki. <http://hdl.handle.net/10138/332924>{:target="_blank"}.
 
 Sahle, Patrick. 2016. ‘What Is a Scholarly Digital Edition?’ In Digital Scholarly Editing: Theories and Practices, edited by Matthew James Driscoll & Elena Pierazzo, 19–39. Digital Humanities Series. Cambridge: Open Book Publishers. <https://books.openedition.org/obp/3397>{:target="_blank"}
 

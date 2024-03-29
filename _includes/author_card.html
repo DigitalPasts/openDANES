@@ -106,7 +106,7 @@
             {% if reviewer[1].github != null %}
               <a href="{{reviewer[1].github}}" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
             {% endif %}
-            <!-- {% unless forloop.last %}, {% endunless -%} -->
+            {% unless forloop.last %}; {% endunless -%}
           {%- endif -%}
         {% endfor %}
         <a href="https://doi.org/{{include.doi}}" target="_blank">

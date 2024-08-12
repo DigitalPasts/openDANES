@@ -22,9 +22,10 @@ When a manuscript is submitted to the OpenDANES platform, it goes through an ini
 The editorial board includes members from varied fields within ancient Near Eastern Studies, who combine computational methods in their research:
 
 - [Marine Béranger](https://fu-berlin.academia.edu/MarineB%C3%A9ranger){:target="_blank"} (FU Berlin)
+- [Katrien De Graef](https://research.flw.ugent.be/en/katrien.degraef){:target="_blank"} (Ghent University)
 - [Shai Gordin](https://ariel.academia.edu/ShaiGordin){:target="_blank"} (Digital Pasts Lab)
 - [Eliese-Sophia Lincke](https://www.geschkult.fu-berlin.de/e/aegyptologie/personen/Professorinnen-und-Professoren/Lincke/index.html){:target="_blank"} (FU Berlin)
-- [Hubert Mara](https://hubert-mara.at/){:target="_blank"} (MLU-Halle Wittenberg)
+- [Hubert Mara](https://hubert-mara.at/){:target="_blank"} (FU Berlin)
 - [Aleksi Sahala](https://researchportal.helsinki.fi/en/persons/aleksi-sahala){:target="_blank"} (University of Helsinki)
 
 ## Editorial Team

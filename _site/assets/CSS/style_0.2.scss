@@ -122,11 +122,11 @@ section {
     border: $tip-prompt-icon-color solid 1px;
 
     p {
-      display: flex;
+      // display: flex;
       padding: 13px;
     }
 
-    ::before {
+    p::before {
       content: "\f0eb";
       color: $tip-prompt-icon-color;
       font: var(--fa-font-solid);
@@ -143,11 +143,11 @@ section {
     border: $info-prompt-icon-color solid 1px;
 
     p {
-      display: flex;
+      // display: flex;
       padding: 13px;
     }
 
-    ::before {
+    p::before {
       content: "\f05a";
       color: $info-prompt-icon-color;
       font: var(--fa-font-solid);
@@ -164,11 +164,11 @@ section {
     border: $warning-prompt-icon-color solid 1px;
 
     p {
-      display: flex;
+      // display: flex;
       padding: 13px;
     }
 
-    ::before {
+    p::before {
       content: "\f06a";
       color: $warning-prompt-icon-color;
       font: var(--fa-font-solid);
@@ -185,11 +185,11 @@ section {
     border: $danger-prompt-icon-color solid 1px;
 
     p {
-      display: flex;
+      // display: flex;
       padding: 13px;
     }
 
-    ::before {
+    p::before {
       content: "\f071";
       color: $danger-prompt-icon-color;
       font: var(--fa-font-solid);

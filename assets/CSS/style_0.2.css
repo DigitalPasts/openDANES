@@ -72,10 +72,9 @@ section blockquote.prompt-tip {
     border: #03b303 solid 1px;
 }
 section blockquote.prompt-tip p {
-    display: flex;
     padding: 13px;
 }
-section blockquote.prompt-tip ::before {
+section blockquote.prompt-tip p::before {
     content: "";
     color: #03b303;
     font: var(--fa-font-solid);
@@ -90,10 +89,9 @@ section blockquote.prompt-info {
     border: #0070cb solid 1px;
 }
 section blockquote.prompt-info p {
-    display: flex;
     padding: 13px;
 }
-section blockquote.prompt-info ::before {
+section blockquote.prompt-info p::before {
     content: "";
     color: #0070cb;
     font: var(--fa-font-solid);
@@ -108,10 +106,9 @@ section blockquote.prompt-warning {
     border: #ef9c03 solid 1px;
 }
 section blockquote.prompt-warning p {
-    display: flex;
     padding: 13px;
 }
-section blockquote.prompt-warning ::before {
+section blockquote.prompt-warning p::before {
     content: "";
     color: #ef9c03;
     font: var(--fa-font-solid);
@@ -126,10 +123,9 @@ section blockquote.prompt-danger {
     border: #df3c30 solid 1px;
 }
 section blockquote.prompt-danger p {
-    display: flex;
     padding: 13px;
 }
-section blockquote.prompt-danger ::before {
+section blockquote.prompt-danger p::before {
     content: "";
     color: #df3c30;
     font: var(--fa-font-solid);

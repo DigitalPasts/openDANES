@@ -92,7 +92,7 @@ The analyses and (re-)evaluations of each single record collected will further i
 Lastly, the results from these examinations and evaluations will feed a database and a lexicon with individual entries to ancient Sumerian and Akkadian lemmas, as well as modern instrument names and related terminology, created and presented as an online and open access Wiki-platform (Figure 1).
 
 
-![Figure 1]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure 1.png)
+![Figure 1]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure_1.png)
 
 {% include fig_legend.html content="Figure 1: Start page of MIAM created based on <i>MediaWiki</i> and <i>Semantic MediaWiki</i>-frameworks." %}
 
@@ -111,7 +111,7 @@ Recent investigations, among them Gabbay (2014a/b), Mirelman (2014), Shehata (20
 
 MIAM’s electronic and online database and lexicon were created based on *MediaWiki* and *Semantic MediaWiki* (SMW)-frameworks. Since its initial release in 2005, *Semantic MediaWiki* has been under active development with more than 1600 active Wikis today. It is ideally suited for the implementation of semantic database projects and offers numerous ready-to-use components to be easily adjusted to the special needs of the project.
 
-![Figure]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure 2.png)
+![Figure]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure_2.png)
 
 {% include fig_legend.html content="Figure 2: Pros and limitations of SMWs" %}
 
@@ -127,7 +127,7 @@ Since MIAM's goals are primarily content-related and the focus is on analyzing a
 
 In creating appropriate and necessary data sets we were initially facing the challenge of including an input mask that works for all types of records, be them **texts**, i.e. cuneiform manuscripts of all types and contents; **images**, as there are depictions on various supports; or original musical instruments, the **sound tools**. 
 
-![Figure 3]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure 3.png)
+![Figure 3]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure_3.png)
 
 {% include fig_legend.html content="Figure 3: Sketch of meta data sets sorted to three tabs headed “View”, “Subject”, and “Object data”" %}
 
@@ -273,7 +273,7 @@ The input mask, adjusted and defined individually for MIAM, can ultimately be se
 
 ### Lexicon of Akkadian and Sumerian terms and names
 
-![Image placeholder]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure 4.png)
+![Image placeholder]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure_4.png)
 
 {% include fig_legend.html content="Figure 4: Provisional presentation of a <b>Lexicon</b> entry in MIAM" %}
 
@@ -287,7 +287,7 @@ MIAM is not only aimed at specialists in ANE studies but is intended to be equal
 
 Among these tools are different **Glossaries**, presenting proper names, places, and professions, **maps** displaying the distribution of instrument types in images and names in text sources. Different **searching** tools, such as a drop-down menu and single-word-searches that enable browsing and searching for individual modern and ancient terms, authors, or abbreviated publications. A comprehensive Bibliography contains all titles referred to on the site as well as literature relevant for all kinds of Mesopotamian instrument studies.
 
-![Image placeholder]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure 5.png)
+![Image placeholder]({{site.baseurl}}/images/white-papers/{{page.title}}/Figure_5.png)
 
 {% include fig_legend.html content="Figure 5: Provisional overview page for <b>Records</b> in MIAM" %}
 

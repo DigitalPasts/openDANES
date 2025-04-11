@@ -138,133 +138,29 @@ While some of the entry fields are mandatory for reasons of the database’s hie
 
 The activated “Visual editor” offers a menu with all kinds of special characters and formatting options for facilitating text input. Even though the corresponding rendering in the “wiki editor” looks complex, it gives access to the HTML coding and allows individual adjustments.
 
-<table>
-  <tr>
-   <td><strong>Sound tools (ca. 464)</strong>
-   </td>
-   <td><strong>4<sup>th</sup>/3<sup>rd</sup> mill. BCE</strong>
-   </td>
-   <td><strong>Late 3<sup>rd</sup> mill. BCE</strong>
-   </td>
-   <td><strong>2<sup>nd</sup> mill. BCE</strong>
-   </td>
-   <td><strong>1<sup>st</sup> mill. BCE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Chordophones</strong>
-   </td>
-   <td>10
-   </td>
-   <td> 
-   </td>
-   <td> 
-   </td>
-   <td> 
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Idiophones</strong>
-   </td>
-   <td>8
-   </td>
-   <td>30
-   </td>
-   <td>100
-   </td>
-   <td>250
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Aerophones</strong>
-   </td>
-   <td>4
-   </td>
-   <td>10
-   </td>
-   <td>20
-   </td>
-   <td>30
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Membranophones</strong>
-   </td>
-   <td>2
-   </td>
-   <td> 
-   </td>
-   <td> 
-   </td>
-   <td> 
-   </td>
-  </tr>
-</table>
+| Sound tools (ca. 464)     | 4<sup>th</sup>/3<sup>rd</sup> mill. BCE     | Late 3<sup>rd</sup> mill. BCE     | 2<sup>nd</sup> mill. BCE     | 1<sup>st</sup> mill. BCE     |
+|---------------------------|-----------------------|------------------------|-------------------|-------------------|
+| Chordophones              | 10                    |                        |                   |                   |
+| Idiophones                | 8                     | 30                     | 100               | 250               |
+| Aerophones                | 4                     | 10                     | 20                | 30                |
+| Membranophones            | 2                     |                        |                   |                   |
 
-<br>
+| Images (ca. 332)          | 4<sup>th</sup>/3<sup>rd</sup> mill. BCE     | Late 3<sup>rd</sup> mill. BCE     | 2<sup>nd</sup> mill. BCE     | 1<sup>st</sup> mill. BCE     |
+|---------------------------|-----------------------|------------------------|-------------------|-------------------|
+| Seals                     | 20                    | 5                      | 15                | 10                |
+| Figurines and Statues     | 2                     | 60                     | 70                | 60                |
+| Reliefs                   | 10                    | 25                     | 30                | 25                |
 
-<table>
-  <tr>
-   <td><strong>Images (ca. 332)</strong>
-   </td>
-   <td><strong>4<sup>th</sup>/3<sup>rd</sup> mill. BCE</strong>
-   </td>
-   <td><strong>Late 3<sup>rd</sup> mill. BCE</strong>
-   </td>
-   <td><strong>2<sup>nd</sup> mill. BCE</strong>
-   </td>
-   <td><strong>1<sup>st</sup> mill. BCE</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Seals</strong>
-   </td>
-   <td>20
-   </td>
-   <td>5
-   </td>
-   <td>15
-   </td>
-   <td>10
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Figurines and Statues</strong>
-   </td>
-   <td>2
-   </td>
-   <td>60
-   </td>
-   <td>70
-   </td>
-   <td>60
-   </td>
-  </tr>
-  <tr>
-   <td><strong>Reliefs</strong>
-   </td>
-   <td>10
-   </td>
-   <td>25
-   </td>
-   <td>30
-   </td>
-   <td>25
-   </td>
-  </tr>
-  <tr>
-   <td><strong>In total</strong>
-   </td>
-   <td>32
-   </td>
-   <td>90
-   </td>
-   <td>115
-   </td>
-   <td>95
-   </td>
-  </tr>
-</table>
+| Texts (ca. 472)      | 4<sup>th</sup>/3<sup>rd</sup> mill. BCE     | Late 3<sup>rd</sup> mill. BCE     | 2<sup>nd</sup> mill. BCE     | 1<sup>st</sup> mill. BCE     |
+|----------------------|-------------------|--------------------|---------------|---------------|
+| Lists                | 8                 |                    | 21            | 19            |
+| Literary             | 4                 | 2                  | 55            | 24            |
+| Administrative       | 25                | 45                 | 85            | 25            |
+| Letters              |                   |                    | 40            | 15            |
+| Liturgy              |                   |                    | 10            | 25            |
+| Rituals/Incantations | 3                 |                    | 5             | 32            |
+| Inscriptions         | 4                 | 2                  | 13            | 10            |
+| In total             | 44                | 49                 | 229           | 150           |
 
 {% include fig_legend.html content="Table 1: Extrapolation of relevant <b>Records</b>, different types of sources with references to musical instruments" %}
 
@@ -334,7 +230,9 @@ ETCSL = The Electronic Text Corpus of Sumerian Literature ([http://etcsl.orinst.
 
 Franklin, J. C., 2015, *Kinyras: The Divine Lyre*, Hellenistic Studies 70, Washington DC: Center for Hellenistic Studies, trustees for Harvard University.
 
-Gabbay, U., 2014a, The Balaĝ Instrument and its Role in the Cult of Ancient Mesopotamia, in: J. Goodnick-Westenholz, Y. Maurey, and E. Seroussi (eds.), *Music in Antiquity: The Near East and the Mediterranean*, Yuval – Studies of the Jewish Music Research Centre 8, 129-147.
+Gabbay, U., 2010, The Ancient Mesopotamian Sistrum and Its References in Cuneiform Literature: The Identification of the šem and the meze, in: I. L. Finkel and R. Dumbrill (eds.), *ICONEA 2008: Proceedings of the International Conference of Near Eastern Archaeomusicology*, London: ICONEA Publications 2010, 23-28
+
+–– 2014a, The Balaĝ Instrument and its Role in the Cult of Ancient Mesopotamia, in: J. Goodnick-Westenholz, Y. Maurey, and E. Seroussi (eds.), *Music in Antiquity: The Near East and the Mediterranean*, Yuval – Studies of the Jewish Music Research Centre 8, 129-147.
 
 –– 2014b, *Pacifying the Hearts of the Gods: Sumerian Emesal Prayers of the First Millennium BC*, Heidelberger Emesal-Studien 1, Wiesbaden: Harrassowitz.
 

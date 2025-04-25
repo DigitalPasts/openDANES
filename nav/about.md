@@ -34,5 +34,5 @@ Our editorial team is in charge of being in contact with authors through the pro
 
 The editorial team members are:
 
-- [Avital Romach](https://yale.academia.edu/AvitalRomach){:target="_blank"} (Yale University): website development, design and maintenance.
-- [Shmuel Clark](https://ariel.academia.edu/ShmuelClark){:target="_blank"} (Digital Pasts Lab): contact person, peer-review process.
+- [Avital Romach](https://yale.academia.edu/AvitalRomach){:target="_blank"} (Yale University).
+- [Shmuel Clark](https://ariel.academia.edu/ShmuelClark){:target="_blank"} (Digital Pasts Lab).

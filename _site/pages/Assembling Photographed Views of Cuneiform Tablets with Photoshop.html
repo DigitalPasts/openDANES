@@ -1,0 +1,1232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EDJ22Y1C2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'G-3EDJ22Y1C2');
+        </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="OpenDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies">
+    <meta name="keywords" content="digital humanities, babylonian engine, assyriology, Akkademia, Atrahasis, digital assyriology, history, archaeology">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/269b02bfd4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
+    <!-- style css -->
+    <link rel="stylesheet" href="/assets/CSS/style_0.2.css">
+    <!-- style css for table of contents -->
+    <link rel="stylesheet" href="/assets/CSS/toc-style.css">
+    <link rel="stylesheet" href="/assets/CSS/search-and-tags.css">
+
+    <!-- codeblock highlighting: https://github.com/highlightjs/highlight.js/ -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/sunburst.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <!-- displaying math formulae -->
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      },
+      tex2jax: {
+        inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true,
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
+  
+
+    <title>openDANES</title>
+
+    
+
+  </head>
+  <body>
+    <a name="top"></a>
+    <header>
+
+    <!-- <div class="logo">
+      <img src="/images/favicon_io/android-chrome-512x512.png" alt="logo">
+      <a href="/index.html">OpenDANES</a>
+    </div> -->
+
+    <div class="navigation">
+      <ul>
+        <li><a href="/index.html"><img src="/favicon_io/android-chrome-512x512.png" alt="logo"></a></li>
+        <li><a href="/nav/about.html">About</a></li>
+        <li><a href="/nav/tutorials.html">Tutorials</a></li>
+        <li><a href="/nav/white-papers.html">White Papers</a></li>
+        <li><a href="/nav/posters.html">Posters</a></li>
+        <li><a href="/nav/DANES-resources.html">DANES Resources</a></li>
+        <li><a href="/nav/submission-guidelines.html">Submission Guidelines</a></li>
+        <li><a href="/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+      </ul>
+    </div>
+
+</header>
+
+
+    <section>
+      <div class="toc">
+        <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
+        <h2><i class="far fa-folder-open"></i> On this page</h2>
+      
+        <ul><li><a href="#prerequisites">Prerequisites</a><ul><li><a href="#preparing-cuneiform-images">Preparing Cuneiform Images</a></li><li><a href="#additional-images-and-metadata">Additional Images and Metadata</a></li><li><a href="#preparing-software-and-code">Preparing Software and Code</a></li></ul></li><li><a href="#pre-processing">Pre-Processing</a><ul><li><a href="#converting-camera-files-to-tiff-format">Converting Camera Files to TIFF Format</a></li><li><a href="#rotating-photos">Rotating Photos</a></li><li><a href="#separation-of-photos-with-suffix-_03">Separation of Photos with Suffix _03</a></li></ul></li><li><a href="#processing-photos-without-scale">Processing Photos without Scale</a></li><li><a href="#processing-photos-with-scale">Processing Photos with Scale</a><ul><li><a href="#adding-and-resizing-the-scale-bar">Adding and Resizing the Scale Bar</a></li><li><a href="#manual-set-up-of-javascript-sources">Manual Set-up of JavaScript Sources</a></li><li><a href="#automatic-application-of-the-action">Automatic Application of the Action</a></li><li><a href="#final-processing">Final Processing</a></li></ul></li><li><a href="#running-the-stitching-script">Running the Stitching Script</a></li><li><a href="#post-processing">Post-Processing</a><ul><li><a href="#convert-from-tiff-to-jpeg">Convert from *TIFF to *.JPEG</a></li><li><a href="#compress-tiff-to-lzw-or-zip-format">Compress *.TIFF to LZW or ZIP format</a></li><li><a href="#reduce-the-dpi-of-stitched-images">Reduce the DPI of Stitched Images</a></li></ul></li><li><a href="#troubleshooting">Troubleshooting</a><ul><li><a href="#removing-the-background-manually">Removing the Background Manually</a></li><li><a href="#stitching-photos-manually">Stitching Photos Manually</a></li></ul></li><li><a href="#final-remarks">Final Remarks</a></li></ul>
+
+      
+      </div>
+      <div class="content">
+        <h1>Assembling Photographed Views of Cuneiform Tablets with Photoshop</h1>
+        <div class="author-card">
+
+  <div class="author-box1">
+
+    <div class="authors-container">
+
+      <div class="card-image-authors">
+        
+          <img class="not-enlarge" src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/banner-image.png" alt="Image not available" />
+        
+      </div>
+
+      <div class="authors">
+        <div class="author-names">
+                  <!-- assign and number author affiliations -->
+        
+        
+    
+        
+    
+        <!-- <div class="author-container"> -->
+              Luis Sáenz
+    
+              
+              
+                
+                
+                
+                  
+                    <sup>1</sup> 
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+    
+              
+                <a href="https://orcid.org/0000-0002-9107-6574" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+              
+              
+                <a href="https://uni-jena.academia.edu/LuisDanielS%C3%A1enzSantos" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              
+              
+                <a href="https://github.com/ludovicus-hispanicus" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+              
+    
+              ; <!-- </div> --><!-- <div class="author-container"> -->
+              Louis Happel
+    
+              
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                    <sup>2</sup> 
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+    
+              
+                <a href="https://orcid.org/0009-0005-3967-383X" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+              
+              
+                <a href="https://independent.academia.edu/LouisHappel" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              
+              
+                <a href="https://github.com/Louis-Happel" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+              
+    
+              ; <!-- </div> --><!-- <div class="author-container"> -->
+              Mathilde Touillon-Ricci
+    
+              
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                    <sup>3</sup> 
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+    
+              
+                <a href="https://orcid.org/0009-0005-7428-977X" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+              
+              
+                <a href="https://britishmuseum.academia.edu/MathildeTouillonRicci" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              
+              
+    
+              ; <!-- </div> --><!-- <div class="author-container"> -->
+              Alberto Giannese
+    
+              
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                    <sup>3</sup> 
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+    
+              
+              
+                <a href="https://ucl.academia.edu/AlbertoGiannese" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              
+              
+    
+              ; <!-- </div> --><!-- <div class="author-container"> -->
+              Jonathan Taylor
+    
+              
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                    <sup>3</sup> 
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+    
+              
+                <a href="https://orcid.org/0000-0002-0016-3227" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+              
+              
+                <a href="https://britishmuseum.academia.edu/JonathanTaylor" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              
+              
+    
+              ; <!-- </div> --><!-- <div class="author-container"> -->
+              Enrique Jiménez
+    
+              
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                
+              
+                
+                
+                
+                  
+                    <sup>4</sup> 
+                  
+                
+              
+    
+              
+                <a href="https://orcid.org/0000-0003-0093-528X" target="_blank"><i class="fa-brands fa-orcid fa-sm"></i></a>
+              
+              
+                <a href="https://lmu-munich.academia.edu/EnriqueJim%C3%A9nez" target="_blank"><i class="fa-solid fa-graduation-cap fa-sm"></i></a>
+              
+              
+                <a href="https://github.com/ejimsan" target="_blank"><i class="fa-brands fa-github fa-sm"></i></a>
+              
+    
+              <!-- </div> -->
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="affiliations">
+          
+          
+                <sup>1</sup> University of Jena
+              ; 
+                <sup>2</sup> LMU Munich
+              ; 
+                <sup>3</sup> The British Museum
+              ; 
+                <sup>4</sup> Ludwig-Maximilians-Universität
+              
+        </div>
+
+        <hr />
+      
+        <div class="dates">
+          <p>Submitted on: March 11, 2025</p>
+          <p>Published on: April 25, 2025</p>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="author-box2">
+  
+    
+  
+    <div class="peer-review">
+      
+        <i>Under peer review</i>
+      
+      
+    </div>
+
+  
+
+  
+
+    
+
+    <div class="card-summary">
+      <p>
+        <b>Summary:</b> This tutorial provides a step-by-step guide on assembling and processing photographed views of cuneiform tablets using Photoshop, with a focus on automation to ensure efficiency and standardization. It covers essential tasks like converting image formats, adding scales, and stitching photos, while also offering troubleshooting advice for manual corrections.
+      </p>
+    </div>
+
+    <div class="card-tags">
+      <p>
+        
+          #cuneiform
+        
+          #Photoshop
+        
+          #2D images
+        
+      </p>
+    </div>
+
+    
+      <div class="difficulty">
+        <p>
+          Difficulty level: beginner
+        </p>
+      </div>
+    
+
+  </div>
+</div>
+<p>Documenting archaeological artifacts is a crucial aspect of research, as it provides valuable data for both traditional and computational analysis and preservation. A standardized approach to documenting these artifacts enhances their usability, facilitating more efficient data processing and analysis. Additionally, implementing an automated method to streamline this documentation process is vital. Among these methods, photography has become a standard practice.</p>
+
+<p>Cuneiform tablets, as archaeological artifacts, present a particular challenge because the inscribed text must be clearly readable for the preservation method to be useful for any kind of philological or computational analysis.</p>
+
+<p>In this tutorial, we will learn how to combine multiple views of cuneiform tablets - front, back, and sides - into a single comprehensive layout. This creates standardized photographic renderings of cuneiform tablets appropriate for publication, following the presentation style used by the British Museum.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-1.jpeg" alt="" class="not-enlarge" /></p>
+<p class="fig">Figure 1: Rendering of the tablet <a href="https://www.britishmuseum.org/collection/object/W_1889-0426-114" target="_blank">1889,0426.114</a> with front, back and side views housed in the British Museum containing extispicy and ritual directions. © The Trustees of the British Museum.</p>
+
+<p>We believe that this is the most cost-effective and efficient way to capture the three-dimensionality of these artifacts and the inscriptions, which often extend to the edges, using a method like photography that can only produce 2D images.</p>
+
+<p>The tutorial focuses on automating this workflow with specialized tools, reducing manual intervention while ensuring consistent, high-quality results that meet professional documentation standards.</p>
+
+<p>This tutorial utilizes two specialized Photoshop components:</p>
+
+<ol>
+  <li>The Photoshop Actions file <code class="language-plaintext highlighter-rouge">Babylon_Project_modified.atn</code>, originally created by Alberto Gianese for the British Museum.</li>
+  <li>The Photoshop JavaScript <code class="language-plaintext highlighter-rouge">STITCHING_updated_EJ_LH_LS_Jena.jsx</code>, developed by Mathilde Touillon-Ricci and Jonathan Taylor for the British Museum.</li>
+</ol>
+
+<p>These components contain automated sequences that:</p>
+
+<ul>
+  <li>Extract the tablet image from its background</li>
+  <li>Place it on a black background layer</li>
+  <li>Apply digital processing for stitching the images according to scale</li>
+  <li>Add a 100-pixel margin to the final image</li>
+  <li>Save and close the final image</li>
+</ul>
+
+<p>Both components have been enhanced through subsequent modifications by Prof. Dr. Enrique Jiménez and the other authors of this tutorial. For training purposes, Prof. Johannes Hackl has kindly provided three sets of tablet photographs, for which we extend our sincere thanks. These tablet photographs from the Frau Professor Hilprecht Collection are used throughout this guide and are available for download for practicing the tutorial.</p>
+
+<blockquote class="prompt-info">
+  <p><strong>Acknowledgements:</strong> These resources were developed over the course of a prolonged period of bulk digitisation at the British Museum, originally for the Ashurbanipal Library Project, then the Ur of the Chaldees project, before being adapted for the Babylon project. The concept is based on a Perl script written by Steve Tinney, which composited scans into <a href="https://cdli.mpiwg-berlin.mpg.de/docs/images-acquisition-and-processing" target="_blank">CDLI “fat-cross”</a> images. It was not possible to run those scripts using the set-up in place at the British Museum, so an equivalent was developed there that could be run through Photoshop, and would take into account the requirements of working with photos. Resizing and quality control scripts were written by Ana Tam. “Compositor” and “finaliser” scripts were written by Jonathan Taylor, drawing on pieces of code made available by Trevor Morris, the late Mike Hale, and Max Kielland.</p>
+</blockquote>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before applying any action or script, some preliminary steps are required to ensure proper functioning.</p>
+
+<h3 id="preparing-cuneiform-images">Preparing Cuneiform Images</h3>
+
+<p>This tutorial assumes you have already photographed your cuneiform tablets following professional documentation standards. If you do not have images available you can use the ones provided for testing the workflow of this tutorial (see under <a href="#preparing-software-and-code">Preparing Software and Code</a>).</p>
+
+<p>If you are using your own images, they should be high-resolution images of all tablet sides, each including a scale and ideally shot against a high-contrast background (preferably black, as shown in Figure 2). A piece of black velvet works excellently as a background material, as it effectively eliminates reflections.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-2.PNG" alt="" class="not-enlarge" /></p>
+<p class="fig">Figure 2: A photo of the obverse of <a href="https://www.ebl.lmu.de/fragmentarium/HS.2067" target="_blank">HS.2067</a> (HS.2067_01) with a black background</p>
+
+<p>The most important requirement for your photographs is consistency. Maintain the same camera configuration, lighting setup, and positioning for each tablet. This standardized approach ensures all tablet views will be uniform and scaled the same when assembled into the final rendering.</p>
+
+<p><strong>Labeling the photos with the tablets sides</strong>:</p>
+
+<p>The ideal number of photos is 6, with each file capturing a specific view of the tablet. Using the obverse (front side) of the tablet as your reference point, the photos should be labeled as follows:</p>
+
+<ul>
+  <li>TABLET-NUMBER_01 → obverse or front</li>
+  <li>TABLET-NUMBER_02 → reverse or back</li>
+  <li>TABLET-NUMBER_03 → top <strong>with scale</strong></li>
+  <li>TABLET-NUMBER_04 → bottom</li>
+  <li>TABLET-NUMBER_05 → left edge</li>
+  <li>TABLET-NUMBER_06 → right edge</li>
+</ul>
+
+<p class="prompt-tip"><strong>Note on orientation:</strong> Don’t worry if you’re unsure which side is the obverse or reverse - even experienced Assyriologists sometimes can’t determine this at first glance. What’s important is to consistently label one side as the front (01) and the other as the back (02) throughout your documentation.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-3.PNG" alt="" class="not-enlarge" /></p>
+<p class="fig">Figure 3: Labeling conventions for tablet views by side.</p>
+
+<p>Try to maintain the consistent numbering of photos. In case you don’t have all six photos, the script will still work, but you must preserve the labeling convention (Tablet-number_XX) and content organization shown above. A critical requirement: ensure at least one blue square calibration reference is present, as the script uses it to rescale the final stitched image. This is included in both scale bars we provided for downloading.</p>
+
+<p>For a set with only two photos (e.g., Tablet-number_01 and Tablet-number_02), place the scale reference in 02. If you have all photos but 03 is missing, create a placeholder Tablet-number_03 containing only the <a href="#adding-and-resizing-the-scale-bar">resized</a> scale reference.</p>
+
+<blockquote class="prompt-tip">
+  <p>You can use <a href="https://www.advancedrenamer.com/" target="_blank">Advanced Renamer</a> to rename the files. This is a software tool designed for renaming multiple files and folders at once. It offers a variety of methods for generating new names and organizing data efficiently.</p>
+</blockquote>
+
+<p></p>
+
+<blockquote class="prompt-warning">
+  <p>Make a copy of all photos on your local computer before starting. Never modify the original files!</p>
+</blockquote>
+
+<p><strong>File format and size</strong>:</p>
+
+<p>The script primarily works with TIFF files, which are optimal for preserving image quality and metadata. While JPEG copies are often required for projects due to their smaller file sizes, making them better suited for web usage and sharing, the primary output remains in TIFF. The script can generate JPEG copies of the TIFF files when specified. If your project requirements don’t specify a format, you can always convert the stitched TIFF files to JPEG format as a separate step after the main processing.</p>
+
+<blockquote class="prompt-tip">
+  <p>Save your stitched images in either compressed or uncompressed TIFF format based on your project requirements. If no specification is given, save uncompressed - you can always compress files later in batch. See <a href="#compress-tiff-to-lzw-or-zip-format">Compress *.TIFF to LZW or ZIP format</a> for details.</p>
+
+  <p>You can set your final image resolution to either 600 or 300 DPI based on your project requirements. If no specification is given, use 600 DPI - you can always reduce resolution later in batch. See <a href="#reduce-the-dpi-of-stitched-images">Reduce the DPI of Stitched Images</a> for details.</p>
+</blockquote>
+
+<h3 id="additional-images-and-metadata">Additional Images and Metadata</h3>
+
+<p><strong>Institution Logo</strong>: The script allows you to add an institutional logo to the stitched image, similar to those used by the Hilprecht Collection.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-4.png" alt="" class="not-enlarge" /></p>
+<p class="fig">Figure 4: Stitched image of <a href="https://www.ebl.lmu.de/fragmentarium/HS.2067" target="_blank">HS.2067</a> with the University of Jena logo</p>
+
+<p>Your institution must provide a digital version of their logo. Use a fixed size for the logo, as dynamic scaling can produce unwanted effects. The script will only resize the logo if it exceeds the width of the stitched image, reducing it to 70% of its original size. For reference, use the 5cm scale shown in the HS.2067 image.</p>
+
+<p>Alternatively, you can use a simpler approach by incorporating the logo into the scale bar, as demonstrated by the British Museum:</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-5.png" alt="" class="not-enlarge" /></p>
+<p class="fig">Figure 5: British Museum 5cm color scale with logo</p>
+
+<p><strong>Metadata</strong>:</p>
+
+<p>Photoshop can embed basic metadata using its native standards and some IPTC fields, though not all. This script implements minimal metadata using both Photoshop’s standard and selected IPTC fields.</p>
+
+<p>For more comprehensive IPTC metadata, we recommend using either Adobe Bridge or ExifTool for batch processing. Adobe Bridge is the preferred option, as ExifTool may encounter issues with special characters and lengthy text entries.</p>
+
+<h3 id="preparing-software-and-code">Preparing Software and Code</h3>
+
+<p>Install Adobe Photoshop on your computer. This workflow has been tested with Adobe Photoshop versions 2021 through 2025. Both the Photoshop Actions and JavaScript files are Photoshop-specific and are not compatible with other image editing software like GIMP.</p>
+
+<blockquote class="prompt-info">
+  <p><strong>Note:</strong> If the Actions don’t work as expected in your Photoshop version, please notify the tutorial authors or the OpenDANES team.</p>
+</blockquote>
+
+<p><strong>Download Files</strong>:</p>
+
+<p>Download the required files from the eBL <a href="https://github.com/ElectronicBabylonianLiterature/generic-documentation/tree/master/cuneiform-tablet-stitch-tools/tutorial" target="_blank">project’s GitHub</a> repository.</p>
+
+<p>Scripts and Actions:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">cuneiform_documentation_bm.atn</code></li>
+  <li><code class="language-plaintext highlighter-rouge">stitching_script_bm.jsx</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Resize Scale 2cm.jsx</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Resize Scale 5cm.jsx</code></li>
+</ul>
+
+<p>Scales:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BM_5cm scale.tif</code></li>
+  <li><code class="language-plaintext highlighter-rouge">BM_2cm scale.tif</code></li>
+</ul>
+
+<p>The scale bars <code class="language-plaintext highlighter-rouge">BM_5cm scale</code> and <code class="language-plaintext highlighter-rouge">BM_2cm_scale</code> are essential components of this script, as they contain a blue square that serves as a reference for resizing the final image correctly.</p>
+
+<p>For testing this workflow, we provide example sets:</p>
+
+<ul>
+  <li><a href="https://www.ebl.lmu.de/fragmentarium/HS.1671" target="_blank">HS.1671</a>: 6 photos for stitching with 5cm scale bar</li>
+  <li><a href="https://www.ebl.lmu.de/fragmentarium/HS.2067" target="_blank">HS.2067</a>: 6 photos for stitching with 2cm scale bar bar</li>
+  <li><a href="https://www.ebl.lmu.de/fragmentarium/HS.1662" target="_blank">HS.1662</a>: 2 photos for stitching</li>
+  <li><code class="language-plaintext highlighter-rouge">mock_logo_tutorial</code>: Institutional logo sample</li>
+</ul>
+
+<p><strong>Load the Actions</strong></p>
+
+<p>To load actions in Photoshop:</p>
+<ol>
+  <li>Open the Action panel:
+    <ol>
+      <li>Navigate to <code class="language-plaintext highlighter-rouge">Photoshop &gt; Windows &gt; Actions</code> or</li>
+      <li>Use the shortcut <code class="language-plaintext highlighter-rouge">Alt+F9</code></li>
+    </ol>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-6.png" alt="" /></p>
+    <p class="fig">Figure 6: Activation of the Actions Panel.</p>
+  </li>
+  <li>Import the custom actions:
+    <ol>
+      <li>Click the Actions panel menu</li>
+      <li>Select <code class="language-plaintext highlighter-rouge">Load Actions...</code></li>
+    </ol>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-7.png" alt="" /></p>
+    <p class="fig">Figure 7: Load operation for the custom action Babylon_Project_modified.atn.</p>
+  </li>
+  <li>Select and load the file:
+    <ol>
+      <li>Locate <code class="language-plaintext highlighter-rouge">Babylon_Project_modified.atn</code></li>
+      <li>Click <code class="language-plaintext highlighter-rouge">Load</code></li>
+    </ol>
+  </li>
+</ol>
+
+<p>The actions will now appear in your Actions panel under the <code class="language-plaintext highlighter-rouge">Babylon Project</code> folder.</p>
+
+<p>You can modify these actions or create your own as needed. With the actions loaded, we can proceed to pre-processing.</p>
+
+<h2 id="pre-processing">Pre-Processing</h2>
+
+<h3 id="converting-camera-files-to-tiff-format">Converting Camera Files to TIFF Format</h3>
+
+<p>If your photos are in any of these camera formats:</p>
+
+<ul>
+  <li>RAW formats (*.CR2, *.NEF, *.ARW, etc.)</li>
+  <li>Digital Negative (*.DNG)</li>
+  <li>Camera-specific formats (*.RW2, *.ORF, *.PEF)</li>
+</ul>
+
+<p>Follow these steps to convert them to TIFF:</p>
+
+<blockquote class="prompt-tip">
+  <p><strong>Note:</strong> If your photos are already in TIFF format, you can skip the conversion process. Simply create the <code class="language-plaintext highlighter-rouge">_PreProcess</code> folder and place your TIFF files directly there.</p>
+</blockquote>
+
+<ol>
+  <li>File Organization:
+    <ol>
+      <li>Create a folder named <code class="language-plaintext highlighter-rouge">_ToProcess</code></li>
+      <li>Create another folder named <code class="language-plaintext highlighter-rouge">_PreProcess</code></li>
+      <li>Copy all your camera files into the <code class="language-plaintext highlighter-rouge">_ToProcess</code> folder</li>
+    </ol>
+  </li>
+  <li>Using Adobe Photoshop:
+    <ol>
+      <li>Open Photoshop</li>
+      <li>
+        <p>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Scripts &gt; Image Processor</code></p>
+
+        <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-8.png" alt="" /></p>
+        <p class="fig">Figure 8: Activation of the image processor dialog box.</p>
+      </li>
+      <li>In the Image Processor dialog box:
+        <ol>
+          <li>Set the source folder to <code class="language-plaintext highlighter-rouge">_ToProcess</code></li>
+          <li>Set the destination folder to <code class="language-plaintext highlighter-rouge">_PreProcess</code></li>
+          <li>Check the “Save as TIFF” option</li>
+          <li>Click “Run” to begin the conversion</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-9.png" alt="" /></p>
+<p class="fig">Figure 9: Selection of TIFF conversion parameters.</p>
+
+<h3 id="rotating-photos">Rotating Photos</h3>
+
+<p>After converting to TIFF format, ensure all photos are oriented correctly for reading the cuneiform text. The correct orientation should match how you would naturally read the cuneiform text on the tablet. If multiple photos need the same rotation:</p>
+
+<p>In Windows File Explorer:</p>
+
+<ol>
+  <li>Navigate to the <code class="language-plaintext highlighter-rouge">_PreProcess</code> folder</li>
+  <li>Select all photos (Press Ctrl + A)</li>
+  <li>Right-click to open the context menu</li>
+  <li>Choose either <code class="language-plaintext highlighter-rouge">Rotate right</code> or <code class="language-plaintext highlighter-rouge">Rotate left</code> as needed</li>
+</ol>
+
+<h3 id="separation-of-photos-with-suffix-_03">Separation of Photos with Suffix _03</h3>
+
+<p>For photos showing the scale (those with suffix <code class="language-plaintext highlighter-rouge">_03</code>), we need a separate workflow since they require digital scale placement. Follow these steps:</p>
+
+<p>File Organization:</p>
+
+<ol>
+  <li>Navigate to the <code class="language-plaintext highlighter-rouge">_PreProcess</code> folder</li>
+  <li>Create a new folder named <code class="language-plaintext highlighter-rouge">PreProcess_03</code></li>
+  <li>Locate all photos with the suffix <code class="language-plaintext highlighter-rouge">_03</code></li>
+  <li>Move these <code class="language-plaintext highlighter-rouge">_03</code> photos to the <code class="language-plaintext highlighter-rouge">PreProcess_03</code> folder</li>
+</ol>
+
+<p>This separation ensures that scale-containing photos will undergo different processing steps from the rest of the photos.</p>
+
+<p>Once you have:</p>
+
+<ul>
+  <li><a href="#preparing-cuneiform-images">Prepared and labeled</a> the images correctly according to tablet’s sides</li>
+  <li><a href="#convert-from-tiff-to-jpeg">Converted</a> your camera files to TIFF format</li>
+  <li><a href="#preparing-software-and-code">Downloaded and loaded in Photoshop</a> the necessary actions</li>
+  <li><a href="#rotating-photos">Rotated</a> the images if needed</li>
+  <li><a href="#separation-of-photos-with-suffix-_03">Separated</a> the images with suffix _03</li>
+</ul>
+
+<p>You’re ready to proceed with extracting the tablet images from their backgrounds using Photoshop Actions.</p>
+
+<blockquote class="prompt-info">
+  <p>You can process multiple tablets simultaneously. The code will combine tablets photos according to their file names.</p>
+</blockquote>
+
+<h2 id="processing-photos-without-scale">Processing Photos without Scale</h2>
+
+<ol>
+  <li>Create a folder named <code class="language-plaintext highlighter-rouge">_Processed</code></li>
+  <li>Open Photoshop</li>
+  <li>
+    <p>Navigate <code class="language-plaintext highlighter-rouge">File &gt; Automate &gt; batch</code></p>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-10.png" alt="" /></p>
+    <p class="fig">Figure 10: Batch Dialog Box Operation</p>
+  </li>
+  <li>Under <code class="language-plaintext highlighter-rouge">Play</code> in the Action menu, check the options under <code class="language-plaintext highlighter-rouge">Set</code> until you find the name of your project (<code class="language-plaintext highlighter-rouge">Cuneiform Documentation</code> or another name assigned by you such as <code class="language-plaintext highlighter-rouge">Babylon Project</code>). Then select <code class="language-plaintext highlighter-rouge">Views 1-6 BATCH</code> under <code class="language-plaintext highlighter-rouge">Action</code>.</li>
+  <li>
+    <p>Set the source folder to <code class="language-plaintext highlighter-rouge">_PreProcess</code>.</p>
+
+    <blockquote class="prompt-info">
+      <p><strong>Note:</strong> If you converted the images to TIFFs make sure your source folder is set to the folder with the actual images in it, not just a parent folder or check <code class="language-plaintext highlighter-rouge">include all subfolders</code>.</p>
+    </blockquote>
+  </li>
+  <li>Set <code class="language-plaintext highlighter-rouge">_Processed</code> as the final destination.</li>
+</ol>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-11.png" alt="" /></p>
+<p class="fig">Figure 11: Action Application Options for 'Views 1-6 BATCH'</p>
+
+<blockquote class="prompt-warning">
+  <p><strong>Important:</strong> The action uses the secondary color as the background, so ensure it is set to black. To change the secondary color to black, click on the background and secondary color icon.</p>
+</blockquote>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-12.png" alt="" /></p>
+<p class="fig">Figure 12: Background Color Selection in Color Picker</p>
+
+<blockquote class="prompt-tip">
+  <p>Disable all action toggles to prevent Photoshop from requesting approval before applying each action.</p>
+</blockquote>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-13.png" alt="" /></p>
+<p class="fig">Figure 13: Action Toggle Deactivation</p>
+
+<p>Photoshop will then use the <code class="language-plaintext highlighter-rouge">Object Selection Tool</code> to automatically separate the tablet images from their background and apply various digital enhancements before saving and closing them. The final output should look like this:</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-14.png" alt="" class="not-enlarge" /></p>
+<p class="fig">Figure 14: Result of '1-6 View BATCH' Action applied to HS_2067_01</p>
+
+<blockquote class="prompt-tip">
+  <p>The batch process may need to be run multiple times, as some photos might not be processed correctly on the first attempt. In most cases, running the process two or three times will successfully process all remaining images. If any photos remain incorrectly processed, please refer to the <a href="#troubleshooting">troubleshooting</a> section.</p>
+
+  <p><strong>Note:</strong> For faster access, you can assign a Function Key (such as F6) to the <code class="language-plaintext highlighter-rouge">Views 1-6 Batch</code> action. Simply select the action, click the menu icon, select Action Options, and assign your preferred function key.</p>
+</blockquote>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-15.png" alt="" /></p>
+<p class="fig">Figure 15: 'Views 1-6 BATCH' Action Configuration.</p>
+
+<h2 id="processing-photos-with-scale">Processing Photos with Scale</h2>
+
+<p>This section covers the processing of photos with the prefix _03. It will involving adding the scale bars and resizing them to accurately represent the tablet size.</p>
+
+<blockquote class="prompt-info">
+  <p>Note: This step includes a manual adjustment that cannot be automated. However, after performing this manually once you can then perform the process automatically (see <a href="#automatic-application-of-the-action">Automatic Application of the Action</a>). You can also create a <code class="language-plaintext highlighter-rouge">Save and Close</code> action to streamline the process slightly.</p>
+</blockquote>
+
+<ol>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Automate &gt; Batch</code></li>
+  <li>Select <code class="language-plaintext highlighter-rouge">View 3 HP</code> from the Action dropdown menu</li>
+  <li>Set the source folder to your <code class="language-plaintext highlighter-rouge">_03</code> photo directory (e.g., <code class="language-plaintext highlighter-rouge">PreProcess_03</code>).</li>
+</ol>
+
+<p>The process creates two layers for each photo: <code class="language-plaintext highlighter-rouge">HP</code> and <code class="language-plaintext highlighter-rouge">background</code>, which are essential for subsequent operations.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-16.png" alt="" /></p>
+<p class="fig">Figure 16: 'View 3 HP' Action Configuration.</p>
+
+<h3 id="adding-and-resizing-the-scale-bar">Adding and Resizing the Scale Bar</h3>
+
+<ol>
+  <li>Open each photo with the <code class="language-plaintext highlighter-rouge">_03</code> suffix</li>
+  <li>
+    <p>Select the <code class="language-plaintext highlighter-rouge">Line Tool</code> (press <code class="language-plaintext highlighter-rouge">U</code> on your keyboard)</p>
+
+    <blockquote class="prompt-tip">
+      <p>The <code class="language-plaintext highlighter-rouge">Line Tool</code> is under the <code class="language-plaintext highlighter-rouge">Shape Tool</code> in the left-side toolbar. If you press <code class="language-plaintext highlighter-rouge">U</code>, make sure the shape is set on <code class="language-plaintext highlighter-rouge">Line</code>and not something else. You can right-click on the <code class="language-plaintext highlighter-rouge">Shape Tool</code> to change the shape type.</p>
+    </blockquote>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/extra-image-line-tool.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Using the scale visible in the photo, draw a line exactly 1 cm long</p>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-17.png" alt="" class="not-enlarge" /></p>
+    <p class="fig">Figure 17: Line drawn to 1 cm length for scale bar calibration.</p>
+  </li>
+  <li>Check that a new layer named <code class="language-plaintext highlighter-rouge">Line 1</code> is created in the Layers panel. If the layer has a different name (this may occur in non-English versions of Photoshop), rename it to <code class="language-plaintext highlighter-rouge">Line 1</code> or change the required Javascript to process another name:
+    <ol>
+      <li>Open <code class="language-plaintext highlighter-rouge">Resize Scale 5cm.jsx</code> in any text editor, like notepad.</li>
+      <li>Find this line (around line 6)
+<code class="language-plaintext highlighter-rouge">var layer = activeDocument.layers.getByName("Line 1"); //Grab the currently selected layer</code></li>
+      <li>and change <code class="language-plaintext highlighter-rouge">"Line 1"</code> for the name generated in your local version of photoshop.</li>
+      <li>Save and close.</li>
+      <li>Do the same with <code class="language-plaintext highlighter-rouge">Resize Scale 2cm.jsx</code></li>
+    </ol>
+  </li>
+  <li>Repeat steps 2-4 for all remaining images</li>
+  <li>Save your work</li>
+</ol>
+
+<h3 id="manual-set-up-of-javascript-sources">Manual Set-up of JavaScript Sources</h3>
+
+<ol>
+  <li>With the <code class="language-plaintext highlighter-rouge">_03</code> image file open, locate and select <code class="language-plaintext highlighter-rouge">View 3 Place 5cm Scale</code> in the Actions window</li>
+  <li>
+    <p>Select the <code class="language-plaintext highlighter-rouge">Place</code> action within this group and start Recording</p>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-18.png" alt="" class="not-enlarge" /></p>
+    <p class="fig">Figure 18: Start Recording of Scale Addition Action</p>
+  </li>
+  <li>Import the <code class="language-plaintext highlighter-rouge">BM_5cm_scale.TIF</code> file into your Photoshop workspace as another layer of the <code class="language-plaintext highlighter-rouge">_03</code> photo using either:
+    <ol>
+      <li>File import</li>
+      <li>Drag and drop from your source folder (make sure to drop the <code class="language-plaintext highlighter-rouge">BM_5cm_scale.TIF</code> on the image so it is added as a layer and not as its own image). After dropping, press enter.</li>
+    </ol>
+  </li>
+  <li>
+    <p>End the recording</p>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-19.png" alt="" /></p>
+    <p class="fig">Figure 19: Recording Termination of Scale Addition Action</p>
+  </li>
+  <li>Delete the original <code class="language-plaintext highlighter-rouge">Place</code> action (select it and press the bin at the bottom right of the Actions window)</li>
+</ol>
+
+<p>Now, you can rescale <code class="language-plaintext highlighter-rouge">BM_5cm_scale.TIF</code> to match the cuneiform tablet:</p>
+
+<ol>
+  <li>Initiate the action recording, like in Figure 18.</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Scripts &gt; Browse</code></li>
+  <li>Locate and select <code class="language-plaintext highlighter-rouge">Resize Scale 5cm.jsx</code> (the action will probably fail but that is ok). This should rescale the <code class="language-plaintext highlighter-rouge">BM_5cm_scale.TIF</code> layer.</li>
+  <li>End the recording.</li>
+</ol>
+
+<blockquote class="prompt-info">
+  <p><strong>Note:</strong> The action may fail at this point - this is expected behavior.</p>
+</blockquote>
+
+<p>After completing the process for the 5cm scale, go back to the beginning of this section and repeat the instructions for the 2cm scale. You should see <code class="language-plaintext highlighter-rouge">View 3 Place 2cm Scale</code> in the actions window below the <code class="language-plaintext highlighter-rouge">View 3 Place 5cm Scale</code>.</p>
+
+<p>Then, for each <code class="language-plaintext highlighter-rouge">_03</code> image you should only keep one scale bar (the 2cm or 5cm).</p>
+
+<blockquote class="prompt-warning">
+  <p>Choose a scale bar that fits within the tablet’s width. The JavaScript measures the image width, not the tablet width. If the scale bar is wider than the tablet, it will cause distortion in the final image, making that side appear disproportionately small.</p>
+</blockquote>
+
+<p>Position the scale bar approximately 0.5cm below the tablet’s bottom edge.</p>
+
+<h3 id="automatic-application-of-the-action">Automatic Application of the Action</h3>
+
+<p>After completing the manual action above once, you have two options for applying the action and adding the scale bar to all other <code class="language-plaintext highlighter-rouge">_03</code> images:</p>
+
+<ol>
+  <li>Individual Processing
+    <ol>
+      <li>Open each <code class="language-plaintext highlighter-rouge">_03</code> image separately</li>
+      <li>Apply the appropriate action based on scale size (2cm or 5cm)</li>
+    </ol>
+  </li>
+  <li>Batch Processing
+    <ol>
+      <li>Sort your <code class="language-plaintext highlighter-rouge">_03</code> images into two separate folders:
+        <ul>
+          <li>One folder for tablets using 2cm scale</li>
+          <li>One folder for tablets using 5cm scale</li>
+        </ul>
+      </li>
+      <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Automate &gt; batch</code></li>
+      <li>Select the appropriate action
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">View 3 Place 5cm Scale</code> or</li>
+          <li><code class="language-plaintext highlighter-rouge">View 3 Place 2cm scale</code>.</li>
+        </ul>
+      </li>
+      <li>After running the action, each image window will remain open with the resized scale bar. Like before, position the scale bar approximately 0.5cm below the tablet’s bottom edge</li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="final-processing">Final Processing</h3>
+
+<p>Remove the background removal from your <code class="language-plaintext highlighter-rouge">_03</code> photos:</p>
+
+<ol>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Automate &gt; batch</code></li>
+  <li>Select <code class="language-plaintext highlighter-rouge">View 3 Crop</code> in the the Action dropdown menu.</li>
+  <li>Set your source folder to the directory containing your <code class="language-plaintext highlighter-rouge">_03</code> photos</li>
+</ol>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-20.png" alt="" /></p>
+<p class="fig">Figure 20: Settings for removing the background</p>
+
+<p>This action will:</p>
+
+<ul>
+  <li>Remove the original background</li>
+  <li>Create a new black background</li>
+  <li>Merge all layers into one</li>
+  <li>Save and close the file automatically</li>
+</ul>
+
+<p><strong>File Consolidation</strong>:</p>
+
+<p>Transfer all processed <code class="language-plaintext highlighter-rouge">_03</code> photos to the <code class="language-plaintext highlighter-rouge">_PreProcess</code> directory containing your other photo files. Individual subfolder organization is not required, as the script automatically groups photos with matching filenames. This consolidation step ensures all related photos are in place for the automated stitching process.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-21.png" alt="" /></p>
+<p class="fig">Figure 21: All views of the tablet ready to be stitched</p>
+
+<h2 id="running-the-stitching-script">Running the Stitching Script</h2>
+
+<p>Once all photos are processed as described earlier:</p>
+
+<ol>
+  <li>Open <code class="language-plaintext highlighter-rouge">Photoshop</code></li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Script &gt; Browse</code></li>
+  <li>Locate and select <code class="language-plaintext highlighter-rouge">stitching_script_bm.jsx</code>.</li>
+</ol>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-22.png" alt="" /></p>
+<p class="fig">Figure 22: Navigation to the script stitching_script_bm.jsx</p>
+
+<p>The script interface has two tabs, <code class="language-plaintext highlighter-rouge">Processing Options</code> and <code class="language-plaintext highlighter-rouge">Metadata</code>:</p>
+
+<p><strong>Processing Options</strong>:</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-23.png" alt="" /></p>
+<p class="fig">Figure 23: User interface tab Processing Option.</p>
+
+<ul>
+  <li>Source folder: select <code class="language-plaintext highlighter-rouge">_PreProcess</code></li>
+  <li>Destination folder: Create and select a folder like <code class="language-plaintext highlighter-rouge">_Processed</code> or <code class="language-plaintext highlighter-rouge">finished</code>.</li>
+</ul>
+
+<blockquote class="prompt-warning">
+  <p>Never place the destination folder inside the source folder - this will cause a script error as it will attempt to process the new folder</p>
+</blockquote>
+
+<ul>
+  <li>Logo inclusion toggle</li>
+  <li>Final resolution settings</li>
+  <li>Compression type (if needed)</li>
+  <li>JPEG copy creation (optional). For JPG files, a compression setting of 8 provides the optimal balance between quality and file size.</li>
+</ul>
+
+<p><strong>Metadata</strong>:</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-24.png" alt="" /></p>
+<p class="fig">Figure 24: User interface tab Metadata.</p>
+
+<ol>
+  <li>General Metadata section:
+    <ol>
+      <li>Fill in all fields as needed</li>
+    </ol>
+  </li>
+  <li>IPTC Metadata section:
+    <ol>
+      <li>Only modify the Credit Line field</li>
+      <li>Other fields auto-populate from General Metadata and tablet information</li>
+    </ol>
+  </li>
+</ol>
+
+<blockquote class="prompt-info">
+  <p><strong>Note:</strong> Your settings will be saved for future use, requiring changes only when necessary.</p>
+</blockquote>
+
+<p><strong>Running the Script</strong>:</p>
+
+<ol>
+  <li>Click <code class="language-plaintext highlighter-rouge">OK</code> to start processing.</li>
+  <li>The script will
+    <ol>
+      <li>Sort through your folder</li>
+      <li>Classify photos by filename</li>
+      <li>Create individual folders for each set</li>
+    </ol>
+  </li>
+</ol>
+
+<blockquote class="prompt-tip">
+  <p><strong>Note:</strong> For maximum efficiency, preprocess as many photos as possible before running the script.</p>
+</blockquote>
+
+<p>The <code class="language-plaintext highlighter-rouge">stitching_script_bm.jsx</code> performs these operations:</p>
+
+<ul>
+  <li>Creates black background and places all images</li>
+  <li>Arranges images based on filenames</li>
+  <li>Mirrors images with <code class="language-plaintext highlighter-rouge">_05</code> and <code class="language-plaintext highlighter-rouge">_06</code> suffixes for reverse side alignment</li>
+  <li>Embeds metadata including:
+    <ul>
+      <li>Photographer name</li>
+      <li>Credit lines</li>
+      <li>Title</li>
+    </ul>
+  </li>
+  <li>Optional institutional logo placement</li>
+  <li>Compression options:
+    <ul>
+      <li>LZW or ZIP compression</li>
+      <li>Optional JPEG export</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="post-processing">Post-Processing</h2>
+
+<p>After running the script:</p>
+<ol>
+  <li>Review all assembled photos</li>
+  <li>Identify any incorrect assemblies</li>
+  <li>For persistent issues, process problematic images manually (see <a href="#troubleshooting">troubleshooting</a>).</li>
+</ol>
+
+<h3 id="convert-from-tiff-to-jpeg">Convert from *TIFF to *.JPEG</h3>
+
+<p>If required for your project you can convert the <code class="language-plaintext highlighter-rouge">\*.TIFF</code> files to <code class="language-plaintext highlighter-rouge">\*.JPEG</code> using Photoshop’s Image Processor:</p>
+
+<ol>
+  <li>Open <code class="language-plaintext highlighter-rouge">Photoshop</code></li>
+  <li>
+    <p>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Scripts &gt; Image Processor</code>.</p>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-25.png" alt="" /></p>
+    <p class="fig">Figure 25: Navigation to Image Processor.</p>
+    <p>This will open the Image Processor user interface. Specify the settings for converting your files.</p>
+  </li>
+  <li>
+    <p>Enable <code class="language-plaintext highlighter-rouge">Save as JPEG</code> as the file type.</p>
+
+    <p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-26.png" alt="" /></p>
+    <p class="fig">Figure 26: Settings for saving as JPEG.</p>
+  </li>
+  <li>Set your desired quality</li>
+  <li>Select destination folder</li>
+</ol>
+
+<h3 id="compress-tiff-to-lzw-or-zip-format">Compress *.TIFF to LZW or ZIP format</h3>
+
+<p>Depending on the specifications of your project you can compress the *.TIFF file to LZW or ZIP format:</p>
+
+<ol>
+  <li>Open <code class="language-plaintext highlighter-rouge">Photoshop</code></li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Scripts &gt; Image Processor</code></li>
+  <li>Select source folder containing TIFF files</li>
+  <li>Choose destination folder</li>
+  <li>Enable “Save as TIFF”</li>
+  <li>Check LZW compression.</li>
+</ol>
+
+<p>If you need ZIP compression. You can use Actions and Batch Processing:</p>
+
+<ol>
+  <li>Record a new action</li>
+  <li>Open a TIFF file</li>
+  <li>Save it as TIFF with your desired compression</li>
+  <li>Stop recording</li>
+  <li>Go to <code class="language-plaintext highlighter-rouge">File &gt; Automate &gt; Batch</code></li>
+  <li>Select your action and source folder</li>
+</ol>
+
+<h3 id="reduce-the-dpi-of-stitched-images">Reduce the DPI of Stitched Images</h3>
+
+<p>In Photoshop:</p>
+
+<ol>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">File &gt; Scripts &gt; Image Processor</code></li>
+  <li>Select your source images</li>
+  <li>Choose destination folder</li>
+  <li>Select output format
+    <ul>
+      <li>“Save as TIFF” or</li>
+      <li>Your preferred format or</li>
+      <li>Both formats</li>
+    </ul>
+  </li>
+  <li>Enable “Resize to Fit”</li>
+  <li>For 300DPI resolution, enter:
+    <ul>
+      <li>Width: 1500 px</li>
+      <li>Height: 2000 px</li>
+    </ul>
+  </li>
+  <li>Click <code class="language-plaintext highlighter-rouge">Run</code> to process images</li>
+</ol>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="removing-the-background-manually">Removing the Background Manually</h3>
+
+<p>In some cases, the action <code class="language-plaintext highlighter-rouge">Views 1-6 BATCH</code> might not perform the background removal as expected, particularly if there is insufficient contrast between the tablet and the background. If this happens, you will need to manually cut out the tablet. Follow these steps:</p>
+
+<ol>
+  <li>Open each photo individually.</li>
+  <li>Select the tablet within the photo using the <code class="language-plaintext highlighter-rouge">Object Selection Tool</code> (W).</li>
+  <li>Apply the <code class="language-plaintext highlighter-rouge">Views 1-6</code> action.</li>
+</ol>
+
+<p>This action performs the same background removal process as <code class="language-plaintext highlighter-rouge">Views 1-6 BATCH</code>, but starts with a predetermined selection, which can be useful when the automatic selection fails.</p>
+
+<p><img src="/images/tutorials/Assembling Photographed Views of Cuneiform Tablets with Photoshop/image-27.png" alt="" /></p>
+<p class="fig">Figure 27: Location of the Obejct Selection Tool.</p>
+
+<h3 id="stitching-photos-manually">Stitching Photos Manually</h3>
+
+<p>If the stitching script does not work as expected, you can manually stitch the photos using Photoshop:</p>
+
+<ol>
+  <li>Create new file
+    <ol>
+      <li>Open <code class="language-plaintext highlighter-rouge">Photoshop</code></li>
+      <li>Create a new file with dimensions 8000 x 8000 px</li>
+      <li>Set resolution to 600 dpi.</li>
+    </ol>
+  </li>
+  <li>Import and arrange photos
+    <ol>
+      <li>Open all source photos</li>
+      <li>Copy and paste each photo into the new file, one at a time.</li>
+      <li>Arrange the photos in the correct order, ensuring they align properly.</li>
+    </ol>
+
+    <blockquote class="prompt-warning">
+      <p>Important: Adjust the size of the photos according to the dimensions in photo _03 (the one with the scale). Do not alter the photo with scale!</p>
+    </blockquote>
+  </li>
+  <li>Process reverse edges
+    <ol>
+      <li>Copy and paste the left and right edges</li>
+      <li>Rotate them 180 degrees</li>
+      <li>Place adjacent to corresponding reverse sides</li>
+    </ol>
+  </li>
+  <li>Final processing
+    <ol>
+      <li>Select the entire composition with the <code class="language-plaintext highlighter-rouge">Object Selection Tool</code> (or W)</li>
+      <li>Ensure that the entire tablet and scale are included in the selection.</li>
+      <li>Crop: <code class="language-plaintext highlighter-rouge">Image &gt; Crop</code></li>
+      <li>Merge layers: <code class="language-plaintext highlighter-rouge">Layer &gt; Merge visible</code> or press <code class="language-plaintext highlighter-rouge">Ctrl + Shift + E</code></li>
+      <li>Save and close the file</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="final-remarks">Final Remarks</h2>
+
+<p>We trust this tutorial has helped you to establish an efficient workflow for creating standardized tablet documentation. While the scripts and actions automate most tasks, manual intervention options ensure you can handle any technical challenges that may arise. For updates, bug reports, or additional assistance, please contact the tutorial authors or the openDANES team.</p>
+
+      </div>
+    </section>
+    <footer>
+
+  <div id="credits">
+    <h3>Contact us</h3>
+    <p>For any questions about OpenDANES, or to join the DANES discord channel or mailing list, send us an email at the
+      <a href="https://digitalpasts.github.io/" target="_blank">Digital Pasts Lab</a>
+      (<a href="mailto:digpasts@gmail.com">digpasts@gmail.com</a>)</p>
+    <p>
+      <a href="https://github.com/DigitalPasts" target="_blank"><i class="fab fa-github"></i></i></a> <a href="https://twitter.com/DigPastsLab" target="_blank"><i class="fab fa-twitter"></i></a>
+    </p>
+  </div>
+
+  <div id="credits">
+    <p>OpenDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies</p>
+    <p> <b>Copyright information</b>: unless indicated otherwise, the website and its content are released under a 
+      <a href="https://creativecommons.org/licenses/by/4.0/deed.en" target="_blank">CC-BY 4.0 license</a>. Images with links have copyrights that are specified in the linked resource.
+    </p>
+    <p>Hosted on
+      <a href="https://github.com/DigitalPasts/openDANES" target="_blank">Github Pages</a>
+    </p>
+    <p>Last updated on April 25, 2025</p>
+  </div>
+  
+</footer>
+
+
+    <!-- javascript to place class on code element so highlighting will display correctly -->
+        <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var highlightElements = document.querySelectorAll("div.highlighter-rouge");
+        for (var i = 0; i < highlightElements.length; i++) {
+          var langClass = highlightElements[i].classList;
+          var lang = Array.from(langClass).find(function(item) {
+            return item.startsWith("language-");
+          });
+          if (lang) {
+            var codeElements = highlightElements[i].querySelectorAll("code");
+            for (var j = 0; j < codeElements.length; j++) {
+              codeElements[j].classList.remove("language-css");
+              codeElements[j].classList.add(lang);
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+  <script src="/assets/js/codeblock.js"></script>
+  <script src="/assets/js/toc-scroll.js"></script>
+  <script src="https://hypothes.is/embed.js" async></script>
+
+</html>

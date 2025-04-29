@@ -41,7 +41,7 @@ authors:
       github: null
    author6:
       name: Enrique Jiménez
-      affiliation: Ludwig-Maximilians-Universität
+      affiliation: LMU Munich
       email: enrique.jimenez@lmu.de
       orcid: 0000-0003-0093-528X
       academia: https://lmu-munich.academia.edu/EnriqueJim%C3%A9nez
@@ -108,7 +108,7 @@ This tutorial assumes you have already photographed your cuneiform tablets follo
 
 If you are using your own images, they should be high-resolution images of all tablet sides, each including a scale and ideally shot against a high-contrast background (preferably black, as shown in Figure 2). A piece of black velvet works excellently as a background material, as it effectively eliminates reflections.
 
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-2.PNG){: .not-enlarge}
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-2.png){: .not-enlarge}
 {% include fig_legend.html content="Figure 2: A photo of the obverse of <a href=\"https://www.ebl.lmu.de/fragmentarium/HS.2067\" target=\"_blank\">HS.2067</a> (HS.2067_01) with a black background" %}
 
 The most important requirement for your photographs is consistency. Maintain the same camera configuration, lighting setup, and positioning for each tablet. This standardized approach ensures all tablet views will be uniform and scaled the same when assembled into the final rendering.
@@ -127,7 +127,7 @@ The ideal number of photos is 6, with each file capturing a specific view of the
 {: .prompt-tip }
 **Note on orientation:** Don't worry if you're unsure which side is the obverse or reverse - even experienced Assyriologists sometimes can't determine this at first glance. What's important is to consistently label one side as the front (01) and the other as the back (02) throughout your documentation.
 
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-3.PNG){: .not-enlarge}
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-3.png){: .not-enlarge}
 {% include fig_legend.html content="Figure 3: Labeling conventions for tablet views by side." %}
 
 Try to maintain the consistent numbering of photos. In case you don't have all six photos, the script will still work, but you must preserve the labeling convention (Tablet-number_XX) and content organization shown above. A critical requirement: ensure at least one blue square calibration reference is present, as the script uses it to rescale the final stitched image. This is included in both scale bars we provided for downloading. 
@@ -248,7 +248,7 @@ Follow these steps to convert them to TIFF:
    1. Open Photoshop
    2. Navigate to `File > Scripts > Image Processor`
 
-      ![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-8.png)
+      ![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-8.PNG)
       {% include fig_legend.html content="Figure 8: Activation of the image processor dialog box." %}
    3. In the Image Processor dialog box:
       1. Set the source folder to `_ToProcess`
@@ -256,7 +256,7 @@ Follow these steps to convert them to TIFF:
       3. Check the "Save as TIFF" option
       4. Click "Run" to begin the conversion
          
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-9.png)
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-9.PNG)
 {% include fig_legend.html content="Figure 9: Selection of TIFF conversion parameters." %}
 
 ### Rotating Photos
@@ -302,7 +302,7 @@ You're ready to proceed with extracting the tablet images from their backgrounds
 2. Open Photoshop
 3. Navigate `File > Automate > batch`
 
-   ![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-10.png)
+   ![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-10.PNG)
    {% include fig_legend.html content="Figure 10: Batch Dialog Box Operation" %}
 4. Under `Play` in the Action menu, check the options under `Set` until you find the name of your project (`Cuneiform Documentation` or another name assigned by you such as `Babylon Project`). Then select `Views 1-6 BATCH` under `Action`.
 5. Set the source folder to `_PreProcess`. 
@@ -311,7 +311,7 @@ You're ready to proceed with extracting the tablet images from their backgrounds
    >**Note:** If you converted the images to TIFFs make sure your source folder is set to the folder with the actual images in it, not just a parent folder or check `include all subfolders`. 
 6. Set `_Processed` as the final destination.
 
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-11.png)
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-11.PNG)
 {% include fig_legend.html content="Figure 11: Action Application Options for 'Views 1-6 BATCH'" %}
 
 {: .prompt-warning }
@@ -352,7 +352,7 @@ This section covers the processing of photos with the prefix _03. It will involv
 
 The process creates two layers for each photo: `HP` and `background`, which are essential for subsequent operations.
 
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-16.png)
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-16.PNG)
 {% include fig_legend.html content="Figure 16: 'View 3 HP' Action Configuration." %}
 
 ### Adding and Resizing the Scale Bar
@@ -439,7 +439,7 @@ Remove the background removal from your `_03` photos:
 2. Select `View 3 Crop` in the the Action dropdown menu. 
 3. Set your source folder to the directory containing your `_03` photos
 
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-20.png)
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-20.PNG)
 {% include fig_legend.html content="Figure 20: Settings for removing the background" %}
 
 This action will:
@@ -464,7 +464,7 @@ Once all photos are processed as described earlier:
 2. Navigate to `File > Script > Browse`
 3. Locate and select `stitching_script_bm.jsx`.
   
-![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-22.png)
+![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-22.PNG)
 {% include fig_legend.html content="Figure 22: Navigation to the script stitching_script_bm.jsx" %}
 
 The script interface has two tabs, `Processing Options` and `Metadata`:

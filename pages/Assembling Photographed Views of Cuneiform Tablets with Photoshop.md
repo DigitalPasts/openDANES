@@ -106,7 +106,7 @@ Before applying any action or script, some preliminary steps are required to ens
 
 This tutorial assumes you have already photographed your cuneiform tablets following professional documentation standards. If you do not have images available you can use the ones provided for testing the workflow of this tutorial (see under [Preparing Software and Code](#preparing-software-and-code)).
 
-If you are using your own images, they should be high-resolution images of all tablet sides, each including a scale and ideally shot against a high-contrast background (preferably black, as shown in Figure 2). A piece of black velvet works excellently as a background material, as it effectively eliminates reflections.
+To use your own images, capture high-resolution photos of all tablet sides. Ensure the top side (photonumber_03) includes a scale (see "Labeling the photos with the tablet's sides"). For optimal results, photograph against a high-contrast background, preferably black (Figure 2). Black velvet is highly recommended for this purpose, as it effectively eliminates reflections.
 
 ![]({{site.baseurl}}/images/tutorials/{{page.title}}/image-2.png){: .not-enlarge}
 {% include fig_legend.html content="Figure 2: A photo of the obverse of <a href=\"https://www.ebl.lmu.de/fragmentarium/HS.2067\" target=\"_blank\">HS.2067</a> (HS.2067_01) with a black background" %}

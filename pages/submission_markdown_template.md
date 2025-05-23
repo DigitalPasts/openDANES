@@ -44,7 +44,7 @@ In markdown syntax:
 In markdown syntax:
 
 ```markdown
-## Heading 3
+### Heading 3
 ```
 
 #### Heading 4
@@ -52,7 +52,7 @@ In markdown syntax:
 In markdown syntax:
 
 ```markdown
-## Heading 4
+#### Heading 4
 ```
 
 ##### Heading 5
@@ -60,7 +60,7 @@ In markdown syntax:
 In markdown syntax:
 
 ```markdown
-## Heading 5
+##### Heading 5
 ```
 
 ###### Heading 6
@@ -68,7 +68,7 @@ In markdown syntax:
 In markdown syntax:
 
 ```markdown
-## Heading 6
+###### Heading 6
 ```
 
 ## Lists

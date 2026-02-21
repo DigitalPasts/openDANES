@@ -7,6 +7,7 @@
    ========================================================================== */
 
 section {
+
   /* Prompt / callout styles */
   blockquote.prompt-tip {
     background-color: $tip-prompt;
@@ -15,7 +16,9 @@ section {
     padding: 0;
     border: $tip-prompt-icon-color solid 1px;
 
-    p { padding: 13px; }
+    p {
+      padding: 13px;
+    }
 
     p::before {
       content: "\f0eb";
@@ -33,7 +36,9 @@ section {
     padding: 0;
     border: $info-prompt-icon-color solid 1px;
 
-    p { padding: 13px; }
+    p {
+      padding: 13px;
+    }
 
     p::before {
       content: "\f05a";
@@ -51,7 +56,9 @@ section {
     padding: 0;
     border: $warning-prompt-icon-color solid 1px;
 
-    p { padding: 13px; }
+    p {
+      padding: 13px;
+    }
 
     p::before {
       content: "\f06a";
@@ -69,7 +76,9 @@ section {
     padding: 0;
     border: $danger-prompt-icon-color solid 1px;
 
-    p { padding: 13px; }
+    p {
+      padding: 13px;
+    }
 
     p::before {
       content: "\f071";
@@ -81,7 +90,9 @@ section {
   }
 
   /* Code blocks */
-  div.highlight { padding: 15px 0; }
+  div.highlight {
+    padding: 15px 0;
+  }
 
   div pre.highlight {
     background-color: black;
@@ -96,7 +107,7 @@ section {
     padding: 1px;
   }
 
-  div.highlight > button {
+  div.highlight>button {
     height: fit-content;
     padding: 5px 15px;
     font-family: $font-main;
@@ -138,11 +149,14 @@ section {
       tr {
         background-color: $table-color-dark;
 
-        &:nth-child(2n+1) { background-color: $table-color-light; }
+        &:nth-child(2n+1) {
+          background-color: $table-color-light;
+        }
       }
     }
 
-    th, td {
+    th,
+    td {
       padding: 10px;
       text-align: left !important;
     }
@@ -155,7 +169,9 @@ section {
     align-items: center;
     padding: 5px 0;
 
-    iframe { border-radius: 10px; }
+    iframe {
+      border-radius: 10px;
+    }
   }
 
   .luwian {

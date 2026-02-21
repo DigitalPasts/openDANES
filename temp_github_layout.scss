@@ -21,14 +21,10 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap: 20px;
 
-
-    .nav-logo {
-      margin-right: 10px;
-
-      img {
-        max-height: 70px;
-      }
+    .nav-logo img {
+      max-height: 70px;
     }
 
     .nav-title {

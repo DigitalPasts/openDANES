@@ -220,7 +220,7 @@ section blockquote.prompt-info p::before {
   padding-top: 5px;
 }
 section blockquote.prompt-warning {
-  background-color: rgb(255, 243, 205);
+  background-color: #fff3cd;
   border-radius: 10px;
   font-style: normal;
   padding: 0;
@@ -305,8 +305,7 @@ section table tbody tr {
 section table tbody tr:nth-child(2n+1) {
   background-color: rgba(254, 218, 117, 0.1);
 }
-section table th,
-section table td {
+section table th, section table td {
   padding: 10px;
   text-align: left !important;
 }
@@ -320,7 +319,7 @@ section .video-container iframe {
   border-radius: 10px;
 }
 section .luwian {
-  font-family: "Noto Sans Anatolian Hieroglyphs", sans-serif;
+  font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
   font-weight: bold;
   font-size: x-large;
 }
@@ -346,9 +345,7 @@ header .nav-header {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
-header .nav-header .nav-logo {
-  margin-right: 10px;
+  gap: 20px;
 }
 header .nav-header .nav-logo img {
   max-height: 70px;
@@ -472,6 +469,7 @@ footer div a:hover {
   h1 {
     font-size: 4vw;
   }
+
   section {
     margin: 15px 15vw;
   }
@@ -510,9 +508,11 @@ footer div a:hover {
   section {
     margin: 15px 10vw;
   }
+
   blockquote {
     padding-left: 5vw !important;
   }
+
   blockquote.prompt-tip,
   blockquote.prompt-info,
   blockquote.prompt-warning,
@@ -525,6 +525,7 @@ footer div a:hover {
   h1 {
     font-size: 40px;
   }
+
   section h2 {
     font-size: 35px;
   }
@@ -567,11 +568,13 @@ footer div a:hover {
     align-self: center;
     margin: 10px;
   }
+
   footer {
     flex-direction: column;
     text-align: justify;
     align-items: flex-start;
   }
+
   #credits {
     flex-direction: column;
   }
@@ -581,12 +584,14 @@ footer div a:hover {
   blockquote {
     padding-left: 10vw !important;
   }
+
   blockquote.prompt-tip,
   blockquote.prompt-info,
   blockquote.prompt-warning,
   blockquote.prompt-danger {
     padding: 0 !important;
   }
+
   img {
     transition: none;
   }
@@ -594,5 +599,3 @@ footer div a:hover {
     max-width: 100% !important;
   }
 }
-
-/*# sourceMappingURL=main.css.map */

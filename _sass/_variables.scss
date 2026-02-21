@@ -1,0 +1,67 @@
+/* ==========================================================================
+   openDANES — Variables (single source of truth)
+
+   - All variables are `!default` so page bundles can override before import.
+   - Defaults match your current style_0.2.scss palette & sizes.
+   ========================================================================== */
+
+/* Colors */
+$primary-color: #52053E !default;
+$primary-color-dark: #330327 !default;
+$primary-color-light: #67074e !default;
+
+$secondary-color: #d7ccc8 !default;
+$secondary-color-dark: #b6af9d !default;
+$secondary-color-light: #ece7e6 !default; /* used by search/tags */
+
+$third-color: #5a175d !default;
+
+$fourth-color: #05878a !default;
+$fourth-color-dark: #074e67 !default;
+
+$contrast-color: #feda75 !default;
+$secondary-contrast-color: #e3ad5b !default;
+$secondary-contrast-color-dark: #9a6b23 !default;
+$secondary-contrast-color-darker: #5c4015 !default;
+
+$light-color: #FEFBF1 !default;
+
+/* Tables */
+$table-color-head: rgba(254, 218, 117, 0.6) !default;
+$table-color-dark: rgba(254, 218, 117, 0.3) !default;
+$table-color-light: rgba(254, 218, 117, 0.1) !default;
+
+/* Callouts */
+$tip-prompt: rgba(123, 247, 144, 0.2) !default;
+$tip-prompt-icon-color: #03b303 !default;
+
+$info-prompt: #e1f5fe !default;
+$info-prompt-icon-color: #0070cb !default;
+
+$warning-prompt: rgb(255, 243, 205) !default;
+$warning-prompt-icon-color: #ef9c03 !default;
+
+$danger-prompt: rgba(248, 215, 218, 0.56) !default;
+$danger-prompt-icon-color: #df3c30 !default;
+
+/* Typography */
+$font-main: 'Taviraj', serif !default;
+$font-code: 'Source Code Pro', monospace !default;
+
+$font-size: 18px !default;
+$font-size-smaller: 16px !default;
+$font-size-smallest: 14px !default;
+$font-size-bigger: 20px !default; /* used by search/tags */
+
+/* Icons */
+$icon-size: 25px !default;
+$icon-padding: 1px !default;
+
+/* Cards */
+$card-border-radius: 10px !default;
+
+/* Breakpoints (match originals) */
+$bp-tablet: 1024px !default;
+$bp-landscape-phone: 900px !default;
+$bp-phone: 700px !default;
+$bp-tiny: 500px !default;

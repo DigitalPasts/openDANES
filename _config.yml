@@ -14,6 +14,11 @@ baseurl: ""
 # highlighter: rouge
 #   input: GFM
 
+sass:
+  sass_dir: _sass
+  style: expanded
+  syntax: scss
+
 analytics:
   provider               : "google-gtag"
   google:

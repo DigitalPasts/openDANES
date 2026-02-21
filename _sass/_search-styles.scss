@@ -1,0 +1,386 @@
+/* ==========================================================================
+   Search + tags (from search-and-tags.scss)
+   ========================================================================== */
+
+a { text-decoration: none; }
+
+span.doi {
+  background-repeat: no-repeat;
+  display: block;
+  color: transparent;
+}
+
+.author-card {
+  display: flex;
+  border: 1px solid $secondary-contrast-color-dark;
+  border-radius: $card-border-radius;
+  padding: 2.5%;
+  margin: 3% 0%;
+  width: 100%;
+  background-color: $secondary-contrast-color;
+  flex-direction: column;
+
+  .author-box1, .author-box2 {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .author-box1 { padding-right: 5px; }
+  .author-box2 { padding-left: 5px; }
+
+  a {
+    color: $secondary-contrast-color-dark;
+    transition: color 0.3s ease-in-out;
+
+    &:hover { color: $secondary-contrast-color-darker; }
+  }
+
+  .authors-container {
+    padding: 5px 0px;
+    font-size: $font-size-bigger;
+    display: flex;
+
+    .authors { padding-left: 15px; }
+
+    .card-image-authors {
+      max-width: 15%;
+
+      img {
+        padding: 0;
+        border-radius: 10px;
+      }
+    }
+
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1.5px solid #9a6b23;
+      margin: 10px 0;
+      padding: 0;
+    }
+  }
+
+  .affiliations {
+    padding: 0 0 5px 0;
+    font-size: $font-size-smaller;
+  }
+
+  .dates {
+    padding: 5px 0px;
+
+    p {
+      padding: 0;
+      font-size: $font-size-smaller;
+    }
+  }
+
+  .peer-review { padding: 5px 0px; }
+
+  .card-summary {
+    padding: 5px 0px;
+    font-size: $font-size-smaller;
+
+    p { padding: 0px; }
+  }
+
+  .difficulty p { padding: 0px; }
+  .deprecated p { font-size: $font-size-bigger; }
+}
+
+.cards {
+  h3 { padding: 0; margin: 0; }
+  p { padding: 0; }
+
+  .card .invisible { display: none; }
+
+  .card .visible {
+    border: 1px solid $secondary-contrast-color-dark;
+    border-radius: $card-border-radius;
+    padding: 2.5%;
+    margin: 3% 0%;
+    background-color: $secondary-contrast-color;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    width: 100%;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    &:hover {
+      background-color: $secondary-color-light;
+      border-color: $secondary-color-dark;
+    }
+
+    .card-image {
+      margin-right: 15px;
+      margin-top: 5px;
+
+      img {
+        padding: 0px;
+        object-fit: contain;
+        border-radius: $card-border-radius;
+        transition: none;
+
+        &:hover { max-width: 100% !important; }
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      .card-body {
+        h3.card-title {
+          margin-top: 0;
+          text-decoration: none;
+          font-size: 2vw;
+        }
+
+        .card-meta {
+          font-size: $font-size-smaller;
+          margin-bottom: 10px;
+
+          i {
+            margin-right: 5px;
+
+            &:not(:first-child) { margin-left: 1.2rem; }
+          }
+        }
+
+        .card-summary {
+          font-size: $font-size-smaller;
+          line-height: 1.5;
+
+          p { margin: 0; }
+        }
+      }
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2vw;
+
+  span {
+    border: 1px solid $secondary-contrast-color-dark;
+    border-radius: $card-border-radius;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 0.4vw 0.8vw;
+    margin: 0.5vw;
+    background-color: $secondary-contrast-color;
+
+    &:hover {
+      background-color: $secondary-color-light;
+      border-color: $secondary-color-dark;
+      cursor: pointer;
+    }
+  }
+
+  .clicked {
+    background-color: $secondary-color-light;
+    border-color: $secondary-color-dark;
+  }
+}
+
+div#no-results {
+  text-align: center;
+  font-size: 40px;
+}
+
+.search-area {
+  text-align: center;
+
+  h3 { padding: 0; margin: 0; }
+  p { padding: 0; }
+
+  #results-container {
+    padding: 0;
+    margin: 0;
+
+    .card {
+      border: 1px solid $secondary-contrast-color-dark;
+      border-radius: $card-border-radius;
+      padding: 2.5%;
+      margin: 3% 0%;
+      background-color: $secondary-contrast-color;
+      transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+      width: 100%;
+      color: black;
+
+      &:hover {
+        background-color: $secondary-color-light;
+        border-color: $secondary-color-dark;
+      }
+
+      .card-body {
+        display: grid !important;
+        grid-template-columns: 1fr 5fr;
+
+        .card-image {
+          margin-right: 15px;
+          margin-top: 5px;
+
+          img {
+            padding: 0px;
+            object-fit: contain;
+            border-radius: $card-border-radius;
+            transition: none;
+
+            &:hover { max-width: 100% !important; }
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+
+        .card-body {
+          display: flex;
+          color: black;
+          transition: color 0.3s ease-in-out;
+
+          &:hover { color: $secondary-color-dark; }
+
+          h3.card-title {
+            margin-top: 0;
+            text-decoration: none;
+            font-size: 2vw;
+          }
+
+          .card-meta {
+            font-size: $font-size-smaller;
+            margin-bottom: 10px;
+
+            i {
+              margin-right: 5px;
+
+              &:not(:first-child) { margin-left: 1.2rem; }
+            }
+          }
+
+          .card-summary {
+            font-size: $font-size-smaller;
+            line-height: 1.5;
+
+            p { margin: 0; }
+          }
+        }
+      }
+    }
+  }
+}
+
+input#search-input {
+  border: 2px solid $primary-color-light;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: none;
+  outline: none;
+  width: 50%;
+  transition: all .25s ease-in .25s;
+  color: transparent;
+  line-height: 25px;
+
+  &::placeholder {
+    color: $primary-color;
+    font-family: $font-main;
+    font-size: $font-size-bigger;
+    text-align: center;
+    opacity: .75;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    &:focus { cursor: text; }
+  }
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    font-family: $font-main;
+    font-size: $font-size-bigger;
+    border: 2px solid $primary-color-light;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    outline: none;
+    background: none;
+    color: $primary-color-light;
+
+    + span {
+      width: 200px;
+
+      &::before {
+        width: 2px;
+        opacity: 0;
+        transition: all .25s ease-in;
+      }
+    }
+  }
+
+  &:focus::placeholder { color: transparent; }
+}
+
+@media (max-width: $bp-phone) {
+  .tags span {
+    padding: 1vw 2vw;
+    margin: 1vw;
+  }
+
+  .author-card {
+    flex-direction: column;
+
+    .author-box1 {
+      .authors-container { font-size: 20px !important; }
+
+      .authors-container {
+        flex-direction: column;
+        align-items: center;
+
+        .card-image-authors {
+          max-width: 100%;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  input#search-input { width: 85%; }
+  input#search-input::placeholder { font-size: 20px; }
+
+  input#search-input:focus,
+  input#search-input:not(:placeholder-shown) { font-size: 20px; }
+
+  .search-area #results-container .card a .card-body h3.card-title { font-size: 30px; }
+  .search-area #results-container .card a .card-body .card-meta { font-size: 3vw; }
+
+  .search-area #results-container .card .card-body,
+  .card-body {
+    margin: 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    .card-content { padding: 10px; }
+    .card-meta { font-size: 3vw; }
+  }
+
+  .cards .card .visible .card-image {
+    margin-right: 0;
+    max-width: 50%;
+  }
+
+  .search-area #results-container .card .card-image {
+    margin-right: 0;
+    max-width: 50%;
+  }
+
+  .author-card { margin: 10% 0%; }
+}

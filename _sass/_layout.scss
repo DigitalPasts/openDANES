@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Layout (header/footer) from style_0.2.scss
+   ========================================================================== */
+
+header {
+  background-color: $primary-color;
+  background-size: cover;
+  width: 100vw;
+  height: 80px;
+  padding: 10px;
+  font-family: $font-main;
+  color: $light-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: bold;
+
+  ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    li {
+      margin: 0 3px;
+      padding: 20px 17px;
+
+      img { max-height: 70px; }
+
+      a {
+        text-decoration: none;
+        color: $light-color;
+        transition: color 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+
+        &:hover { color: $contrast-color; }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $primary-color;
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+
+  font-family: $font-main;
+  color: $light-color;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  padding: 20px;
+
+  div {
+    padding: 10px;
+    flex: 1 1 0px;
+
+    h3 { color: $contrast-color; }
+
+    a {
+      text-decoration: none;
+      color: $light-color;
+      transition: color 0.3s ease-in-out;
+
+      i {
+        font-size: $icon-size;
+        padding: $icon-padding;
+      }
+
+      &:hover {
+        color: $contrast-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#credits {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  p { padding: 10px; }
+}

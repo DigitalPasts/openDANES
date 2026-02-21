@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Components (from style_0.2.scss)
+   - prompts/callouts
+   - code blocks
+   - tables
+   - embeds
+   ========================================================================== */
+
+section {
+  /* Prompt / callout styles */
+  blockquote.prompt-tip {
+    background-color: $tip-prompt;
+    border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: $tip-prompt-icon-color solid 1px;
+
+    p { padding: 13px; }
+
+    p::before {
+      content: "\f0eb";
+      color: $tip-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding-right: 13px;
+      padding-top: 5px;
+    }
+  }
+
+  blockquote.prompt-info {
+    background-color: $info-prompt;
+    border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: $info-prompt-icon-color solid 1px;
+
+    p { padding: 13px; }
+
+    p::before {
+      content: "\f05a";
+      color: $info-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding-right: 13px;
+      padding-top: 5px;
+    }
+  }
+
+  blockquote.prompt-warning {
+    background-color: $warning-prompt;
+    border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: $warning-prompt-icon-color solid 1px;
+
+    p { padding: 13px; }
+
+    p::before {
+      content: "\f06a";
+      color: $warning-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding-right: 13px;
+      padding-top: 5px;
+    }
+  }
+
+  blockquote.prompt-danger {
+    background-color: $danger-prompt;
+    border-radius: 10px;
+    font-style: normal;
+    padding: 0;
+    border: $danger-prompt-icon-color solid 1px;
+
+    p { padding: 13px; }
+
+    p::before {
+      content: "\f071";
+      color: $danger-prompt-icon-color;
+      font: var(--fa-font-solid);
+      padding-right: 13px;
+      padding-top: 5px;
+    }
+  }
+
+  /* Code blocks */
+  div.highlight { padding: 15px 0; }
+
+  div pre.highlight {
+    background-color: black;
+    color: $light-color;
+    border-radius: 0 0 5px 5px;
+    font-family: $font-code;
+    white-space: pre-wrap;
+    word-break: break-all;
+
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+  }
+
+  div.highlight > button {
+    height: fit-content;
+    padding: 5px 15px;
+    font-family: $font-main;
+    background-color: $third-color;
+    color: $light-color;
+    border: none;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    text-align: right;
+    border-radius: 5px 5px 0 0;
+  }
+
+  button span.code-button-emoticon {
+    font: var(--fa-font-solid);
+    padding-right: 13px;
+    padding-top: 5px;
+  }
+
+  /* Inline code */
+  code.language-plaintext.highlighter-rouge {
+    padding: 3px 5px;
+    border-radius: 4px;
+    background-color: $table-color-dark;
+    font-size: $font-size-smallest;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+
+    thead {
+      background-color: $table-color-head;
+      border-radius: 10px;
+    }
+
+    tbody {
+      tr {
+        background-color: $table-color-dark;
+
+        &:nth-child(2n+1) { background-color: $table-color-light; }
+      }
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left !important;
+    }
+  }
+
+  /* Embeds */
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+
+    iframe { border-radius: 10px; }
+  }
+
+  .luwian {
+    font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+  }
+}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* ==========================================================================
+ * openDANES — TOC bundle
+ * - Include only on pages that render the fixed TOC (in addition to main.css)
+ * - Keeps the same output as assets/CSS/toc-style.scss
+ * ========================================================================== */
+/* ==========================================================================
+   openDANES — Variables (single source of truth)
+
+   - All variables are `!default` so page bundles can override before import.
+   - Defaults match your current style_0.2.scss palette & sizes.
+   ========================================================================== */
+/* Colors */
+/* used by search/tags */
+/* Tables */
+/* Callouts */
+/* Typography */
+/* used by search/tags */
+/* Icons */
+/* Cards */
+/* Breakpoints (match originals) */
+/* ==========================================================================
+   TOC styles (from toc-style.scss)
+   ========================================================================== */
+section {
+  margin: 15px 0;
+}
+section .toc {
+  position: fixed;
+  width: 20vw;
+  padding: 0 2.5vw;
+  transition: top 0.3s ease-in-out;
+}
+section .toc h2 {
+  font-size: 16px;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+section .toc ul {
+  margin: 0;
+  display: contents;
+}
+section .toc ul li {
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  padding: 5px 0 0 10px;
+}
+section .toc a, section .toc p a {
+  transition: border-left 0.2s ease-in-out, padding-left 0.3s ease-in-out;
+  display: block;
+  border: none;
+  text-decoration: none;
+  color: #330327;
+}
+section .toc a:hover, section .toc p a:hover {
+  border-left: 1px solid #67074e;
+  border-bottom: none;
+  padding-left: 5px;
+  color: #330327;
+}
+section .content {
+  margin: 0 20vw;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  section .toc {
+    padding: 0 2.5vw;
+  }
+  section .toc h2 {
+    font-size: 1.5vw;
+  }
+  section .toc ul li {
+    font-size: 1.2vw !important;
+  }
+  section .toc .content {
+    margin: 0 15vw !important;
+  }
+}
+@media (max-width: 700px) {
+  section .toc {
+    display: none !important;
+  }
+  .content {
+    margin: 0 10vw !important;
+  }
+}
+
+/*# sourceMappingURL=toc.css.map */

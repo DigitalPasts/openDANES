@@ -4,11 +4,11 @@
   <input type="text" id="search-input" placeholder="Dig through the findings...">
   <ul id="results-container"></ul>
 
-{% capture result_elem %}
+  {% capture result_elem %}
 
-  <div class="card visible">
+  <div class="card">
     <a href="{url}">
-      <div class="card-body">
+      <div class="card-body visible">
 
         <div class="card-image">
           <img src="{{ site.baseurl }}/images/{type}s/{title}/banner-image.png" alt="Image not available">
@@ -19,7 +19,7 @@
           <h3 class="card-title">
             {title}
           </h3>
-    
+
           <div class="card-meta">
             <i class="fas fa-robot fa-sm"></i>
             {authors}
@@ -40,13 +40,13 @@
             ">Under peer review</span></p>
             {% endif %} -->
           </div>
-    
+
           <div class="card-summary">
             <p>
               {summary}
             </p>
           </div>
-          
+
         </div>
 
       </div>
@@ -64,7 +64,7 @@
       <p>{summary}</p>
     </li>
   </a> -->
-{% endcapture %}
+  {% endcapture %}
 </div>
 
 
@@ -78,12 +78,12 @@
 
 <script>
   simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.baseurl }}/search.json',
-        searchResultTemplate: '{{ result_elem | strip_newlines }}',
-        noResultsText: '<div id="no-results">No results found</div>',
-        fuzzy: false,
-        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-      })
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '{{ result_elem | strip_newlines }}',
+    noResultsText: '<div id="no-results">No results found</div>',
+    fuzzy: false,
+    exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
+  })
 </script>

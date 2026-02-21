@@ -2,7 +2,9 @@
    Search + tags (from search-and-tags.scss)
    ========================================================================== */
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 span.doi {
   background-repeat: no-repeat;
@@ -20,21 +22,29 @@ span.doi {
   background-color: $secondary-contrast-color;
   flex-direction: column;
 
-  .author-box1, .author-box2 {
+  .author-box1,
+  .author-box2 {
     flex: 1 1 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .author-box1 { padding-right: 5px; }
-  .author-box2 { padding-left: 5px; }
+  .author-box1 {
+    padding-right: 5px;
+  }
+
+  .author-box2 {
+    padding-left: 5px;
+  }
 
   a {
     color: $secondary-contrast-color-dark;
     transition: color 0.3s ease-in-out;
 
-    &:hover { color: $secondary-contrast-color-darker; }
+    &:hover {
+      color: $secondary-contrast-color-darker;
+    }
   }
 
   .authors-container {
@@ -42,7 +52,9 @@ span.doi {
     font-size: $font-size-bigger;
     display: flex;
 
-    .authors { padding-left: 15px; }
+    .authors {
+      padding-left: 15px;
+    }
 
     .card-image-authors {
       max-width: 15%;
@@ -77,26 +89,43 @@ span.doi {
     }
   }
 
-  .peer-review { padding: 5px 0px; }
+  .peer-review {
+    padding: 5px 0px;
+  }
 
   .card-summary {
     padding: 5px 0px;
     font-size: $font-size-smaller;
 
-    p { padding: 0px; }
+    p {
+      padding: 0px;
+    }
   }
 
-  .difficulty p { padding: 0px; }
-  .deprecated p { font-size: $font-size-bigger; }
+  .difficulty p {
+    padding: 0px;
+  }
+
+  .deprecated p {
+    font-size: $font-size-bigger;
+  }
 }
 
 .cards {
-  h3 { padding: 0; margin: 0; }
-  p { padding: 0; }
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
 
-  .card.invisible { display: none; }
+  p {
+    padding: 0;
+  }
 
-  .card.visible {
+  .card .invisible {
+    display: none;
+  }
+
+  .card .visible {
     border: 1px solid $secondary-contrast-color-dark;
     border-radius: $card-border-radius;
     padding: 2.5%;
@@ -124,7 +153,9 @@ span.doi {
         border-radius: $card-border-radius;
         transition: none;
 
-        &:hover { max-width: 100% !important; }
+        &:hover {
+          max-width: 100% !important;
+        }
       }
     }
 
@@ -145,7 +176,9 @@ span.doi {
           i {
             margin-right: 5px;
 
-            &:not(:first-child) { margin-left: 1.2rem; }
+            &:not(:first-child) {
+              margin-left: 1.2rem;
+            }
           }
         }
 
@@ -153,7 +186,9 @@ span.doi {
           font-size: $font-size-smaller;
           line-height: 1.5;
 
-          p { margin: 0; }
+          p {
+            margin: 0;
+          }
         }
       }
     }
@@ -196,8 +231,14 @@ div#no-results {
 .search-area {
   text-align: center;
 
-  h3 { padding: 0; margin: 0; }
-  p { padding: 0; }
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    padding: 0;
+  }
 
   #results-container {
     padding: 0;
@@ -232,7 +273,9 @@ div#no-results {
             border-radius: $card-border-radius;
             transition: none;
 
-            &:hover { max-width: 100% !important; }
+            &:hover {
+              max-width: 100% !important;
+            }
           }
         }
       }
@@ -245,7 +288,9 @@ div#no-results {
           color: black;
           transition: color 0.3s ease-in-out;
 
-          &:hover { color: $secondary-color-dark; }
+          &:hover {
+            color: $secondary-color-dark;
+          }
 
           h3.card-title {
             margin-top: 0;
@@ -260,7 +305,9 @@ div#no-results {
             i {
               margin-right: 5px;
 
-              &:not(:first-child) { margin-left: 1.2rem; }
+              &:not(:first-child) {
+                margin-left: 1.2rem;
+              }
             }
           }
 
@@ -268,7 +315,9 @@ div#no-results {
             font-size: $font-size-smaller;
             line-height: 1.5;
 
-            p { margin: 0; }
+            p {
+              margin: 0;
+            }
           }
         }
       }
@@ -298,7 +347,9 @@ input#search-input {
   &:hover {
     cursor: pointer;
 
-    &:focus { cursor: text; }
+    &:focus {
+      cursor: text;
+    }
   }
 
   &:focus,
@@ -314,7 +365,7 @@ input#search-input {
     background: none;
     color: $primary-color-light;
 
-    + span {
+    +span {
       width: 200px;
 
       &::before {
@@ -325,7 +376,9 @@ input#search-input {
     }
   }
 
-  &:focus::placeholder { color: transparent; }
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
 @media (max-width: $bp-phone) {
@@ -338,7 +391,9 @@ input#search-input {
     flex-direction: column;
 
     .author-box1 {
-      .authors-container { font-size: 20px !important; }
+      .authors-container {
+        font-size: 20px !important;
+      }
 
       .authors-container {
         flex-direction: column;
@@ -352,14 +407,26 @@ input#search-input {
     }
   }
 
-  input#search-input { width: 85%; }
-  input#search-input::placeholder { font-size: 20px; }
+  input#search-input {
+    width: 85%;
+  }
+
+  input#search-input::placeholder {
+    font-size: 20px;
+  }
 
   input#search-input:focus,
-  input#search-input:not(:placeholder-shown) { font-size: 20px; }
+  input#search-input:not(:placeholder-shown) {
+    font-size: 20px;
+  }
 
-  .search-area #results-container .card a .card-body h3.card-title { font-size: 30px; }
-  .search-area #results-container .card a .card-body .card-meta { font-size: 3vw; }
+  .search-area #results-container .card a .card-body h3.card-title {
+    font-size: 30px;
+  }
+
+  .search-area #results-container .card a .card-body .card-meta {
+    font-size: 3vw;
+  }
 
   .search-area #results-container .card .card-body,
   .card-body {
@@ -368,8 +435,13 @@ input#search-input {
     flex-direction: column;
     align-items: center;
 
-    .card-content { padding: 10px; }
-    .card-meta { font-size: 3vw; }
+    .card-content {
+      padding: 10px;
+    }
+
+    .card-meta {
+      font-size: 3vw;
+    }
   }
 
   .cards .card .visible .card-image {
@@ -382,5 +454,7 @@ input#search-input {
     max-width: 50%;
   }
 
-  .author-card { margin: 10% 0%; }
+  .author-card {
+    margin: 10% 0%;
+  }
 }

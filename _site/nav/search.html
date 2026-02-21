@@ -61,26 +61,34 @@
   <body>
     <header>
 
-    <!-- <div class="logo">
+  <!-- <div class="logo">
       <img src="/images/favicon_io/android-chrome-512x512.png" alt="logo">
       <a href="/index.html">OpenDANES</a>
     </div> -->
 
-    <div class="navigation">
-      <ul>
-        <li><a href="/index.html"><img src="/favicon_io/android-chrome-512x512.png" alt="logo"></a></li>
-        <li><a href="/nav/about.html">About</a></li>
-        <li><a href="/nav/tutorials.html">Tutorials</a></li>
-        <li><a href="/nav/white-papers.html">White Papers</a></li>
-        <li><a href="/nav/posters.html">Posters</a></li>
-        <li><a href="/nav/DANES-resources.html">DANES Resources</a></li>
-        <li><a href="/nav/submission-guidelines.html">Submission Guidelines</a></li>
-        <li><a href="/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-      </ul>
+  <div class="navigation">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <div class="nav-header">
+      <a href="/index.html" class="nav-logo">
+        <img src="/favicon_io/android-chrome-512x512.png" alt="logo">
+      </a>
+      <a href="/index.html" class="nav-title">OpenDANES</a>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span><i class="fas fa-bars"></i></span>
+      </label>
     </div>
+    <ul class="nav-links">
+      <li><a href="/nav/about.html">About</a></li>
+      <li><a href="/nav/tutorials.html">Tutorials</a></li>
+      <li><a href="/nav/white-papers.html">White Papers</a></li>
+      <li><a href="/nav/posters.html">Posters</a></li>
+      <li><a href="/nav/DANES-resources.html">DANES Resources</a></li>
+      <li><a href="/nav/submission-guidelines.html">Submission Guidelines</a></li>
+      <li><a href="/nav/search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+    </ul>
+  </div>
 
 </header>
-
     <section>
       <h1></h1>
       <!-- HTML elements for search -->
@@ -89,7 +97,7 @@
   <input type="text" id="search-input" placeholder="Dig through the findings..." />
   <ul id="results-container"></ul>
 
-
+  
 </div>
 
 <!--  -->
@@ -100,14 +108,14 @@
 
 <script>
   simpleJekyllSearch = new SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json',
-        searchResultTemplate: '  <div class="card visible">    <a href="{url}">      <div class="card-body">        <div class="card-image">          <img src="/images/{type}s/{title}/banner-image.png" alt="Image not available">        </div>        <div class="card-content">          <h3 class="card-title">            {title}          </h3>              <div class="card-meta">            <i class="fas fa-robot fa-sm"></i>            {authors}            <i class="fas fa-calendar-alt fa-sm"></i>            {publish-date}            <i class="fas fa-hashtag fa-sm"></i>            <span class="page-tags">              {tags}            </span>            <!--               <p><span class="card-peer-review" style="                font-style: italic;                font-size: 1.3vw;            ">Under peer review</span></p>             -->          </div>              <div class="card-summary">            <p>              {summary}            </p>          </div>                  </div>      </div>    </a>  </div>  <!-- <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a> -->',
-        noResultsText: '<div id="no-results">No results found</div>',
-        fuzzy: false,
-        exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-      })
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '  <div class="card">    <a href="{url}">      <div class="card-body visible">        <div class="card-image">          <img src="/images/{type}s/{title}/banner-image.png" alt="Image not available">        </div>        <div class="card-content">          <h3 class="card-title">            {title}          </h3>          <div class="card-meta">            <i class="fas fa-robot fa-sm"></i>            {authors}            <i class="fas fa-calendar-alt fa-sm"></i>            {publish-date}            <i class="fas fa-hashtag fa-sm"></i>            <span class="page-tags">              {tags}            </span>            <!--               <p><span class="card-peer-review" style="                font-style: italic;                font-size: 1.3vw;            ">Under peer review</span></p>             -->          </div>          <div class="card-summary">            <p>              {summary}            </p>          </div>        </div>      </div>    </a>  </div>  <!-- <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a> -->  ',
+    noResultsText: '<div id="no-results">No results found</div>',
+    fuzzy: false,
+    exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
+  })
 </script>
 
 <p><a target="blank" class="image-link" href="https://archive.org/details/dr_planche-40-koum-ombo-ombos-vue-du-grand-temple-antiquites-tome-premie-10404050"><img src="/images/decoration/Koum_Omboû_(Ombos)._Vue_du_Grand_Temple_(NYPL_b14212718-1267869).jpg" alt="image here" class="not-enlarge" /></a></p>

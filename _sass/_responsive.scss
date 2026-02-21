@@ -4,78 +4,115 @@
 
 /* Tablet */
 @media (max-width: $bp-tablet) {
-  h1 { font-size: 4vw; }
+  h1 {
+    font-size: 4vw;
+  }
 
   section {
     margin: 15px 15vw;
 
-    h2 { font-size: 3.5vw; }
-    h3 { font-size: 3vw; }
-    h4, h5, h6 { font-size: 2.5vw; }
+    h2 {
+      font-size: 3.5vw;
+    }
 
-    p { font-size: 2vw !important; }
-    code.language-plaintext.highlighter-rouge { font-size: 1.75vw !important; }
+    h3 {
+      font-size: 3vw;
+    }
 
-    ul, ol {
+    h4,
+    h5,
+    h6 {
+      font-size: 2.5vw;
+    }
+
+    p {
+      font-size: 2vw !important;
+    }
+
+    code.language-plaintext.highlighter-rouge {
+      font-size: 1.75vw !important;
+    }
+
+    ul,
+    ol {
       font-size: 2vw !important;
 
-      li { font-size: 2vw !important; }
+      li {
+        font-size: 2vw !important;
+      }
     }
 
-    .fig, .fig a { font-size: 1.5vw; }
-  }
-
-  header {
-    height: 280px;
-
-    ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 0 40px;
-      justify-content: space-around;
-
-      li { padding: 20px 7px; }
+    .fig,
+    .fig a {
+      font-size: 1.5vw;
     }
   }
+
 }
 
 /* Landscape phone */
 @media (max-width: $bp-landscape-phone) {
-  section { margin: 15px 10vw; }
+  section {
+    margin: 15px 10vw;
+  }
 
-  blockquote { padding-left: 5vw !important; }
+  blockquote {
+    padding-left: 5vw !important;
+  }
+
   blockquote.prompt-tip,
   blockquote.prompt-info,
   blockquote.prompt-warning,
-  blockquote.prompt-danger { padding: 0 !important; }
+  blockquote.prompt-danger {
+    padding: 0 !important;
+  }
 
-  header { height: 320px; }
 }
 
 /* Phone */
 @media (max-width: $bp-phone) {
-  h1 { font-size: 40px; }
+  h1 {
+    font-size: 40px;
+  }
 
   section {
-    h2 { font-size: 35px; }
-    h3 { font-size: 30px; }
-    h4, h5, h6 { font-size: 25px; }
+    h2 {
+      font-size: 35px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-size: 25px;
+    }
 
     p {
       text-align: left;
       font-size: 17px !important;
     }
 
-    code.language-plaintext.highlighter-rouge { font-size: 15px !important; }
+    code.language-plaintext.highlighter-rouge {
+      font-size: 15px !important;
+    }
 
-    ul, ol {
+    ul,
+    ol {
       text-align: left;
       font-size: 17px !important;
 
-      li { font-size: 17px !important; }
+      li {
+        font-size: 17px !important;
+      }
     }
 
-    .fig, .fig a { font-size: 14px; }
+    .fig,
+    .fig a {
+      font-size: 14px;
+    }
 
     div pre.highlight {
       flex-direction: column;
@@ -83,7 +120,7 @@
       word-break: break-all;
     }
 
-    div pre.highlight > button {
+    div pre.highlight>button {
       opacity: 1 !important;
       width: fit-content;
       align-self: center;
@@ -91,18 +128,7 @@
     }
   }
 
-  header {
-    .logo {
-      padding: 0;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
 
-      a { position: static; }
-    }
-
-    ul { width: 100vw; }
-  }
 
   footer {
     flex-direction: column;
@@ -110,22 +136,31 @@
     align-items: flex-start;
   }
 
-  #credits { flex-direction: column; }
+  #credits {
+    flex-direction: column;
+  }
 }
 
 /* Very small phone */
 @media (max-width: $bp-tiny) {
-  header { height: 320px; }
 
-  blockquote { padding-left: 10vw !important; }
+
+  blockquote {
+    padding-left: 10vw !important;
+  }
+
   blockquote.prompt-tip,
   blockquote.prompt-info,
   blockquote.prompt-warning,
-  blockquote.prompt-danger { padding: 0 !important; }
+  blockquote.prompt-danger {
+    padding: 0 !important;
+  }
 
   img {
     transition: none;
 
-    &:hover { max-width: 100% !important; }
+    &:hover {
+      max-width: 100% !important;
+    }
   }
 }

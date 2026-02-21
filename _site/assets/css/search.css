@@ -123,9 +123,17 @@ span.doi {
   padding: 0;
 }
 .cards .card .invisible {
-  display: none;
+  display: none !important;
 }
-.cards .card .visible {
+.cards .card {
+  width: 100%;
+}
+.cards .card a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+.cards .card a .card-body {
   border: 1px solid #9a6b23;
   border-radius: 10px;
   padding: 2.5%;
@@ -137,46 +145,44 @@ span.doi {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
-.cards .card .visible:hover {
+.cards .card a .card-body:hover {
   background-color: #ece7e6;
   border-color: #b6af9d;
 }
-.cards .card .visible .card-image {
+.cards .card a .card-body .card-image {
   margin-right: 15px;
   margin-top: 5px;
 }
-.cards .card .visible .card-image img {
+.cards .card a .card-body .card-image img {
   padding: 0px;
   object-fit: contain;
   border-radius: 10px;
   transition: none;
 }
-.cards .card .visible .card-image img:hover {
+.cards .card a .card-body .card-image img:hover {
   max-width: 100% !important;
 }
-.cards .card .visible a {
-  text-decoration: none;
-}
-.cards .card .visible a .card-body h3.card-title {
+.cards .card a .card-body .card-content h3.card-title {
   margin-top: 0;
   text-decoration: none;
   font-size: 2vw;
+  color: black;
 }
-.cards .card .visible a .card-body .card-meta {
+.cards .card a .card-body .card-content .card-meta {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.cards .card .visible a .card-body .card-meta i {
+.cards .card a .card-body .card-content .card-meta i {
   margin-right: 5px;
 }
-.cards .card .visible a .card-body .card-meta i:not(:first-child) {
+.cards .card a .card-body .card-content .card-meta i:not(:first-child) {
   margin-left: 1.2rem;
 }
-.cards .card .visible a .card-body .card-summary {
+.cards .card a .card-body .card-content .card-summary {
   font-size: 16px;
   line-height: 1.5;
 }
-.cards .card .visible a .card-body .card-summary p {
+.cards .card a .card-body .card-content .card-summary p {
   margin: 0;
 }
 
@@ -366,10 +372,10 @@ input#search-input:focus::placeholder {
   input#search-input:not(:placeholder-shown) {
     font-size: 20px;
   }
-  .search-area #results-container .card a .card-body h3.card-title {
+  .card a .card-body h3.card-title {
     font-size: 30px;
   }
-  .search-area #results-container .card a .card-body .card-meta {
+  .card a .card-body .card-meta {
     font-size: 3vw;
   }
   .search-area #results-container .card .card-body,
@@ -387,11 +393,7 @@ input#search-input:focus::placeholder {
   .card-body .card-meta {
     font-size: 3vw;
   }
-  .cards .card .visible .card-image {
-    margin-right: 0;
-    max-width: 50%;
-  }
-  .search-area #results-container .card .card-image {
+  .card .card-image {
     margin-right: 0;
     max-width: 50%;
   }

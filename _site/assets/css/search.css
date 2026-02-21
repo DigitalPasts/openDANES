@@ -121,10 +121,10 @@ span.doi {
 .cards p {
   padding: 0;
 }
-.cards .card .invisible {
+.cards .card.invisible {
   display: none;
 }
-.cards .card .visible {
+.cards .card.visible {
   border: 1px solid #9a6b23;
   border-radius: 10px;
   padding: 2.5%;
@@ -136,46 +136,46 @@ span.doi {
   display: grid;
   grid-template-columns: 1fr 5fr;
 }
-.cards .card .visible:hover {
+.cards .card.visible:hover {
   background-color: #ece7e6;
   border-color: #b6af9d;
 }
-.cards .card .visible .card-image {
+.cards .card.visible .card-image {
   margin-right: 15px;
   margin-top: 5px;
 }
-.cards .card .visible .card-image img {
+.cards .card.visible .card-image img {
   padding: 0px;
   object-fit: contain;
   border-radius: 10px;
   transition: none;
 }
-.cards .card .visible .card-image img:hover {
+.cards .card.visible .card-image img:hover {
   max-width: 100% !important;
 }
-.cards .card .visible a {
+.cards .card.visible a {
   text-decoration: none;
 }
-.cards .card .visible a .card-body h3.card-title {
+.cards .card.visible a .card-body h3.card-title {
   margin-top: 0;
   text-decoration: none;
   font-size: 2vw;
 }
-.cards .card .visible a .card-body .card-meta {
+.cards .card.visible a .card-body .card-meta {
   font-size: 16px;
   margin-bottom: 10px;
 }
-.cards .card .visible a .card-body .card-meta i {
+.cards .card.visible a .card-body .card-meta i {
   margin-right: 5px;
 }
-.cards .card .visible a .card-body .card-meta i:not(:first-child) {
+.cards .card.visible a .card-body .card-meta i:not(:first-child) {
   margin-left: 1.2rem;
 }
-.cards .card .visible a .card-body .card-summary {
+.cards .card.visible a .card-body .card-summary {
   font-size: 16px;
   line-height: 1.5;
 }
-.cards .card .visible a .card-body .card-summary p {
+.cards .card.visible a .card-body .card-summary p {
   margin: 0;
 }
 
@@ -296,7 +296,7 @@ input#search-input {
   outline: none;
   width: 50%;
   transition: all 0.25s ease-in 0.25s;
-  color: transparent;
+  color: #52053E;
   line-height: 25px;
 }
 input#search-input::placeholder {

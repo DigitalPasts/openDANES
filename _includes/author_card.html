@@ -17,6 +17,9 @@
           alt="Image not available">
         {% endif %}
       </div>
+      {%- assign _pf_title = include.title | replace: ' ', '%20' | replace: '(', '%28' | replace: ')', '%29' -%}
+      <meta data-pagefind-meta="image[content]"
+        content="{{ site.baseurl }}/images/{{ include.item_type }}s/{{ _pf_title }}/banner-image.png">
 
       <div class="authors">
         <div class="author-names">

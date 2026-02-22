@@ -455,3 +455,100 @@ input#search-input {
     margin: 10% 0%;
   }
 }
+
+/* ==========================================================================
+   Pagefind UI overrides — uses site variables via CSS custom properties
+   ========================================================================== */
+
+#search {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #{$primary-color};
+  --pagefind-ui-text: #{$primary-color-dark};
+  --pagefind-ui-background: #{$light-color};
+  --pagefind-ui-border: #{$secondary-contrast-color-dark};
+  --pagefind-ui-tag: #{$secondary-contrast-color};
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: #{$card-border-radius};
+  --pagefind-ui-image-border-radius: #{$card-border-radius};
+  --pagefind-ui-font: #{$font-main};
+
+  .pagefind-ui__search-input {
+    font-family: $font-main;
+    font-size: $font-size-bigger;
+    color: $primary-color;
+
+    &::placeholder {
+      color: $primary-color;
+      opacity: 0.75;
+    }
+  }
+
+  .pagefind-ui__result {
+    border: 1px solid $secondary-contrast-color-dark;
+    border-radius: $card-border-radius;
+    background-color: $secondary-contrast-color;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    padding: 2.5%;
+    margin: 3% 0;
+    overflow: hidden;
+    word-break: break-word;
+
+    &:hover {
+      background-color: $secondary-color-light;
+      border-color: $secondary-color-dark;
+    }
+  }
+
+  .pagefind-ui__result-thumb {
+    width: 100px;
+    min-width: 100px;
+    flex-shrink: 0;
+
+    &:not(:has(img[src])) {
+      display: none; // hide empty image slots (pages without a banner)
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: $card-border-radius;
+      padding: 0;
+    }
+
+    @media (max-width: $bp-phone) {
+      display: none;
+    }
+  }
+
+  .pagefind-ui__result-title {
+    font-family: $font-main;
+    font-size: 1.3rem;
+    color: $primary-color-dark;
+  }
+
+  .pagefind-ui__result-excerpt {
+    font-size: $font-size-smaller;
+    color: $primary-color-dark;
+
+    mark {
+      background-color: $contrast-color;
+      color: $primary-color-dark;
+      border-radius: 3px;
+      padding: 0 2px;
+    }
+  }
+
+  .pagefind-ui__button {
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+    border-radius: $card-border-radius;
+    font-family: $font-main;
+    transition: background-color 0.25s ease;
+
+    &:hover {
+      background-color: $primary-color-light;
+    }
+  }
+}

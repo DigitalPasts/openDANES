@@ -29,3 +29,7 @@ extra:
   hypothesis:
     open_sidebar: true
     theme: 'clean'
+
+keep_files: [pagefind]
+
+disable_disk_cache: true

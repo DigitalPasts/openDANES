@@ -52,11 +52,17 @@
 
 <body>
   {% include navigation.html %}
-  <section>
+  {% assign should_index = false %}
+  {% if page.type == 'tutorial' or page.type == 'white-paper' or page.layout == 'newsletter' %}
+  {% assign should_index = true %}
+  {% endif %}
+  <section{% unless should_index %} data-pagefind-ignore{% endunless %}>
     <h1>{{ page.title }}</h1>
-    {{ content }}
-  </section>
-  {% include footer.html %}
+    <div{% if should_index %} data-pagefind-body{% endif %}>
+      {{ content }}
+      </div>
+      </section>
+      {% include footer.html %}
 </body>
 <script src="{{site.baseurl}}/assets/js/tag_click.js"></script>
 <script src="{{site.baseurl}}/assets/js/codeblock.js"></script>

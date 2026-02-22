@@ -1,89 +1,34 @@
-<!-- HTML elements for search -->
+<!-- Pagefind search UI -->
 
 <div class="search-area">
-  <input type="text" id="search-input" placeholder="Dig through the findings...">
-  <ul id="results-container"></ul>
-
-  {% capture result_elem %}
-
-  <div class="card">
-    <a href="{url}">
-      <div class="card-body visible">
-
-        <div class="card-image">
-          <img src="{{ site.baseurl }}/images/{type}s/{title}/banner-image.png" alt="Image not available">
-        </div>
-
-        <div class="card-content">
-
-          <h3 class="card-title">
-            {title}
-          </h3>
-
-          <div class="card-meta">
-            <i class="fas fa-robot fa-sm"></i>
-            {authors}
-            <i class="fas fa-calendar-alt fa-sm"></i>
-            {publish-date}
-            <i class="fas fa-hashtag fa-sm"></i>
-
-            <span class="page-tags">
-              {tags}
-            </span>
-
-            <!-- {% if doi != null %}
-              <span class="doi" style="background-image: url(https://zenodo.org/badge/DOI/{doi}.svg);">{doi}</span>
-            {% else %}
-              <p><span class="card-peer-review" style="
-                font-style: italic;
-                font-size: 1.3vw;
-            ">Under peer review</span></p>
-            {% endif %} -->
-          </div>
-
-          <div class="card-summary">
-            <p>
-              {summary}
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </a>
-  </div>
-
-
-
-  <!-- <a href="{url}">
-    <li class="result">
-      <h4 class="result-title">
-        {title}
-      </h4>
-      <p>{authors} | {tags}</p>
-      <p>{summary}</p>
-    </li>
-  </a> -->
-  {% endcapture %}
+  <div id="search"></div>
 </div>
 
-
-
-
-
-<!-- {% capture not_found %}<p class="mt-5">No results found</p>{% endcapture %} -->
-
-<script src="{{site.baseurl}}/assets/js/simple-jekyll-search.js"></script>
-<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
-
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
 <script>
-  simpleJekyllSearch = new SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '{{ site.baseurl }}/search.json',
-    searchResultTemplate: '{{ result_elem | strip_newlines }}',
-    noResultsText: '<div id="no-results">No results found</div>',
-    fuzzy: false,
-    exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-  })
+  function initPagefind() {
+    var el = document.getElementById('search');
+    if (el && !el.hasChildNodes()) {
+      new PagefindUI({
+        element: "#search",
+        showImages: true,
+        showEmptyFilters: false,
+        resetStyles: false,
+        excerptLength: 30,
+        translations: {
+          placeholder: "Dig through the findings...",
+          zero_results: "No results for [SEARCH_TERM]"
+        }
+      });
+    }
+  }
+  window.addEventListener('DOMContentLoaded', initPagefind);
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) { // restored from bfcache — reinitialize
+      var el = document.getElementById('search');
+      if (el) el.innerHTML = '';
+      initPagefind();
+    }
+  });
 </script>

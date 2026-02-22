@@ -4,13 +4,13 @@
 <head>
   
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E3LY698R5"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EN4RVX0B1S"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-1E3LY698R5');
+    gtag('config', 'G-EN4RVX0B1S');
   </script>
   
   <meta charset="utf-8">
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
   </link>
   <!-- style css -->
-  <link rel="stylesheet" href="/assets/css/main.css?v=1771775676">
-  <link rel="stylesheet" href="/assets/css/search.css?v=1771775676">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1771778889">
+  <link rel="stylesheet" href="/assets/css/search.css?v=1771778889">
   <title>openDANES</title>
 
 
@@ -97,39 +97,53 @@
   </div>
 
 </header>
-  <section>
+  
+  
+  <section data-pagefind-ignore>
     <h1></h1>
-    <!-- HTML elements for search -->
+    <div>
+      <!-- Pagefind search UI -->
 
 <div class="search-area">
-  <input type="text" id="search-input" placeholder="Dig through the findings..." />
-  <ul id="results-container"></ul>
-
-  
+  <div id="search"></div>
 </div>
 
-<!--  -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 
-<script src="/assets/js/simple-jekyll-search.js"></script>
-
-<!-- <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script> -->
+<script src="/pagefind/pagefind-ui.js"></script>
 
 <script>
-  simpleJekyllSearch = new SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    searchResultTemplate: '  <div class="card">    <a href="{url}">      <div class="card-body visible">        <div class="card-image">          <img src="/images/{type}s/{title}/banner-image.png" alt="Image not available">        </div>        <div class="card-content">          <h3 class="card-title">            {title}          </h3>          <div class="card-meta">            <i class="fas fa-robot fa-sm"></i>            {authors}            <i class="fas fa-calendar-alt fa-sm"></i>            {publish-date}            <i class="fas fa-hashtag fa-sm"></i>            <span class="page-tags">              {tags}            </span>            <!--               <p><span class="card-peer-review" style="                font-style: italic;                font-size: 1.3vw;            ">Under peer review</span></p>             -->          </div>          <div class="card-summary">            <p>              {summary}            </p>          </div>        </div>      </div>    </a>  </div>  <!-- <a href="{url}">    <li class="result">      <h4 class="result-title">        {title}      </h4>      <p>{authors} | {tags}</p>      <p>{summary}</p>    </li>  </a> -->  ',
-    noResultsText: '<div id="no-results">No results found</div>',
-    fuzzy: false,
-    exclude: ['search.json', 'nav/about.md', 'nav/submission-guidelines.md']
-  })
+  function initPagefind() {
+    var el = document.getElementById('search');
+    if (el && !el.hasChildNodes()) {
+      new PagefindUI({
+        element: "#search",
+        showImages: true,
+        showEmptyFilters: false,
+        resetStyles: false,
+        excerptLength: 30,
+        translations: {
+          placeholder: "Dig through the findings...",
+          zero_results: "No results for [SEARCH_TERM]"
+        }
+      });
+    }
+  }
+  window.addEventListener('DOMContentLoaded', initPagefind);
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) { // restored from bfcache — reinitialize
+      var el = document.getElementById('search');
+      if (el) el.innerHTML = '';
+      initPagefind();
+    }
+  });
 </script>
 
 <p><a target="blank" class="image-link" href="https://archive.org/details/dr_planche-40-koum-ombo-ombos-vue-du-grand-temple-antiquites-tome-premie-10404050"><img src="/images/decoration/Koum_Omboû_(Ombos)._Vue_du_Grand_Temple_(NYPL_b14212718-1267869).jpg" alt="image here" class="not-enlarge" /></a></p>
 
-  </section>
-  <footer>
+      </div>
+      </section>
+      <footer>
 
   <div id="credits">
     <h3>Contact us</h3>

@@ -9,7 +9,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bundle exec jekyll build && npx pagefind --site _site",
+    "serve": "npm run build && bundle exec jekyll serve --skip-initial-build"
   },
   "keywords": [],
   "author": "",

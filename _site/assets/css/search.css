@@ -397,5 +397,89 @@ input#search-input:focus::placeholder {
     margin: 10% 0%;
   }
 }
+/* ==========================================================================
+   Pagefind UI overrides — uses site variables via CSS custom properties
+   ========================================================================== */
+#search {
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: #52053E;
+  --pagefind-ui-text: #330327;
+  --pagefind-ui-background: #FEFBF1;
+  --pagefind-ui-border: #9a6b23;
+  --pagefind-ui-tag: #e3ad5b;
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 10px;
+  --pagefind-ui-image-border-radius: 10px;
+  --pagefind-ui-font: Taviraj, serif;
+}
+#search .pagefind-ui__search-input {
+  font-family: "Taviraj", serif;
+  font-size: 20px;
+  color: #52053E;
+}
+#search .pagefind-ui__search-input::placeholder {
+  color: #52053E;
+  opacity: 0.75;
+}
+#search .pagefind-ui__result {
+  border: 1px solid #9a6b23;
+  border-radius: 10px;
+  background-color: #e3ad5b;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 2.5%;
+  margin: 3% 0;
+  overflow: hidden;
+  word-break: break-word;
+}
+#search .pagefind-ui__result:hover {
+  background-color: #ece7e6;
+  border-color: #b6af9d;
+}
+#search .pagefind-ui__result-thumb {
+  width: 100px;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+#search .pagefind-ui__result-thumb:not(:has(img[src])) {
+  display: none;
+}
+#search .pagefind-ui__result-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 0;
+}
+@media (max-width: 700px) {
+  #search .pagefind-ui__result-thumb {
+    display: none;
+  }
+}
+#search .pagefind-ui__result-title {
+  font-family: "Taviraj", serif;
+  font-size: 1.3rem;
+  color: #330327;
+}
+#search .pagefind-ui__result-excerpt {
+  font-size: 16px;
+  color: #330327;
+}
+#search .pagefind-ui__result-excerpt mark {
+  background-color: #feda75;
+  color: #330327;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+#search .pagefind-ui__button {
+  background-color: #52053E;
+  color: #FEFBF1;
+  border: none;
+  border-radius: 10px;
+  font-family: "Taviraj", serif;
+  transition: background-color 0.25s ease;
+}
+#search .pagefind-ui__button:hover {
+  background-color: #67074e;
+}
 
 /*# sourceMappingURL=search.css.map */

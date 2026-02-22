@@ -109,7 +109,10 @@
 
 </header>
 
-  <section>
+  
+  
+
+  <section data-pagefind-ignore>
     <div class="toc">
       <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
       <h2><i class="far fa-folder-open"></i> On this page</h2>
@@ -118,7 +121,7 @@
 
       
     </div>
-    <div class="content">
+    <div class="content" >
       <h1>Write the title of your submission here</h1>
       <h2 id="types-of-headings">Types of Headings</h2>
 
@@ -368,8 +371,8 @@
 </div>
 
     </div>
-  </section>
-  <footer>
+    </section>
+    <footer>
 
   <div id="credits">
     <h3>Contact us</h3>
@@ -395,25 +398,25 @@
 </footer>
 
 
-  <!-- javascript to place class on code element so highlighting will display correctly -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      var highlightElements = document.querySelectorAll("div.highlighter-rouge");
-      for (var i = 0; i < highlightElements.length; i++) {
-        var langClass = highlightElements[i].classList;
-        var lang = Array.from(langClass).find(function (item) {
-          return item.startsWith("language-");
-        });
-        if (lang) {
-          var codeElements = highlightElements[i].querySelectorAll("code");
-          for (var j = 0; j < codeElements.length; j++) {
-            codeElements[j].classList.remove("language-css");
-            codeElements[j].classList.add(lang);
+    <!-- javascript to place class on code element so highlighting will display correctly -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var highlightElements = document.querySelectorAll("div.highlighter-rouge");
+        for (var i = 0; i < highlightElements.length; i++) {
+          var langClass = highlightElements[i].classList;
+          var lang = Array.from(langClass).find(function (item) {
+            return item.startsWith("language-");
+          });
+          if (lang) {
+            var codeElements = highlightElements[i].querySelectorAll("code");
+            for (var j = 0; j < codeElements.length; j++) {
+              codeElements[j].classList.remove("language-css");
+              codeElements[j].classList.add(lang);
+            }
           }
         }
-      }
-    });
-  </script>
+      });
+    </script>
 </body>
 <script src="/assets/js/codeblock.js"></script>
 <script src="/assets/js/toc-scroll.js"></script>

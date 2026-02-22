@@ -1,52 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EDJ22Y1C2"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-    
-          gtag('config', 'G-3EDJ22Y1C2');
-        </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- meta description -->
-    <meta name="description" content="OpenDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies">
-    <meta name="keywords" content="digital humanities, babylonian engine, assyriology, Akkademia, Atrahasis, digital assyriology, history, archaeology">
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/favicon_io/site.webmanifest">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/269b02bfd4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
-    <!-- style css -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <!-- style css for table of contents -->
-    <link rel="stylesheet" href="/assets/css/toc.css">
-    <link rel="stylesheet" href="/assets/css/search.css">
 
-    <!-- codeblock highlighting: https://github.com/highlightjs/highlight.js/ -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/sunburst.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    
-    <!-- displaying math formulae -->
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+<head>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EDJ22Y1C2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3EDJ22Y1C2');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta description -->
+  <meta name="description"
+    content="OpenDANES is a platform for tutorials and white papers about using computational methodologies for ancient Near Eastern studies">
+  <meta name="keywords"
+    content="digital humanities, babylonian engine, assyriology, Akkademia, Atrahasis, digital assyriology, history, archaeology">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Taviraj&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/269b02bfd4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  </link>
+  <!-- style css -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- style css for table of contents -->
+  <link rel="stylesheet" href="/assets/css/toc.css">
+  <link rel="stylesheet" href="/assets/css/search.css">
+
+  <!-- codeblock highlighting: https://github.com/highlightjs/highlight.js/ -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/sunburst.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/languages/javascript.min.js"></script>
+  <script>hljs.highlightAll();</script>
+
+  <!-- displaying math formulae -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
     </script>
 
-    <script type="text/x-mathjax-config">
+  <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       TeX: {
         equationNumbers: {
@@ -63,14 +69,15 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
   
 
-    <title>openDANES</title>
+  <title>openDANES</title>
 
-    
+  
 
-  </head>
-  <body>
-    <a name="top"></a>
-    <header>
+</head>
+
+<body>
+  <a name="top"></a>
+  <header>
 
   <!-- <div class="logo">
       <img src="/images/favicon_io/android-chrome-512x512.png" alt="logo">
@@ -102,18 +109,18 @@
 
 </header>
 
-    <section>
-      <div class="toc">
-        <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
-        <h2><i class="far fa-folder-open"></i> On this page</h2>
+  <section>
+    <div class="toc">
+      <p><a href="#top"><i class="fas fa-arrow-up"></i> Top</a></p>
+      <h2><i class="far fa-folder-open"></i> On this page</h2>
       
-        <ul><li><a href="#danes-2024">DANES 2024</a><ul><li><a href="#demcc---the-first-online-cuneiform-texts-database-in-china">DEMCC - The First Online Cuneiform Texts Database in China</a></li><li><a href="#developing-an-ocr---wikibase-pipeline-for-place-names-in-the-rgtc-series">Developing an OCR - Wikibase Pipeline for Place Names in the RGTC Series</a></li><li><a href="#modeling-network-connections-of-the-settlements-from-the-cuneiform-map-cbs-10434">Modeling Network Connections of the Settlements from the Cuneiform Map CBS 10434</a></li><li><a href="#still-glowing-developing-synergies-in-the-assembly-and-development-of-sustainable-open-access-data-in-cuneiform-studies">Still GLoWing: Developing Synergies in the Assembly and Development of Sustainable Open Access Data in Cuneiform Studies</a></li><li><a href="#the-siane-device-advancing-digital-documentation-of-ancient-near-eastern-cylinder-seals">The SIANE Device: Advancing Digital Documentation of Ancient Near Eastern Cylinder Seals</a></li><li><a href="#use-of-relational-databases-for-medium-sized-corpus-study-case-studies-of-old-babylonian-nippur-and-ur-2016-1841-bce">Use of Relational Databases for Medium Sized Corpus Study: Case Studies of Old Babylonian Nippur and Ur (2016-1841 BCE)</a></li></ul></li><li><a href="#danes-2023">DANES 2023</a><ul><li><a href="#beloved-brother-friend-comparing-dumuzi-myths-using-shallow-ontologies">Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies</a></li><li><a href="#factgrid-cuneiform-discovery-project-building-linked-open-data-repositories">FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories</a></li><li><a href="#material-culture-from-the-middle-babylonain-period-mcmib">Material Culture from the Middle Babylonain Period (McMiB)</a></li><li><a href="#towards-binarization-of-iron-age-ostraca-from-multispectral-weakly-annotated-imaging">Towards Binarization of Iron Age Ostraca from Multispectral Weakly-Annotated Imaging</a></li><li><a href="#universal-dependencies-for-hittite">Universal dependencies for Hittite</a></li><li><a href="#workflow-of-cune-iiif-orm">Workflow of Cune-iiif-orm</a></li></ul></li></ul>
+      <ul><li><a href="#danes-2024">DANES 2024</a><ul><li><a href="#demcc---the-first-online-cuneiform-texts-database-in-china">DEMCC - The First Online Cuneiform Texts Database in China</a></li><li><a href="#developing-an-ocr---wikibase-pipeline-for-place-names-in-the-rgtc-series">Developing an OCR - Wikibase Pipeline for Place Names in the RGTC Series</a></li><li><a href="#modeling-network-connections-of-the-settlements-from-the-cuneiform-map-cbs-10434">Modeling Network Connections of the Settlements from the Cuneiform Map CBS 10434</a></li><li><a href="#still-glowing-developing-synergies-in-the-assembly-and-development-of-sustainable-open-access-data-in-cuneiform-studies">Still GLoWing: Developing Synergies in the Assembly and Development of Sustainable Open Access Data in Cuneiform Studies</a></li><li><a href="#the-siane-device-advancing-digital-documentation-of-ancient-near-eastern-cylinder-seals">The SIANE Device: Advancing Digital Documentation of Ancient Near Eastern Cylinder Seals</a></li><li><a href="#use-of-relational-databases-for-medium-sized-corpus-study-case-studies-of-old-babylonian-nippur-and-ur-2016-1841-bce">Use of Relational Databases for Medium Sized Corpus Study: Case Studies of Old Babylonian Nippur and Ur (2016-1841 BCE)</a></li></ul></li><li><a href="#danes-2023">DANES 2023</a><ul><li><a href="#beloved-brother-friend-comparing-dumuzi-myths-using-shallow-ontologies">Beloved, Brother, Friend: Comparing Dumuzi Myths using Shallow Ontologies</a></li><li><a href="#factgrid-cuneiform-discovery-project-building-linked-open-data-repositories">FactGrid Cuneiform Discovery Project: Building Linked Open Data Repositories</a></li><li><a href="#material-culture-from-the-middle-babylonain-period-mcmib">Material Culture from the Middle Babylonain Period (McMiB)</a></li><li><a href="#towards-binarization-of-iron-age-ostraca-from-multispectral-weakly-annotated-imaging">Towards Binarization of Iron Age Ostraca from Multispectral Weakly-Annotated Imaging</a></li><li><a href="#universal-dependencies-for-hittite">Universal dependencies for Hittite</a></li><li><a href="#workflow-of-cune-iiif-orm">Workflow of Cune-iiif-orm</a></li></ul></li></ul>
 
       
-      </div>
-      <div class="content">
-        <h1>Posters</h1>
-        <p>Welcome to the Poster presentations of the DANES conferences! Below you can view, explore and download (through the Zenodo DOI banner links) some of the ground-breaking research in digital ancient Near Eastern studies.</p>
+    </div>
+    <div class="content">
+      <h1>Posters</h1>
+      <p>Welcome to the Poster presentations of the DANES conferences! Below you can view, explore and download (through the Zenodo DOI banner links) some of the ground-breaking research in digital ancient Near Eastern studies.</p>
 
 <h2 id="danes-2024">DANES 2024</h2>
 
@@ -263,9 +270,9 @@
 
 <p><img src="/images/posters/DANES2023/cune-iiif-orm/poster_danes_cune-iiif-orm-min.jpg" alt="poster" /></p>
 
-      </div>
-    </section>
-    <footer>
+    </div>
+  </section>
+  <footer>
 
   <div id="credits">
     <h3>Contact us</h3>
@@ -291,28 +298,29 @@
 </footer>
 
 
-    <!-- javascript to place class on code element so highlighting will display correctly -->
-        <script>
-      document.addEventListener("DOMContentLoaded", function(event) {
-        var highlightElements = document.querySelectorAll("div.highlighter-rouge");
-        for (var i = 0; i < highlightElements.length; i++) {
-          var langClass = highlightElements[i].classList;
-          var lang = Array.from(langClass).find(function(item) {
-            return item.startsWith("language-");
-          });
-          if (lang) {
-            var codeElements = highlightElements[i].querySelectorAll("code");
-            for (var j = 0; j < codeElements.length; j++) {
-              codeElements[j].classList.remove("language-css");
-              codeElements[j].classList.add(lang);
-            }
+  <!-- javascript to place class on code element so highlighting will display correctly -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      var highlightElements = document.querySelectorAll("div.highlighter-rouge");
+      for (var i = 0; i < highlightElements.length; i++) {
+        var langClass = highlightElements[i].classList;
+        var lang = Array.from(langClass).find(function (item) {
+          return item.startsWith("language-");
+        });
+        if (lang) {
+          var codeElements = highlightElements[i].querySelectorAll("code");
+          for (var j = 0; j < codeElements.length; j++) {
+            codeElements[j].classList.remove("language-css");
+            codeElements[j].classList.add(lang);
           }
         }
-      });
-    </script>
-  </body>
-  <script src="/assets/js/codeblock.js"></script>
-  <script src="/assets/js/toc-scroll.js"></script>
-  <script src="https://hypothes.is/embed.js" async></script>
+      }
+    });
+  </script>
+</body>
+<script src="/assets/js/codeblock.js"></script>
+<script src="/assets/js/toc-scroll.js"></script>
+<script src="https://hypothes.is/embed.js" async></script>
+
 
 </html>

@@ -109,6 +109,35 @@ span.doi {
   .deprecated p {
     font-size: $font-size-bigger;
   }
+
+  .card-bottom {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 10px;
+
+    .card-bottom-left {
+      flex: 3;
+      min-width: 0;
+    }
+
+    .card-bottom-right {
+      flex: 1;
+      min-width: 0;
+      font-size: $font-size-smaller;
+
+      p {
+        padding: 0;
+        margin: 4px 0;
+      }
+    }
+  }
+
+  .read-time p {
+    padding: 0;
+    margin: 4px 0;
+    font-size: $font-size-smaller;
+  }
 }
 
 .cards {

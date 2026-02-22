@@ -114,6 +114,30 @@ span.doi {
 .author-card .deprecated p {
   font-size: 20px;
 }
+.author-card .card-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+.author-card .card-bottom .card-bottom-left {
+  flex: 3;
+  min-width: 0;
+}
+.author-card .card-bottom .card-bottom-right {
+  flex: 1;
+  min-width: 0;
+  font-size: 16px;
+}
+.author-card .card-bottom .card-bottom-right p {
+  padding: 0;
+  margin: 4px 0;
+}
+.author-card .read-time p {
+  padding: 0;
+  margin: 4px 0;
+  font-size: 16px;
+}
 
 .cards h3 {
   padding: 0;

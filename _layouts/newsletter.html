@@ -1,0 +1,42 @@
+---
+layout: default+toc
+---
+
+{% assign newsletters = site.pages | where_exp: "item", "item.dir == '/newsletter/'" | sort: "date" %}
+
+{% for item in newsletters %}
+{% if item.url == page.url %}
+{% assign current_index = forloop.index0 %}
+{% endif %}
+{% endfor %}
+
+{% assign prev_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+
+{% if current_index > 0 %}
+{% assign prev_newsletter = newsletters[prev_index] %}
+{% endif %}
+
+{% if next_index < newsletters.size %} {% assign next_newsletter=newsletters[next_index] %} {% endif %} <div
+    class="newsletter-nav"
+    style="display: flex; justify-content: space-between; margin-bottom: 2em; font-style: italic;">
+    <span class="nav-prev" style="text-align: left; flex: 1;">
+        {% if prev_newsletter %}
+        <a href="{{ site.baseurl }}{{ prev_newsletter.url }}">&larr; Previous ({{ prev_newsletter.date | date: "%B %Y"
+            }})</a>
+        {% endif %}
+    </span>
+
+    <span class="nav-all" style="text-align: center; flex: 1;">
+        <a href="{{ site.baseurl }}/nav/DANES-newsletters.html">All Newsletters</a>
+    </span>
+
+    <span class="nav-next" style="text-align: right; flex: 1;">
+        {% if next_newsletter %}
+        <a href="{{ site.baseurl }}{{ next_newsletter.url }}">Next ({{ next_newsletter.date | date: "%B %Y" }})
+            &rarr;</a>
+        {% endif %}
+    </span>
+    </div>
+
+    {{ content }}

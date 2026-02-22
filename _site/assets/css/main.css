@@ -61,9 +61,14 @@ section {
   margin: 15px 20vw;
   /* Paragraphs + links */
   /* Lists */
-  /* Images (enlarge on hover; disabled on very small screens in responsive partial) */
+  /* Images */
+  /* Newsletter Nav Override */
 }
-section h2, section h3, section h4, section h5, section h6 {
+section h2,
+section h3,
+section h4,
+section h5,
+section h6 {
   padding-bottom: 10px;
   margin: 15px 0;
 }
@@ -81,11 +86,15 @@ section h3 {
 section h3 i {
   font-size: inherit;
 }
-section h4, section h5, section h6 {
+section h4,
+section h5,
+section h6 {
   font-size: 1.7vw;
   padding-top: 10px;
 }
-section h4 i, section h5 i, section h6 i {
+section h4 i,
+section h5 i,
+section h6 i {
   font-size: inherit;
 }
 section blockquote {
@@ -98,7 +107,8 @@ section p {
   text-align: justify;
   font-size: 18px;
 }
-section p a, section p i {
+section p a,
+section p i {
   padding: none !important;
   text-align: inherit !important;
   font-size: inherit !important;
@@ -106,38 +116,46 @@ section p a, section p i {
 section p a {
   text-decoration: none;
   color: #05878a;
-  border-bottom: #05878a 1px dashed;
   transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
 }
 section p a:hover {
   color: #9a6b23;
-  border-bottom: #9a6b23 1px dashed;
 }
-section p a.footnote, section p a.reversefootnote {
+section p a.footnote,
+section p a.reversefootnote {
   border: none;
 }
-section p a.image-link {
+section p a.image-link,
+section p a:has(img),
+section p a.no-underline {
   border-bottom: none;
 }
-section ul, section ol {
+section p a.image-link:hover,
+section p a:has(img):hover,
+section p a.no-underline:hover {
+  border-bottom: none;
+}
+section ul,
+section ol {
   padding: 15px;
   text-align: justify;
   font-size: 18px;
 }
-section ul li, section ol li {
+section ul li,
+section ol li {
   font-size: 18px;
   text-align: justify;
   padding: 0 5px;
 }
-section ul li a, section ol li a {
+section ul li a,
+section ol li a {
   text-decoration: none;
   color: #05878a;
-  border-bottom: #05878a 1px dashed;
   transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
 }
-section ul li a:hover, section ol li a:hover {
+section ul li a:hover,
+section ol li a:hover {
   color: #9a6b23;
-  border-bottom: #9a6b23 1px dashed;
 }
 section ul {
   margin: 0 7.5px;
@@ -155,20 +173,19 @@ section img {
   max-width: 100%;
   height: auto;
   padding: 0 2.5vw;
-  transition: max-width 0.3s ease-in-out;
-}
-section img:hover {
-  max-width: 130%;
-}
-section img.not-enlarge {
-  transition: none;
-}
-section img.not-enlarge:hover {
-  max-width: 100%;
 }
 section i {
   font-size: 25px;
   padding: 1px;
+}
+section .newsletter-nav a {
+  text-decoration: none;
+  color: #05878a;
+  transition: color 0.25s ease-in-out;
+}
+section .newsletter-nav a:hover {
+  color: #9a6b23;
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -586,12 +603,6 @@ footer div a:hover {
   blockquote.prompt-warning,
   blockquote.prompt-danger {
     padding: 0 !important;
-  }
-  img {
-    transition: none;
-  }
-  img:hover {
-    max-width: 100% !important;
   }
 }
 

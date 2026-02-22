@@ -8,13 +8,22 @@
   box-sizing: border-box;
 
   /* Custom thin scrollbar */
-  ::-webkit-scrollbar { width: 4px; }
-  ::-webkit-scrollbar-track { background: $light-color; }
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $light-color;
+  }
+
   ::-webkit-scrollbar-thumb {
     background: $primary-color;
     border-radius: 5px;
   }
-  ::-webkit-scrollbar-thumb:hover { background: $primary-color-light; }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary-color-light;
+  }
 
   body {
     overflow-x: hidden;
@@ -36,7 +45,11 @@ section {
   font-family: $font-main;
   margin: 15px 20vw;
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     padding-bottom: 10px;
     margin: 15px 0;
   }
@@ -45,21 +58,29 @@ section {
     font-size: 2.7vw;
     border-bottom: $primary-color-dark solid 1px;
 
-    i { font-size: inherit; }
+    i {
+      font-size: inherit;
+    }
   }
 
   h3 {
     font-size: 2vw;
     padding-top: 10px;
 
-    i { font-size: inherit; }
+    i {
+      font-size: inherit;
+    }
   }
 
-  h4, h5, h6 {
+  h4,
+  h5,
+  h6 {
     font-size: 1.7vw;
     padding-top: 10px;
 
-    i { font-size: inherit; }
+    i {
+      font-size: inherit;
+    }
   }
 
   blockquote {
@@ -74,7 +95,8 @@ section {
     text-align: justify;
     font-size: $font-size;
 
-    a, i {
+    a,
+    i {
       padding: none !important;
       text-align: inherit !important;
       font-size: inherit !important;
@@ -83,21 +105,34 @@ section {
     a {
       text-decoration: none;
       color: $fourth-color;
-      border-bottom: $fourth-color 1px dashed;
+      // border-bottom: $fourth-color 1px dashed;
       transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
 
       &:hover {
         color: $secondary-contrast-color-dark;
-        border-bottom: $secondary-contrast-color-dark 1px dashed;
+        // border-bottom: $secondary-contrast-color-dark 1px dashed;
       }
     }
 
-    a.footnote, a.reversefootnote { border: none; }
-    a.image-link { border-bottom: none; }
+    a.footnote,
+    a.reversefootnote {
+      border: none;
+    }
+
+    a.image-link,
+    a:has(img),
+    a.no-underline {
+      border-bottom: none;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
   }
 
   /* Lists */
-  ul, ol {
+  ul,
+  ol {
     padding: 15px;
     text-align: justify;
     font-size: $font-size;
@@ -110,18 +145,20 @@ section {
       a {
         text-decoration: none;
         color: $fourth-color;
-        border-bottom: $fourth-color 1px dashed;
+        // border-bottom: $fourth-color 1px dashed;
         transition: color 0.25s ease-in-out, border-bottom 0.25s ease-in-out;
 
         &:hover {
           color: $secondary-contrast-color-dark;
-          border-bottom: $secondary-contrast-color-dark 1px dashed;
+          // border-bottom: $secondary-contrast-color-dark 1px dashed;
         }
       }
     }
   }
 
-  ul { margin: 0 7.5px; }
+  ul {
+    margin: 0 7.5px;
+  }
 
   .fig {
     font-size: $font-size-smaller;
@@ -129,27 +166,32 @@ section {
     line-height: 1.4;
     font-style: italic;
 
-    a { font-size: $font-size-smaller; }
+    a {
+      font-size: $font-size-smaller;
+    }
   }
 
-  /* Images (enlarge on hover; disabled on very small screens in responsive partial) */
+  /* Images */
   img {
     max-width: 100%;
     height: auto;
     padding: 0 2.5vw;
-    transition: max-width 0.3s ease-in-out;
-
-    &:hover { max-width: 130%; }
-  }
-
-  img.not-enlarge {
-    transition: none;
-
-    &:hover { max-width: 100%; }
   }
 
   i {
     font-size: $icon-size;
     padding: $icon-padding;
+  }
+
+  /* Newsletter Nav Override */
+  .newsletter-nav a {
+    text-decoration: none;
+    color: $fourth-color;
+    transition: color 0.25s ease-in-out;
+
+    &:hover {
+      color: $secondary-contrast-color-dark;
+      text-decoration: none;
+    }
   }
 }

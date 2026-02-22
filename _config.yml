@@ -22,7 +22,7 @@ sass:
 analytics:
   provider               : "google-gtag"
   google:
-    measurement_id          : "G-1E3LY698R5"
+    measurement_id          : "G-EN4RVX0B1S"
     anonymize_ip         : # true, false (default)
 
 extra:

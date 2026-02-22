@@ -1,4 +1,5 @@
 ---
+permalink: /p/38bf88/
 layout: default+toc
 type: white-paper
 title: Musical Instruments in Ancient Mesopotamia (MIAM) A Semantic Media Wiki Database and Lexicon

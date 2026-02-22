@@ -11,7 +11,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "bundle exec jekyll build && npx pagefind --site _site",
-    "serve": "npm run build && bundle exec jekyll serve --skip-initial-build"
+    "serve": "npm run build && bundle exec jekyll serve --skip-initial-build",
+    "pdf": "node assets/js/generate-pdf.js",
+    "pdf:pages": "node assets/js/generate-pdf.js --all-pages",
+    "pdf:newsletters": "node assets/js/generate-pdf.js --all-newsletters",
+    "slugs": "node assets/js/generate-slugs.js",
+    "slugs:apply": "node assets/js/generate-slugs.js --apply"
   },
   "keywords": [],
   "author": "",

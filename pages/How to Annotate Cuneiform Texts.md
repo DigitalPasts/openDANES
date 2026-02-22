@@ -1,4 +1,5 @@
 ---
+permalink: /p/23e8f5/
 layout: default+toc
 type: tutorial
 title: How to Annotate Cuneiform Texts

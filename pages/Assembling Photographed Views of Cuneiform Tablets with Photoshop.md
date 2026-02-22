@@ -1,4 +1,5 @@
 ---
+permalink: /p/d7251a/
 title: "Assembling Photographed Views of Cuneiform Tablets with Photoshop"
 type: tutorial
 layout: default+toc

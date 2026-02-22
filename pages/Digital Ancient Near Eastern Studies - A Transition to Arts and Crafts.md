@@ -1,4 +1,5 @@
 ---
+permalink: /p/e0112f/
 layout: default+toc
 type: white-paper
 title: Digital Ancient Near Eastern Studies - A Transition to Arts and Crafts

@@ -79,14 +79,73 @@
 
         <hr>
 
-        <div class="dates">
-          <p>Submitted on: {{ include.date | date: "%B %d, %Y" }}</p>
-          <p>Published on: {{ include.publish-date | date: "%B %d, %Y" }}</p>
-          {% if include.peer-review-date != null %}
-          <p>Peer reviewed: {{ include.peer-review-date | date: "%B %d, %Y" }}</p>
-          {% endif %}
-          {% if include.update-date != null %}
-          <p>Last update: {{ include.update-date | date: "%B %d, %Y" }}</p>
+        {% if include.doi != null %}
+        {%- assign _permalink_parts = page.permalink | split: '/' -%}
+        {%- assign _pdf_id = '' -%}
+        {%- for part in _permalink_parts -%}
+        {%- if part != '' -%}{%- assign _pdf_id = part -%}{%- endif -%}
+        {%- endfor -%}
+        {%- assign _bib_key_author = '' -%}
+        {%- for author in include.authors -%}
+        {%- assign _bib_key_author = author[1].name | split: ' ' | last -%}
+        {%- break -%}
+        {%- endfor -%}
+        {%- assign _bib_year = include.publish-date | date: '%Y' -%}
+        {%- assign _bib_key = _bib_key_author | append: _bib_year -%}
+        {%- assign _bib_authors_arr = '' | split: '' -%}
+        {%- for author in include.authors -%}
+        {%- assign _bib_authors_arr = _bib_authors_arr | push: author[1].name -%}
+        {%- endfor -%}
+        {%- assign _bib_authors = _bib_authors_arr | join: ' and ' -%}
+        {%- assign _bib_month = include.publish-date | date: '%b' | downcase -%}
+        {%- assign _bib_tags = include.tags | join: ', ' -%}
+        {%- assign _bib_url = site.url | append: page.permalink -%}
+        {%- assign ob = '{' -%}
+        {%- assign cb = '}' -%}
+        {%- capture _bibtex -%}@article{{ ob }}{{ _bib_key }},
+        title = {{ ob }}{{ include.title }}{{ cb }},
+        url = {{ ob }}{{ _bib_url }}{{ cb }},
+        doi = {{ ob }}{{ include.doi }}{{ cb }},
+        abstract = {{ ob }}{{ include.summary }}{{ cb }},
+        journal = {{ ob }}OpenDANES{{ cb }},
+        author = {{ ob }}{{ _bib_authors }}{{ cb }},
+        month = {{ _bib_month }},
+        year = {{ ob }}{{ _bib_year }}{{ cb }},
+        keywords = {{ ob }}{{ _bib_tags }}{{ cb }},
+        pages = {{ ob }}{{ _pdf_id }}{{ cb }},
+        {{ cb }}{%- endcapture -%}
+        {% endif %}
+
+        <div class="dates-actions">
+          <div class="dates">
+            <p>Submitted on: {{ include.date | date: "%B %d, %Y" }}</p>
+            <p>Published on: {{ include.publish-date | date: "%B %d, %Y" }}</p>
+            {% if include.peer-review-date != null %}
+            <p>Peer reviewed: {{ include.peer-review-date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+            {% if include.update-date != null %}
+            <p>Last update: {{ include.update-date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+          </div>
+
+          {% if include.doi != null %}
+          <div class="download-buttons">
+            <a class="btn-download btn-pdf" href="{{ site.baseurl }}/assets/pdf/p_{{ _pdf_id }}_.pdf" target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-file-pdf"></i> Download PDF
+            </a>
+            <pre id="bib-{{ _pdf_id }}" style="display:none">{{ _bibtex }}</pre>
+            <button class="btn-download btn-bib" onclick="(function(btn){
+                var text = document.getElementById('bib-{{ _pdf_id }}').textContent;
+                navigator.clipboard.writeText(text).then(function(){
+                  var orig = btn.innerHTML;
+                  btn.innerHTML = '<i class=\'fas fa-check\'></i> Copied!';
+                  setTimeout(function(){ btn.innerHTML = orig; }, 2000);
+                });
+              })(this)">
+              <i class="fas fa-quote-right"></i> Cite (.bib)
+            </button>
+          </div>
           {% endif %}
         </div>
       </div>
@@ -127,10 +186,8 @@
     </div>
 
 
-
-
-
     <div class="card-bottom">
+
 
       <div class="card-bottom-left">
         {% if include.deprecated != null %}

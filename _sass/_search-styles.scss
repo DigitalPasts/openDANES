@@ -54,6 +54,8 @@ span.doi {
 
     .authors {
       padding-left: 15px;
+      flex: 1;
+      min-width: 0;
     }
 
     .card-image-authors {
@@ -435,6 +437,12 @@ input#search-input {
           padding: 10px;
         }
       }
+    }
+
+    .dates-actions,
+    .card-bottom {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 

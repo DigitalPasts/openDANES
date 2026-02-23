@@ -1,9 +1,6 @@
 # Jekyll build output — never commit
 _site/
 
-# Generated PDFs
-_pdf/
-
 # Node dependencies
 node_modules/
 

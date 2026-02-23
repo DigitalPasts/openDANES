@@ -51,7 +51,7 @@ const CONFIG = {
         '/usr/bin/chromium-browser',
     ],
 
-    outputDir: path.join(__dirname, '..', '..', '_pdf'),
+    outputDir: path.join(__dirname, '..', '..', 'assets', 'pdf'),
 
     pdf: {
         format: 'A4',
@@ -122,6 +122,9 @@ const CONFIG = {
     .author-card hr { margin: 4px 0 !important; }
     .author-card .peer-review { font-size: 8.5pt !important; }
     .author-card .author-box1, .author-card .author-box2 { padding: 0 !important; }
+    .author-card .dates-actions { display: flex !important; flex-direction: row !important; align-items: flex-start !important; justify-content: space-between !important; gap: 8px !important; }
+    .author-card .download-buttons { display: flex !important; flex-direction: column !important; gap: 4px !important; }
+    .author-card .btn-download { font-size: 7pt !important; padding: 2px 6px !important; line-height: 1 !important; border-radius: 3px !important; text-decoration: none !important; }
   `,
 
     // URL paths to generate when using --all-pages
@@ -130,8 +133,8 @@ const CONFIG = {
         '/p/23e8f5/',
         '/p/d7251a/',
         '/p/38bf88/',
-    
-    
+
+
     ],
 };
 

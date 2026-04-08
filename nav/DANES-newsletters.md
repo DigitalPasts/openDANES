@@ -6,7 +6,7 @@ authors: openDANES
 tags: navigation bar
 ---
 
-The purpose of this newsletter is to aggregate relevant articles, conferences, and general updates about the world of digital ancient Near Eastern studies, so that we are informed as a community of each other’s research.
+The purpose of this newsletter is to aggregate relevant articles, conferences, and general updates about the world of digital ancient Near Eastern studies, so that we are informed as a community of each other’s research. All the publications are also collected in the [DANES Zotero library](https://www.zotero.org/groups/4969526/danes/library){:target="_blank"}.
 
 A new newsletter is published at the beginning of each month or every other month. To get updated when a new newsletter is published, send an email to <digpasts@gmail.com> to join the DANES mailing list!
 

@@ -30,7 +30,6 @@ The editorial board includes members from varied fields within ancient Near East
 - [Hubert Mara](https://hubert-mara.at/){:target="_blank"} (FU Berlin)
 - [Aleksi Sahala](https://researchportal.helsinki.fi/en/persons/aleksi-sahala){:target="_blank"} (University of Helsinki)
 - [Maurizio Viano](https://www.dipstudistorici.unito.it/do/docenti.pl/Alias?maurizio.viano#tab-profilo){:target="_blank"} (University of Turin)
-- 
 
 ## Editorial Team
 

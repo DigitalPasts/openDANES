@@ -4,6 +4,10 @@ _site/
 # Node dependencies
 node_modules/
 
+# Local Ruby/Bundler environment
+vendor/
+.bundle/
+
 # Jekyll cache
 .jekyll-cache/
 .jekyll-metadata
